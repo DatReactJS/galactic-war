@@ -1,0 +1,23 @@
+# Installs the project dependencies listed in bower.json
+$ bower install
+
+# Install package
+$ bower install jquery
+
+# GitHub shorthand
+$ bower install desandro/masonry
+
+# Git endpoint
+$ bower install git://github.com/user/package.git
+
+# URL
+$ bower install http://example.com/script.js
+
+# Bower clean cache package
+$ bower cache clean
+$ bower cache clean <name> [<name> ...]
+$ bower cache clean <name>#<version> [<name>#<version> ..]
+
+# Bower search package 
+$ bower search
+$ bower search <name>

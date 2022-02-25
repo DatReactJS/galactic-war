@@ -1,0 +1,145 @@
+@font-face {
+  font-family: "VARIEN";
+  src: url("../../../fonts/VARIEN.OTF") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "MUDHEAD";
+  src: url("../../../fonts/MUDHEAD.OTF") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "MUDHEAD-BOLD";
+  src: url("../../../fonts/MUDHEAD-BOLD.OTF") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "MUDHEAD-LIGHT";
+  src: url("../../../fonts/MUDHEAD-LIGHT.OTF") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.homepage .swiper-container .swiper-wrapper .swiper-slide {
+  height: 100vh;
+  width: 100%;
+  background: black;
+}
+.homepage .swiper-container .swiper-button-next,
+.homepage .swiper-container .swiper-button-prev {
+  outline: none;
+  margin-top: 0;
+  width: auto;
+  height: auto;
+  transform: translateX(-50%);
+  opacity: 1;
+}
+.homepage .swiper-container .swiper-button-next:after,
+.homepage .swiper-container .swiper-button-prev:after {
+  display: none;
+}
+.homepage .swiper-container .swiper-button-next {
+  right: 60px;
+  animation: next 2s infinite;
+  animation-timing-function: linear;
+}
+.homepage .swiper-container .swiper-button-prev {
+  left: 60px;
+  animation: prev 2s infinite;
+  animation-timing-function: linear;
+}
+.homepage .swiper-container .swiper-pagination .swiper-pagination-bullet {
+  font-family: "Barlow", sans-serif;
+}
+.homepage .swiper-container .swiper-pagination .swiper-pagination-bullet span {
+  font-family: "Barlow", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 10px 0px;
+}
+
+@keyframes next {
+  0% {
+    right: 70px;
+  }
+  50% {
+    right: 60px;
+  }
+  100% {
+    right: 70px;
+  }
+}
+@keyframes prev {
+  0% {
+    left: 70px;
+  }
+  50% {
+    left: 60px;
+  }
+  100% {
+    left: 70px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

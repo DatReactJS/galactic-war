@@ -1,0 +1,109 @@
+@mixin transition() {
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+@mixin transition-time($time) {
+    -moz-transition: all $time ease-in-out;
+    -o-transition: all $time ease-in-out;
+    -webkit-transition: all $time ease-in-out;
+    transition: all $time ease-in-out;
+}
+
+@mixin keyframes( $animationName) {
+    @-webkit-keyframes #{$animationName} {
+        @content;
+    }
+    @-moz-keyframes #{$animationName} {
+        @content;
+    }
+    @-o-keyframes #{$animationName} {
+        @content;
+    }
+    @keyframes #{$animationName} {
+        @content;
+    }
+}
+
+@mixin fixedFull {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+@mixin absoluteFull {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+@mixin absoluteItemCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    @include transform(translate(-50%, -50%));
+}
+
+@mixin backgroundCoverCenter {
+    background-size: cover;
+    background-position: center center;
+}
+
+@mixin transition($value) {
+    -webkit-transition: $value;
+    -moz-transition: $value;
+    transition: $value;
+}
+
+@mixin animation($value) {
+    -webkit-animation: $value;
+    -moz-animation: $value;
+    -o-animation: $value;
+    -ms-animation: $value;
+}
+
+@mixin transform($value) {
+    -webkit-transform: $value;
+    -moz-transform: $value;
+    transform: $value;
+}
+
+@mixin clearfix() {
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+@mixin font-smoothing($value) {
+    -webkit-font-smoothing: $value;
+    -moz-font-smoothing: $value;
+    font-smoothing: $value;
+}
+
+@mixin mediaMaxWidth($breakpoints) {
+    @media only screen and (max-width: $breakpoints) {
+        @content;
+    }
+}
+
+@mixin mediaMinWidth($breakpoints) {
+    @media only screen and (min-width: $breakpoints) {
+        @content;
+    }
+}
+
+@mixin inputPlaceholder() {
+    &::-webkit-input-placeholder,
+    &:-ms-input-placeholder,
+    &::-moz-placeholder, 
+    &:-moz-placeholder {  
+        @content;
+    }
+}

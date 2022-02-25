@@ -1,0 +1,4 @@
+# Run with terminal
+sass --watch --sourcemap main.scss:../dist/main.css partials.scss:../dist/partials.css addon.scss:../dist/addon.css --style compact
+
+sass --watch main.scss:../dist/main.css partials.scss:../dist/partials.css addon.scss:../dist/addon.css --style compact

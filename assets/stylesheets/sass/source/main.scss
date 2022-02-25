@@ -1,0 +1,116 @@
+@import "abstracts/_mixins";
+@import "base/_fonts";
+@import "base/agent";
+@import "./layout/_navbar.scss";
+@import './layout/header';
+@import './page/page1';
+@import './page/page2';
+@import './swiper/swiper';
+:root{
+  --theme-color:#1AD7FD;
+}
+body{
+  min-height: 100vh;  
+  cursor: url("/assets/images/icon/Frame (2).png") 10 10 , default !important;
+  a,button,*{
+    cursor: url("/assets/images/icon/Frame (2).png") 10 10 , default !important;
+  }
+}
+#cursor-click{
+  position: fixed;  
+  width: 32px;
+  height: 32px;
+  background: #1AD7FD;
+  opacity: 0.1;
+  border-radius: 50%;
+  z-index: 999;
+  border: 1px solid #1AD7FD;
+  animation: clickAnimation 0.4s ease-out;    
+}
+@keyframes clickAnimation{
+  from{    
+    opacity: 0.1;
+    background: #1AD7FD;
+    transform: translate(-50%,-50%) scale(0);
+  }
+  to{
+    opacity: 1;
+    background: transparent;
+    transform: translate(-50%,-50%) scale(1.5);
+  }
+}
+.homepage {
+  .swiper-container {
+    .swiper-wrapper {
+      .swiper-slide {
+        height: 100vh;
+        width: 100%;
+        background: black;
+      }
+    }
+    .swiper-button-next,
+    .swiper-button-prev {
+      outline: none;
+      margin-top: 0;
+      width: auto;
+      height: auto;
+      transform: translateX(-50%);
+      opacity: 1;
+      &:after {
+        display: none;
+      }
+    }
+    .swiper-button-next {
+      right: 60px;
+      animation: next 2s infinite;
+      animation-timing-function: linear;
+    }
+    .swiper-button-prev {
+      left: 60px;
+      animation: prev 2s infinite;
+      animation-timing-function: linear;
+    }
+    .swiper-pagination {
+      .swiper-pagination-bullet {
+        font-family: "Barlow", sans-serif;
+        span {
+          font-family: "Barlow", sans-serif;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 19px;
+          display: flex;
+          align-items: center;
+          text-align: center;
+          color: #ffffff;
+          /* Inside auto layout */
+          flex: none;
+          order: 0;
+          flex-grow: 0;
+          margin: 10px 0px;
+        }
+      }
+    }
+  }
+}
+@keyframes next {
+  0% {
+    right: 70px;
+  }
+  50% {
+    right: 60px;
+  }
+  100% {
+    right: 70px;
+  }
+}
+@keyframes prev {
+  0% {
+    left: 70px;
+  }
+  50% {
+    left: 60px;
+  }
+  100% {
+    left: 70px;
+  }
+}

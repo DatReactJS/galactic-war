@@ -171,14 +171,34 @@
                         <img src="/assets//images//ldp/play.png" alt="" class="play" onclick="playVideoPages2()">
                         <img src="/assets//images//ldp/pause.png" alt="" class="pause" onclick="playVideoPages2()">
                     </button>
+
+                    <button class="control-sound playing" id="control-sound-video-page-2">
+                        <img src="/assets//images//ldp/sound.png" alt="" class="play" onclick="playSoundVideoPages2()">
+                        <img src="/assets//images//ldp/sound-off.png" alt="" class="pause" onclick="playSoundVideoPages2()">
+                        <img src="/assets//images/icon/Vector.png" alt="" class="fullscreen" onclick="openFullscreenVideoPages2()">                        
+                    </button>
                 </div>
                 <script>
-                    document.getElementById('video-page2').preventDefault('click');
                     function playVideoPages2(){
                         let video = document.getElementById('video-page2');
-                        video.paused ? video.play() : video.paused();
+                        if(video.paused) {video.play()} else video.pause();
                         document.getElementById('control-video-page-2').classList.toggle('playing');
                     }
+                    function playSoundVideoPages2(){
+                        let video = document.getElementById('video-page2');
+                        if(video.muted) {video.muted=false} else video.muted=true;
+                        document.getElementById('control-sound-video-page-2').classList.toggle('playing');
+                    }
+                    function openFullscreenVideoPages2() {
+                        let elem = document.getElementById("video-page2");
+                        if (elem.requestFullscreen) {
+                            elem.requestFullscreen();
+                        } else if (elem.webkitRequestFullscreen) { /* Safari */
+                            elem.webkitRequestFullscreen();
+                        } else if (elem.msRequestFullscreen) { /* IE11 */
+                            elem.msRequestFullscreen();
+                        }
+                        }
                 </script>
             </div>
             <div class="swiper-slide">Slide 3</div>
@@ -189,7 +209,10 @@
             <div class="swiper-slide">Slide 8</div>
             <div class="swiper-slide">Slide 9</div>
             <div class="swiper-slide">Slide 9</div>
-            <div class="swiper-slide">Slide 9</div>
+            <div class="swiper-slide">Slide 11</div>
+            <div class="swiper-slide">Slide 12</div>
+            <div class="swiper-slide">Slide 13</div>
+            <div class="swiper-slide">Slide 14</div>
             </div>
             <div class="swiper-pagination"></div>
             <div class="swiper-button-next"><img src="./assets/images/ldp/next.png" alt=""></div>

@@ -2307,6 +2307,114 @@ header ._header_top .bg_header {
   }
 }
 
+#page-11 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+
+#page-11 .bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+#page-11 .bg img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center 83px;
+     object-position: center 83px;
+}
+
+#page-11 .content {
+  position: relative;
+  margin: 31vh auto auto 15px;
+  width: calc(100% - 75px);
+  padding: 17px 35px 0px 34px;
+  color: white;
+  top: 0;
+  left: 0;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+#page-11 .content h2 {
+  margin-bottom: 13px;
+  text-shadow: 0px 10px 80px rgba(0, 0, 0, 0.5);
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 23px;
+}
+
+#page-11 .content p {
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 13px;
+  width: 243px;
+}
+
+#page-11 .content p span {
+  color: var(--theme-color);
+}
+
+#page-11 .content img {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+@media (min-width: 1024px) {
+  #page-11 .bg {
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+  }
+  #page-11 .bg img {
+    -o-object-position: cover;
+       object-position: cover;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  #page-11 .content {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 17vh 11vw auto auto;
+    text-align: right;
+    padding: 0 0 37px 0;
+  }
+  #page-11 .content h2 {
+    margin-bottom: 24px;
+    font-size: 48px;
+    line-height: 58px;
+    width: 671px;
+  }
+  #page-11 .content p {
+    font-size: 18px;
+    line-height: 22px;
+    width: 525px;
+    margin-left: auto;
+  }
+  #page-11 .content img {
+    bottom: 0;
+    right: 0;
+    top: initial;
+    left: initial;
+  }
+}
+
 #page-13 {
   width: 100%;
   position: relative;

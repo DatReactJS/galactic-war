@@ -1677,6 +1677,16 @@ header ._header_top .bg_header {
   position: relative;
   width: 100%;
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  -webkit-box-align: right;
+      -ms-flex-align: right;
+          align-items: right;
 }
 
 #page-5 .bg {
@@ -1690,6 +1700,161 @@ header ._header_top .bg_header {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+#page-5 .content {
+  position: relative;
+  margin-bottom: 20vh;
+  margin-right: 15px;
+  width: 250px;
+  padding: 33px;
+  margin-left: auto;
+  top: 0;
+  right: 0;
+  color: white;
+  text-transform: uppercase;
+  text-align: right;
+}
+
+#page-5 .content h2 {
+  margin-bottom: 13px;
+  text-shadow: 0px 10px 80px rgba(0, 0, 0, 0.5);
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 23px;
+  white-space: nowrap;
+}
+
+#page-5 .content p {
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 13px;
+}
+
+#page-5 .content p span {
+  color: var(--theme-color);
+}
+
+#page-5 .content img {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+@media (min-width: 1024px) {
+  #page-5 .content {
+    width: 622px;
+    margin-top: 21.29vh;
+    margin-bottom: auto;
+    margin-right: 9.37vw;
+    text-align: left;
+    padding: 51px 141px;
+  }
+  #page-5 .content h2 {
+    margin-bottom: 24px;
+    font-size: 48px;
+    line-height: 58px;
+  }
+  #page-5 .content p {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  #page-5 .content img {
+    width: 55px;
+    height: 288px;
+  }
+}
+
+#page-6 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  -webkit-box-align: right;
+      -ms-flex-align: right;
+          align-items: right;
+}
+
+#page-6 .bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+#page-6 .bg img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#page-6 .content {
+  position: relative;
+  margin-bottom: 20vh;
+  margin-right: 15px;
+  width: 250px;
+  padding: 33px;
+  margin-left: auto;
+  top: 0;
+  right: 0;
+  color: white;
+  text-transform: uppercase;
+  text-align: right;
+}
+
+#page-6 .content h2 {
+  margin-bottom: 13px;
+  text-shadow: 0px 10px 80px rgba(0, 0, 0, 0.5);
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 23px;
+  white-space: nowrap;
+}
+
+#page-6 .content p {
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 13px;
+}
+
+#page-6 .content p span {
+  color: var(--theme-color);
+}
+
+#page-6 .content img {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+@media (min-width: 1024px) {
+  #page-6 .content {
+    width: 622px;
+    margin-top: 21.29vh;
+    margin-bottom: auto;
+    margin-right: 9.37vw;
+    text-align: left;
+    padding: 51px 141px;
+  }
+  #page-6 .content h2 {
+    margin-bottom: 24px;
+    font-size: 48px;
+    line-height: 58px;
+  }
+  #page-6 .content p {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  #page-6 .content img {
+    width: 55px;
+    height: 288px;
+  }
 }
 
 #slide_home .swiper-button-next, #slide_home .swiper-button-prev {
@@ -1709,6 +1874,7 @@ header ._header_top .bg_header {
   height: 6px;
   position: relative;
   margin: auto calc(9px);
+  opacity: 1;
 }
 
 #slide_home .swiper-pagination-bullet:first {
@@ -1723,7 +1889,7 @@ header ._header_top .bg_header {
   content: '';
   display: block;
   border-radius: 50%;
-  background: rgba(26, 215, 253, 0.5);
+  background: rgba(26, 215, 253, 0.1);
   position: absolute;
   width: 100%;
   height: 100%;
@@ -1802,9 +1968,8 @@ header ._header_top .bg_header {
     height: 40px;
     margin: auto calc( 6px * 5 + 10px);
   }
-  #slide_home .swiper-pagination-bullet::after {
+  #slide_home .swiper-pagination-bullet.swiper-pagination-bullet-active::after {
     left: calc( 6px * 5 + 30px);
-    opacity: .2;
   }
 }
 

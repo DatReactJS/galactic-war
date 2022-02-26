@@ -1985,6 +1985,328 @@ header ._header_top .bg_header {
   }
 }
 
+#page-8 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  -webkit-box-align: right;
+      -ms-flex-align: right;
+          align-items: right;
+  padding-top: 53px;
+}
+
+#page-8 .bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+#page-8 .bg img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top left;
+     object-position: top left;
+}
+
+#page-8 .content {
+  position: relative;
+  margin: auto auto 26vh 15px;
+  width: 250px;
+  padding: 15px  33px;
+  margin-left: auto;
+  top: 0;
+  right: 0;
+  color: white;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+#page-8 .content h2 {
+  margin-bottom: 13px;
+  text-shadow: 0px 10px 80px rgba(0, 0, 0, 0.5);
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 23px;
+}
+
+#page-8 .content p {
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 13px;
+}
+
+#page-8 .content p span {
+  color: var(--theme-color);
+}
+
+#page-8 .content img {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+@media (min-width: 1024px) {
+  #page-8 .bg {
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+  }
+  #page-8 .bg img {
+    -o-object-position: center;
+       object-position: center;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  #page-8 .content {
+    width: 784px;
+    margin-bottom: auto;
+    margin: 18.42vh auto auto 12.6vw;
+    text-align: left;
+    padding: 36px 0 0 55px;
+  }
+  #page-8 .content h2 {
+    margin-bottom: 24px;
+    font-size: 48px;
+    line-height: 58px;
+  }
+  #page-8 .content p {
+    font-size: 18px;
+    line-height: 22px;
+    width: 622px;
+  }
+  #page-8 .content img {
+    width: 55px;
+    height: 288px;
+  }
+}
+
+#page-9 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  -webkit-box-align: right;
+      -ms-flex-align: right;
+          align-items: right;
+  padding-top: 53px;
+}
+
+#page-9 .bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+#page-9 .bg img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top left;
+     object-position: top left;
+}
+
+#page-9 .content {
+  position: relative;
+  margin: auto auto 26vh 15px;
+  width: 250px;
+  padding: 36px 47px;
+  margin-left: auto;
+  top: 0;
+  right: 0;
+  color: white;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+#page-9 .content h2 {
+  margin-bottom: 13px;
+  text-shadow: 0px 10px 80px rgba(0, 0, 0, 0.5);
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 23px;
+}
+
+#page-9 .content p {
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 13px;
+}
+
+#page-9 .content p span {
+  color: var(--theme-color);
+}
+
+#page-9 .content img {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+@media (min-width: 1024px) {
+  #page-9 .bg {
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+  }
+  #page-9 .bg img {
+    -o-object-position: center;
+       object-position: center;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  #page-9 .content {
+    width: 784px;
+    margin: auto auto 22.5vh 8.8vw;
+    text-align: left;
+    padding: 0 0 55px 55px;
+  }
+  #page-9 .content h2 {
+    margin-bottom: 24px;
+    font-size: 48px;
+    line-height: 58px;
+  }
+  #page-9 .content p {
+    font-size: 18px;
+    line-height: 22px;
+    width: 622px;
+  }
+  #page-9 .content img {
+    width: 55px;
+    height: 288px;
+    bottom: 0;
+    top: initial;
+  }
+}
+
+#page-10 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+
+#page-10 .bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+#page-10 .bg img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top left;
+     object-position: top left;
+}
+
+#page-10 .content {
+  position: relative;
+  margin: auto auto 15vh 15px;
+  width: calc(100% - 75px);
+  padding: 36px 35px 55px 0;
+  top: 0;
+  right: 0;
+  color: white;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+#page-10 .content h2 {
+  margin-bottom: 13px;
+  text-shadow: 0px 10px 80px rgba(0, 0, 0, 0.5);
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 23px;
+}
+
+#page-10 .content p {
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 13px;
+}
+
+#page-10 .content p span {
+  color: var(--theme-color);
+}
+
+#page-10 .content img {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+#page-10 .content .left {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  #page-10 .bg {
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+  }
+  #page-10 .bg img {
+    -o-object-position: center;
+       object-position: center;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  #page-10 .content {
+    width: 577px;
+    margin: auto auto 22.44vh auto;
+    text-align: left;
+    padding: 21px 70px 0px 70px;
+  }
+  #page-10 .content h2 {
+    margin-bottom: 24px;
+    font-size: 48px;
+    line-height: 58px;
+  }
+  #page-10 .content p {
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+  }
+  #page-10 .content img {
+    width: 55px;
+    height: 288px;
+  }
+  #page-10 .content img.left {
+    display: block;
+    -webkit-transform: rotateY(180deg) rotateX(180deg);
+            transform: rotateY(180deg) rotateX(180deg);
+    left: 0;
+    top: initial;
+    bottom: 0;
+  }
+}
+
 #slide_home .swiper-button-next, #slide_home .swiper-button-prev {
   display: none !important;
 }

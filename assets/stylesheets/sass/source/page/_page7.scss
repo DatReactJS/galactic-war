@@ -1,4 +1,4 @@
-#page-6{
+#page-7{
     position: relative;
     width: 100%;
     height: 100%;
@@ -14,6 +14,7 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
+            object-position: top left;
         }
     }
     .content{
@@ -49,17 +50,15 @@
             top: 0;
             right: 0;
         }
-    }
-    .gun{
-        object-fit: contain;
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        top: -61px;
-    }
+    } 
     @media (min-width:1024px) {
         .bg{
+            width: auto;
+            height: auto;
+            min-width: 100%;
+            min-height: 100%;
             img{
+                object-position: center;
                 object-fit: contain;
             }
         }
@@ -83,9 +82,6 @@
             img{
                 display: none;
             }
-        }
-        .gun{
-            display: none;
-        }
+        }       
     }
 }

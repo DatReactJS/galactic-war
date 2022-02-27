@@ -2510,7 +2510,7 @@ header ._header_top .bg_header {
       -ms-flex-align: center;
           align-items: center;
   width: 50%;
-  padding: 0 5px;
+  padding: 0 15px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin-bottom: 24px;

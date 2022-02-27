@@ -167,207 +167,8 @@
         </a>
       </div>
       <div class="swiper-container" id="slide_home">
-        <div class="swiper-wrapper">          
-
-          <div class="swiper-slide">
-            <div id="page-1">
-              <picture>
-                <source
-                  media="(min-width:1024px)"
-                  srcset="/assets/images/slider/page1/desktop.gif"
-                />
-                <img
-                  src="/assets/images/slider/page1/226347986-AdobeStock_226347986 2.png"
-                  alt="bh"
-                  class="bg"
-                />
-              </picture>
-              <img
-                src="/assets/images/slider/page1/planet20 1.png"
-                alt="bh"
-                class="bg-2"
-              />
-              <div class="layer"></div>
-              <!--  -->
-              <div class="cointaier">
-                <div class="circle">
-                  <img
-                    src="./assets/images/slider/page1/Group 271.png"
-                    alt="logo"
-                    class="logo"
-                  />
-                </div>
-                <img
-                  src="./assets/images/slider/page1/GalacticWar_PNG 2.png"
-                  alt="logo"
-                  class="logo"
-                />
-                <h2 class="Barlow">galactic war</h2>
-                <h3 class="Microgramma-b">
-                  <span> A World </span>
-                  Vast
-                  <br />
-                  Beyond Imagining
-                </h3>
-                <button>
-                  <img src="/assets/images/ldp/Group 230.png" alt="" />
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <div class="swiper-slide">
-            <div id="page-2">
-              <video
-                src="https://sidusheroes.com/video/sidus-trailer.mp4"
-                muted
-                autoplay
-                id="video-page2"
-              ></video>
-              <!--  -->
-              <button class="control playing" id="control-video-page-2">
-                <img
-                  src="/assets//images//ldp/play.png"
-                  alt=""
-                  class="play"
-                  onclick="playVideoPages2()"
-                />
-                <img
-                  src="/assets//images//ldp/pause.png"
-                  alt=""
-                  class="pause"
-                  onclick="playVideoPages2()"
-                />
-              </button>
-
-              <button
-                class="control-sound playing"
-                id="control-sound-video-page-2"
-              >
-                <img
-                  src="/assets//images//ldp/sound.png"
-                  alt=""
-                  class="play"
-                  onclick="playSoundVideoPages2()"
-                />
-                <img
-                  src="/assets//images//ldp/sound-off.png"
-                  alt=""
-                  class="pause"
-                  onclick="playSoundVideoPages2()"
-                />
-                <img
-                  src="/assets//images/icon/Vector.png"
-                  alt=""
-                  class="fullscreen"
-                  onclick="openFullscreenVideoPages2()"
-                />
-              </button>
-            </div>
-            <script>
-              function playVideoPages2() {
-                let video = document.getElementById("video-page2");
-                if (video.paused) {
-                  video.play();
-                } else video.pause();
-                document
-                  .getElementById("control-video-page-2")
-                  .classList.toggle("playing");
-              }
-              function playSoundVideoPages2() {
-                let video = document.getElementById("video-page2");
-                if (video.muted) {
-                  video.muted = false;
-                } else video.muted = true;
-                document
-                  .getElementById("control-sound-video-page-2")
-                  .classList.toggle("playing");
-              }
-              function openFullscreenVideoPages2() {
-                let elem = document.getElementById("video-page2");
-                if (elem.requestFullscreen) {
-                  elem.requestFullscreen();
-                } else if (elem.webkitRequestFullscreen) {
-                  /* Safari */
-                  elem.webkitRequestFullscreen();
-                } else if (elem.msRequestFullscreen) {
-                  /* IE11 */
-                  elem.msRequestFullscreen();
-                }
-              }
-            </script>
-          </div>
-
-          <div class="swiper-slide">
-            <div id="page-3">
-              <div class="bg">
-                <img
-                  src="/assets//images//slider/page3/226347986-AdobeStock_226347986 3.png"
-                  alt=""
-                />
-              </div>
-              <div class="group730">
-                <img
-                  src="/assets//images//slider//page3/Group 730.png"
-                  alt=""
-                />
-              </div>
-              <div class="group235">
-                <img
-                  src="/assets//images//slider//page3/2 26347989.png"
-                  alt=""
-                />
-              </div>
-              <!-- list img -->
-              <div class="li-border-1">
-                <img src="/assets//images/slider//page3/s3-01.png" alt="" />
-              </div>
-              <div class="li-border-2">
-                <img src="/assets//images/slider//page3/s3-02.png" alt="" />
-              </div>
-              <div class="li-border-3">
-                <img src="/assets//images/slider//page3/s3-03.png" alt="" />
-              </div>
-              <div class="li-border-4">
-                <img src="/assets//images/slider//page3/s3-04.png" alt="" />
-              </div>
-              <div class="li-border-5">
-                <img src="/assets//images/slider//page3/s3-05.png" alt="" />
-              </div>
-              <div class="li-border-6">
-                <img src="/assets//images/slider//page3/s3-center.png" alt="" />
-              </div>
-
-              <div class="container">
-                <h2 class="Microgramma-b">features</h2>
-
-                <ul class="list-features">
-                  <li class="Barlow l1">
-                    The First Ecosystem To Combine The Greatest Aspects Of
-                    Gaming And Digital Collectibles
-                  </li>
-                  <li class="Barlow l2">PvP Arena rewards</li>
-                  <li class="Barlow l3">Idle campaign rewards</li>
-                  <li class="Barlow l4">Evolutionary system</li>
-                  <li class="Barlow l5">Quest and Ranking system</li>
-                  <li class="Barlow l6">
-                    Elemon is inspired by the mysterious and beautiful world of
-                    Elematris, our mission is to build a comprehensive platform
-                    of digital monsters that will enable millions of individuals
-                    to participate in the NFT and blockchain-based gaming world
-                    in a simple, creative, and enjoyable way
-                  </li>
-                </ul>
-                <div class="flex-center">
-                  <button class="read">
-                    <img src="\assets\images\ldp\play_trailer.png" alt="" />
-                    <span class="Barlow"> read our story </span>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-
+        <div class="swiper-wrapper">
+           
           <div class="swiper-slide">
             <div id="page-4">
               <div class="bg-mobie">
@@ -579,7 +380,209 @@
                 </dl>
               </div>
             </div>
+          </div>         
+
+          <div class="swiper-slide">
+            <div id="page-1">
+              <picture>
+                <source
+                  media="(min-width:1024px)"
+                  srcset="/assets/images/slider/page1/desktop.gif"
+                />
+                <img
+                  src="/assets/images/slider/page1/226347986-AdobeStock_226347986 2.png"
+                  alt="bh"
+                  class="bg"
+                />
+              </picture>
+              <img
+                src="/assets/images/slider/page1/planet20 1.png"
+                alt="bh"
+                class="bg-2"
+              />
+              <div class="layer"></div>
+              <!--  -->
+              <div class="cointaier">
+                <div class="circle">
+                  <img
+                    src="./assets/images/slider/page1/Group 271.png"
+                    alt="logo"
+                    class="logo"
+                  />
+                </div>
+                <img
+                  src="./assets/images/slider/page1/GalacticWar_PNG 2.png"
+                  alt="logo"
+                  class="logo"
+                />
+                <h2 class="Barlow">galactic war</h2>
+                <h3 class="Microgramma-b">
+                  <span> A World </span>
+                  Vast
+                  <br />
+                  Beyond Imagining
+                </h3>
+                <button>
+                  <img src="/assets/images/ldp/Group 230.png" alt="" />
+                </button>
+              </div>
+            </div>
           </div>
+
+          <div class="swiper-slide">
+            <div id="page-2">
+              <video
+                src="https://sidusheroes.com/video/sidus-trailer.mp4"
+                muted
+                autoplay
+                id="video-page2"
+              ></video>
+              <!--  -->
+              <button class="control playing" id="control-video-page-2">
+                <img
+                  src="/assets//images//ldp/play.png"
+                  alt=""
+                  class="play"
+                  onclick="playVideoPages2()"
+                />
+                <img
+                  src="/assets//images//ldp/pause.png"
+                  alt=""
+                  class="pause"
+                  onclick="playVideoPages2()"
+                />
+              </button>
+
+              <button
+                class="control-sound playing"
+                id="control-sound-video-page-2"
+              >
+                <img
+                  src="/assets//images//ldp/sound.png"
+                  alt=""
+                  class="play"
+                  onclick="playSoundVideoPages2()"
+                />
+                <img
+                  src="/assets//images//ldp/sound-off.png"
+                  alt=""
+                  class="pause"
+                  onclick="playSoundVideoPages2()"
+                />
+                <img
+                  src="/assets//images/icon/Vector.png"
+                  alt=""
+                  class="fullscreen"
+                  onclick="openFullscreenVideoPages2()"
+                />
+              </button>
+            </div>
+            <script>
+              function playVideoPages2() {
+                let video = document.getElementById("video-page2");
+                if (video.paused) {
+                  video.play();
+                } else video.pause();
+                document
+                  .getElementById("control-video-page-2")
+                  .classList.toggle("playing");
+              }
+              function playSoundVideoPages2() {
+                let video = document.getElementById("video-page2");
+                if (video.muted) {
+                  video.muted = false;
+                } else video.muted = true;
+                document
+                  .getElementById("control-sound-video-page-2")
+                  .classList.toggle("playing");
+              }
+              function openFullscreenVideoPages2() {
+                let elem = document.getElementById("video-page2");
+                if (elem.requestFullscreen) {
+                  elem.requestFullscreen();
+                } else if (elem.webkitRequestFullscreen) {
+                  /* Safari */
+                  elem.webkitRequestFullscreen();
+                } else if (elem.msRequestFullscreen) {
+                  /* IE11 */
+                  elem.msRequestFullscreen();
+                }
+              }
+            </script>
+          </div>
+
+          <div class="swiper-slide">
+            <div id="page-3">
+              <div class="bg">
+                <img
+                  src="/assets//images//slider/page3/226347986-AdobeStock_226347986 3.png"
+                  alt=""
+                />
+              </div>
+              <div class="group730">
+                <img
+                  src="/assets//images//slider//page3/Group 730.png"
+                  alt=""
+                />
+              </div>
+              <div class="group235">
+                <img
+                  src="/assets//images//slider//page3/2 26347989.png"
+                  alt=""
+                />
+              </div>
+              <!-- list img -->
+              <div class="li-border-1">
+                <img src="/assets//images/slider//page3/s3-01.png" alt="" />
+              </div>
+              <div class="li-border-2">
+                <img src="/assets//images/slider//page3/s3-02.png" alt="" />
+              </div>
+              <div class="li-border-3">
+                <img src="/assets//images/slider//page3/s3-03.png" alt="" />
+              </div>
+              <div class="li-border-4">
+                <img src="/assets//images/slider//page3/s3-04.png" alt="" />
+              </div>
+              <div class="li-border-5">
+                <img src="/assets//images/slider//page3/s3-05.png" alt="" />
+              </div>
+              <div class="li-border-6">
+                <img src="/assets//images/slider//page3/s3-center.png" alt="" />
+              </div>
+
+              <div class="container">
+                <h2 class="Microgramma-b">features</h2>
+
+                <ul class="list-features">
+                  <li class="Barlow l1">
+                    The First Ecosystem To Combine The Greatest Aspects Of
+                    Gaming And Digital Collectibles
+                  </li>
+                  <li class="Barlow l2">PvP Arena rewards</li>
+                  <li class="Barlow l3">Idle campaign rewards</li>
+                  <li class="Barlow l4">Evolutionary system</li>
+                  <li class="Barlow l5">Quest and Ranking system</li>
+                  <li class="Barlow l6">
+                    Elemon is inspired by the mysterious and beautiful world of
+                    Elematris, our mission is to build a comprehensive platform
+                    of digital monsters that will enable millions of individuals
+                    to participate in the NFT and blockchain-based gaming world
+                    in a simple, creative, and enjoyable way
+                  </li>
+                </ul>
+                <div class="flex-center">
+                  <button class="read">
+                    <img src="\assets\images\ldp\play_trailer.png" alt="" />
+                    <span class="Barlow"> read our story </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- page 4 -->
+
+          
 
           <div class="swiper-slide">
             <div id="page-5">

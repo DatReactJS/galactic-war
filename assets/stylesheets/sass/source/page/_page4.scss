@@ -110,6 +110,7 @@
                 display: flex;
                 justify-content: center;
                 padding-top: 13vh;
+                transition: 0.3s ease-in-out;
                 .phase{
                     width: fit-content;
                     display: flex;
@@ -146,11 +147,13 @@
                         position: absolute;
                         top:calc(100% + 39px);
                         left: 0;
+                        transition: 0.3s ease-in-out;
                         .desktop-icon{
                             .planet{
                                 transition: 0.3 s ease-in-out;
                                 width: 100px;
                                 height: 100px;
+                                transition: 0.3s ease-in-out;
                             }
                             .core{
                                 position: absolute;
@@ -158,7 +161,7 @@
                                 left: 50%;
                                 transform: translateX(-50%);
                             }
-                        }
+                        }                        
                         h4{
                             text-align: center;
                         }
@@ -181,6 +184,9 @@
                         }
                     }
                     &:hover{
+                        header{
+                            transform: translateY(-4px);
+                        }
                         .planet{
                             filter: drop-shadow(0px 0px 40px #1AD7FD);                            
                         }

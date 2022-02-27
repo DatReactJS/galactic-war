@@ -117,6 +117,9 @@
     .content-page14{
       padding: 23vh 0 18vh;      
       overflow-y: auto;
+       &::-webkit-scrollbar{
+        display: none;
+      }    
       .Partners,.MEDIA-SECURITY {
         display: none;
         &.active {

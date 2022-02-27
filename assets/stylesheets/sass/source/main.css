@@ -1,41 +1,41 @@
 @font-face {
-  font-family: 'VARIEN';
+  font-family: "VARIEN";
   src: url("../../../fonts/VARIEN.OTF") format("opentype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'MUDHEAD';
+  font-family: "MUDHEAD";
   src: url("../../../fonts/MUDHEAD.OTF") format("opentype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'MUDHEAD-BOLD';
+  font-family: "MUDHEAD-BOLD";
   src: url("../../../fonts/MUDHEAD-BOLD.OTF") format("opentype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'MUDHEAD-LIGHT';
+  font-family: "MUDHEAD-LIGHT";
   src: url("../../../fonts/MUDHEAD-LIGHT.OTF") format("opentype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Microgramma-D-OT-Bold';
-  src: url("/assets/fonts/Microgramma-D-OT-Bold-Extended_30403.ttf") format("opentype");
+  font-family: "Microgramma-D-OT-Bold";
+  src: url("./assets/fonts/Microgramma-D-OT-Bold-Extended_30403.ttf") format("opentype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Microgramma-D-OT-Medium';
-  src: url("/assets/fonts/Microgramma-D-OT-Medium-Extended_30404.ttf") format("opentype");
+  font-family: "Microgramma-D-OT-Medium";
+  src: url("./assets/fonts/Microgramma-D-OT-Medium-Extended_30404.ttf") format("opentype");
   font-weight: normal;
   font-style: normal;
 }
@@ -1145,10 +1145,8 @@ header ._header_top .bg_header {
     min-width: 100%;
     min-height: 56.25vw;
     /* 100 * 9 / 16 */
-    -o-object-fit: cover;
-       object-fit: cover;
-    -o-object-position: bottom;
-       object-position: bottom;
+    -o-object-fit: contain;
+       object-fit: contain;
   }
   #page-2 .control img {
     height: initial;
@@ -2763,6 +2761,9 @@ header ._header_top .bg_header {
     padding: 23vh 0 18vh;
     overflow-y: auto;
   }
+  #page-14 .content-page14::-webkit-scrollbar {
+    display: none;
+  }
   #page-14 .content-page14 .Partners, #page-14 .content-page14 .MEDIA-SECURITY {
     display: none;
   }
@@ -2955,16 +2956,18 @@ header ._header_top .bg_header {
 }
 
 :root {
-  --theme-color:#1AD7FD;
+  --theme-color: #1ad7fd;
 }
 
 body {
   min-height: 100vh;
-  cursor: url("/assets/images/icon/Frame (2).png") 10 10, default !important;
+  cursor: url("./assets/images/icon/Frame (2).png") 10 10, default !important;
 }
 
-body a, body button, body * {
-  cursor: url("/assets/images/icon/Frame (2).png") 10 10, default !important;
+body a,
+body button,
+body * {
+  cursor: url("./assets/images/icon/Frame (2).png") 10 10, default !important;
 }
 
 body ::-webkit-scrollbar {
@@ -2989,11 +2992,11 @@ body ::-webkit-scrollbar-thumb:hover {
   position: fixed;
   width: 32px;
   height: 32px;
-  background: #1AD7FD;
+  background: #1ad7fd;
   opacity: 0.1;
   border-radius: 50%;
   z-index: 999;
-  border: 1px solid #1AD7FD;
+  border: 1px solid #1ad7fd;
   -webkit-animation: clickAnimation 0.4s ease-out;
           animation: clickAnimation 0.4s ease-out;
 }
@@ -3001,7 +3004,7 @@ body ::-webkit-scrollbar-thumb:hover {
 @-webkit-keyframes clickAnimation {
   from {
     opacity: 0.1;
-    background: #1AD7FD;
+    background: #1ad7fd;
     -webkit-transform: translate(-50%, -50%) scale(0);
             transform: translate(-50%, -50%) scale(0);
   }
@@ -3016,7 +3019,7 @@ body ::-webkit-scrollbar-thumb:hover {
 @keyframes clickAnimation {
   from {
     opacity: 0.1;
-    background: #1AD7FD;
+    background: #1ad7fd;
     -webkit-transform: translate(-50%, -50%) scale(0);
             transform: translate(-50%, -50%) scale(0);
   }
@@ -3166,8 +3169,8 @@ body ::-webkit-scrollbar-thumb:hover {
     border-radius: 10px;
     -webkit-transform: matrix(0.98, 0, -0.19, 1, 0, 0);
             transform: matrix(0.98, 0, -0.19, 1, 0, 0);
-    background: #1AD7FD;
-    content: '';
+    background: #1ad7fd;
+    content: "";
     z-index: -1;
     -webkit-box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.35);
             box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.35);

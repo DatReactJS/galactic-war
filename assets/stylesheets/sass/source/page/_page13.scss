@@ -97,12 +97,17 @@
       }
     }
   }
-  @media (min-width:1024px) {
-    .main{      
-      padding: 22vh 0;
-      &::-webkit-scrollbar{
-        display: none;
-      }
+  @media (min-width:1024px) {    
+    .main{
+      left: 50%;
+      top: 22vh;
+      transform: translateX(-50%);
+      position: absolute;
+      height: 700px;
+      padding: 0;
+      // &::-webkit-scrollbar{
+      //   display: none;
+      // }      
       .title-page13{
         font-size: 3rem;
         line-height: 3.625rem;      
@@ -139,3 +144,4 @@
     }
   }
 }
+

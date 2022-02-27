@@ -1352,6 +1352,9 @@ header ._header_top .bg_header {
 }
 
 @media (min-width: 1024px) {
+  #page-3::-webkit-scrollbar {
+    display: none;
+  }
   #page-3 .container {
     background: initial;
     -webkit-backdrop-filter: initial;
@@ -1547,6 +1550,9 @@ header ._header_top .bg_header {
 }
 
 @media (min-width: 1024px) {
+  #page-4::-webkit-scrollbar {
+    display: none;
+  }
   #page-4 .bg-mobie {
     display: none;
   }
@@ -2565,6 +2571,21 @@ header ._header_top .bg_header {
     height: 700px;
     padding: 0;
   }
+  #page-13 .main::-webkit-scrollbar {
+    width: 10px;
+  }
+  #page-13 .main::-webkit-scrollbar-track {
+    border-radius: 10px;
+  }
+  #page-13 .main::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-radius: 10px;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+  }
+  #page-13 .main:hover::-webkit-scrollbar-thumb {
+    background: var(--theme-color);
+  }
   #page-13 .main .title-page13 {
     font-size: 3rem;
     line-height: 3.625rem;
@@ -2968,24 +2989,6 @@ body a,
 body button,
 body * {
   cursor: url("../../../images/icon/cursor.png") 10 10, default !important;
-}
-
-body ::-webkit-scrollbar {
-  width: 10px;
-}
-
-body ::-webkit-scrollbar-track {
-  border-radius: 10px;
-}
-
-body ::-webkit-scrollbar-thumb {
-  background: var(--theme-color);
-  opacity: 0.5;
-  border-radius: 10px;
-}
-
-body ::-webkit-scrollbar-thumb:hover {
-  opacity: 1;
 }
 
 #cursor-click {

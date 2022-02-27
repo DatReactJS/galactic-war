@@ -147,6 +147,9 @@
         }
     }
     @media (min-width:1024px) {
+    &::-webkit-scrollbar{
+        display: none;
+    }
         .container{
             background: initial;
             backdrop-filter: initial;

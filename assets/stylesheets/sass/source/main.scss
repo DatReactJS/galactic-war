@@ -23,11 +23,11 @@
 }
 body {
   min-height: 100vh;
-  cursor: url("./assets/images/icon/Frame (2).png") 10 10, default !important;
+  cursor: url("../../../images/icon/cursor.png") 10 10, default !important;
   a,
   button,
   * {
-    cursor: url("./assets/images/icon/Frame (2).png") 10 10, default !important;
+    cursor: url("../../../images/icon/cursor.png") 10 10, default !important;
   }
   ::-webkit-scrollbar {
     width: 10px;

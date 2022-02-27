@@ -28,14 +28,14 @@
 
 @font-face {
   font-family: "Microgramma-D-OT-Bold";
-  src: url("./assets/fonts/Microgramma-D-OT-Bold-Extended_30403.ttf") format("opentype");
+  src: url("../../../fonts/Microgramma-D-OT-Bold-Extended_30403.ttf") format("opentype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Microgramma-D-OT-Medium";
-  src: url("./assets/fonts/Microgramma-D-OT-Medium-Extended_30404.ttf") format("opentype");
+  src: url("../../../fonts/Microgramma-D-OT-Medium-Extended_30404.ttf") format("opentype");
   font-weight: normal;
   font-style: normal;
 }
@@ -2961,13 +2961,13 @@ header ._header_top .bg_header {
 
 body {
   min-height: 100vh;
-  cursor: url("./assets/images/icon/Frame (2).png") 10 10, default !important;
+  cursor: url("../../../images/icon/cursor.png") 10 10, default !important;
 }
 
 body a,
 body button,
 body * {
-  cursor: url("./assets/images/icon/Frame (2).png") 10 10, default !important;
+  cursor: url("../../../images/icon/cursor.png") 10 10, default !important;
 }
 
 body ::-webkit-scrollbar {

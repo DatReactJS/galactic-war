@@ -1,5 +1,7 @@
 .main-nav{    
-    position: fixed;    
+    position: fixed;
+    height: calc(100vh - 53px);
+    overflow: auto;
     bottom: 0;
     top: 53px;
     width: 100%;
@@ -55,6 +57,7 @@
     }
     // desktop
     @media (min-width:1024px) {
+        overflow: initial;
         position: initial;
         left: initial;
         bottom: initial;

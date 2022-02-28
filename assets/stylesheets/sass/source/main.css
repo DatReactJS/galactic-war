@@ -104,6 +104,8 @@ table {
 
 .main-nav {
   position: fixed;
+  height: calc(100vh - 53px);
+  overflow: auto;
   bottom: 0;
   top: 53px;
   width: 100%;
@@ -187,6 +189,7 @@ table {
 
 @media (min-width: 1024px) {
   .main-nav {
+    overflow: initial;
     position: initial;
     left: initial;
     bottom: initial;

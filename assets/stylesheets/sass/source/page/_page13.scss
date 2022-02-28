@@ -136,9 +136,11 @@
         .person{
           margin-bottom: 1.5rem;
           width: 25%;
+          padding: 15px;
           .avatar{
             width: 169px;
-            height: 169px;
+            height: auto;
+            max-width: 100%;
           }
           .person-name {
             font-size: 18px;

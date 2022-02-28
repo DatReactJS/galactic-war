@@ -2602,10 +2602,12 @@ header ._header_top .bg_header {
   #page-13 .main .my_team .person {
     margin-bottom: 1.5rem;
     width: 25%;
+    padding: 15px;
   }
   #page-13 .main .my_team .person .avatar {
     width: 169px;
-    height: 169px;
+    height: auto;
+    max-width: 100%;
   }
   #page-13 .main .my_team .person .person-name {
     font-size: 18px;

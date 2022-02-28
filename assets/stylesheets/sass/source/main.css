@@ -146,7 +146,7 @@ table {
   padding: 19.5px;
   font-style: normal;
   font-weight: bold;
-  font-size: 21px;
+  font-size: 16px;
   line-height: 25px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -1220,16 +1220,33 @@ header ._header_top .bg_header {
   height: 100%;
 }
 
+#page-3 .group111 {
+  position: absolute;
+  z-index: 0;
+  left: 50%;
+  bottom: 0;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+#page-3 .group111 img {
+  width: 100%;
+  height: 100%;
+}
+
 #page-3 .li-border-1, #page-3 .li-border-2, #page-3 .li-border-3, #page-3 .li-border-4, #page-3 .li-border-5, #page-3 .li-border-6 {
   display: none;
 }
 
 #page-3 .container {
+  height: 100%;
+  overflow-y: auto;
   padding: 78px 15px;
   background: rgba(0, 0, 0, 0.5);
   -webkit-backdrop-filter: blur(30px);
           backdrop-filter: blur(30px);
-  min-height: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 #page-3 .container h2 {
@@ -1359,6 +1376,7 @@ header ._header_top .bg_header {
     display: none;
   }
   #page-3 .container {
+    overflow-y: initial;
     background: initial;
     -webkit-backdrop-filter: initial;
             backdrop-filter: initial;
@@ -1388,12 +1406,27 @@ header ._header_top .bg_header {
     line-height: 150%;
     position: absolute;
     text-transform: uppercase;
+    -webkit-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
   }
   #page-3 .container .list-features li::before {
     display: none;
   }
   #page-3 .container .list-features li::after {
     display: none;
+  }
+  #page-3 .container .list-features li div {
+    -webkit-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+  }
+  #page-3 .container .list-features li:hover {
+    text-shadow: 1px 1px 3px #1AD7FD;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  #page-3 .container .list-features li:hover div {
+    -webkit-filter: invert(1);
+            filter: invert(1);
   }
   #page-3 .container .list-features li.l1 {
     right: 69.79%;
@@ -1427,35 +1460,35 @@ header ._header_top .bg_header {
     position: absolute;
   }
   #page-3 .li-border-1 {
-    right: 64.79%;
-    top: 17.31%;
+    right: -100px;
+    top: -102px;
   }
   #page-3 .li-border-2 {
-    right: 66.92%;
-    top: 42.87%;
+    right: -136px;
+    top: -34px;
   }
   #page-3 .li-border-3 {
-    right: 74%;
-    top: 57.31481481481482%;
+    left: -21px;
+    top: -29px;
   }
   #page-3 .li-border-4 {
-    left: 72.86%;
-    top: 26.48%;
+    left: -79px;
+    top: -31px;
   }
   #page-3 .li-border-5 {
-    left: 71.45%;
-    top: 48.05%;
+    left: -72px;
+    top: -32px;
   }
   #page-3 .li-border-6 {
-    left: 37.81%;
-    top: 28.33%;
+    left: -37px;
+    top: -18.67%;
   }
 }
 
 #page-4 {
-  height: 100%;
+  height: 100vh;
   width: 100%;
-  overflow-y: auto;
+  overflow-y: scroll;
   overflow-x: hidden;
   position: relative;
   z-index: 1;
@@ -1464,9 +1497,11 @@ header ._header_top .bg_header {
 #page-4 .bg-mobie {
   overflow: hidden;
   z-index: -1;
+  position: absolute;
   width: 100%;
   height: 100%;
-  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 #page-4 .bg-mobie .bg-1 {
@@ -1474,6 +1509,7 @@ header ._header_top .bg_header {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
+  top: 0;
 }
 
 #page-4 .bg-mobie .bg-2 {
@@ -1489,8 +1525,9 @@ header ._header_top .bg_header {
 }
 
 #page-4 .container {
-  height: 100%;
-  padding: 78px 15px 0;
+  height: 100vh;
+  overflow: scroll;
+  padding: 78px 15px 50px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -1574,6 +1611,9 @@ header ._header_top .bg_header {
   #page-4 .border, #page-4 .desktop-icon {
     display: block;
   }
+  #page-4 .container {
+    overflow: initial;
+  }
   #page-4 .container h2 {
     position: absolute;
     top: 80.83%;
@@ -1609,7 +1649,7 @@ header ._header_top .bg_header {
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
     position: relative;
-    padding: 0 64px;
+    padding: 0 50px;
   }
   #page-4 .container .phases .phase ul {
     list-style-type: none;
@@ -1619,12 +1659,21 @@ header ._header_top .bg_header {
   #page-4 .container .phases .phase ul li {
     background: rgba(26, 215, 253, 0.5);
     width: 225px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    height: 46px;
     padding: 10px 15px;
     font-weight: 500;
     font-size: 18px;
     line-height: 24px;
     -webkit-transition: 0.3 s ease-in-out;
     transition: 0.3 s ease-in-out;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-bottom: 10px;
     border: 1px dashed #1AD7FD;
   }
@@ -2562,6 +2611,7 @@ header ._header_top .bg_header {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: #acafc3;
+  margin-bottom: 20px;
 }
 
 @media (min-width: 1024px) {
@@ -2623,6 +2673,7 @@ header ._header_top .bg_header {
   #page-13 .main .my_team .person .description {
     font-size: 9px;
     line-height: 11px;
+    margin-bottom: 20px;
   }
 }
 

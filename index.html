@@ -44,6 +44,9 @@
     />
   </head>
   <body>
+    <script>
+      // alert(window.innerWidth,window.innerHeight);
+    </script>
     <header class="main-header">
       <div class="container">
         <div class="logo">
@@ -186,10 +189,10 @@
       </script>
     </header>
     <div class="homepage">
-      <button class="Play-trailer" onclick="toggleTrailer()">
-        <img src=".\assets\images\ldp\play_trailer.png" alt="" />
-        <span class="Barlow"> Play trailer </span>
-      </button>
+      <a class="Play-trailer" href="#slide2" onclick="playSoundVideoPages2()">
+        <img src=".\assets\images\ldp\play_trailer.png" alt="" class="arrowHorizontal" />
+        <span class="Barlow"> Play trailer </span>        
+      </a>
       <!--  -->
       <div class="social">
         <a href="#">
@@ -213,22 +216,23 @@
 
           <div class="swiper-slide" data-hash="slide1">
             <div id="page-1">
-              <picture>
-                <source
-                  media="(min-width:1024px)"
-                  srcset="./assets/images/slider/page1/desktop.gif"
-                />
+              <div class="bg">
+                <picture>
+                  <source
+                    media="(min-width:1024px)"
+                    srcset="./assets/images/slider/page1/desktop.gif"
+                  />
+                  <img
+                    src="./assets/images/slider/page1/226347986-AdobeStock_226347986 2.png"
+                    alt="bh"
+                  />
+                </picture>
                 <img
-                  src="./assets/images/slider/page1/226347986-AdobeStock_226347986 2.png"
+                  src="./assets/images/slider/page1/planet20 1.png"
                   alt="bh"
-                  class="bg"
+                  class="bg-2"
                 />
-              </picture>
-              <img
-                src="./assets/images/slider/page1/planet20 1.png"
-                alt="bh"
-                class="bg-2"
-              />
+              </div>
               <div class="layer"></div>
               <!--  -->
               <div class="cointaier">
@@ -266,9 +270,9 @@
           </div>
 
           <div class="swiper-slide" data-hash="slide2">
-            <div id="page-2">
+            <div id="page-2" onmouseenter="lazyloadVideo()" onmouseleave="pausevideo2()">
               <video
-                src="./assets/images//slider/page2/Video Trailer Galacticwar_1.mp4"
+                data-src='./assets/images//slider/page2/Video Trailer Galacticwar_1.mp4'                
                 muted
                 autoplay
                 controls
@@ -315,6 +319,10 @@
               </button>
             </div>
             <script>
+              function pausevideo2(){
+                let video = document.getElementById("video-page2");
+                video.pause();
+              }
               function playVideoPages2() {
                 let video = document.getElementById("video-page2");
                 if (video.paused) {
@@ -345,7 +353,16 @@
                   elem.msRequestFullscreen();
                 }
               }
-            </script>
+              function lazyloadVideo(){
+                let vdp2 = document.getElementById('video-page2');                                
+                if(vdp2.getAttribute('src')){
+                  vdp2.play();
+                  return;
+                }
+                vdp2.setAttribute('src',vdp2.getAttribute('data-src'));
+                playSoundVideoPages2();
+              }
+            </script>            
           </div>
 
           <div class="swiper-slide" data-hash="slide3">

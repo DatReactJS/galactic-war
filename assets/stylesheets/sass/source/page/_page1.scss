@@ -6,13 +6,18 @@
     overflow: hidden;
     .bg{
         position: absolute;
-        background-size: cover;
-        min-width: 100%;
-        min-height: 100%;
+        width: 100%;
+        height: 100%;
         z-index: -1;
-    }
-    .bg-2{
-        display: none;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: 91% 0;
+        }        
+        .bg-2{
+            display: none;
+        }
     }
     .layer{
         background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
@@ -73,17 +78,22 @@
         padding-top: 0;
         display: flex;
         z-index: 98;
-        .bg-2{
-            display: block;
-            position: absolute;
-            background-size: cover;
-            min-width: 874px;
-            min-height: 874px;
-            z-index: -1;
-            top:0;
-            left: 0;
-            transform: translate(-35%, -18%) rotate(7.33deg);
-            mix-blend-mode: lighten;
+        .bg{
+            img{
+                object-position: center;
+            }                    
+            .bg-2{
+                display: block;
+                position: absolute;
+                background-size: cover;
+                min-width: 874px;
+                min-height: 874px;
+                z-index: -1;
+                top:0;
+                left: 0;
+                transform: translate(-35%, -18%) rotate(7.33deg);
+                mix-blend-mode: lighten;
+            }
         }
         .cointaier{
             margin: auto;

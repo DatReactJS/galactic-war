@@ -1,0 +1,15 @@
+.arrowHorizontal{
+    animation-name: arrowHorizontal;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    animation-direction: alternate-reverse;
+    animation-timing-function: linear;
+}
+@keyframes arrowHorizontal{
+    from{
+        transform: translateX(0%);
+    }
+    to{
+        transform: translateX(-15%);
+    }
+}

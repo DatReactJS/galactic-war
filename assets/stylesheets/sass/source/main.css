@@ -814,6 +814,10 @@ header ._header_top .bg_header {
   border: transparent;
 }
 
+#page-1 .cointaier button span {
+  display: none;
+}
+
 #page-1 .circle {
   display: none;
 }
@@ -885,9 +889,23 @@ header ._header_top .bg_header {
     margin-bottom: 44px;
   }
   #page-1 .cointaier button {
-    -webkit-transform: scale(1.8);
-            transform: scale(1.8);
     margin-bottom: 31%;
+    position: relative;
+  }
+  #page-1 .cointaier button span {
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 34px;
+    text-align: center;
+    text-transform: uppercase;
+    position: absolute;
+    top: 51%;
+    left: 50%;
+    white-space: nowrap;
+    color: #FFFFFF;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    display: initial;
   }
 }
 

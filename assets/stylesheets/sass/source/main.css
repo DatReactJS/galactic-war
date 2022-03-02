@@ -952,10 +952,26 @@ header ._header_top .bg_header {
     left: 50%;
     width: 311px;
     height: 313px;
-    opacity: 0.5;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
     z-index: 99;
+  }
+  .trailer .game-mode img {
+    opacity: 0.5;
+  }
+  .trailer .game-mode span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 58px;
+    text-align: center;
+    color: #FFFFFF;
+    text-shadow: 1px 1px 21px rgba(0, 0, 0, 0.4);
   }
   .trailer aside {
     width: 50%;
@@ -2640,13 +2656,7 @@ header ._header_top .bg_header {
 
 @media (min-width: 1024px) {
   #page-13 .main {
-    left: 50%;
-    top: 22vh;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-    position: absolute;
-    height: 700px;
-    padding: 0;
+    padding-top: calc(108px + 16px);
   }
   #page-13 .main::-webkit-scrollbar {
     width: 10px;
@@ -2670,15 +2680,16 @@ header ._header_top .bg_header {
   #page-13 .main .tittleChildren {
     font-size: 18px;
     line-height: 150%;
+    margin-bottom: 0;
   }
   #page-13 .main .my_team {
     width: 100%;
-    max-width: 1077px;
-    margin: auto;
+    max-width: 1240px;
+    margin: 0 auto;
   }
   #page-13 .main .my_team .person {
     margin-bottom: 1.5rem;
-    width: 25%;
+    width: 20%;
     padding: 15px;
   }
   #page-13 .main .my_team .person .avatar {
@@ -3070,23 +3081,23 @@ header ._header_top .bg_header {
 
 @-webkit-keyframes arrowHorizontal {
   from {
-    -webkit-transform: translateX(0%);
-            transform: translateX(0%);
-  }
-  to {
     -webkit-transform: translateX(-15%);
             transform: translateX(-15%);
+  }
+  to {
+    -webkit-transform: translateX(15%);
+            transform: translateX(15%);
   }
 }
 
 @keyframes arrowHorizontal {
   from {
-    -webkit-transform: translateX(0%);
-            transform: translateX(0%);
-  }
-  to {
     -webkit-transform: translateX(-15%);
             transform: translateX(-15%);
+  }
+  to {
+    -webkit-transform: translateX(15%);
+            transform: translateX(15%);
   }
 }
 

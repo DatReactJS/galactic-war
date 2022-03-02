@@ -185,9 +185,24 @@
             left: 50%;
             width: 311px;
             height: 313px;
-            opacity: 0.5;
             transform: translate(-50%,-50%);
             z-index: 99;
+            img{
+                opacity: 0.5;
+            }
+            span{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                font-style: normal;
+                font-weight: bold;
+                font-size: 48px;
+                line-height: 58px;
+                text-align: center;
+                color: #FFFFFF;
+                text-shadow: 1px 1px 21px rgba(0, 0, 0, 0.4);
+            }
         }       
         aside{
             width: 50%;

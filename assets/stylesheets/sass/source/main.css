@@ -1445,7 +1445,6 @@ header ._header_top .bg_header {
     font-size: 18px;
     line-height: 150%;
     position: absolute;
-    text-transform: uppercase;
     -webkit-transition: 0.5s ease-in-out;
     transition: 0.5s ease-in-out;
   }
@@ -3405,5 +3404,9 @@ body * {
   100% {
     left: 70px;
   }
+}
+
+.upcase {
+  text-transform: uppercase;
 }
 /*# sourceMappingURL=main.css.map */

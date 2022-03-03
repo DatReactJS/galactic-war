@@ -44,9 +44,6 @@
     />
   </head>
   <body>
-    <script>
-      // alert(window.innerWidth,window.innerHeight);
-    </script>
     <header class="main-header">
       <div class="container">
         <div class="logo">
@@ -106,13 +103,21 @@
               <img src=".\assets\images\Btn_WeaponMenu_p 2.svg" alt="" />
             </li>
             <li>
-              <a href="#marketplace" data-attr="section_what_race" class="Barlow">
+              <a
+                href="#marketplace"
+                data-attr="section_what_race"
+                class="Barlow"
+              >
                 <span> marketplace </span>
               </a>
               <img src=".\assets\images\Btn_WeaponMenu_p 2.svg" alt="" />
             </li>
             <li>
-              <a href="./assets/wwp.pdf" data-attr="section_what_race" class="Barlow">
+              <a
+                href="./assets/wwp.pdf"
+                data-attr="section_what_race"
+                class="Barlow"
+              >
                 <span> whitepaper </span>
               </a>
               <img src=".\assets\images\Btn_WeaponMenu_p 2.svg" alt="" />
@@ -122,7 +127,7 @@
                 <span> news </span>
               </a>
               <img src=".\assets\images\Btn_WeaponMenu_p 2.svg" alt="" />
-            </li>            
+            </li>
             <li>
               <a href="#slide4" data-attr="section_what_race" class="Barlow">
                 <span> roadmap </span>
@@ -137,24 +142,23 @@
             </li>
             <li>
               <a href="#slide12" data-attr="section_what_race" class="Barlow">
-                <span> team &
-                  advisors </span>
+                <span> team & advisors </span>
               </a>
               <img src=".\assets\images\Btn_WeaponMenu_p 2.svg" alt="" />
             </li>
             <li>
               <a href="#slide13" data-attr="section_what_race" class="Barlow">
-                <span> 
-                  investors & partners
-                </span>
+                <span> investors & partners </span>
               </a>
               <img src=".\assets\images\Btn_WeaponMenu_p 2.svg" alt="" />
             </li>
             <li>
-              <a href="#play-to-earn" data-attr="section_what_race" class="Barlow">
-                <span> 
-                  play to earn
-                </span>
+              <a
+                href="#play-to-earn"
+                data-attr="section_what_race"
+                class="Barlow"
+              >
+                <span> play to earn </span>
               </a>
               <img src=".\assets\images\Btn_WeaponMenu_p 2.svg" alt="" />
             </li>
@@ -190,8 +194,12 @@
     </header>
     <div class="homepage">
       <a class="Play-trailer" href="#slide2" onclick="playSoundVideoPages2()">
-        <img src=".\assets\images\ldp\play_trailer.png" alt="" class="arrowHorizontal" />
-        <span class="Barlow"> Play trailer </span>        
+        <img
+          src=".\assets\images\ldp\play_trailer.png"
+          alt=""
+          class="arrowHorizontal"
+        />
+        <span class="Barlow"> Play trailer </span>
       </a>
       <!--  -->
       <div class="social">
@@ -212,25 +220,26 @@
         </a>
       </div>
       <div class="swiper-container" id="slide_home">
-        <div class="swiper-wrapper">          
-
-          <div class="swiper-slide" data-hash="slide1" onmouseover="pausevideo2()">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" data-hash="slide1">
             <div id="page-1">
               <div class="bg">
                 <picture>
                   <source
                     media="(min-width:1024px)"
-                    srcset="./assets/images/slider/page1/desktop.gif"
+                    data-src="./assets/images/slider/page1/desktop.gif"
+                    class="swiper-lazy"
                   />
                   <img
-                    src="./assets/images/slider/page1/226347986-AdobeStock_226347986 2.png"
+                    data-src="./assets/images/slider/page1/226347986-AdobeStock_226347986 2.png"
                     alt="bh"
+                    class="swiper-lazy"
                   />
                 </picture>
                 <img
-                  src="./assets/images/slider/page1/planet20 1.png"
+                  data-src="./assets/images/slider/page1/planet20 1.png"
                   alt="bh"
-                  class="bg-2"
+                  class="swiper-lazy bg-2"
                 />
               </div>
               <div class="layer"></div>
@@ -238,15 +247,15 @@
               <div class="cointaier">
                 <div class="circle">
                   <img
-                    src="./assets/images/slider/page1/Group 271.png"
+                    data-src="./assets/images/slider/page1/Group 271.png"
                     alt="logo"
-                    class="logo"
+                    class="swiper-lazy logo"
                   />
                 </div>
                 <img
-                  src="./assets/images/slider/page1/GalacticWar_PNG 2.png"
+                  data-src="./assets/images/slider/page1/GalacticWar_PNG 2.png"
                   alt="logo"
-                  class="logo"
+                  class="swiper-lazy logo"
                 />
                 <h2 class="Barlow">galactic war</h2>
                 <h3 class="Microgramma-b">
@@ -260,8 +269,13 @@
                     <source
                       media="(min-width:1024px)"
                       srcset="./assets/images/slider/page1/btndesktop.png"
+                      class="swiper-lazy"
                     />
-                    <img src="./assets/images/ldp/Group 230.png" alt="" />
+                    <img
+                      src="./assets/images/ldp/Group 230.png"
+                      alt=""
+                      class="swiper-lazy"
+                    />
                   </picture>
                   <span class="Microgramma-b">PLAY now</span>
                 </button>
@@ -269,27 +283,28 @@
             </div>
           </div>
 
-          <div class="swiper-slide" data-hash="slide2" onmouseover="lazyloadVideo()">
+          <div class="swiper-slide" data-hash="slide2">
             <div id="page-2">
               <video
-                data-src='./assets/images//slider/page2/Video Trailer Galacticwar_1.mp4'                
+                data-src="./assets/images//slider/page2/Video Trailer Galacticwar_1.mp4"
                 muted
                 autoplay
                 controls
                 id="video-page2"
+                class="swiper-lazy"
               ></video>
               <!--  -->
               <button class="control playing" id="control-video-page-2">
                 <img
-                  src="./assets//images//ldp/play.png"
+                  data-src="./assets//images//ldp/play.png"
                   alt=""
-                  class="play"
+                  class="swiper-lazy play"
                   onclick="playVideoPages2()"
                 />
                 <img
-                  src="./assets//images//ldp/pause.png"
+                  data-src="./assets//images//ldp/pause.png"
                   alt=""
-                  class="pause"
+                  class="swiper-lazy pause"
                   onclick="playVideoPages2()"
                 />
               </button>
@@ -299,27 +314,27 @@
                 id="control-sound-video-page-2"
               >
                 <img
-                  src="./assets//images//ldp/sound.png"
+                  data-src="./assets//images//ldp/sound.png"
                   alt=""
-                  class="play"
+                  class="swiper-lazy play"
                   onclick="playSoundVideoPages2()"
                 />
                 <img
-                  src="./assets//images//ldp/sound-off.png"
+                  data-src="./assets//images//ldp/sound-off.png"
                   alt=""
-                  class="pause"
+                  class="swiper-lazy pause"
                   onclick="playSoundVideoPages2()"
                 />
                 <img
-                  src="./assets//images/icon/Vector.png"
+                  data-src="./assets//images/icon/Vector.png"
                   alt=""
-                  class="fullscreen"
+                  class="swiper-lazy fullscreen"
                   onclick="openFullscreenVideoPages2()"
                 />
               </button>
             </div>
             <script>
-              function pausevideo2(){
+              function pausevideo2() {
                 let video = document.getElementById("video-page2");
                 video.pause();
               }
@@ -353,86 +368,101 @@
                   elem.msRequestFullscreen();
                 }
               }
-              function lazyloadVideo(){
-                let vdp2 = document.getElementById('video-page2');                                
-                if(vdp2.getAttribute('src')){
-                  vdp2.play();
-                  video.muted = false;
-                  return;
-                }
-                vdp2.setAttribute('src',vdp2.getAttribute('data-src'));
-                vdp2.muted=false;
-              }
-            </script>            
+            </script>
           </div>
 
-          <div class="swiper-slide" data-hash="slide3" onmouseover="pausevideo2()">
+          <div class="swiper-slide" data-hash="slide3">
             <div id="page-3">
               <div class="bg">
                 <img
-                  src="./assets//images//slider/page3/226347986-AdobeStock_226347986 3.png"
+                  data-src="./assets//images//slider/page3/226347986-AdobeStock_226347986 3.png"
+                  class="swiper-lazy"
                   alt=""
                 />
               </div>
               <div class="group730">
                 <img
-                  src="./assets//images//slider//page3/Group 730.png"
+                  data-src="./assets//images//slider//page3/Group 730.png"
+                  class="swiper-lazy"
                   alt=""
                 />
               </div>
               <div class="group235">
                 <img
-                  src="./assets//images//slider//page3/2 26347989.png"
+                  data-src="./assets//images//slider//page3/2 26347989.png"
+                  class="swiper-lazy"
                   alt=""
                 />
               </div>
               <div class="group111">
                 <img
-                  src="./assets//images//slider//page3/111 2 (1).png"
+                  data-src="./assets//images//slider//page3/111 2 (1).png"
+                  class="swiper-lazy"
                   alt=""
                 />
               </div>
-              <!-- list img -->              
+              <!-- list img -->
               <div class="container">
                 <h2 class="Microgramma-b">features</h2>
 
                 <ul class="list-features">
                   <li class="Barlow l1">
                     <div class="li-border-1">
-                      <img src="./assets//images/slider//page3/s3-01.png" alt="" />
-                    </div>                  
+                      <img
+                        data-src="./assets//images/slider//page3/s3-01.png"
+                        alt=""
+                        class="swiper-lazy"
+                      />
+                    </div>
                     The First Ecosystem To Combine The Greatest Aspects Of
                     Gaming And Digital Collectibles
                   </li>
-                  <li class="Barlow l2">                   
+                  <li class="Barlow l2">
                     <div class="li-border-2">
-                      <img src="./assets//images/slider//page3/s3-02.png" alt="" />
+                      <img
+                        data-src="./assets//images/slider//page3/s3-02.png"
+                        alt=""
+                        class="swiper-lazy"
+                      />
                     </div>
                     PvP Arena rewards
                   </li>
-                  <li class="Barlow l3">                  
+                  <li class="Barlow l3">
                     <div class="li-border-3">
-                      <img src="./assets//images/slider//page3/s3-03.png" alt="" />
+                      <img
+                        data-src="./assets//images/slider//page3/s3-03.png"
+                        class="swiper-lazy"
+                        alt=""
+                      />
                     </div>
                     Idle campaign rewards
                   </li>
-                  <li class="Barlow l4">                  
+                  <li class="Barlow l4">
                     <div class="li-border-4">
-                      <img src="./assets//images/slider//page3/s3-04.png" alt="" />
-                    </div>              
+                      <img
+                        data-src="./assets//images/slider//page3/s3-04.png"
+                        alt=""
+                        class="swiper-lazy"
+                      />
+                    </div>
                     Evolutionary system
                   </li>
-                  <li class="Barlow l5">                
+                  <li class="Barlow l5">
                     <div class="li-border-5">
-                      <img src="./assets//images/slider//page3/s3-05.png" alt="" />
+                      <img
+                        data-src="./assets//images/slider//page3/s3-05.png"
+                        alt=""
+                        class="swiper-lazy"
+                      />
                     </div>
                     Quest and Ranking system
                   </li>
-                  <li class="Barlow l6">                   
+                  <li class="Barlow l6">
                     <div class="li-border-6">
                       <img
-                        src="./assets//images/slider//page3/s3-center.png"
+                        data-src="./assets//images/slider//page3/s3-center.png"
                         alt=""
+                        class="swiper-lazy"
                       />
                     </div>
                     Elemon is inspired by the mysterious and beautiful world of
@@ -444,7 +474,11 @@
                 </ul>
                 <div class="flex-center">
                   <button class="read">
-                    <img src=".\assets\images\ldp\play_trailer.png" alt="" />
+                    <img
+                      data-src=".\assets\images\ldp\play_trailer.png"
+                      alt=""
+                      class="swiper-lazy"
+                    />
                     <span class="Barlow"> read our story </span>
                   </button>
                 </div>
@@ -452,24 +486,25 @@
             </div>
           </div>
 
-          <div class="swiper-slide" data-hash="slide4" onmouseover="pausevideo2()">
+          <div class="swiper-slide" data-hash="slide4">
             <div id="page-4">
               <div class="bg-mobie">
                 <img
-                  src="./assets//images//slider/page4/226347986-AdobeStock_226347986 3.png"
+                  data-src="./assets//images//slider/page4/226347986-AdobeStock_226347986 3.png"
                   alt=""
-                  class="bg-1"
+                  class="bg-1 swiper-lazy"
                 />
                 <img
-                  src="./assets//images//slider/page4/338566170-AdobeStock_338566170 1.png"
+                  data-src="./assets//images//slider/page4/338566170-AdobeStock_338566170 1.png"
                   alt=""
-                  class="bg-2"
+                  class="bg-2 swiper-lazy"
                 />
               </div>
               <div class="bg-desktop">
                 <img
-                  src="./assets//images//slider/page4/226347986-AdobeStock_226347986 3 (1).png"
+                  data-src="./assets//images//slider/page4/226347986-AdobeStock_226347986 3 (1).png"
                   alt=""
+                  class="swiper-lazy"
                 />
               </div>
               <div class="container">
@@ -480,14 +515,14 @@
                     <header>
                       <div class="desktop-icon">
                         <img
-                          src="./assets//images//slider//page4/111 2.png"
+                          data-src="./assets//images//slider//page4/111 2.png"
                           alt=""
-                          class="planet"
+                          class="swiper-lazy planet"
                         />
                         <img
-                          src="./assets//images//slider//page4/Frame (4).png"
+                          data-src="./assets//images//slider//page4/Frame (4).png"
                           alt=""
-                          class="core"
+                          class="core swiper-lazy"
                         />
                       </div>
                       <h4 class="Microgramma-b">Q1. 2022</h4>
@@ -501,23 +536,24 @@
                       <li>IDO, NFT Boxes</li>
                       <div class="border">
                         <img
-                          src="./assets//images//slider//page4/Vector.png"
+                          data-src="./assets//images//slider//page4/Vector.png"
                           alt=""
-                          class="top-left"
+                          class="top-left swiper-lazy"
                         />
                         <img
-                          src="./assets//images//slider//page4/Group 180.png"
+                          data-src="./assets//images//slider//page4/Group 180.png"
                           alt=""
+                          class="swiper-lazy"
                         />
                         <img
-                          src="./assets//images//slider//page4/Vector (1).png"
+                          data-src="./assets//images//slider//page4/Vector (1).png"
                           alt=""
-                          class="top"
+                          class="top swiper-lazy"
                         />
                         <img
-                          src="./assets//images//slider//page4/Vector (2).png"
+                          data-src="./assets//images//slider//page4/Vector (2).png"
                           alt=""
-                          class="top-right"
+                          class="top-right swiper-lazy"
                         />
                       </div>
                     </ul>
@@ -526,14 +562,14 @@
                     <header>
                       <div class="desktop-icon">
                         <img
-                          src="./assets//images//slider//page4/3 38566171.png"
+                          data-src="./assets//images//slider//page4/3 38566171.png"
                           alt=""
-                          class="planet"
+                          class="planet swiper-lazy"
                         />
                         <img
-                          src="./assets//images//slider//page4/Frame (4).png"
+                          data-src="./assets//images//slider//page4/Frame (4).png"
                           alt=""
-                          class="core"
+                          class="core swiper-lazy"
                         />
                       </div>
                       <h4 class="Microgramma-b">Q2. 2022</h4>
@@ -547,23 +583,24 @@
                       <li>Alpha test</li>
                       <div class="border">
                         <img
-                          src="./assets//images//slider//page4/Vector.png"
+                          data-src="./assets//images//slider//page4/Vector.png"
                           alt=""
-                          class="top-left"
+                          class="top-left swiper-lazy"
                         />
                         <img
-                          src="./assets//images//slider//page4/Group 180.png"
+                          data-src="./assets//images//slider//page4/Group 180.png"
                           alt=""
+                          class="swiper-lazy"
                         />
                         <img
-                          src="./assets//images//slider//page4/Vector (1).png"
+                          data-src="./assets//images//slider//page4/Vector (1).png"
                           alt=""
-                          class="top"
+                          class="top swiper-lazy"
                         />
                         <img
-                          src="./assets//images//slider//page4/Vector (2).png"
+                          data-src="./assets//images//slider//page4/Vector (2).png"
                           alt=""
-                          class="top-right"
+                          class="top-right swiper-lazy"
                         />
                       </div>
                     </ul>
@@ -572,20 +609,20 @@
                     <header>
                       <div class="desktop-icon">
                         <img
-                          src="./assets//images//slider//page4/planet20.png"
+                          data-src="./assets//images//slider//page4/planet20.png"
                           alt=""
-                          class="planet"
+                          class="planet swiper-lazy"
                         />
                         <img
-                          src="./assets//images//slider//page4/Frame (4).png"
+                          data-src="./assets//images//slider//page4/Frame (4).png"
                           alt=""
-                          class="core"
+                          class="core swiper-lazy"
                         />
                       </div>
                       <h4 class="Microgramma-b">Q3. 2022</h4>
                     </header>
                     <ul>
-                      <li>Battle Royale </li>
+                      <li>Battle Royale</li>
                       <li>Tournaments</li>
                       <li>Testing Vr</li>
                       <li>NFT sale</li>
@@ -593,23 +630,24 @@
                       <li>Competitive mode</li>
                       <div class="border">
                         <img
-                          src="./assets//images//slider//page4/Vector.png"
+                          data-src="./assets//images//slider//page4/Vector.png"
                           alt=""
-                          class="top-left"
+                          class="top-left swiper-lazy"
                         />
                         <img
-                          src="./assets//images//slider//page4/Group 180.png"
+                          data-src="./assets//images//slider//page4/Group 180.png"
                           alt=""
+                          class="swiper-lazy"
                         />
                         <img
-                          src="./assets//images//slider//page4/Vector (1).png"
+                          data-src="./assets//images//slider//page4/Vector (1).png"
                           alt=""
-                          class="top"
+                          class="top swiper-lazy"
                         />
                         <img
-                          src="./assets//images//slider//page4/Vector (2).png"
+                          data-src="./assets//images//slider//page4/Vector (2).png"
                           alt=""
-                          class="top-right"
+                          class="top-right swiper-lazy"
                         />
                       </div>
                     </ul>
@@ -618,14 +656,14 @@
                     <header>
                       <div class="desktop-icon">
                         <img
-                          src="./assets//images//slider//page4/111 1.png"
+                          data-src="./assets//images//slider//page4/111 1.png"
                           alt=""
-                          class="planet"
+                          class="planet swiper-lazy"
                         />
                         <img
-                          src="./assets//images//slider//page4/Frame (4).png"
+                          data-src="./assets//images//slider//page4/Frame (4).png"
                           alt=""
-                          class="core"
+                          class="core swiper-lazy"
                         />
                       </div>
                       <h4 class="Microgramma-b">Q4. 2022</h4>
@@ -633,29 +671,30 @@
                     <ul>
                       <li>Metaverse demo</li>
                       <li>VR adoption</li>
-                      <li>Upgrading new game </li>
+                      <li>Upgrading new game</li>
                       <li>VR update character</li>
                       <li>VR hardware optimization</li>
                       <li>NFT Boxes 2</li>
                       <div class="border">
                         <img
-                          src="./assets//images//slider//page4/Vector.png"
+                          data-src="./assets//images//slider//page4/Vector.png"
                           alt=""
-                          class="top-left"
+                          class="top-left swiper-lazy"
                         />
                         <img
-                          src="./assets//images//slider//page4/Group 180.png"
+                          data-src="./assets//images//slider//page4/Group 180.png"
                           alt=""
+                          class="swiper-lazy"
                         />
                         <img
-                          src="./assets//images//slider//page4/Vector (1).png"
+                          data-src="./assets//images//slider//page4/Vector (1).png"
                           alt=""
-                          class="top"
+                          class="top swiper-lazy"
                         />
                         <img
-                          src="./assets//images//slider//page4/Vector (2).png"
+                          data-src="./assets//images//slider//page4/Vector (2).png"
                           alt=""
-                          class="top-right"
+                          class="top-right swiper-lazy"
                         />
                       </div>
                     </ul>
@@ -664,14 +703,14 @@
                     <header>
                       <div class="desktop-icon">
                         <img
-                          src="./assets//images//slider//page4/planet5.png"
+                          data-src="./assets//images//slider//page4/planet5.png"
                           alt=""
-                          class="planet"
+                          class="planet swiper-lazy"
                         />
                         <img
-                          src="./assets//images//slider//page4/Frame (4).png"
+                          data-src="./assets//images//slider//page4/Frame (4).png"
                           alt=""
-                          class="core"
+                          class="core swiper-lazy"
                         />
                       </div>
                       <h4 class="Microgramma-b">2024 - 2025</h4>
@@ -685,23 +724,24 @@
                       <li>Metaverse Planet</li>
                       <div class="border">
                         <img
-                          src="./assets//images//slider//page4/Vector.png"
+                          data-src="./assets//images//slider//page4/Vector.png"
                           alt=""
-                          class="top-left"
+                          class="top-left swiper-lazy"
                         />
                         <img
-                          src="./assets//images//slider//page4/Group 180.png"
+                          data-src="./assets//images//slider//page4/Group 180.png"
                           alt=""
+                          class="swiper-lazy"
                         />
                         <img
-                          src="./assets//images//slider//page4/Vector (1).png"
+                          data-src="./assets//images//slider//page4/Vector (1).png"
                           alt=""
-                          class="top"
+                          class="top swiper-lazy"
                         />
                         <img
-                          src="./assets//images//slider//page4/Vector (2).png"
+                          data-src="./assets//images//slider//page4/Vector (2).png"
                           alt=""
-                          class="top-right"
+                          class="top-right swiper-lazy"
                         />
                       </div>
                     </ul>
@@ -711,17 +751,19 @@
             </div>
           </div>
 
-          <div class="swiper-slide" data-hash="slide5" onmouseover="pausevideo2()">
+          <div class="swiper-slide" data-hash="slide5">
             <div id="page-5">
               <div class="bg">
                 <picture>
                   <source
                     media="(min-width:1024px)"
-                    srcset="./assets//images//slider//page5/bg-desktop.png"
+                    data-srcset="./assets//images//slider//page5/bg-desktop.png"
+                    class="swiper-lazy"
                   />
                   <img
-                    src="./assets//images//slider//page5/Screen Shot 2022-02-16 at 10.51 1.png"
+                    data-src="./assets//images//slider//page5/Screen Shot 2022-02-16 at 10.51 1.png"
                     alt=""
+                    class="swiper-lazy"
                   />
                 </picture>
               </div>
@@ -733,29 +775,31 @@
                   <span> Flag-Capture, Battle Royale </span>
                   and more.
                 </p>
-                <img src="./assets//images/ldp/Group 270.png" alt="" />
+                <img data-src="./assets//images/ldp/Group 270.png" alt="" class="swiper-lazy"/>
               </div>
             </div>
           </div>
 
-          <div class="swiper-slide" data-hash="slide6" onmouseover="pausevideo2()">
+          <div class="swiper-slide" data-hash="slide6">
             <div id="page-6">
               <div class="bg">
                 <picture>
                   <source
                     media="(min-width:1024px)"
-                    srcset="./assets//images//slider//page6/BGgun_1.png"
+                    data-srcset="./assets//images//slider//page6/BGgun_1.png"
+                    class="swiper-lazy"
                   />
                   <img
-                    src="./assets//images//slider//page6/Screen Shot 2022-02-16 at 10.51 1.png"
+                    data-src="./assets//images//slider//page6/Screen Shot 2022-02-16 at 10.51 1.png"
                     alt=""
+                    class="swiper-lazy"
                   />
                 </picture>
               </div>
               <img
-                src="./assets//images//slider//page6//Rectangle 73.png"
+                data-src="./assets//images//slider//page6//Rectangle 73.png"
                 alt=""
-                class="gun"
+                class="gun swiper-lazy"
               />
               <div class="content">
                 <h2 class="Microgramma-b">inventory</h2>
@@ -767,22 +811,28 @@
                             </span>
                                 and more. -->
                 </p>
-                <img src="./assets//images/ldp/Group 270.png" alt="" />
+                <img
+                  data-src="./assets//images/ldp/Group 270.png"
+                  alt=""
+                  class="swiper-lazy"
+                />
               </div>
             </div>
           </div>
 
-          <div class="swiper-slide" data-hash="slide7" onmouseover="pausevideo2()">
+          <div class="swiper-slide" data-hash="slide7">
             <div id="page-7">
               <div class="bg">
                 <picture>
                   <source
                     media="(min-width:1024px)"
-                    srcset="./assets//images//slider//page7/bgpage7.png"
+                    data-srcset="./assets//images//slider//page7/bgpage7.png"
+                    class="swiper-lazy"
                   />
                   <img
-                    src="./assets//images//slider//page7/Screen Shot 2022-02-16 at 10.51 1.png"
+                    data-src="./assets//images//slider//page7/Screen Shot 2022-02-16 at 10.51 1.png"
                     alt=""
+                    class="swiper-lazy"
                   />
                 </picture>
               </div>
@@ -797,22 +847,28 @@
                             </span>
                                 and more. -->
                 </p>
-                <img src="./assets//images/ldp/Group 270.png" alt="" />
+                <img
+                  data-src="./assets//images/ldp/Group 270.png"
+                  alt=""
+                  class="swiper-lazy"
+                />
               </div>
             </div>
           </div>
 
-          <div class="swiper-slide" data-hash="slide8" onmouseover="pausevideo2()">
+          <div class="swiper-slide" data-hash="slide8">
             <div id="page-8">
               <div class="bg">
                 <picture>
                   <source
                     media="(min-width:1024px)"
-                    srcset="./assets//images//slider//page8/desktop.png"
+                    data-srcset="./assets//images//slider//page8/desktop.png"
+                    class="swiper-lazy"
                   />
                   <img
-                    src="./assets//images//slider//page8/mobile.png"
+                    data-src="./assets//images//slider//page8/mobile.png"
                     alt=""
+                    class="swiper-lazy"
                   />
                 </picture>
               </div>
@@ -827,22 +883,28 @@
                             </span>
                                 and more. -->
                 </p>
-                <img src="./assets//images/ldp/Group 270 rever.png" alt="" />
+                <img
+                  data-src="./assets//images/ldp/Group 270 rever.png"
+                  alt=""
+                  class="swiper-lazy"
+                />
               </div>
             </div>
           </div>
 
-          <div class="swiper-slide" data-hash="slide9" onmouseover="pausevideo2()">
+          <div class="swiper-slide" data-hash="slide9">
             <div id="page-9">
               <div class="bg">
                 <picture>
                   <source
                     media="(min-width:1024px)"
-                    srcset="./assets//images//slider//page9/desktop.png"
+                    data-srcset="./assets//images//slider//page9/desktop.png"
+                    class="swiper-lazy"
                   />
                   <img
-                    src="./assets//images//slider//page9/mobile.png"
+                    data-src="./assets//images//slider//page9/mobile.png"
                     alt=""
+                    class="swiper-lazy"
                   />
                 </picture>
               </div>
@@ -860,24 +922,31 @@
                 <picture>
                   <source
                     media="(min-width:1024px)"
-                    srcset="./assets//images//ldp/Group_270_left.png"
+                    data-srcset="./assets//images//ldp/Group_270_left.png"
+                    class="swiper-lazy"
                   />
-                  <img src="./assets//images/ldp/Group 270 top.png" alt="" />
+                  <img
+                    data-src="./assets//images/ldp/Group 270 top.png"
+                    alt=""
+                    class="swiper-lazy"
+                  />
                 </picture>
               </div>
             </div>
           </div>
 
-          <div class="swiper-slide" data-hash="slide10" onmouseover="pausevideo2()">
+          <div class="swiper-slide" data-hash="slide10">
             <div id="page-10">
               <div class="bg">
                 <picture>
                   <source
                     media="(min-width:1024px)"
-                    srcset="./assets//images//slider//page10/desktop.png"
+                    data-srcset="./assets//images//slider//page10/desktop.png"
+                    class="swiper-lazy"
                   />
                   <img
-                    src="./assets//images//slider//page10/mobile.png"
+                    class="swiper-lazy"
+                    data-src="./assets//images//slider//page10/mobile.png"
                     alt=""
                   />
                 </picture>
@@ -892,16 +961,16 @@
                   constantly expanding their prestige and conflicts between them
                   never seem to stop.
                 </p>
-                <!-- <img src="./assets//images/ldp/Group 270.png" alt="" class="right"> -->
+                <!-- <img data-src="./assets//images/ldp/Group 270.png" alt="" class="right"> -->
                 <img
-                  src="./assets//images/ldp/Group 731.png"
+                  data-src="./assets//images/ldp/Group 731.png"
                   alt=""
-                  class="right"
+                  class="right swiper-lazy"
                 />
                 <img
-                  src="./assets//images/ldp/Group 731.png"
+                  data-src="./assets//images/ldp/Group 731.png"
                   alt=""
-                  class="left"
+                  class="left swiper-lazy"
                 />
               </div>
             </div>
@@ -913,9 +982,10 @@
                 <picture>
                   <source
                     media="(min-width:1024px)"
-                    srcset="./assets//images//slider//page11/gif.gif"
+                    data-srcset="./assets//images//slider//page11/gif.gif"
+                    class="swiper-lazy"
                   />
-                  <img src="./assets//images//slider//page11/gif.gif" alt="" />
+                  <img data-src="./assets//images//slider//page11/gif.gif" alt="" class="swiper-lazy"/>
                 </picture>
               </div>
               <div class="content">
@@ -930,29 +1000,33 @@
                 <picture>
                   <source
                     media="(min-width:1024px)"
-                    srcset="./assets//images//ldp/bottom.png"
+                    data-srcset="./assets//images//ldp/bottom.png"
+                    class="swiper-lazy"
                   />
-                  <img src="./assets//images/ldp/Group 270 rever.png" alt="" />
+                  <img
+                    data-src="./assets//images/ldp/Group 270 rever.png"
+                    alt=""
+                    class="swiper-lazy"
+                  />
                 </picture>
               </div>
             </div>
           </div>
 
-          <div class="swiper-slide" data-hash="slide12" 
-          <!-- onmouseover="pauseSlider()" onmouseout="playSlider()" -->
-          >
+          <div class="swiper-slide" data-hash="slide12">
             <!-- render on here -->
             <div id="page-13">
               <div class="bg">
                 <picture>
                   <source
                     media="(min-width:1024px)"
-                    srcset="./assets//images//slider//page14/background.png"
+                    data-srcset="./assets//images//slider//page14/background.png"
+                    class="swiper-lazy"
                   />
                   <img
-                    src="./assets/images/slider/page14/mobile.png"
+                    data-src="./assets/images/slider/page14/mobile.png"
                     alt="logo"
-                    class="logo"
+                    class="logo swiper-lazy"
                   />
                 </picture>
               </div>
@@ -974,70 +1048,81 @@
                 <div class="my_team">
                   <div class="person">
                     <img
-                      src="./assets/images/slider/page13/Group 733.png"
+                      data-src="./assets/images/slider/page13/Group 733.png"
                       alt="logo"
-                      class="avatar"
+                      class="avatar swiper-lazy"
                     />
                     <p class="person-name">Lee</p>
-                    <p class="position">CEO/ Founder
-                      Head Of Game Design                      
-                      </p>
+                    <p class="position">CEO/ Founder Head Of Game Design</p>
                     <!-- <p class="description">
                       Dynamic office manager with over 4 years of professional
                       experience of making games.
                     </p> -->
-                    <img src="./assets/images/ldp/Vector (3).png" alt="">
+                    <img
+                      data-src="./assets/images/ldp/Vector (3).png"
+                      alt=""
+                      class="swiper-lazy"
+                    />
                   </div>
                   <div class="person">
                     <img
-                      src="./assets/images/slider/page13/Group 735.png"
+                      data-src="./assets/images/slider/page13/Group 735.png"
                       alt="logo"
-                      class="avatar"
+                      class="avatar swiper-lazy"
                     />
                     <p class="person-name">ANDY</p>
-                    <p class="position">CO-FOUNDER/CtO
-                    </p>
+                    <p class="position">CO-FOUNDER/CtO</p>
                     <!-- <p class="description">
                       Dynamic office manager with over 4 years of professional
                       experience of making games.
                     </p> -->
-                    <img src="./assets/images/ldp/Vector (3).png" alt="">
+                    <img
+                      data-src="./assets/images/ldp/Vector (3).png"
+                      alt=""
+                      class="swiper-lazy"
+                    />
                   </div>
                   <div class="person">
                     <img
-                      src="./assets/images/slider/page13/Group 737.png"
+                      data-src="./assets/images/slider/page13/Group 737.png"
                       alt="logo"
-                      class="avatar"
+                      class="avatar swiper-lazy"
                     />
                     <p class="person-name">LEO</p>
-                    <p class="position">CpO
-                    </p>
+                    <p class="position">CpO</p>
                     <!-- <p class="description">
                       Dynamic office manager with over 4 years of professional
                       experience of making games.
                     </p> -->
-                    <img src="./assets/images/ldp/Vector (3).png" alt="">
+                    <img
+                      data-src="./assets/images/ldp/Vector (3).png"
+                      alt=""
+                      class="swiper-lazy"
+                    />
                   </div>
                   <div class="person">
                     <img
-                      src="./assets/images/slider/page13/Group 742 (1).png"
+                      data-src="./assets/images/slider/page13/Group 742 (1).png"
                       alt="logo"
-                      class="avatar"
+                      class="avatar swiper-lazy"
                     />
                     <p class="person-name">MARK</p>
-                    <p class="position">CMO
-                    </p>
+                    <p class="position">CMO</p>
                     <!-- <p class="description">
                       Dynamic office manager with over 4 years of professional
                       experience of making games.
                     </p> -->
-                    <img src="./assets/images/ldp/Vector (3).png" alt="">
+                    <img
+                      data-src="./assets/images/ldp/Vector (3).png"
+                      alt=""
+                      class="swiper-lazy"
+                    />
                   </div>
                   <div class="person">
                     <img
-                      src="./assets/images/slider/page13/Group 771.png"
+                      data-src="./assets/images/slider/page13/Group 771.png"
                       alt="logo"
-                      class="avatar"
+                      class="avatar swiper-lazy"
                     />
                     <p class="person-name">jay</p>
                     <p class="position">Project Owner</p>
@@ -1047,13 +1132,17 @@
                       Decentralized Blockchain applications using Ethereum and
                       Hyper ledger.
                     </p> -->
-                    <img src="./assets/images/ldp/Vector (3).png" alt="">
+                    <img
+                      data-src="./assets/images/ldp/Vector (3).png"
+                      alt=""
+                      class="swiper-lazy"
+                    />
                   </div>
                   <div class="person">
                     <img
-                      src="./assets/images/slider/page13/Group 738 (1).png"
+                      data-src="./assets/images/slider/page13/Group 738 (1).png"
                       alt="logo"
-                      class="avatar"
+                      class="avatar swiper-lazy"
                     />
                     <p class="person-name">tyber</p>
                     <p class="position">art director</p>
@@ -1061,13 +1150,17 @@
                       Self-motivated and cheerful game performance. With 2+
                       years of experience in making games and 3D movies.
                     </p> -->
-                    <img src="./assets/images/ldp/Vector (3).png" alt="">
+                    <img
+                      data-src="./assets/images/ldp/Vector (3).png"
+                      alt=""
+                      class="swiper-lazy"
+                    />
                   </div>
                   <div class="person">
                     <img
-                      src="./assets/images/slider/page13/Group 740 (1).png"
+                      data-src="./assets/images/slider/page13/Group 740 (1).png"
                       alt="logo"
-                      class="avatar"
+                      class="avatar swiper-lazy"
                     />
                     <p class="person-name">michael</p>
                     <p class="position">3D Game Designer/ Developer</p>
@@ -1076,27 +1169,35 @@
                       of experience in producing game source code for
                       high-volume companies.
                     </p> -->
-                    <img src="./assets/images/ldp/Vector (3).png" alt="">
+                    <img
+                      data-src="./assets/images/ldp/Vector (3).png"
+                      alt=""
+                      class="swiper-lazy"
+                    />
                   </div>
                   <div class="person">
                     <img
-                      src="./assets/images/slider/page13/Group 735 (1).png"
+                      data-src="./assets/images/slider/page13/Group 735 (1).png"
                       alt="logo"
-                      class="avatar"
+                      class="avatar swiper-lazy"
                     />
                     <p class="person-name">Qkus</p>
                     <p class="position">Community Leader</p>
-                    <p class="description">
+                    <!-- <p class="description">
                       Strongly knowledgeable and innovative 3D Modeler with a
                       superior commercial and artistic success record.
-                    </p>
-                    <img src="./assets/images/ldp/Vector (3).png" alt="">
+                    </p> -->
+                    <img
+                      data-src="./assets/images/ldp/Vector (3).png"
+                      alt=""
+                      class="swiper-lazy"
+                    />
                   </div>
                   <div class="person">
                     <img
-                      src="./assets/images/slider/page13/Group 741 (1).png"
+                      data-src="./assets/images/slider/page13/Group 741 (1).png"
                       alt="logo"
-                      class="avatar"
+                      class="avatar swiper-lazy"
                     />
                     <p class="person-name">kenvin</p>
                     <p class="position">Blockchain Engineer</p>
@@ -1104,13 +1205,17 @@
                       Likable and dedicated IT consultant with over 5 years of
                       experience in Blockchain field.
                     </p> -->
-                    <img src="./assets/images/ldp/Vector (3).png" alt="">
+                    <img
+                      data-src="./assets/images/ldp/Vector (3).png"
+                      alt=""
+                      class="swiper-lazy"
+                    />
                   </div>
                   <div class="person">
                     <img
-                      src="./assets/images/slider/page13/Group 770.png"
+                      data-src="./assets/images/slider/page13/Group 770.png"
                       alt="logo"
-                      class="avatar"
+                      class="avatar swiper-lazy"
                     />
                     <p class="person-name">elevent</p>
                     <p class="position">Head of Finance</p>
@@ -1118,7 +1223,11 @@
                       Likable and dedicated IT consultant with over 5 years of
                       experience in Blockchain field.
                     </p> -->
-                    <img src="./assets/images/ldp/Vector (3).png" alt="">
+                    <img
+                      data-src="./assets/images/ldp/Vector (3).png"
+                      alt=""
+                      class="swiper-lazy"
+                    />
                   </div>
                 </div>
               </div>
@@ -1143,12 +1252,13 @@
                 <picture>
                   <source
                     media="(min-width:1024px)"
-                    srcset="./assets//images//slider//page14/background.png"
+                    data-srcset="./assets//images//slider//page14/background.png"
+                    class="swiper-lazy"
                   />
                   <img
-                    src="./assets/images/slider/page14/mobile.png"
+                    data-src="./assets/images/slider/page14/mobile.png"
                     alt="logo"
-                    class="logo"
+                    class="logo swiper-lazy"
                   />
                 </picture>
               </div>
@@ -1193,91 +1303,91 @@
                 <div class="Partners active" id="Partners">
                   <!-- <div class="col">
                     <img
-                      src="./assets/images/slider/page14/Mask Group.png"
+                      data-src="./assets/images/slider/page14/Mask Group.png"
                       alt="logo"
                       class="logoitem"
                     />
                   </div>
                   <div class="col">
                     <img
-                      src="./assets/images/slider/page14/Mask Group (1).png"
+                      data-src="./assets/images/slider/page14/Mask Group (1).png"
                       alt="logo"
                       class="logoitem"
                     />
                   </div>
                   <div class="col">
                     <img
-                      src="./assets/images/slider/page14/image 3.png"
+                      data-src="./assets/images/slider/page14/image 3.png"
                       alt="logo"
                       class="logoitem"
                     />
                   </div>
                   <div class="col">
                     <img
-                      src="./assets/images/slider/page14/image 4 (1).png"
+                      data-src="./assets/images/slider/page14/image 4 (1).png"
                       alt="logo"
                       class="logoitem"
                     />
                   </div>
                   <div class="col">
                     <img
-                      src="./assets/images/slider/page14/image 5.png"
+                      data-src="./assets/images/slider/page14/image 5.png"
                       alt="logo"
                       class="logoitem"
                     />
                   </div>
                   <div class="col">
                     <img
-                      src="./assets/images/slider/page14/Mask Group (2).png"
+                      data-src="./assets/images/slider/page14/Mask Group (2).png"
                       alt="logo"
                       class="logoitem1"
                     />
                   </div>
                   <div class="col">
                     <img
-                      src="./assets/images/slider/page14/Mask Group (3).png"
+                      data-src="./assets/images/slider/page14/Mask Group (3).png"
                       alt="logo"
                       class="logoitem1"
                     />
                   </div>
                   <div class="col">
                     <img
-                      src="./assets/images/slider/page14/Mask Group (4).png"
+                      data-src="./assets/images/slider/page14/Mask Group (4).png"
                       alt="logo"
                       class="logoitem1"
                     />
                   </div>
                   <div class="col">
                     <img
-                      src="./assets/images/slider/page14/Mask Group (5).png"
+                      data-src="./assets/images/slider/page14/Mask Group (5).png"
                       alt="logo"
                       class="logoitem1"
                     />
                   </div>
                   <div class="col">
                     <img
-                      src="./assets/images/slider/page14/image 9 (1).png"
+                      data-src="./assets/images/slider/page14/image 9 (1).png"
                       alt="logo"
                       class="logoitem1"
                     />
                   </div>
                   <div class="col">
                     <img
-                      src="./assets/images/slider/page14/Mask Group (6).png"
+                      data-src="./assets/images/slider/page14/Mask Group (6).png"
                       alt="logo"
                       class="logoitem2"
                     />
                   </div>
                   <div class="col">
                     <img
-                      src="./assets/images/slider/page14/Mask Group (7).png"
+                      data-src="./assets/images/slider/page14/Mask Group (7).png"
                       alt="logo"
                       class="logoitem2"
                     />
                   </div>
                   <div class="col">
                     <img
-                      src="./assets/images/slider/page14/Mask Group (8).png"
+                      data-src="./assets/images/slider/page14/Mask Group (8).png"
                       alt="logo"
                       class="logoitem2"
                     />
@@ -1287,12 +1397,12 @@
                   <h2 class="Microgramma-b active">MEDIA & SECURITY</h2>
                   <!-- <div class="container-2">
                     <img
-                      src="./assets/images/slider/page14/image 6.png"
+                      data-src="./assets/images/slider/page14/image 6.png"
                       alt="logo"
                       class="logoitem2"
                     />
                     <img
-                      src="./assets/images/slider/page14/image 7.png"
+                      data-src="./assets/images/slider/page14/image 7.png"
                       alt="logo"
                       class="logoitem2"
                     />
@@ -1305,7 +1415,6 @@
               </div>
             </div>
           </div>
-          
         </div>
         <div class="swiper-pagination"></div>
         <div class="swiper-button-next">
@@ -1335,13 +1444,16 @@
     <!-- show -->
     <div class="trailer" id="trailer">
       <button class="back" onclick="toggleTrailer()">
-        <img src=".\assets\images\slider\page1\Btn_GoBack2_p 1.png" alt="back" />
+        <img
+          src=".\assets\images\slider\page1\Btn_GoBack2_p 1.png"
+          alt="back"
+        />
       </button>
       <div class="game-mode">
         <img src=".\assets\images\slider\page1\Frame (3).png" alt="game mode" />
         <span class="Microgramma-b">
           GAME
-          <br>
+          <br />
           MODE
         </span>
       </div>
@@ -1350,7 +1462,11 @@
           <h1 class="Microgramma-b">fps</h1>
         </div>
         <div class="content">
-          <img src=".\assets\images\ldp\play_trailer.png" alt="" class="arrowHorizontal"/>
+          <img
+            src=".\assets\images\ldp\play_trailer.png"
+            alt=""
+            class="arrowHorizontal"
+          />
           <div class="container">
             <h2 class="Microgramma-b">fps</h2>
             <p class="Barlow">
@@ -1373,7 +1489,11 @@
           <h1 class="Microgramma-b">metaverse</h1>
         </div>
         <div class="content">
-          <img src=".\assets\images\ldp\play_trailer.png" alt="" class="arrowHorizontal" />
+          <img
+            src=".\assets\images\ldp\play_trailer.png"
+            alt=""
+            class="arrowHorizontal"
+          />
           <div class="container">
             <h2 class="Microgramma-b">metaverse</h2>
             <p class="Barlow">
@@ -1420,12 +1540,13 @@
       },
       hashNavigation: {
         replaceState: true,
-        watchState:true,
+        watchState: true,
       },
       navigation: {
         nextEl: "#slide_home .swiper-button-next",
         prevEl: "#slide_home .swiper-button-prev",
       },
+      lazy: true,
     });
   });
   AOS.init();
@@ -1453,7 +1574,7 @@
     storageBucket: "galacticwar-b809b.appspot.com",
     messagingSenderId: "880192327616",
     appId: "1:880192327616:web:1f9cb86b686dcabd4a4225",
-    measurementId: "G-T34CVKV5SE"
+    measurementId: "G-T34CVKV5SE",
   };
 
   // Initialize Firebase

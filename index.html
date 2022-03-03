@@ -1568,7 +1568,9 @@
         nextEl: "#slide_home .swiper-button-next",
         prevEl: "#slide_home .swiper-button-prev",
       },      
-      lazy: true,
+      lazy: {
+        loadPrevNext:true
+      }
     });  
     SlideHome.on('transitionEnd', function () {
       let sliderActive=document.getElementById('slide_home').getElementsByClassName('swiper-slide swiper-slide-active')[0];

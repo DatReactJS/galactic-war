@@ -2549,28 +2549,37 @@ header ._header_top .bg_header {
   }
 }
 
-#page-13 {
+#page-13, #clone-parner {
   width: 100%;
   position: relative;
   z-index: 0;
   height: 100%;
+  position: absolute;
 }
 
-#page-13 .bg {
+#page-13.active, #clone-parner.active {
+  top: 0;
+  z-index: 49;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#page-13 .bg, #clone-parner .bg {
   position: absolute;
   width: 100%;
   height: 100%;
   z-index: -1;
 }
 
-#page-13 .bg img {
+#page-13 .bg img, #clone-parner .bg img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-#page-13 .main {
+#page-13 .main, #clone-parner .main {
   margin: auto;
   max-width: 1245px;
   display: -webkit-box;
@@ -2587,7 +2596,7 @@ header ._header_top .bg_header {
   overflow-y: scroll;
 }
 
-#page-13 .main .title-page13 {
+#page-13 .main .title-page13, #clone-parner .main .title-page13 {
   margin-bottom: 27px;
   font-style: normal;
   font-weight: bold;
@@ -2598,7 +2607,7 @@ header ._header_top .bg_header {
   text-shadow: 0px 10px 80px rgba(0, 0, 0, 0.5);
 }
 
-#page-13 .main .tittleChildren {
+#page-13 .main .tittleChildren, #clone-parner .main .tittleChildren {
   font-style: normal;
   font-weight: 400;
   font-size: 11px;
@@ -2608,7 +2617,7 @@ header ._header_top .bg_header {
   margin-bottom: 49px;
 }
 
-#page-13 .main .my_team {
+#page-13 .main .my_team, #clone-parner .main .my_team {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2616,7 +2625,7 @@ header ._header_top .bg_header {
       flex-wrap: wrap;
 }
 
-#page-13 .main .my_team .person {
+#page-13 .main .my_team .person, #clone-parner .main .my_team .person {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2634,14 +2643,14 @@ header ._header_top .bg_header {
   margin-bottom: 24px;
 }
 
-#page-13 .main .my_team .person .avatar {
+#page-13 .main .my_team .person .avatar, #clone-parner .main .my_team .person .avatar {
   width: 117.88px;
   height: 117.88px;
   border-radius: 50%;
   margin-bottom: 22px;
 }
 
-#page-13 .main .my_team .person .person-name {
+#page-13 .main .my_team .person .person-name, #clone-parner .main .my_team .person .person-name {
   margin-bottom: 0.25rem;
   font-family: 'Microgramma-D-OT-Bold';
   font-style: normal;
@@ -2654,7 +2663,7 @@ header ._header_top .bg_header {
   margin-top: 4px;
 }
 
-#page-13 .main .my_team .person .position {
+#page-13 .main .my_team .person .position, #clone-parner .main .my_team .person .position {
   margin-bottom: 0.5rem;
   font-family: 'Barlow';
   font-style: normal;
@@ -2674,7 +2683,7 @@ header ._header_top .bg_header {
   color: #1ad7fd;
 }
 
-#page-13 .main .my_team .person .description {
+#page-13 .main .my_team .person .description, #clone-parner .main .my_team .person .description {
   font-family: 'Barlow';
   font-style: normal;
   font-weight: 600;
@@ -2688,61 +2697,83 @@ header ._header_top .bg_header {
 }
 
 @media (min-width: 1024px) {
-  #page-13 .main {
+  #page-13 .main, #clone-parner .main {
+    display: none;
     padding-top: calc(108px + 16px);
   }
-  #page-13 .main::-webkit-scrollbar {
+  #page-13 .main::-webkit-scrollbar, #clone-parner .main::-webkit-scrollbar {
+    display: none;
     width: 10px;
   }
-  #page-13 .main::-webkit-scrollbar-track {
+  #page-13 .main::-webkit-scrollbar-track, #clone-parner .main::-webkit-scrollbar-track {
     border-radius: 10px;
   }
-  #page-13 .main::-webkit-scrollbar-thumb {
+  #page-13 .main::-webkit-scrollbar-thumb, #clone-parner .main::-webkit-scrollbar-thumb {
     background: transparent;
     border-radius: 10px;
     -webkit-transition: 0.3s ease-in-out;
     transition: 0.3s ease-in-out;
   }
-  #page-13 .main:hover::-webkit-scrollbar-thumb {
+  #page-13 .main:hover::-webkit-scrollbar-thumb, #clone-parner .main:hover::-webkit-scrollbar-thumb {
     background: var(--theme-color);
   }
-  #page-13 .main .title-page13 {
+  #page-13 .main .title-page13, #clone-parner .main .title-page13 {
     font-size: 3rem;
     line-height: 3.625rem;
   }
-  #page-13 .main .tittleChildren {
+  #page-13 .main .tittleChildren, #clone-parner .main .tittleChildren {
     font-size: 18px;
     line-height: 150%;
     margin-bottom: 0;
   }
-  #page-13 .main .my_team {
+  #page-13 .main .my_team, #clone-parner .main .my_team {
     width: 100%;
     max-width: 1240px;
     margin: 0 auto;
   }
-  #page-13 .main .my_team .person {
+  #page-13 .main .my_team .person, #clone-parner .main .my_team .person {
     margin-bottom: 1.5rem;
     width: 20%;
     padding: 15px;
   }
-  #page-13 .main .my_team .person .avatar {
+  #page-13 .main .my_team .person .avatar, #clone-parner .main .my_team .person .avatar {
     width: 169px;
     height: auto;
     max-width: 100%;
   }
-  #page-13 .main .my_team .person .person-name {
+  #page-13 .main .my_team .person .person-name, #clone-parner .main .my_team .person .person-name {
     font-size: 18px;
     line-height: 22px;
   }
-  #page-13 .main .my_team .person .position {
+  #page-13 .main .my_team .person .position, #clone-parner .main .my_team .person .position {
     font-size: 14px;
     line-height: 17px;
   }
-  #page-13 .main .my_team .person .description {
+  #page-13 .main .my_team .person .description, #clone-parner .main .my_team .person .description {
     font-size: 9px;
     line-height: 11px;
     margin-bottom: 20px;
   }
+}
+
+#clone-parner {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 49;
+}
+
+#clone-parner .bg {
+  display: none;
+}
+
+#clone-parner .main {
+  display: block;
 }
 
 #page-14 {

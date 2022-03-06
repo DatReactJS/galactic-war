@@ -2669,7 +2669,7 @@ header ._header_top .bg_header {
   font-style: normal;
   font-weight: 600;
   font-size: 10.53px;
-  height: 2.5em;
+  min-height: 2.5em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2757,6 +2757,7 @@ header ._header_top .bg_header {
 }
 
 #clone-parner {
+  display: none;
   position: absolute;
   top: 0;
   left: 50%;
@@ -2766,6 +2767,12 @@ header ._header_top .bg_header {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   z-index: 49;
+}
+
+@media (min-width: 1024px) {
+  #clone-parner {
+    display: block;
+  }
 }
 
 #clone-parner .bg {

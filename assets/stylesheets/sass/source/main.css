@@ -2549,6 +2549,150 @@ header ._header_top .bg_header {
   }
 }
 
+#tokenomic {
+  width: 100%;
+  min-height: 100%;
+  position: relative;
+  background: linear-gradient(0.28deg, #020818 0.26%, rgba(2, 8, 24, 0.806937) 51%, rgba(2, 8, 24, 0) 99.77%);
+}
+
+#tokenomic .bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+
+#tokenomic .bg img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-position: top;
+}
+
+#tokenomic img {
+  max-width: 100%;
+}
+
+#tokenomic .content {
+  padding-top: 90px;
+  padding-top: 150px;
+  text-align: center;
+  width: 100%;
+  max-width: 1375px;
+  margin: auto;
+  z-index: 50;
+}
+
+@media (min-width: 1024px) {
+  #tokenomic .content {
+    padding-top: 151px;
+    padding-bottom: 700px;
+  }
+}
+
+#tokenomic .content header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#tokenomic .content .logo {
+  max-width: 16vw;
+  z-index: 99;
+}
+
+#tokenomic .content .intro {
+  position: relative;
+  margin-top: -310px;
+}
+
+#tokenomic .content .intro img {
+  z-index: -1;
+  max-width: 100%;
+}
+
+#tokenomic .content .intro .title {
+  z-index: 0;
+  position: absolute;
+  top: 14%;
+}
+
+#tokenomic .content .intro p {
+  position: absolute;
+  top: 50%;
+  max-width: 100%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  color: white;
+  font-family: 'Barlow';
+  padding: 70px 70px 100px;
+  font-size: 34px;
+  width: 83%;
+  font-style: italic;
+  font-weight: 500;
+}
+
+#tokenomic .content .intro p span {
+  color: #1AD7FD;
+}
+
+#tokenomic .content .intro p .bg {
+  position: absolute;
+  z-index: -1;
+}
+
+#tokenomic .content table {
+  border-collapse: separate;
+  border-spacing: 8px;
+  width: 100%;
+}
+
+#tokenomic .content table thead th {
+  background: #1AD7FD;
+  font-family: Barlow;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15.7984px;
+  line-height: 44px;
+  /* identical to box height, or 280% */
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+#tokenomic .content table tbody td {
+  background: rgba(26, 215, 253, 0.5);
+  font-family: Barlow;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15.7984px;
+  line-height: 44px;
+  /* or 280% */
+  text-align: center;
+  color: #FFFFFF;
+}
+
+#tokenomic .footer-bg {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
 #page-13, #clone-parner {
   width: 100%;
   position: relative;

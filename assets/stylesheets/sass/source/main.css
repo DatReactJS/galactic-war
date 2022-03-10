@@ -1278,11 +1278,15 @@ header ._header_top .bg_header {
   z-index: 0;
   right: 0;
   bottom: 0;
+  width: 100%;
+  height: 100%;
 }
 
 #page-3 .bg img {
   -o-object-fit: cover;
      object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 #page-3 .group730 {
@@ -1290,9 +1294,7 @@ header ._header_top .bg_header {
   z-index: 0;
   left: 0;
   top: 0;
-  border-radius: 127.907px;
   width: 36.19%;
-  height: 77.68%;
 }
 
 #page-3 .group730 img {
@@ -1300,17 +1302,16 @@ header ._header_top .bg_header {
   height: 100%;
 }
 
-#page-3 .group235 {
+#page-3 .Greenplanet {
   position: absolute;
   z-index: 0;
   left: 62%;
   top: 31%;
   border-radius: 127.907px;
   width: 12.91%;
-  height: 22.96%;
 }
 
-#page-3 .group235 img {
+#page-3 .Greenplanet img {
   width: 100%;
   height: 100%;
 }
@@ -1325,6 +1326,32 @@ header ._header_top .bg_header {
 }
 
 #page-3 .group111 img {
+  width: 100%;
+  height: 100%;
+}
+
+#page-3 .group235 {
+  position: absolute;
+  z-index: 0;
+  left: -2%;
+  top: -1%;
+  width: 37.19%;
+}
+
+#page-3 .group235 img {
+  width: 100%;
+  height: 100%;
+}
+
+#page-3 .group236 {
+  position: absolute;
+  z-index: 0;
+  left: 62%;
+  top: 31%;
+  width: 12.91%;
+}
+
+#page-3 .group236 img {
   width: 100%;
   height: 100%;
 }
@@ -1494,10 +1521,14 @@ header ._header_top .bg_header {
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
   }
+  #page-3 .container .list-features img {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
   #page-3 .container .list-features li {
     border: none;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 14px;
     line-height: 150%;
     position: absolute;
     -webkit-transition: 0.5s ease-in-out;
@@ -1523,16 +1554,16 @@ header ._header_top .bg_header {
             filter: invert(1);
   }
   #page-3 .container .list-features li.l1 {
-    right: 69.79%;
-    width: 360px;
-    top: 26.63%;
+    right: 67.79%;
+    width: 280px;
+    top: 25.63%;
   }
   #page-3 .container .list-features li.l2 {
-    right: 73.92%;
+    right: 71.92%;
     top: 44.87%;
   }
   #page-3 .container .list-features li.l3 {
-    right: 80%;
+    right: 74%;
     top: 59.314815%;
   }
   #page-3 .container .list-features li.l4 {
@@ -1540,13 +1571,13 @@ header ._header_top .bg_header {
     top: 28.48%;
   }
   #page-3 .container .list-features li.l5 {
-    left: 75.45%;
-    top: 50.05%;
+    left: 74.45%;
+    top: 53.05%;
   }
   #page-3 .container .list-features li.l6 {
     left: 40.81%;
-    top: 32.33%;
-    width: 302px;
+    top: 23.33%;
+    width: 250px;
     text-transform: none;
   }
   #page-3 .li-border-1, #page-3 .li-border-2, #page-3 .li-border-3, #page-3 .li-border-4, #page-3 .li-border-5, #page-3 .li-border-6 {
@@ -1562,8 +1593,8 @@ header ._header_top .bg_header {
     top: -34px;
   }
   #page-3 .li-border-3 {
-    left: -21px;
-    top: -29px;
+    left: -58px;
+    top: -35px;
   }
   #page-3 .li-border-4 {
     left: -79px;
@@ -1574,6 +1605,67 @@ header ._header_top .bg_header {
     top: -32px;
   }
   #page-3 .li-border-6 {
+    left: -74px;
+    top: -36.67%;
+  }
+}
+
+@media (min-width: 1620px) {
+  #page-3 .container .list-features li {
+    font-size: 18px;
+  }
+  #page-3 .container .list-features li.l1 {
+    right: 68.79%;
+    width: 360px;
+    top: 26.63%;
+  }
+  #page-3 .container .list-features li.l2 {
+    right: 70.92%;
+    top: 44.87%;
+  }
+  #page-3 .container .list-features li.l3 {
+    right: 75%;
+    top: 59.314815%;
+  }
+  #page-3 .container .list-features li.l4 {
+    left: 76.86%;
+    top: 28.48%;
+  }
+  #page-3 .container .list-features li.l5 {
+    left: 75.45%;
+    top: 52.05%;
+  }
+  #page-3 .container .list-features li.l6 {
+    left: 42.81%;
+    top: 32.33%;
+    width: 302px;
+    text-transform: none;
+  }
+  #page-3 .container .list-features img {
+    -webkit-transform: initial;
+            transform: initial;
+  }
+  #page-3 .container .li-border-1 {
+    right: -94px;
+    top: -111px;
+  }
+  #page-3 .container .li-border-2 {
+    right: -136px;
+    top: -34px;
+  }
+  #page-3 .container .li-border-3 {
+    left: -21px;
+    top: -29px;
+  }
+  #page-3 .container .li-border-4 {
+    left: -79px;
+    top: -31px;
+  }
+  #page-3 .container .li-border-5 {
+    left: -72px;
+    top: -32px;
+  }
+  #page-3 .container .li-border-6 {
     left: -37px;
     top: -18.67%;
   }

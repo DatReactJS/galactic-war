@@ -1802,12 +1802,12 @@ header ._header_top .bg_header {
   }
   #page-4 .container h2 {
     position: absolute;
-    top: 80.83%;
+    top: 75.83%;
     left: 50%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
-    font-size: 48px;
-    line-height: 58px;
+    font-size: 32px;
+    line-height: 2em;
     text-shadow: 0px 10px 80px rgba(0, 0, 0, 0.5);
   }
   #page-4 .container .phases {
@@ -1819,7 +1819,7 @@ header ._header_top .bg_header {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    padding-top: 13vh;
+    padding-top: 6vh;
     -webkit-transition: 0.3s ease-in-out;
     transition: 0.3s ease-in-out;
     -webkit-transform: scale(0.7) translate(-10%, -15%);
@@ -1945,12 +1945,18 @@ header ._header_top .bg_header {
   #page-4::-webkit-scrollbar {
     display: none;
   }
+  #page-4 .container h2 {
+    font-size: 48px;
+    line-height: 58px;
+    top: 80.83%;
+  }
   #page-4 .container .phases {
     -webkit-transform: initial;
             transform: initial;
     width: 100%;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
+    padding-top: 13vh;
   }
 }
 

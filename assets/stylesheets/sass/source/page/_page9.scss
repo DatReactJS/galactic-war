@@ -51,15 +51,35 @@
     } 
     @media (min-width:1024px) {
         .bg{
-            width: auto;
-            height: auto;
-            min-width: 100%;
-            min-height: 100%;
             img{
-                object-position: center;
-                object-fit: contain;
+                object-position: top;
+                object-fit: cover;
             }
         }
+        .content{
+            width: 784px;
+            margin: auto auto 26.5vh 8.8vw ;
+            text-align: left;
+            padding:  0 0 33px 55px;
+            h2{
+                margin-bottom: 0.5em;
+                font-size: 32px;
+                line-height: 1.5em;
+            }
+            p{
+                font-size: 16px;
+                line-height: 2em;
+                width: 422px;      
+            }
+            img{
+                width: 55px;
+                height: 288px;
+                bottom: 0;
+                top:initial;
+            }
+        }       
+    }
+    @media (min-width:1620px) {      
         .content{
             width: 784px;
             margin: auto auto 22.5vh 8.8vw ;
@@ -74,13 +94,7 @@
                 font-size: 18px;
                 line-height: 22px;   
                 width: 622px;      
-            }
-            img{
-                width: 55px;
-                height: 288px;
-                bottom: 0;
-                top:initial;
-            }
+            }        
         }       
     }
 }

@@ -2030,25 +2030,40 @@ header ._header_top .bg_header {
 
 @media (min-width: 1024px) {
   #page-5 .content {
-    width: 622px;
+    width: 422px;
     margin-top: 21.29vh;
     margin-bottom: auto;
     margin-right: 9.37vw;
     text-align: left;
-    padding: 51px 141px;
+    padding: 33px 44px;
   }
   #page-5 .content h2 {
     margin-bottom: 24px;
+    font-size: 32px;
+    line-height: 58px;
+  }
+  #page-5 .content p {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  #page-5 .content img {
+    width: 55px;
+    height: 288px;
+  }
+}
+
+@media (min-width: 1620px) {
+  #page-5 .content {
+    padding: 51px 141px;
+    width: 622px;
+  }
+  #page-5 .content h2 {
     font-size: 48px;
     line-height: 58px;
   }
   #page-5 .content p {
     font-size: 18px;
     line-height: 22px;
-  }
-  #page-5 .content img {
-    width: 55px;
-    height: 288px;
   }
 }
 
@@ -2381,11 +2396,33 @@ header ._header_top .bg_header {
        object-fit: contain;
   }
   #page-8 .content {
-    width: 784px;
+    width: 584px;
     margin-bottom: auto;
-    margin: 18.42vh auto auto 12.6vw;
+    margin: 10.42vh auto auto 8.6vw;
     text-align: left;
     padding: 36px 0 0 55px;
+  }
+  #page-8 .content h2 {
+    margin-bottom: 0.5em;
+    font-size: 26px;
+    line-height: 1.5em;
+  }
+  #page-8 .content p {
+    font-size: 16px;
+    line-height: 22px;
+    width: 422px;
+  }
+  #page-8 .content img {
+    width: 55px;
+    height: 288px;
+  }
+}
+
+@media (min-width: 1620px) {
+  #page-8 .content {
+    width: 784px;
+    padding: 36px 0 0 55px;
+    margin: 18.42vh auto auto 12.6vw;
   }
   #page-8 .content h2 {
     margin-bottom: 24px;
@@ -2396,10 +2433,6 @@ header ._header_top .bg_header {
     font-size: 18px;
     line-height: 22px;
     width: 622px;
-  }
-  #page-8 .content img {
-    width: 55px;
-    height: 288px;
   }
 }
 
@@ -2473,18 +2506,37 @@ header ._header_top .bg_header {
 }
 
 @media (min-width: 1024px) {
-  #page-9 .bg {
-    width: auto;
-    height: auto;
-    min-width: 100%;
-    min-height: 100%;
-  }
   #page-9 .bg img {
-    -o-object-position: center;
-       object-position: center;
-    -o-object-fit: contain;
-       object-fit: contain;
+    -o-object-position: top;
+       object-position: top;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
+  #page-9 .content {
+    width: 784px;
+    margin: auto auto 26.5vh 8.8vw;
+    text-align: left;
+    padding: 0 0 33px 55px;
+  }
+  #page-9 .content h2 {
+    margin-bottom: 0.5em;
+    font-size: 32px;
+    line-height: 1.5em;
+  }
+  #page-9 .content p {
+    font-size: 16px;
+    line-height: 2em;
+    width: 422px;
+  }
+  #page-9 .content img {
+    width: 55px;
+    height: 288px;
+    bottom: 0;
+    top: initial;
+  }
+}
+
+@media (min-width: 1620px) {
   #page-9 .content {
     width: 784px;
     margin: auto auto 22.5vh 8.8vw;
@@ -2500,12 +2552,6 @@ header ._header_top .bg_header {
     font-size: 18px;
     line-height: 22px;
     width: 622px;
-  }
-  #page-9 .content img {
-    width: 55px;
-    height: 288px;
-    bottom: 0;
-    top: initial;
   }
 }
 
@@ -2578,18 +2624,45 @@ header ._header_top .bg_header {
 }
 
 @media (min-width: 1024px) {
-  #page-10 .bg {
-    width: auto;
-    height: auto;
-    min-width: 100%;
-    min-height: 100%;
-  }
   #page-10 .bg img {
-    -o-object-position: center;
-       object-position: center;
-    -o-object-fit: contain;
-       object-fit: contain;
+    -o-object-position: top;
+       object-position: top;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
+  #page-10 .content {
+    width: 577px;
+    margin: auto auto 13.44vh auto;
+    text-align: left;
+    padding: 21px 70px 0px 70px;
+    text-shadow: 0px 10px 80px rgba(0, 0, 0, 0.5);
+  }
+  #page-10 .content h2 {
+    margin-bottom: 0.5em;
+    font-size: 32px;
+    line-height: 1.5em;
+    text-align: center;
+  }
+  #page-10 .content p {
+    font-size: 16px;
+    line-height: 1.5em;
+    text-align: center;
+  }
+  #page-10 .content img {
+    width: 55px;
+    height: 288px;
+  }
+  #page-10 .content img.left {
+    display: block;
+    -webkit-transform: rotateY(180deg) rotateX(180deg);
+            transform: rotateY(180deg) rotateX(180deg);
+    left: 0;
+    top: initial;
+    bottom: 0;
+  }
+}
+
+@media (min-width: 1620px) {
   #page-10 .content {
     width: 577px;
     margin: auto auto 22.44vh auto;

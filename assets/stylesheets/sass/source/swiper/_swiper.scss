@@ -64,7 +64,7 @@
     }
     @media (min-width:1024px) {     
         .swiper-pagination{            
-            bottom: 55px;
+            bottom: 25px;
             background: rgba(238, 238, 238, 0.1);
             backdrop-filter: blur(10px);            
             border-radius: 51px;
@@ -96,6 +96,11 @@
                     left: calc( 6px * 5 + 30px );                    
                 }
             }
+        }
+    }
+    @media (min-width:1620px) {
+        .swiper-pagination{            
+            bottom: 55px;
         }
     }
 }

@@ -22,7 +22,7 @@
   }  
   .main {
     margin: auto;      
-    max-width: 1245px;
+    max-width: 1045px;
     display: flex;
     flex-direction: column;
     padding: 113px 27px 100px;
@@ -33,8 +33,8 @@
       margin-bottom: 27px;
       font-style: normal;
       font-weight: bold;
-      font-size: 19px;
-      line-height: 23px;      
+      font-size: 16px;
+      line-height: 1.5em;      
       text-transform: uppercase;
       color: #ffffff;
       text-shadow: 0px 10px 80px rgba(0, 0, 0, 0.5);
@@ -129,11 +129,11 @@
         }
       }
       .title-page13{
-        font-size: 3rem;
-        line-height: 3.625rem;      
+        font-size: 1.5rem;
+        line-height: 1.625em;
       }
       .tittleChildren{
-        font-size: 18px;
+        font-size: 16px;
         line-height: 150%;
         margin-bottom: 0;
       }
@@ -167,12 +167,26 @@
       }
     }
   }
+  @media (min-width:1620px) {     
+    max-width: 1245px;
+    .main{
+      .title-page13 {
+        font-size: 3rem;
+        line-height: 3.625rem;
+      }
+      .tittleChildren{
+        font-size: 18px;
+        line-height: 150%;
+        margin-bottom: 0;
+      }
+    }
+  }
 }
 #clone-parner{
   display: none;
   @media (min-width:1024px) {
     display: block;
-  }
+  }  
   position: absolute;
   top: 0;
   left: 50%;

@@ -1567,11 +1567,11 @@ header ._header_top .bg_header {
     top: 59.314815%;
   }
   #page-3 .container .list-features li.l4 {
-    left: 76.86%;
+    left: 78.86%;
     top: 28.48%;
   }
   #page-3 .container .list-features li.l5 {
-    left: 74.45%;
+    left: 75.45%;
     top: 53.05%;
   }
   #page-3 .container .list-features li.l6 {
@@ -1597,11 +1597,11 @@ header ._header_top .bg_header {
     top: -35px;
   }
   #page-3 .li-border-4 {
-    left: -79px;
+    left: -93px;
     top: -31px;
   }
   #page-3 .li-border-5 {
-    left: -72px;
+    left: -93px;
     top: -32px;
   }
   #page-3 .li-border-6 {
@@ -3116,7 +3116,7 @@ header ._header_top .bg_header {
 }
 
 @media (min-width: 1620px) {
-  #page-13, #clone-parner {
+  #page-13 .main, #clone-parner .main {
     max-width: 1245px;
   }
   #page-13 .main .title-page13, #clone-parner .main .title-page13 {

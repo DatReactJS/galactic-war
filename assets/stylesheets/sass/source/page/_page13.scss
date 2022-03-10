@@ -109,7 +109,7 @@
   }
   @media (min-width:1024px) {    
     .main{
-      display: none;
+      // display: none;
       padding-top: calc(108px + 16px);
       &::-webkit-scrollbar {
         display: none;
@@ -131,11 +131,65 @@
       .title-page13{
         font-size: 1.5rem;
         line-height: 1.625em;
+        margin-bottom: 0;
       }
       .tittleChildren{
         font-size: 16px;
         line-height: 150%;
-        margin-bottom: 0;
+        margin-bottom: 1em;
+      }
+      .my_team{
+        width: 100%;
+        max-width: 1240px;
+        margin: 0 auto;
+        .person{
+          margin-bottom: 1em;
+          width: 20%;
+          padding: 0 15px;
+          .avatar{
+            width: 100px;
+            height: auto;
+            max-width: 100%;
+          }
+          .person-name {
+            font-size: 18px;
+            line-height: 22px;
+            width: 100%;
+            text-align: center;
+          }
+          .description{            
+            display: flex;
+            flex-direction: row-reverse;
+            flex-shrink: initial;
+            display: none;
+            .position{
+              font-size: 12px;
+              line-height: 17px;
+              padding-left: 1em;
+              margin: 0;
+            }
+            img{
+              display: block;
+              flex-shrink: none;
+              margin: auto;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media (min-width:1620px) {
+    .main{
+      max-width: 1245px;      
+      padding-top: calc(108px + 2.5em);
+      .title-page13 {
+        font-size: 3rem;
+        line-height: 3.625rem;
+      }
+      .tittleChildren{
+        font-size: 18px;
+        line-height: 150%;
+        margin-bottom: 1rem;
       }
       .my_team{
         width: 100%;
@@ -144,60 +198,20 @@
         .person{
           margin-bottom: 1.5rem;
           width: 20%;
-          padding: 15px;
-          .avatar{
+          padding: 0 15px;
+          .avatar{        
             width: 169px;
-            height: auto;
-            max-width: 100%;
-          }
-          .person-name {
-            font-size: 18px;
-            line-height: 22px;
-          }
-          .position{
-            font-size: 14px;
-            line-height: 17px;
           }
           .description{
-            font-size: 9px;
-            line-height: 11px;
-            margin-bottom: 20px;
+            flex-direction: column;
+            
+            .position{
+              font-size: 14px;
+              line-height: 17px;
+            }
           }
         }
       }
     }
   }
-  @media (min-width:1620px) {     
-    .main{
-      max-width: 1245px;      
-      .title-page13 {
-        font-size: 3rem;
-        line-height: 3.625rem;
-      }
-      .tittleChildren{
-        font-size: 18px;
-        line-height: 150%;
-        margin-bottom: 0;
-      }
-    }
-  }
 }
-#clone-parner{
-  display: none;
-  @media (min-width:1024px) {
-    display: block;
-  }  
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: fit-content;
-  transform: translateX(-50%);
-  z-index: 49;
-  .bg{
-    display: none;
-  }
-  .main{
-    display: block;
-  }
-}
-

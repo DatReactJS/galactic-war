@@ -3154,7 +3154,6 @@ header ._header_top .bg_header {
 
 @media (min-width: 1024px) {
   #page-13 .main, #clone-parner .main {
-    display: none;
     padding-top: calc(108px + 16px);
   }
   #page-13 .main::-webkit-scrollbar, #clone-parner .main::-webkit-scrollbar {
@@ -3176,11 +3175,73 @@ header ._header_top .bg_header {
   #page-13 .main .title-page13, #clone-parner .main .title-page13 {
     font-size: 1.5rem;
     line-height: 1.625em;
+    margin-bottom: 0;
   }
   #page-13 .main .tittleChildren, #clone-parner .main .tittleChildren {
     font-size: 16px;
     line-height: 150%;
-    margin-bottom: 0;
+    margin-bottom: 1em;
+  }
+  #page-13 .main .my_team, #clone-parner .main .my_team {
+    width: 100%;
+    max-width: 1240px;
+    margin: 0 auto;
+  }
+  #page-13 .main .my_team .person, #clone-parner .main .my_team .person {
+    margin-bottom: 1em;
+    width: 20%;
+    padding: 0 15px;
+  }
+  #page-13 .main .my_team .person .avatar, #clone-parner .main .my_team .person .avatar {
+    width: 100px;
+    height: auto;
+    max-width: 100%;
+  }
+  #page-13 .main .my_team .person .person-name, #clone-parner .main .my_team .person .person-name {
+    font-size: 18px;
+    line-height: 22px;
+    width: 100%;
+    text-align: center;
+  }
+  #page-13 .main .my_team .person .description, #clone-parner .main .my_team .person .description {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -ms-flex-negative: initial;
+        flex-shrink: initial;
+    display: none;
+  }
+  #page-13 .main .my_team .person .description .position, #clone-parner .main .my_team .person .description .position {
+    font-size: 12px;
+    line-height: 17px;
+    padding-left: 1em;
+    margin: 0;
+  }
+  #page-13 .main .my_team .person .description img, #clone-parner .main .my_team .person .description img {
+    display: block;
+    -ms-flex-negative: none;
+        flex-shrink: none;
+    margin: auto;
+  }
+}
+
+@media (min-width: 1620px) {
+  #page-13 .main, #clone-parner .main {
+    max-width: 1245px;
+    padding-top: calc(108px + 2.5em);
+  }
+  #page-13 .main .title-page13, #clone-parner .main .title-page13 {
+    font-size: 3rem;
+    line-height: 3.625rem;
+  }
+  #page-13 .main .tittleChildren, #clone-parner .main .tittleChildren {
+    font-size: 18px;
+    line-height: 150%;
+    margin-bottom: 1rem;
   }
   #page-13 .main .my_team, #clone-parner .main .my_team {
     width: 100%;
@@ -3190,68 +3251,21 @@ header ._header_top .bg_header {
   #page-13 .main .my_team .person, #clone-parner .main .my_team .person {
     margin-bottom: 1.5rem;
     width: 20%;
-    padding: 15px;
+    padding: 0 15px;
   }
   #page-13 .main .my_team .person .avatar, #clone-parner .main .my_team .person .avatar {
     width: 169px;
-    height: auto;
-    max-width: 100%;
   }
-  #page-13 .main .my_team .person .person-name, #clone-parner .main .my_team .person .person-name {
-    font-size: 18px;
-    line-height: 22px;
+  #page-13 .main .my_team .person .description, #clone-parner .main .my_team .person .description {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
-  #page-13 .main .my_team .person .position, #clone-parner .main .my_team .person .position {
+  #page-13 .main .my_team .person .description .position, #clone-parner .main .my_team .person .description .position {
     font-size: 14px;
     line-height: 17px;
   }
-  #page-13 .main .my_team .person .description, #clone-parner .main .my_team .person .description {
-    font-size: 9px;
-    line-height: 11px;
-    margin-bottom: 20px;
-  }
-}
-
-@media (min-width: 1620px) {
-  #page-13 .main, #clone-parner .main {
-    max-width: 1245px;
-  }
-  #page-13 .main .title-page13, #clone-parner .main .title-page13 {
-    font-size: 3rem;
-    line-height: 3.625rem;
-  }
-  #page-13 .main .tittleChildren, #clone-parner .main .tittleChildren {
-    font-size: 18px;
-    line-height: 150%;
-    margin-bottom: 0;
-  }
-}
-
-#clone-parner {
-  display: none;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  z-index: 49;
-}
-
-@media (min-width: 1024px) {
-  #clone-parner {
-    display: block;
-  }
-}
-
-#clone-parner .bg {
-  display: none;
-}
-
-#clone-parner .main {
-  display: block;
 }
 
 #page-14 {

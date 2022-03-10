@@ -2177,12 +2177,6 @@ header ._header_top .bg_header {
     line-height: 22px;
     width: 622px;
   }
-  #page-6 .content img {
-    display: none;
-  }
-  #page-6 .gun {
-    display: none;
-  }
 }
 
 #page-7 {
@@ -2257,27 +2251,40 @@ header ._header_top .bg_header {
 }
 
 @media (min-width: 1024px) {
-  #page-7 .bg {
-    width: auto;
-    height: auto;
-    min-width: 100%;
-    min-height: 100%;
-  }
   #page-7 .bg img {
-    -o-object-position: center;
-       object-position: center;
-    -o-object-fit: contain;
-       object-fit: contain;
+    -o-object-position: top;
+       object-position: top;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   #page-7 .content {
     width: 100%;
     margin: auto 0 0;
-    padding: 50px  25vw 16vh;
+    padding: 19px  19vw 21vh;
     text-align: left;
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(238, 238, 238, 0.1)), to(rgba(238, 238, 238, 0)));
     background: linear-gradient(rgba(238, 238, 238, 0.1) 0%, rgba(238, 238, 238, 0) 100%);
     -webkit-backdrop-filter: blur(10px);
             backdrop-filter: blur(10px);
+  }
+  #page-7 .content h2 {
+    margin-bottom: 0.5em;
+    font-size: 28px;
+    line-height: 1.5em;
+  }
+  #page-7 .content p {
+    font-size: 14px;
+    line-height: 1.5em;
+    width: 822px;
+  }
+  #page-7 .content img {
+    display: none;
+  }
+}
+
+@media (min-width: 1620px) {
+  #page-7 .content {
+    padding: 50px  25vw 16vh;
   }
   #page-7 .content h2 {
     margin-bottom: 16px;
@@ -2288,9 +2295,6 @@ header ._header_top .bg_header {
     font-size: 18px;
     line-height: 22px;
     width: 622px;
-  }
-  #page-7 .content img {
-    display: none;
   }
 }
 

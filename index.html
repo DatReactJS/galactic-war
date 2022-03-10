@@ -1240,7 +1240,7 @@
                 <picture>
                   <source
                     media="(min-width:1024px)"
-                    t="./assets//images//slider//page14/background.png"
+                    data-srcset="./assets//images//slider//page14/background.png"
                     class="swiper-lazy"
                   />
                   <img
@@ -1566,18 +1566,7 @@
       else{
         pausevideo2();
         document.getElementById("control-sound-video-page-2").classList.add("playing");
-      }
-      // show parner clone
-      // let parnerActive=sliderActive.querySelector('#page-13');
-      // if(parnerActive){
-      //   displayParner=parnerActive.cloneNode(true);
-      //   displayParner.setAttribute("id", "clone-parner");
-      //   document.body.appendChild(displayParner);
-      //   console.log(displayParner);
-      // }
-      // else if(document.getElementById("clone-parner")) {
-      //   document.getElementById("clone-parner").remove();
-      // }
+      }  
     });
   });
   AOS.init();

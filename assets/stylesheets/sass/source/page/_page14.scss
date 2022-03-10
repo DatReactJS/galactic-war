@@ -102,10 +102,10 @@
   }
   @media (min-width:1024px) {        
     .title{        
-      justify-content: space-between;
+      justify-content: space-around;
       h2{
-        font-size: 48px;
-        line-height: 58px;
+        font-size: 32px;
+        line-height: 1.5em;
         &#title2{
           display: initial;
         }
@@ -169,5 +169,13 @@
       margin-top: auto ;
       text-align: center;
     }
+  }
+  @media (min-width:1620px) {        
+    .title{
+      h2{
+        font-size: 48px;
+        line-height: 58px;        
+      }
+    }     
   } 
 }

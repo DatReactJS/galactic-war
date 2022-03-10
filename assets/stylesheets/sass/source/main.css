@@ -2578,8 +2578,9 @@ header ._header_top .bg_header {
 }
 
 #tokenomic .content {
-  padding-top: 90px;
-  padding-top: 150px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 90px 15px;
   text-align: center;
   width: 100%;
   max-width: 1375px;
@@ -2612,12 +2613,18 @@ header ._header_top .bg_header {
 
 #tokenomic .content .logo {
   max-width: 16vw;
-  z-index: 99;
+  z-index: 49;
 }
 
 #tokenomic .content .intro {
   position: relative;
-  margin-top: -310px;
+  margin-top: -81px;
+}
+
+@media (min-width: 1024px) {
+  #tokenomic .content .intro {
+    margin-top: -310px;
+  }
 }
 
 #tokenomic .content .intro img {
@@ -2640,11 +2647,18 @@ header ._header_top .bg_header {
           transform: translateX(-50%);
   color: white;
   font-family: 'Barlow';
-  padding: 70px 70px 100px;
-  font-size: 34px;
+  font-size: 12px;
+  padding: 15px 15px 20px;
   width: 83%;
   font-style: italic;
   font-weight: 500;
+}
+
+@media (min-width: 1024px) {
+  #tokenomic .content .intro p {
+    font-size: 34px;
+    padding: 70px 70px 100px;
+  }
 }
 
 #tokenomic .content .intro p span {
@@ -2657,9 +2671,16 @@ header ._header_top .bg_header {
 }
 
 #tokenomic .content table {
+  display: none;
   border-collapse: separate;
   border-spacing: 8px;
   width: 100%;
+}
+
+@media (min-width: 1024px) {
+  #tokenomic .content table {
+    display: initial;
+  }
 }
 
 #tokenomic .content table thead th {
@@ -2690,7 +2711,22 @@ header ._header_top .bg_header {
 #tokenomic .footer-bg {
   position: absolute;
   bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#tokenomic .footer-bg img {
+  width: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 #page-13, #clone-parner {

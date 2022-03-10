@@ -81,17 +81,14 @@
         .bg{
             img{
                 object-position: top;
-                min-width: 100%;
-                min-height: 100%;
-                width: 128%;                
+                width: 100%;
             }                    
             .bg-2{
                 display: block;
                 position: absolute;
                 background-size: cover;
-                min-width: 874px;
-                min-height: 874px;
-                z-index: -1;
+                width: 50%;
+                max-width: 1000px;
                 top:0;
                 left: 0;
                 transform: translate(-35%, -18%) rotate(7.33deg);
@@ -167,8 +164,6 @@
         box-sizing: border-box;
         .bg{
             img{
-                min-width: 100%;
-                min-height: 100%;
                 width: 100%;
             }
         }

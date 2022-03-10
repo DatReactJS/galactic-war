@@ -11,25 +11,12 @@
       href="./assets/images/logo.png"
     />
     <link rel="stylesheet" href="./assets/stylesheets/sass/dist/main.css" />
-    <link rel="stylesheet" href="./assets/stylesheets/sass/source/main.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
-      integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <link rel="stylesheet" href="./assets/stylesheets/sass/source/main.css" />    
     <script
       src="https://code.jquery.com/jquery-3.6.0.js"
       integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
       crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
-      integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
+    ></script>    
     <script src="./assets/scripts/main.js" type="text/javascript"></script>
     <link
       rel="stylesheet"
@@ -138,7 +125,6 @@
               <img src=".\assets\images\Btn_WeaponMenu_p 2.svg" alt="" />
             </li>
             <li
-              onclick="openPopUp()"
               >
               <a href="./tokenomic.html" data-attr="section_what_race" class="Barlow">
                 <span> tokenomic </span>
@@ -293,7 +279,7 @@
             </div>
           </div>
 
-          <div class="swiper-slide" data-hash="trailer">
+          <div class="swiper-slide" data-hash="Trailer">
             <script>
               var videoPage2Stage={
                 play:true,
@@ -1550,7 +1536,7 @@
         prevEl: "#slide_home .swiper-button-prev",
       },      
       lazy: {
-        loadPrevNext:true
+        // loadPrevNext:true
       }
     });  
     SlideHome.on('transitionEnd', function () {
@@ -1568,12 +1554,5 @@
         document.getElementById("control-sound-video-page-2").classList.add("playing");
       }  
     });
-  });
-  AOS.init();
-  AOS.init({
-    offset: 200,
-    delay: 50,
-    duration: 1500,
-    once: false,
-  });
+  });  
 </script>

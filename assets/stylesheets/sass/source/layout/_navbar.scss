@@ -113,9 +113,9 @@
                     }
                 }
                 a{                
-                    font-weight: 400;
-                    font-size: 16px;
-                    padding: 6px 50px;
+                    font-weight: 400;                   
+                    font-size: 14px;
+                    padding: 6px 25px;
                     height: 100%;
                     display: flex;
                     text-align: center;
@@ -135,6 +135,16 @@
         }
         .social{
             display: none;
+        }
+    }
+    @media (min-width:1620px) {
+        .menu__content{
+            .list_menu{
+                .a{
+                    font-size: 16px;
+                    padding: 6px 50px;
+                }
+            }
         }
     }
 }

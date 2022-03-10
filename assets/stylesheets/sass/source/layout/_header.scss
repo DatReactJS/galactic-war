@@ -276,7 +276,7 @@ header {
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 109px;
+        height: 89px;
         border-bottom: 1px solid rgba(255, 255, 255, 0.3);
         .container{
             flex: initial;
@@ -308,6 +308,9 @@ header {
             content: '';
             background: linear-gradient(180deg, rgba(255, 255, 255, 0.567) 16.67%, rgba(181, 181, 181, 0) 90%);
         }
+    }
+    @media (min-width:1620px) {
+        height: 109px;
     }
 }
 

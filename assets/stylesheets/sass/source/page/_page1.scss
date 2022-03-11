@@ -62,9 +62,10 @@
                 color:#1AD7FD;
             }
         }
-        button{
+        a{
             background:transparent;
             border: transparent;
+            text-decoration: none;
             span{
                 display: none;
             }
@@ -137,7 +138,7 @@
                 max-width: 990px;
                 margin-bottom: 1em;
             }
-            button{                
+            a{                
                 margin-bottom: 31%;
                 position: relative;
                 span{
@@ -182,7 +183,7 @@
                 line-height: 77px;
                 margin-bottom: 44px;
             }
-            button{
+            a{
                 span{
                     font-weight: 400;
                     font-size: 28px;

@@ -244,20 +244,10 @@ table {
   .main-nav .menu__content .list_menu li.active a span {
     color: var(--theme-color);
   }
-  .main-nav .menu__content .list_menu li::after {
-    position: absolute;
-    left: 0;
-    content: '';
-    background: rgba(255, 255, 255, 0.5);
-    display: block;
-    height: 100%;
-    width: 1.02px;
-    top: -3.5px;
-  }
   .main-nav .menu__content .list_menu a {
     font-weight: 400;
-    font-size: 14px;
-    padding: 6px 25px;
+    font-size: 16px;
+    padding: 6px 50px;
     height: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -286,7 +276,6 @@ table {
 @media (min-width: 1620px) {
   .main-nav .menu__content .list_menu .a {
     font-size: 16px;
-    padding: 6px 50px;
   }
 }
 
@@ -716,6 +705,11 @@ header ._header_top .bg_header {
         -ms-flex-pack: center;
             justify-content: center;
     padding: 0 50px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
     border: initial;
   }
   .main-header .container .logo img {

@@ -78,13 +78,12 @@
                     padding-top: 6px;
                     height: 100%;
                     position: relative;
-                    transform: skewX(-28.6478898deg);
                     img{
                         display: block;
                         position: absolute;
                         bottom: 0;
-                        transform:  skewX(+28.6478898deg) translateX(-50%) translateY(+29%);
-                        left: 40%;
+                        transform:  translateX(-50%) translateY(+29%);
+                        left: 50%;
                         transition: 0.3s ease-in-out;
                         opacity: 0;
                         z-index: -1;
@@ -121,13 +120,13 @@
                     text-align: center;
                     align-items: center;
                     span{
-                        display: inline-block;                        
-                        transform: skewX(+28.6478898deg) translateY(5px);
+                        display: inline-block;
                         transition: 0.3s ease-in-out;
                     }
                     &:hover{
                         span{
-                            transform:  skewX(+28.6478898deg) translateY(5px) scale(1.1);
+                            color: var(--theme-color);
+                            transform:  scale(1.1);
                         }
                     }
                 }

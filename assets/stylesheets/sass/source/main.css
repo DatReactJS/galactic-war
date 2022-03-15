@@ -223,16 +223,14 @@ table {
     padding-top: 6px;
     height: 100%;
     position: relative;
-    -webkit-transform: skewX(-28.64789deg);
-            transform: skewX(-28.64789deg);
   }
   .main-nav .menu__content .list_menu li img {
     display: block;
     position: absolute;
     bottom: 0;
-    -webkit-transform: skewX(28.64789deg) translateX(-50%) translateY(29%);
-            transform: skewX(28.64789deg) translateX(-50%) translateY(29%);
-    left: 40%;
+    -webkit-transform: translateX(-50%) translateY(29%);
+            transform: translateX(-50%) translateY(29%);
+    left: 50%;
     -webkit-transition: 0.3s ease-in-out;
     transition: 0.3s ease-in-out;
     opacity: 0;
@@ -259,14 +257,13 @@ table {
   }
   .main-nav .menu__content .list_menu a span {
     display: inline-block;
-    -webkit-transform: skewX(28.64789deg) translateY(5px);
-            transform: skewX(28.64789deg) translateY(5px);
     -webkit-transition: 0.3s ease-in-out;
     transition: 0.3s ease-in-out;
   }
   .main-nav .menu__content .list_menu a:hover span {
-    -webkit-transform: skewX(28.64789deg) translateY(5px) scale(1.1);
-            transform: skewX(28.64789deg) translateY(5px) scale(1.1);
+    color: var(--theme-color);
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
   }
   .main-nav .social {
     display: none;

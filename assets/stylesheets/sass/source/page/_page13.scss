@@ -224,32 +224,32 @@
           .avatar{        
             width: 169px;
           }
-          .description{
-            flex-direction: column;                     
-            display: flex;
-            position: initial;
-            justify-content: center;
-            .position{
-              font-size: 14px;
-              line-height: 17px;
-              margin-top: 0.5em;
-              padding-left: 0;
-              margin-bottom: 0.5em;
-              text-align: center;
-              display: block;
-            }
-            img{
-              margin: auto auto;
-            }
-          }
-          &:hover{
-            .description{
-              transform:initial;
-            }
-            .person-name{
-              transform: initial;
-            }
-          }
+          // .description{
+          //   flex-direction: column;                     
+          //   display: flex;
+          //   position: initial;
+          //   justify-content: center;
+          //   .position{
+          //     font-size: 14px;
+          //     line-height: 17px;
+          //     margin-top: 0.5em;
+          //     padding-left: 0;
+          //     margin-bottom: 0.5em;
+          //     text-align: center;
+          //     display: block;
+          //   }
+          //   img{
+          //     margin: auto auto;
+          //   }
+          // }
+          // &:hover{
+          //   .description{
+          //     transform:initial;
+          //   }
+          //   .person-name{
+          //     transform: initial;
+          //   }
+          // }
         }
       }
     }

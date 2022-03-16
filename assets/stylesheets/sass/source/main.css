@@ -3275,39 +3275,6 @@ header ._header_top .bg_header {
   #page-13 .main .my_team .person .avatar, #clone-parner .main .my_team .person .avatar {
     width: 169px;
   }
-  #page-13 .main .my_team .person .description, #clone-parner .main .my_team .person .description {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    position: initial;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  #page-13 .main .my_team .person .description .position, #clone-parner .main .my_team .person .description .position {
-    font-size: 14px;
-    line-height: 17px;
-    margin-top: 0.5em;
-    padding-left: 0;
-    margin-bottom: 0.5em;
-    text-align: center;
-    display: block;
-  }
-  #page-13 .main .my_team .person .description img, #clone-parner .main .my_team .person .description img {
-    margin: auto auto;
-  }
-  #page-13 .main .my_team .person:hover .description, #clone-parner .main .my_team .person:hover .description {
-    -webkit-transform: initial;
-            transform: initial;
-  }
-  #page-13 .main .my_team .person:hover .person-name, #clone-parner .main .my_team .person:hover .person-name {
-    -webkit-transform: initial;
-            transform: initial;
-  }
 }
 
 #page-14 {

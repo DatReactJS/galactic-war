@@ -3239,19 +3239,18 @@ header ._header_top .bg_header {
     margin: auto 0;
   }
   #page-13 .main .my_team .person:hover .description, #clone-parner .main .my_team .person:hover .description {
-    -webkit-transform: translateY(-100%);
-            transform: translateY(-100%);
+    -webkit-transform: translateY(-110%);
+            transform: translateY(-110%);
   }
   #page-13 .main .my_team .person:hover .person-name, #clone-parner .main .my_team .person:hover .person-name {
-    -webkit-transform: translateY(100%);
-            transform: translateY(100%);
+    -webkit-transform: translateY(110%);
+            transform: translateY(110%);
   }
 }
 
 @media (min-width: 1620px) {
   #page-13 .main, #clone-parner .main {
     max-width: 1245px;
-    padding-top: calc(108px + 2.5em);
   }
   #page-13 .main .title-page13, #clone-parner .main .title-page13 {
     font-size: 3rem;
@@ -3268,7 +3267,6 @@ header ._header_top .bg_header {
     margin: 0 auto;
   }
   #page-13 .main .my_team .person, #clone-parner .main .my_team .person {
-    margin-bottom: 1.5rem;
     width: 20%;
     padding: 0 15px;
   }

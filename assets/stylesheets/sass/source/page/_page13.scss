@@ -190,10 +190,10 @@
           }
           &:hover{
             .description{
-              transform:translateY(-100%);
+              transform:translateY(-110%);
             }
             .person-name{
-              transform: translateY(100%);
+              transform: translateY(110%);
             }
           }
         }
@@ -203,7 +203,7 @@
   @media (min-width:1620px) {
     .main{
       max-width: 1245px;      
-      padding-top: calc(108px + 2.5em);
+      // padding-top: calc(108px + 2.5em);
       .title-page13 {
         font-size: 3rem;
         line-height: 3.625rem;
@@ -218,7 +218,7 @@
         max-width: 1240px;
         margin: 0 auto;
         .person{
-          margin-bottom: 1.5rem;
+          // margin-bottom: 1.5rem;
           width: 20%;
           padding: 0 15px;
           .avatar{        

@@ -3239,8 +3239,8 @@ header ._header_top .bg_header {
     margin: auto 0;
   }
   #page-13 .main .my_team .person:hover .description, #clone-parner .main .my_team .person:hover .description {
-    -webkit-transform: translateY(-150%);
-            transform: translateY(-150%);
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
   }
   #page-13 .main .my_team .person:hover .person-name, #clone-parner .main .my_team .person:hover .person-name {
     -webkit-transform: translateY(150%);

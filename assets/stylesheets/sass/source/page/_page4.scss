@@ -470,9 +470,9 @@
                         top: 56%;
                         transform: rotateZ(-22deg);
                     }
-                    @media (min-width:1620) {
+                    @media (min-width:1620px) {
                         transform: translateX(-42%);
-                        top: 75px;
+                        top: 75px;                        
                     }
                 }
             }

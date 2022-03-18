@@ -2210,7 +2210,7 @@ header ._header_top .bg_header {
   }
 }
 
-@media (min-width: 1024px) and (min-width: 1620) {
+@media (min-width: 1024px) and (min-width: 1620px) {
   #page-4 .container .phases .infinity {
     -webkit-transform: translateX(-42%);
             transform: translateX(-42%);

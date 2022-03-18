@@ -2186,12 +2186,10 @@ header ._header_top .bg_header {
     display: block;
     position: absolute;
     left: 100%;
-    -webkit-transform: translateX(50%);
-            transform: translateX(50%);
     -webkit-filter: brightness(0) invert(1);
             filter: brightness(0) invert(1);
-    -webkit-transform: translateX(-42%);
-            transform: translateX(-42%);
+    -webkit-transform: translateX(-26%);
+            transform: translateX(-26%);
     top: 75px;
     width: 500px;
     -webkit-box-sizing: border-box;
@@ -2209,6 +2207,14 @@ header ._header_top .bg_header {
     top: 56%;
     -webkit-transform: rotateZ(-22deg);
             transform: rotateZ(-22deg);
+  }
+}
+
+@media (min-width: 1024px) and (min-width: 1620) {
+  #page-4 .container .phases .infinity {
+    -webkit-transform: translateX(-42%);
+            transform: translateX(-42%);
+    top: 75px;
   }
 }
 

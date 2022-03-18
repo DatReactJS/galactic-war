@@ -75,6 +75,9 @@
                     }
                 }
             }
+            .infinity{
+                display: none;
+            }
         }
     }
     .border,.desktop-icon{
@@ -93,24 +96,33 @@
             width: 100%;
             height: 100%;
             position: absolute;
-            img{
+            img.bg-1{
                 object-fit: cover;
                 width: 100%;
+            }
+            .bg-2{
+                position: absolute;
+                top: 0;
+                max-width: 100%;
+                left: 50%;
+                transform: translate(-50%);
             }
         }
         .border,.desktop-icon{
             display: block;
         }
         .container{
+            padding: 78px 0px 50px;
             overflow: initial;
             h2{
                 position: absolute;
-                top: 75.83%;
+                bottom: 40px;
                 left: 50%;
                 transform: translateX(-50%);
                 font-size: 32px;
                 line-height: 2em;
                 text-shadow: 0px 10px 80px rgba(0, 0, 0, 0.5);
+                margin-bottom: 0;
             }
             .phases{
                 margin: auto;
@@ -122,24 +134,26 @@
                 transform: scale(0.7) translate(-10%,-15%);
                 width: fit-content;
                 flex-wrap: nowrap;
+                min-height: 400px;
+                position: relative;
                 .phase{
                     width: fit-content;
                     display: flex;
                     flex-direction: column-reverse;
                     position: relative;
-                    padding: 0 50px;                    
+                    padding: 0 23px;
                     ul{
                         list-style-type: none;
                         padding-left: 0;
                         position: relative;
                         li{
-                            background: rgba(26,215,253,.5);
-                            width: 225px;
+                            background: rgba(26,215,253,.2);
+                            width: 190px;
                             box-sizing: border-box;
-                            height: 46px;
-                            padding: 10px 15px;
+                            min-height: 46px;
+                            padding: 8px;
                             font-weight: 500;
-                            font-size: 18px;
+                            font-size: 15.2157px;;
                             line-height: 24px;
                             transition: 0.3 s ease-in-out;
                             display: flex;
@@ -161,26 +175,80 @@
                     }
                     header{
                         position: absolute;
-                        top:calc(100% + 39px);
-                        left: 0;
+                        top: calc(100% + 39px);
+                        left: -45px;
                         transition: 0.3s ease-in-out;
                         .desktop-icon{
                             .planet{
-                                transition: 0.3 s ease-in-out;
                                 width: 100px;
                                 height: 100px;
                                 transition: 0.3s ease-in-out;
+                                transform: scale(2);
+                                filter: brightness(70%);
                             }
                             .core{
                                 position: absolute;
                                 bottom: 36%;
-                                left: 50%;
+                                left: 49%;
                                 transform: translateX(-50%);
+                                z-index: -1;
                                 
                             }
                         }                        
                         h4{
                             text-align: center;
+                            margin-top: -22px;
+                        }
+                    }
+                    &.active{  
+                        @keyframes LiOnPhase{
+                            from {
+                                background: rgba(26,215,253,.2);
+                            }
+                            to{
+                                background: rgba(26,215,253,.8);
+                            }
+                        }                                                                   
+                        ul{
+                            li{
+                                overflow: hidden;
+                                color: white;
+                                animation: LiOnPhase;
+                                animation-duration: 1.5s;
+                                animation-iteration-count: infinite;
+                                animation-timing-function: linear;
+                                animation-direction: alternate-reverse;
+                            }
+                        }                         
+                        @keyframes planetOnPhase{
+                            from {
+                                transform: scale(2.5);
+                                filter: brightness(100%);
+                            }
+                            to{
+                                transform: scale(3.5);
+                                filter: brightness(100%);
+                            }
+                        }
+                        header{
+                            .desktop-icon{
+                                .planet{
+                                    animation-name: planetOnPhase;
+                                    animation-duration: 1.5s;
+                                    animation-iteration-count: infinite;
+                                    animation-timing-function: linear;
+                                    animation-direction: alternate-reverse;
+                                }
+                            }
+                        }
+                    }
+                    &.coming{
+                        header{
+                            .desktop-icon{
+                                .planet{
+                                    filter: brightness(0) invert(1);
+                                }
+                            }
                         }
                     }
                     &:last-child{
@@ -189,6 +257,18 @@
                                 .core{
                                     transform: translateX(-54%);
                                 }
+                            }
+                        }
+                        .border{
+                            .top-right{
+                                height: 150%;
+                            }
+                        }
+                    }
+                    &:nth-last-child(2){
+                        .border{
+                            .top-right{
+                                height: 98%;
                             }
                         }
                     }
@@ -207,44 +287,214 @@
                         .top{
                             top: -13px;
                             right: 0;
+                            width: 86%;
                         }
                     }
+                    transition: 0.3s ease-in-out;
                     &:hover{
+                        animation: initial;
                         header{
-                            transform: translateY(-4px);
+                            position: absolute;
+                            top: calc(100% + 39px);
+                            left: -45px;
+                            transition: 0.3s ease-in-out;
+                            .desktop-icon{
+                                .planet{
+                                    filter: brightness(100%);
+                                }
+                            }
                         }
+
                         h4{
                             color: var(--theme-color);
-                        }
-                        .planet{
-                            filter: drop-shadow(0px 0px 40px #1AD7FD);                            
-                        }
+                        }                        
                         ul{
                             li{
                                 background: rgba(26,215,253,1);
                                 color: black;
+                                animation: none;
                             }
                         }
+                    }                  
+                    &:nth-child(1){
+                        margin-bottom: auto;
+                        &::after{
+                            content: '';
+                            width: calc(100% + 10px);
+                            display: block;
+                            background-color: var(--theme-color);
+                            position: absolute;
+                            top: calc(100% + 85px);
+                            left: 0px;
+                            z-index: -1;
+                            height: 163px;
+                            clip-path: polygon(0 0, 10px 0, 100% 100%, calc(100% - 10px) 100%);
+                        }
+                        &::before{
+                            content: '';
+                            width: 500px;
+                            display: block;
+                            background-color: var(--theme-color);
+                            position: absolute;                                                        
+                            right: 100%;
+                            z-index: -1;
+                            top: 134%;
+                            height: 500px;
+                            clip-path: polygon(0 calc(100% - 6px), 0 100%, 100% 6px, 100% 0);
+                        }
+                    }
+                    &:nth-child(2){
+                        margin-bottom: -2px;
+                        &::after{
+                            content: '';
+                            width: calc(100% + 10px);
+                            display: block;
+                            background-color: var(--theme-color);
+                            position: absolute;                            
+                            top: 108%;
+                            left: 0px;
+                            z-index: -1;
+                            height: 15%;
+                            clip-path: polygon(0 calc(100% - 6px), 0 100%, 100% 6px, 100% 0);
+                        }
+                    }
+                    &:nth-child(3){
+                        margin-bottom: auto;
+                        &::after{
+                            content: '';
+                            width: calc(100% + 10px);
+                            display: block;
+                            background-color: white;
+                            position: absolute;
+                            top: calc(100% + 81px);
+                            left: 0px;
+                            z-index: -1;
+                            height: 40%;
+                            clip-path: polygon(0 7px, 0 0, 100% calc(100% - 6px) ,100% 100%);
+                        }
+                    }
+                    &:nth-child(4){
+                        margin-bottom: -134px;
+                        header{
+                            top:calc(100% - 7px);
+                        }
+                        &::after{
+                            content: '';
+                            width: calc(100% + 10px);
+                            display: block;
+                            background-color: white;
+                            position: absolute;                                                        
+                            left: 0px;
+                            z-index: -1;
+                            top: 98%;
+                            height: 11%;
+                            clip-path: polygon(0 calc(100% - 6px), 0 100%, 100% 6px, 100% 0);
+                        }
+                    }
+                    &:nth-child(5){
+                        margin-bottom: -76px;
+                        header{
+                            top: calc(100% + -3px);
+                        }
+                        &::after{
+                            content: '';
+                            width: calc(100% + 10px);
+                            display: block;
+                            background-color: white;
+                            position: absolute;
+                            top: calc(100% + 44px);
+                            left: 0px;
+                            z-index: -1;
+                            height: 14%;
+                            clip-path: polygon(0 7px, 0 0, 100% calc(100% - 6px) ,100% 100%);
+                        }
+                    }
+                    &:nth-child(6){
+                        margin-bottom: -57px;
+                        header{
+                            top: calc(100% + 77px);
+                        }
+                        &::after{
+                            content: '';
+                            width: calc(100% + 10px);
+                            display: block;
+                            background-color: white;
+                            position: absolute;                                                        
+                            left: 0px;
+                            z-index: -1;
+                            top: 97%;
+                            height: 33%;
+                            clip-path: polygon(0 calc(100% - 6px), 0 100%, 100% 6px, 100% 0);
+                        }
+                    }
+                    &:nth-child(7){
+                        margin-bottom: 140px;
+                        header{
+                            top:calc(100% + 139px);
+                            .core{
+                                height:250px;
+                            }
+                        }
+                        &::after{
+                            content: '';
+                            width: 350px;
+                            display: block;
+                            background-color: white;
+                            position: absolute;                                                        
+                            left: 0px;
+                            z-index: -1;
+                            top: 117%;
+                            height: 153px;
+                            clip-path: polygon(0 calc(100% - 6px), 0 100%, 100% 6px, 100% 0);
+                        }                        
+                    }
+                }
+                .infinity{
+                    display: block;
+                    position: absolute;
+                    left: 100%;
+                    transform: translateX(50%);
+                    filter: brightness(0) invert(1);
+                    transform: translateX(-42%);
+                    top: 75px;                
+                    width: 500px;      
+                    box-sizing: border-box;
+                    img{
+                        width: 500px;                        
+                    }
+                    h4{
+                        position: absolute;
+                        right: 73%;
+                        display: block;
+                        white-space: nowrap;
+                        font-weight: bold;
+                        top: 50%;
+                        transform: rotateZ(-13deg);
                     }
                 }
             }
         }
     }
     @media (min-width:1600px) {
+    .container{
+        padding-top: 109px;
+    }
     &::-webkit-scrollbar{
         display: none;
     }        
-        .container{
+        .container{            
             h2{
                 font-size: 48px;
                 line-height: 58px;
-                top: 80.83%;
+                top: initial;
+                bottom: 95px;
+                margin-bottom: 0;
             }
             .phases{
                 transform: initial;
                 width: 100%;
                 flex-wrap: nowrap;
-                padding-top: 13vh;
+                padding-top: 45px;
             }
         }
     }

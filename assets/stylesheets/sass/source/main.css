@@ -1108,8 +1108,52 @@ header ._header_top .bg_header {
     line-height: 58px;
     /* identical to box height */
     text-transform: uppercase;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     color: #17D2FC;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
     margin-bottom: 14px;
+  }
+  .trailer aside .content h2 .download {
+    margin-left: 22px;
+    border: 1px solid #1AD7FD;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+    padding: 5px;
+    height: 36px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    -ms-flex-negative: none;
+        flex-shrink: none;
+  }
+  .trailer aside .content h2 .download img {
+    height: 18px;
+    margin: 0 0.5em;
+  }
+  .trailer aside .content h2 .download:hover {
+    background-color: white;
+    color: black;
+  }
+  .trailer aside .content h2 .download:hover * {
+    -webkit-filter: brightness(0);
+            filter: brightness(0);
   }
   .trailer aside .content p {
     font-style: normal;

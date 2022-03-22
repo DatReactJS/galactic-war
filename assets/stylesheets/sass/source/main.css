@@ -2286,6 +2286,22 @@ header ._header_top .bg_header {
   }
 }
 
+@media (min-width: 1024px) {
+  .mobile-phase {
+    display: none;
+  }
+}
+
+.desktop-phase {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .desktop-phase {
+    display: block;
+  }
+}
+
 #page-5 {
   position: relative;
   width: 100%;

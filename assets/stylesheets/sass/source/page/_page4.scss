@@ -502,3 +502,14 @@
         }
     }
 }
+.mobile-phase{
+    @media (min-width:1024px) {
+        display: none;        
+    }
+}
+.desktop-phase{
+    display: none;
+    @media (min-width:1024px) {
+        display: block;        
+    }
+}

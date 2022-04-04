@@ -3069,8 +3069,8 @@ header ._header_top .bg_header {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  -o-object-position: center 83px;
-     object-position: center 83px;
+  -o-object-position: center 0;
+     object-position: center 0;
 }
 
 #page-11 .content {

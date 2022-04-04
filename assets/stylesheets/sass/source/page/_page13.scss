@@ -142,9 +142,10 @@
         width: 100%;
         max-width: 1240px;
         margin: 0 auto;
+        justify-content: center;
         .person{
           margin-bottom: 1em;
-          width: 20%;
+          width: 25%;
           padding: 0 15px;
           position: relative;
           overflow: hidden;
@@ -219,7 +220,7 @@
         margin: 0 auto;
         .person{
           // margin-bottom: 1.5rem;
-          width: 20%;
+          width: 25%;
           padding: 0 15px;
           .avatar{        
             width: 169px;

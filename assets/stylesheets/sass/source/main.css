@@ -3538,10 +3538,13 @@ header ._header_top .bg_header {
     width: 100%;
     max-width: 1240px;
     margin: 0 auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   #page-13 .main .my_team .person, #clone-parner .main .my_team .person {
     margin-bottom: 1em;
-    width: 20%;
+    width: 25%;
     padding: 0 15px;
     position: relative;
     overflow: hidden;
@@ -3626,7 +3629,7 @@ header ._header_top .bg_header {
     margin: 0 auto;
   }
   #page-13 .main .my_team .person, #clone-parner .main .my_team .person {
-    width: 20%;
+    width: 25%;
     padding: 0 15px;
   }
   #page-13 .main .my_team .person .avatar, #clone-parner .main .my_team .person .avatar {

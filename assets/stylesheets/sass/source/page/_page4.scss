@@ -518,3 +518,27 @@
         }
     }
 }
+.phase-desktop{
+    @media (max-width:568px) {
+        display: none !important;
+    }
+}
+.phase-mobile{
+    color: white;    
+    ul{
+        display: flex;
+        justify-content: space-between;
+        list-style-type: disc;
+        box-sizing: border-box;        
+        padding: 0 1em;
+        li{
+            font-family: 'Barlow';
+            font-weight: 500;
+            font-size: 11px;
+            line-height: 24px;
+        }
+    }
+    @media (min-width:568px) {
+        display: none !important;
+    }
+}

@@ -2304,6 +2304,42 @@ header ._header_top .bg_header {
   }
 }
 
+@media (max-width: 568px) {
+  .phase-desktop {
+    display: none !important;
+  }
+}
+
+.phase-mobile {
+  color: white;
+}
+
+.phase-mobile ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style-type: disc;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0 1em;
+}
+
+.phase-mobile ul li {
+  font-family: 'Barlow';
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 24px;
+}
+
+@media (min-width: 568px) {
+  .phase-mobile {
+    display: none !important;
+  }
+}
+
 #page-5 {
   position: relative;
   width: 100%;
@@ -3349,7 +3385,8 @@ header ._header_top .bg_header {
      object-fit: contain;
 }
 
-#page-13, #clone-parner {
+#page-13,
+#clone-parner {
   width: 100%;
   position: relative;
   z-index: 0;
@@ -3357,7 +3394,8 @@ header ._header_top .bg_header {
   position: absolute;
 }
 
-#page-13.active, #clone-parner.active {
+#page-13.active,
+#clone-parner.active {
   top: 0;
   z-index: 49;
   display: -webkit-box;
@@ -3365,21 +3403,24 @@ header ._header_top .bg_header {
   display: flex;
 }
 
-#page-13 .bg, #clone-parner .bg {
+#page-13 .bg,
+#clone-parner .bg {
   position: absolute;
   width: 100%;
   height: 100%;
   z-index: -1;
 }
 
-#page-13 .bg img, #clone-parner .bg img {
+#page-13 .bg img,
+#clone-parner .bg img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-#page-13 .main, #clone-parner .main {
+#page-13 .main,
+#clone-parner .main {
   margin: auto;
   max-width: 1045px;
   display: -webkit-box;
@@ -3396,7 +3437,8 @@ header ._header_top .bg_header {
   overflow-y: scroll;
 }
 
-#page-13 .main .title-page13, #clone-parner .main .title-page13 {
+#page-13 .main .title-page13,
+#clone-parner .main .title-page13 {
   margin-bottom: 27px;
   font-style: normal;
   font-weight: bold;
@@ -3407,7 +3449,8 @@ header ._header_top .bg_header {
   text-shadow: 0px 10px 80px rgba(0, 0, 0, 0.5);
 }
 
-#page-13 .main .tittleChildren, #clone-parner .main .tittleChildren {
+#page-13 .main .tittleChildren,
+#clone-parner .main .tittleChildren {
   font-style: normal;
   font-weight: 400;
   font-size: 11px;
@@ -3417,7 +3460,8 @@ header ._header_top .bg_header {
   margin-bottom: 49px;
 }
 
-#page-13 .main .my_team, #clone-parner .main .my_team {
+#page-13 .main .my_team,
+#clone-parner .main .my_team {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3425,7 +3469,8 @@ header ._header_top .bg_header {
       flex-wrap: wrap;
 }
 
-#page-13 .main .my_team .person, #clone-parner .main .my_team .person {
+#page-13 .main .my_team .person,
+#clone-parner .main .my_team .person {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3443,16 +3488,18 @@ header ._header_top .bg_header {
   margin-bottom: 24px;
 }
 
-#page-13 .main .my_team .person .avatar, #clone-parner .main .my_team .person .avatar {
+#page-13 .main .my_team .person .avatar,
+#clone-parner .main .my_team .person .avatar {
   width: 117.88px;
   height: 117.88px;
   border-radius: 50%;
   margin-bottom: 22px;
 }
 
-#page-13 .main .my_team .person .person-name, #clone-parner .main .my_team .person .person-name {
+#page-13 .main .my_team .person .person-name,
+#clone-parner .main .my_team .person .person-name {
   margin-bottom: 0.25rem;
-  font-family: 'Microgramma-D-OT-Bold';
+  font-family: "Microgramma-D-OT-Bold";
   font-style: normal;
   font-weight: bold;
   font-size: 12.5556px;
@@ -3463,9 +3510,10 @@ header ._header_top .bg_header {
   margin-top: 4px;
 }
 
-#page-13 .main .my_team .person .position, #clone-parner .main .my_team .person .position {
+#page-13 .main .my_team .person .position,
+#clone-parner .main .my_team .person .position {
   margin-bottom: 0.5rem;
-  font-family: 'Barlow';
+  font-family: "Barlow";
   font-style: normal;
   font-weight: 600;
   font-size: 10.53px;
@@ -3483,8 +3531,9 @@ header ._header_top .bg_header {
   color: #1ad7fd;
 }
 
-#page-13 .main .my_team .person .description, #clone-parner .main .my_team .person .description {
-  font-family: 'Barlow';
+#page-13 .main .my_team .person .description,
+#clone-parner .main .my_team .person .description {
+  font-family: "Barlow";
   font-style: normal;
   font-weight: 600;
   font-size: 6.27778px;
@@ -3497,36 +3546,44 @@ header ._header_top .bg_header {
 }
 
 @media (min-width: 1024px) {
-  #page-13 .main, #clone-parner .main {
+  #page-13 .main,
+  #clone-parner .main {
     padding-top: calc(108px + 16px);
   }
-  #page-13 .main::-webkit-scrollbar, #clone-parner .main::-webkit-scrollbar {
+  #page-13 .main::-webkit-scrollbar,
+  #clone-parner .main::-webkit-scrollbar {
     display: none;
     width: 10px;
   }
-  #page-13 .main::-webkit-scrollbar-track, #clone-parner .main::-webkit-scrollbar-track {
+  #page-13 .main::-webkit-scrollbar-track,
+  #clone-parner .main::-webkit-scrollbar-track {
     border-radius: 10px;
   }
-  #page-13 .main::-webkit-scrollbar-thumb, #clone-parner .main::-webkit-scrollbar-thumb {
+  #page-13 .main::-webkit-scrollbar-thumb,
+  #clone-parner .main::-webkit-scrollbar-thumb {
     background: transparent;
     border-radius: 10px;
     -webkit-transition: 0.3s ease-in-out;
     transition: 0.3s ease-in-out;
   }
-  #page-13 .main:hover::-webkit-scrollbar-thumb, #clone-parner .main:hover::-webkit-scrollbar-thumb {
+  #page-13 .main:hover::-webkit-scrollbar-thumb,
+  #clone-parner .main:hover::-webkit-scrollbar-thumb {
     background: var(--theme-color);
   }
-  #page-13 .main .title-page13, #clone-parner .main .title-page13 {
+  #page-13 .main .title-page13,
+  #clone-parner .main .title-page13 {
     font-size: 1.5rem;
     line-height: 1.625em;
     margin-bottom: 0;
   }
-  #page-13 .main .tittleChildren, #clone-parner .main .tittleChildren {
+  #page-13 .main .tittleChildren,
+  #clone-parner .main .tittleChildren {
     font-size: 16px;
     line-height: 150%;
     margin-bottom: 1em;
   }
-  #page-13 .main .my_team, #clone-parner .main .my_team {
+  #page-13 .main .my_team,
+  #clone-parner .main .my_team {
     width: 100%;
     max-width: 1240px;
     margin: 0 auto;
@@ -3534,21 +3591,26 @@ header ._header_top .bg_header {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  #page-13 .main .my_team .person, #clone-parner .main .my_team .person {
+  #page-13 .main .my_team .person,
+  #clone-parner .main .my_team .person {
     margin-bottom: 1em;
     width: 25%;
     padding: 0 15px;
     position: relative;
     overflow: hidden;
   }
-  #page-13 .main .my_team .person .avatar, #clone-parner .main .my_team .person .avatar {
+  #page-13 .main .my_team .person .avatar,
+  #clone-parner .main .my_team .person .avatar {
     width: 100px;
     height: auto;
     max-width: 100%;
     margin-bottom: 1.5em;
     z-index: 99;
+    -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
   }
-  #page-13 .main .my_team .person .person-name, #clone-parner .main .my_team .person .person-name {
+  #page-13 .main .my_team .person .person-name,
+  #clone-parner .main .my_team .person .person-name {
     font-size: 18px;
     line-height: 22px;
     width: 100%;
@@ -3556,8 +3618,10 @@ header ._header_top .bg_header {
     -webkit-transition: 0.5s ease-in-out;
     transition: 0.5s ease-in-out;
     z-index: -1;
+    white-space: nowrap;
   }
-  #page-13 .main .my_team .person .description, #clone-parner .main .my_team .person .description {
+  #page-13 .main .my_team .person .description,
+  #clone-parner .main .my_team .person .description {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
         -ms-flex-direction: row-reverse;
@@ -3579,52 +3643,62 @@ header ._header_top .bg_header {
     -webkit-transition: 0.5s ease-in-out;
     transition: 0.5s ease-in-out;
   }
-  #page-13 .main .my_team .person .description .position, #clone-parner .main .my_team .person .description .position {
+  #page-13 .main .my_team .person .description .position,
+  #clone-parner .main .my_team .person .description .position {
     font-size: 12px;
     line-height: 17px;
     padding-left: 1em;
     text-align: center;
     margin-bottom: 0;
   }
-  #page-13 .main .my_team .person .description img, #clone-parner .main .my_team .person .description img {
+  #page-13 .main .my_team .person .description img,
+  #clone-parner .main .my_team .person .description img {
     display: block;
     -ms-flex-negative: none;
         flex-shrink: none;
     margin: auto 0;
   }
-  #page-13 .main .my_team .person:hover .description, #clone-parner .main .my_team .person:hover .description {
+  #page-13 .main .my_team .person:hover .description,
+  #clone-parner .main .my_team .person:hover .description {
     -webkit-transform: translateY(-100%);
             transform: translateY(-100%);
   }
-  #page-13 .main .my_team .person:hover .person-name, #clone-parner .main .my_team .person:hover .person-name {
+  #page-13 .main .my_team .person:hover .person-name,
+  #clone-parner .main .my_team .person:hover .person-name {
     -webkit-transform: translateY(150%);
             transform: translateY(150%);
   }
 }
 
 @media (min-width: 1620px) {
-  #page-13 .main, #clone-parner .main {
+  #page-13 .main,
+  #clone-parner .main {
     max-width: 1245px;
   }
-  #page-13 .main .title-page13, #clone-parner .main .title-page13 {
+  #page-13 .main .title-page13,
+  #clone-parner .main .title-page13 {
     font-size: 3rem;
     line-height: 3.625rem;
   }
-  #page-13 .main .tittleChildren, #clone-parner .main .tittleChildren {
+  #page-13 .main .tittleChildren,
+  #clone-parner .main .tittleChildren {
     font-size: 18px;
     line-height: 150%;
     margin-bottom: 2rem;
   }
-  #page-13 .main .my_team, #clone-parner .main .my_team {
+  #page-13 .main .my_team,
+  #clone-parner .main .my_team {
     width: 100%;
     max-width: 1240px;
     margin: 0 auto;
   }
-  #page-13 .main .my_team .person, #clone-parner .main .my_team .person {
+  #page-13 .main .my_team .person,
+  #clone-parner .main .my_team .person {
     width: 25%;
     padding: 0 15px;
   }
-  #page-13 .main .my_team .person .avatar, #clone-parner .main .my_team .person .avatar {
+  #page-13 .main .my_team .person .avatar,
+  #clone-parner .main .my_team .person .avatar {
     width: 169px;
   }
 }
@@ -3667,35 +3741,6 @@ header ._header_top .bg_header {
   overflow-y: scroll;
 }
 
-#page-14 .content-page14 .Partners {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 100%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  margin-bottom: 57px;
-}
-
-#page-14 .content-page14 .Partners .col {
-  width: 33.33%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  padding: 15px;
-}
-
-#page-14 .content-page14 .Partners img {
-  width: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-
 #page-14 .content-page14 .MEDIA-SECURITY {
   margin-bottom: 110px;
 }
@@ -3707,7 +3752,7 @@ header ._header_top .bg_header {
   line-height: 23px;
   text-align: center;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
   text-shadow: 0px 10px 80px rgba(0, 0, 0, 0.5);
   margin-bottom: 37px;
 }
@@ -3735,6 +3780,85 @@ header ._header_top .bg_header {
   margin-bottom: 21px;
 }
 
+#page-14 .my_team {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#page-14 .my_team .person {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+  padding: 0 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-bottom: 24px;
+}
+
+#page-14 .my_team .person .avatar {
+  width: 155.62px;
+  height: 155.62px;
+  border-radius: 50%;
+  margin-bottom: 22px;
+}
+
+#page-14 .my_team .person .person-name {
+  margin-bottom: 0.25rem;
+  font-family: "Microgramma-D-OT-Bold";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12.5556px;
+  line-height: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-top: 4px;
+}
+
+#page-14 .my_team .person .position {
+  margin-bottom: 0.5rem;
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 10.53px;
+  min-height: 2.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 1.0625rem;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #1ad7fd;
+}
+
+#page-14 .my_team .person .description {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 6.27778px;
+  line-height: 8px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #acafc3;
+  margin-bottom: 20px;
+}
+
 #page-14 .title {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3753,7 +3877,7 @@ header ._header_top .bg_header {
   line-height: 23px;
   /* identical to box height */
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
   text-shadow: 0px 10px 80px rgba(0, 0, 0, 0.5);
 }
 
@@ -3792,30 +3916,15 @@ header ._header_top .bg_header {
   #page-14 .content-page14::-webkit-scrollbar {
     display: none;
   }
-  #page-14 .content-page14 .Partners, #page-14 .content-page14 .MEDIA-SECURITY {
+  #page-14 .content-page14 .Partners,
+  #page-14 .content-page14 .MEDIA-SECURITY {
     display: none;
   }
-  #page-14 .content-page14 .Partners.active, #page-14 .content-page14 .MEDIA-SECURITY.active {
+  #page-14 .content-page14 .Partners.active,
+  #page-14 .content-page14 .MEDIA-SECURITY.active {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-  }
-  #page-14 .content-page14 .Partners .col {
-    width: 20%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding: 2 34px;
-  }
-  #page-14 .content-page14 .Partners .col img {
-    width: initial;
-    height: initial;
   }
   #page-14 .content-page14 .MEDIA-SECURITY {
     padding: 75px 0 0;
@@ -3851,12 +3960,100 @@ header ._header_top .bg_header {
     margin-top: auto;
     text-align: center;
   }
+  #page-14 .my_team {
+    width: 100%;
+    max-width: 1240px;
+    margin: 0 auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #page-14 .my_team .person {
+    margin-bottom: 1em;
+    width: 25%;
+    padding: 0 15px;
+    position: relative;
+    overflow: hidden;
+  }
+  #page-14 .my_team .person .avatar {
+    width: 100px;
+    height: auto;
+    max-width: 100%;
+    margin-bottom: 1.5em;
+    z-index: 99;
+    -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+  }
+  #page-14 .my_team .person .person-name {
+    font-size: 18px;
+    line-height: 22px;
+    width: 100%;
+    text-align: center;
+    -webkit-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+    z-index: -1;
+  }
+  #page-14 .my_team .person .description {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    position: absolute;
+    padding: 0 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    top: 100%;
+    left: 0%;
+    margin-bottom: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+  }
+  #page-14 .my_team .person .description .position {
+    font-size: 12px;
+    line-height: 17px;
+    padding-left: 1em;
+    text-align: center;
+    margin-bottom: 0;
+  }
+  #page-14 .my_team .person .description img {
+    display: block;
+    -ms-flex-negative: none;
+        flex-shrink: none;
+    margin: auto 0;
+  }
+  #page-14 .my_team .person:hover .description {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  #page-14 .my_team .person:hover .person-name {
+    -webkit-transform: translateY(150%);
+            transform: translateY(150%);
+  }
 }
 
 @media (min-width: 1620px) {
   #page-14 .title h2 {
     font-size: 48px;
     line-height: 58px;
+  }
+  #page-14 .my_team {
+    width: 100%;
+    max-width: 1240px;
+    margin: 0 auto;
+  }
+  #page-14 .my_team .person {
+    width: 25%;
+    padding: 0 15px;
+  }
+  #page-14 .my_team .person .avatar {
+    width: 169px;
   }
 }
 

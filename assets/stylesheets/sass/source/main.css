@@ -3606,8 +3606,6 @@ header ._header_top .bg_header {
     max-width: 100%;
     margin-bottom: 1.5em;
     z-index: 99;
-    -webkit-filter: grayscale(100%);
-            filter: grayscale(100%);
   }
   #page-13 .main .my_team .person .person-name,
   #clone-parner .main .my_team .person .person-name {

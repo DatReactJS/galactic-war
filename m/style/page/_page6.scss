@@ -1,0 +1,106 @@
+#page-6{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: right;
+    padding-top: 53px;
+    .bg{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .content{
+        position: relative;
+        margin-bottom: 20vh;
+        margin-right: 15px;
+        width: 250px;
+        padding: 33px;
+        margin-left: auto;
+        top: 0;
+        right: 0;
+        color: white;
+        text-transform: uppercase;
+        text-align: right;
+        h2{
+            margin-bottom: 13px;
+            text-shadow: 0px 10px 80px rgba(0, 0, 0, 0.5);
+            font-weight: bold;
+            font-size: 19px;
+            line-height: 23px;
+            white-space: nowrap;
+        }
+        p{
+            font-weight: 500;
+            font-size: 11px;
+            line-height: 13px;
+            span{
+                color: var(--theme-color);
+            }
+        }
+        img{
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+    }
+    .gun{
+        object-fit: contain;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: -61px;
+    }
+    @media (min-width:1024px) {
+        .bg{
+            img{
+                object-fit: contain;
+            }
+        }
+        .content{
+            width: 100%;            
+            margin: auto 0 0;
+            padding:19px  19vw 21vh;
+            text-align: left;
+            background: linear-gradient( rgba(238, 238, 238, 0.1) 0%, rgba(238, 238, 238, 0) 100%);
+            backdrop-filter: blur(10px);
+            h2{
+                margin-bottom: 0.5em;
+                font-size: 28px;
+                line-height: 1.5em;
+            }
+            p{
+                font-size: 14px;
+                line-height: 1.5em;
+                width :822px;
+            }
+            img{
+                display: none;
+            }
+        }
+        .gun{
+            display: none;
+        }
+    }
+    @media (min-width:1620px) {        
+        .content{
+            padding:50px  25vw 16vh;                        
+            h2{
+                margin-bottom: 16px;
+                font-size: 48px;
+                line-height: 58px;
+            }
+            p{
+                font-size: 18px;
+                line-height: 22px;
+                width :622px;
+            }
+        }
+    }
+}

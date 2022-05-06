@@ -1,0 +1,102 @@
+#page-8{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: right;
+    padding-top: 53px;
+    .bg{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: top left;
+        }
+    }
+    .content{
+        position: relative;        
+        margin: auto auto 26vh 15px;
+        width: 250px;
+        padding: 15px  33px;
+        margin-left: auto;
+        top: 0;
+        right: 0;
+        color: white;
+        text-transform: uppercase;
+        text-align: left;
+        h2{
+            margin-bottom: 13px;
+            text-shadow: 0px 10px 80px rgba(0, 0, 0, 0.5);
+            font-weight: bold;
+            font-size: 19px;
+            line-height: 23px;
+        }
+        p{
+            font-weight: 500;
+            font-size: 11px;
+            line-height: 13px;
+            span{
+                color: var(--theme-color);
+            }
+        }
+        img{
+            position: absolute;
+            left: 0;
+            top: 0;      
+        }
+    } 
+    @media (min-width:1024px) {
+        .bg{
+            width: auto;
+            height: auto;
+            min-width: 100%;
+            min-height: 100%;
+            img{
+                object-position: center;
+                object-fit: contain;
+            }
+        }
+        .content{
+            width: 584px;
+            margin-bottom: auto;            
+            margin: 10.42vh auto auto 8.6vw;
+            text-align: left;
+            padding: 36px 0 0 55px;
+            h2{
+                margin-bottom: 0.5em;
+                font-size: 26px;
+                line-height: 1.5em;
+            }
+            p{
+                font-size: 16px;
+                line-height: 22px;   
+                width: 422px;      
+            }
+            img{
+                width: 55px;
+                height: 288px;
+            }
+        }       
+    }
+    @media (min-width:1620px) {        
+        .content{
+            width: 784px;
+            padding: 36px 0 0 55px;
+            margin: 18.42vh auto auto 12.6vw;
+            h2{
+                margin-bottom: 24px;
+                font-size: 48px;
+                line-height: 58px;                
+            }
+            p{
+                font-size: 18px;
+                line-height: 22px;   
+                width: 622px;      
+            }           
+        }       
+    }
+}

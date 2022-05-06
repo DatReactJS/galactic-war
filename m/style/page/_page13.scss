@@ -1,0 +1,261 @@
+#page-13,
+#clone-parner {
+  width: 100%;
+  position: relative;
+  z-index: 0;
+  height: 100%;
+  position: absolute;
+  &.active {
+    top: 0;
+    z-index: 49;
+    display: flex;
+  }
+  .bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .main {
+    margin: auto;
+    max-width: 1045px;
+    display: flex;
+    flex-direction: column;
+    padding: 113px 27px 100px;
+    box-sizing: border-box;
+    height: 100%;
+    overflow-y: scroll;
+    .title-page13 {
+      margin-bottom: 27px;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 1.5em;
+      text-transform: uppercase;
+      color: #ffffff;
+      text-shadow: 0px 10px 80px rgba(0, 0, 0, 0.5);
+    }
+    .tittleChildren {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 11px;
+      line-height: 150%;
+      text-align: justify;
+      color: #ffffff;
+      margin-bottom: 49px;
+    }
+    .my_team {
+      display: flex;
+      flex-wrap: wrap;
+      .person {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        padding: 0 15px;
+        box-sizing: border-box;
+        margin-bottom: 24px;
+        .avatar {
+          width: 117.88px;
+          height: 117.88px;
+          border-radius: 50%;
+          margin-bottom: 22px;
+        }
+        .person-name {
+          margin-bottom: 0.25rem;
+          font-family: "Microgramma-D-OT-Bold";
+          font-style: normal;
+          font-weight: bold;
+          font-size: 12.5556px;
+          line-height: 15px;
+          text-align: center;
+          text-transform: uppercase;
+          color: #ffffff;
+          margin-top: 4px;
+        }
+        .position {
+          margin-bottom: 0.5rem;
+          font-family: "Barlow";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 10.53px;
+          min-height: 2.5em;
+          display: flex;
+          align-items: center;
+          line-height: 1.0625rem;
+          text-align: center;
+          letter-spacing: 0.1em;
+          text-transform: uppercase;
+          color: #1ad7fd;
+        }
+        .description {
+          font-family: "Barlow";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 6.27778px;
+          line-height: 8px;
+          text-align: center;
+          letter-spacing: 0.1em;
+          text-transform: uppercase;
+          color: #acafc3;
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+  @media (min-width: 1024px) {
+    .main {
+      // display: none;
+      padding-top: calc(108px + 16px);
+      &::-webkit-scrollbar {
+        display: none;
+        width: 10px;
+      }
+      &::-webkit-scrollbar-track {
+        border-radius: 10px;
+      }
+      &::-webkit-scrollbar-thumb {
+        background: transparent;
+        border-radius: 10px;
+        transition: 0.3s ease-in-out;
+      }
+      &:hover {
+        &::-webkit-scrollbar-thumb {
+          background: var(--theme-color);
+        }
+      }
+      .title-page13 {
+        font-size: 1.5rem;
+        line-height: 1.625em;
+        margin-bottom: 0;
+      }
+      .tittleChildren {
+        font-size: 16px;
+        line-height: 150%;
+        margin-bottom: 1em;
+      }
+      .my_team {
+        width: 100%;
+        max-width: 1240px;
+        margin: 0 auto;
+        justify-content: center;
+        .person {
+          margin-bottom: 1em;
+          width: 25%;
+          padding: 0 15px;
+          position: relative;
+          overflow: hidden;
+          .avatar {
+            width: 100px;
+            height: auto;
+            max-width: 100%;
+            margin-bottom: 1.5em;
+            z-index: 99;
+            // filter: grayscale(100%);
+          }
+          .person-name {
+            font-size: 18px;
+            line-height: 22px;
+            width: 100%;
+            text-align: center;
+            transition: 0.5s ease-in-out;
+            z-index: -1;
+            white-space: nowrap;
+          }
+          .description {
+            flex-direction: row-reverse;
+            position: absolute;
+            padding: 0 15px;
+            display: flex;
+            width: 100%;
+            top: 100%;
+            left: 0%;
+            margin-bottom: 0;
+            justify-content: center;
+            box-sizing: border-box;
+            transition: 0.5s ease-in-out;
+            .position {
+              font-size: 12px;
+              line-height: 17px;
+              padding-left: 1em;
+              text-align: center;
+              margin-bottom: 0;
+            }
+            img {
+              display: block;
+              flex-shrink: none;
+              margin: auto 0;
+            }
+          }
+          &:hover {
+            .description {
+              transform: translateY(-100%);
+            }
+            .person-name {
+              transform: translateY(150%);
+            }
+          }
+        }
+      }
+    }
+  }
+  @media (min-width: 1620px) {
+    .main {
+      max-width: 1245px;
+      // padding-top: calc(108px + 2.5em);
+      .title-page13 {
+        font-size: 3rem;
+        line-height: 3.625rem;
+      }
+      .tittleChildren {
+        font-size: 18px;
+        line-height: 150%;
+        margin-bottom: 2rem;
+      }
+      .my_team {
+        width: 100%;
+        max-width: 1240px;
+        margin: 0 auto;
+        .person {
+          // margin-bottom: 1.5rem;
+          width: 25%;
+          padding: 0 15px;
+          .avatar {
+            width: 169px;
+          }
+          // .description{
+          //   flex-direction: column;
+          //   display: flex;
+          //   position: initial;
+          //   justify-content: center;
+          //   .position{
+          //     font-size: 14px;
+          //     line-height: 17px;
+          //     margin-top: 0.5em;
+          //     padding-left: 0;
+          //     margin-bottom: 0.5em;
+          //     text-align: center;
+          //     display: block;
+          //   }
+          //   img{
+          //     margin: auto auto;
+          //   }
+          // }
+          // &:hover{
+          //   .description{
+          //     transform:initial;
+          //   }
+          //   .person-name{
+          //     transform: initial;
+          //   }
+          // }
+        }
+      }
+    }
+  }
+}

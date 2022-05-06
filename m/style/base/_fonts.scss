@@ -1,0 +1,54 @@
+// -----------------------------------------------------------------------------
+// This file contains all @font-face declarations, if any.
+// -----------------------------------------------------------------------------
+
+// font old
+@font-face {
+  font-family: "VARIEN";
+  src: url("../../../fonts/VARIEN.OTF") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "MUDHEAD";
+  src: url("../../../fonts/MUDHEAD.OTF") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "MUDHEAD-BOLD";
+  src: url("../../../fonts/MUDHEAD-BOLD.OTF") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "MUDHEAD-LIGHT";
+  src: url("../../../fonts/MUDHEAD-LIGHT.OTF") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Microgramma-D-OT-Bold";
+  src: url("../../../fonts/Microgramma-D-OT-Bold-Extended_30403.ttf")
+    format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Microgramma-D-OT-Medium";
+  src: url("../../../fonts/Microgramma-D-OT-Medium-Extended_30404.ttf")
+    format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.Barlow {
+  font-family: "Barlow", sans-serif;
+}
+.Microgramma {
+  font-family: "Microgramma-D-OT-Medium", sans-serif;
+}
+.Microgramma-b {
+  font-family: "Microgramma-D-OT-Bold", sans-serif;
+}

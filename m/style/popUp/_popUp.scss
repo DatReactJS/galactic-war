@@ -1,5 +1,6 @@
 #popUp{
     display: flex;
+    z-index: -99;
     &.fadeOut{
         animation-name: fadeOut;
     }

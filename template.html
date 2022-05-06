@@ -1,0 +1,116 @@
+        
+        
+
+          
+
+          
+
+          
+
+          
+          
+          
+          
+
+          
+
+          <div class="swiper-slide" data-hash="investors&partners">
+            <div id="page-14">
+              <div class="bg">
+                <picture>
+                  <source
+                    media="(min-width:1024px)"
+                    data-srcset="https://dvibdyqjx.mo.cloudinary.net/assets//images//slider//page14/background.png"
+                    class="swiper-lazy"
+                  />
+                  <img
+                    data-src="https://dvibdyqjx.mo.cloudinary.net/assets/images/slider/page14/mobile.png"
+                    alt="logo"
+                    class="logo swiper-lazy"
+                  />
+                </picture>
+              </div>
+              <div class="content-page14">
+                <div class="title">
+                  <h2
+                    onclick="onActiveTab('title1')"
+                    id="title1"
+                    class="Microgramma-b active"
+                  >
+                    Partners
+                  </h2>
+                  <h2
+                    onclick="onActiveTab('title2')"
+                    id="title2"
+                    class="Microgramma-b"
+                  >
+                    MEDIA & SECURITY
+                  </h2>
+                </div>
+                <script>
+                  function onActiveTab(title) {
+                    let tl1 = document.getElementById("title1");
+                    let tl2 = document.getElementById("title2");
+
+                    let tab1 = document.getElementById("Partners");
+                    let tab2 = document.getElementById("MEDIA-SECURITY");
+
+                    tl1.classList.remove("active");
+                    tl2.classList.remove("active");
+                    tab1.classList.remove("active");
+                    tab2.classList.remove("active");
+                    if (title === "title1") {
+                      tl1.classList.add("active");
+                      tab1.classList.add("active");
+                    } else {
+                      tl2.classList.add("active");
+                      tab2.classList.add("active");
+                    }
+                  }
+                </script>
+                <div class="Partners active" id="Partners">
+                  <div class="my_team">
+                    <div class="person">
+                      <img
+                        src="https://dvibdyqjx.mo.cloudinary.net/assets/images/slider/page14/darren.png"
+                        alt="logo"
+                        class="avatar swiper-lazy"
+                      />
+                      <p class="person-name">Darren chu</p>
+                      <div class="description">
+                        <p class="position">Strategy ADVISOR</p>
+                        <img
+                          src="https://dvibdyqjx.mo.cloudinary.net/assets/images/ldp/Vector (3).png"
+                          alt=""
+                          class="swiper-lazy"
+                        />
+                      </div>
+                    </div>
+                    <div class="person">
+                      <img
+                        src="https://dvibdyqjx.mo.cloudinary.net/assets/images/slider/page14/rune.png"
+                        alt="logo"
+                        class="avatar swiper-lazy"
+                      />
+                      <p class="person-name">RUNE EVENSEN</p>
+                      <div class="description">
+                        <p class="position">ADVISOR</p>
+                        <img
+                          src="https://dvibdyqjx.mo.cloudinary.net/assets/images/ldp/Vector (3).png"
+                          alt=""
+                          class="swiper-lazy"
+                        />
+                      </div>
+                    </div>
+                  </div>            
+                </div>
+                <div class="MEDIA-SECURITY" id="MEDIA-SECURITY">
+                  <h2 class="Microgramma-b active">MEDIA & SECURITY</h2>     
+                </div>
+
+                <div class="titleFooter">
+                  <p class="Barlow">Copyright 2022 galactic war</p>
+                </div>
+              </div>
+            </div>
+          </div>

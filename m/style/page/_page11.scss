@@ -1,7 +1,7 @@
 #page-11{
     position: relative;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     display: flex;
     flex-direction: column-reverse;    
     .bg{
@@ -12,7 +12,6 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
-            object-position: center -83px;
         }
     }
     .content{
@@ -47,67 +46,5 @@
             left: 0;
             top: 0;
         }
-    } 
-    @media (min-width:1024px) {
-        .bg{            
-            img{
-                object-position: 0 -149px;
-                object-fit: cover;
-            }
-        }
-        .content{
-            width: fit-content;            
-            margin: 25vh 11vw auto auto;
-            text-align: right;
-            padding: 0 0 37px 0 ;
-            h2{
-                margin-bottom: 0.5em;
-                font-size: 26px;
-                line-height: 1.5em;
-                width: 671px;
-            }
-            p{
-                font-size: 14px;
-                line-height: 1.5em;
-                width: 525px;
-                margin-left: auto;
-            }
-            img{
-                bottom: 0;
-                right: 0;
-                top:initial;
-                left: initial;
-            }
-        }       
-    }
-    @media (min-width:1620px) {    
-        .bg{            
-            img{
-                object-position: center;
-            }
-        }    
-        .content{
-            margin: 17vh 11vw auto auto;
-            text-align: right;
-            padding: 0 0 37px 0 ;
-            h2{
-                margin-bottom: 24px;
-                font-size: 48px;
-                line-height: 58px;
-                width: 671px;
-            }
-            p{
-                font-size: 18px;
-                line-height: 22px;
-                width: 525px;
-                margin-left: auto;
-            }
-            img{
-                bottom: 0;
-                right: 0;
-                top:initial;
-                left: initial;
-            }
-        }       
-    }
+    }     
 }

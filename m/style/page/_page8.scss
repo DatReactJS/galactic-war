@@ -1,7 +1,7 @@
 #page-8{
     position: relative;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     display: flex;
     flex-direction: column-reverse;
     align-items: right;
@@ -48,55 +48,5 @@
             left: 0;
             top: 0;      
         }
-    } 
-    @media (min-width:1024px) {
-        .bg{
-            width: auto;
-            height: auto;
-            min-width: 100%;
-            min-height: 100%;
-            img{
-                object-position: center;
-                object-fit: contain;
-            }
-        }
-        .content{
-            width: 584px;
-            margin-bottom: auto;            
-            margin: 10.42vh auto auto 8.6vw;
-            text-align: left;
-            padding: 36px 0 0 55px;
-            h2{
-                margin-bottom: 0.5em;
-                font-size: 26px;
-                line-height: 1.5em;
-            }
-            p{
-                font-size: 16px;
-                line-height: 22px;   
-                width: 422px;      
-            }
-            img{
-                width: 55px;
-                height: 288px;
-            }
-        }       
-    }
-    @media (min-width:1620px) {        
-        .content{
-            width: 784px;
-            padding: 36px 0 0 55px;
-            margin: 18.42vh auto auto 12.6vw;
-            h2{
-                margin-bottom: 24px;
-                font-size: 48px;
-                line-height: 58px;                
-            }
-            p{
-                font-size: 18px;
-                line-height: 22px;   
-                width: 622px;      
-            }           
-        }       
-    }
+    }     
 }

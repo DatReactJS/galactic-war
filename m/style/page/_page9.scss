@@ -1,7 +1,7 @@
 #page-9{
     position: relative;
     width: 100%;
-    height: 100%;
+    height: 100VH;
     display: flex;
     flex-direction: column-reverse;
     align-items: right;
@@ -48,53 +48,5 @@
             left: 0;
             top: 0;      
         }
-    } 
-    @media (min-width:1024px) {
-        .bg{
-            img{
-                object-position: top;
-                object-fit: cover;
-            }
-        }
-        .content{
-            width: 784px;
-            margin: auto auto 26.5vh 8.8vw ;
-            text-align: left;
-            padding:  0 0 33px 55px;
-            h2{
-                margin-bottom: 0.5em;
-                font-size: 32px;
-                line-height: 1.5em;
-            }
-            p{
-                font-size: 16px;
-                line-height: 2em;
-                width: 422px;      
-            }
-            img{
-                width: 55px;
-                height: 288px;
-                bottom: 0;
-                top:initial;
-            }
-        }       
-    }
-    @media (min-width:1620px) {      
-        .content{
-            width: 784px;
-            margin: auto auto 22.5vh 8.8vw ;
-            text-align: left;
-            padding:  0 0 55px 55px;
-            h2{
-                margin-bottom: 24px;
-                font-size: 48px;
-                line-height: 58px;                
-            }
-            p{
-                font-size: 18px;
-                line-height: 22px;   
-                width: 622px;      
-            }        
-        }       
-    }
+    }     
 }

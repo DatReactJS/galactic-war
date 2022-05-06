@@ -199,6 +199,7 @@ table {
     -webkit-backdrop-filter: initial;
             backdrop-filter: initial;
     height: 100%;
+    max-width: calc(100% - 163px);
   }
   .main-nav .menu__content {
     height: 100%;

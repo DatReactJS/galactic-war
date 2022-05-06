@@ -1,0 +1,11 @@
+#page-2{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    align-items: center;
+    display: flex;
+    video{
+        width: 100%;
+        object-fit: contain;             
+    }
+}

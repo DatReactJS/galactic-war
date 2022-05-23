@@ -2315,6 +2315,15 @@ header ._header_top .bg_header {
   color: white;
 }
 
+.phase-mobile header h4 {
+  text-align: center;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 24px;
+  margin-bottom: 1px;
+}
+
 .phase-mobile ul {
   display: -webkit-box;
   display: -ms-flexbox;

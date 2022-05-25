@@ -22,7 +22,7 @@
     padding: 113px 15px 50px;
     box-sizing: border-box;
     height: 100%;
-    overflow-y: scroll; 
+    overflow-y: scroll;
     .MEDIA-SECURITY {
       margin-bottom: 110px;
       h2 {
@@ -36,18 +36,20 @@
         text-shadow: 0px 10px 80px rgba(0, 0, 0, 0.5);
         margin-bottom: 37px;
       }
-      .container-2 {
+      .container {
         display: flex;
         flex-direction: column;
         justify-self: center;
         align-items: center;
         width: 100%;
         align-items: center;
-        img {
-          display: block;
-          height: 34.67px;
-          width: auto;
-          margin-bottom: 21px;
+        .col {     
+          margin-bottom: 15px;               
+          img {
+            display: block;
+            height: 34.67px;
+            width: auto;
+          }
         }
       }
     }
@@ -166,19 +168,23 @@
         &.active {
           display: flex;
         }
-      } 
+      }
       .MEDIA-SECURITY {
         padding: 75px 0 0;
         h2 {
           display: none;
         }
-        .container-2 {
+        .container {
           flex-direction: row;
           justify-content: center;
-          img {
-            padding: 0 37px;
-            width: initial;
-            height: initial;
+          width: 100%;
+          .col {
+            width: 25%;
+            img {
+              padding: 0 37px;
+              width: initial;
+              height: initial;
+            }
           }
         }
       }
@@ -197,18 +203,18 @@
       margin-top: auto;
       text-align: center;
     }
-    .my_team{
+    .my_team {
       width: 100%;
       max-width: 1240px;
       margin: 0 auto;
       justify-content: center;
-      .person{
+      .person {
         margin-bottom: 1em;
         width: 25%;
         padding: 0 15px;
         position: relative;
         overflow: hidden;
-        .avatar{
+        .avatar {
           width: 100px;
           height: auto;
           max-width: 100%;
@@ -220,11 +226,11 @@
           font-size: 18px;
           line-height: 22px;
           width: 100%;
-          text-align: center;            
+          text-align: center;
           transition: 0.5s ease-in-out;
           z-index: -1;
         }
-        .description{   
+        .description {
           flex-direction: row-reverse;
           position: absolute;
           padding: 0 15px;
@@ -236,24 +242,24 @@
           justify-content: center;
           box-sizing: border-box;
           transition: 0.5s ease-in-out;
-          .position{
+          .position {
             font-size: 12px;
             line-height: 17px;
             padding-left: 1em;
             text-align: center;
             margin-bottom: 0;
           }
-          img{
+          img {
             display: block;
             flex-shrink: none;
             margin: auto 0;
           }
         }
-        &:hover{
-          .description{
-            transform:translateY(-100%);
+        &:hover {
+          .description {
+            transform: translateY(-100%);
           }
-          .person-name{
+          .person-name {
             transform: translateY(150%);
           }
         }
@@ -267,17 +273,17 @@
         line-height: 58px;
       }
     }
-    .my_team{
+    .my_team {
       width: 100%;
       max-width: 1240px;
       margin: 0 auto;
-      .person{
+      .person {
         // margin-bottom: 1.5rem;
         width: 25%;
         padding: 0 15px;
-        .avatar{        
+        .avatar {
           width: 169px;
-        }   
+        }
       }
     }
   }

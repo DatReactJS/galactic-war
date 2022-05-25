@@ -3767,7 +3767,7 @@ header ._header_top .bg_header {
   margin-bottom: 37px;
 }
 
-#page-14 .content-page14 .MEDIA-SECURITY .container-2 {
+#page-14 .content-page14 .MEDIA-SECURITY .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3783,11 +3783,14 @@ header ._header_top .bg_header {
   align-items: center;
 }
 
-#page-14 .content-page14 .MEDIA-SECURITY .container-2 img {
+#page-14 .content-page14 .MEDIA-SECURITY .container .col {
+  margin-bottom: 15px;
+}
+
+#page-14 .content-page14 .MEDIA-SECURITY .container .col img {
   display: block;
   height: 34.67px;
   width: auto;
-  margin-bottom: 21px;
 }
 
 #page-14 .my_team {
@@ -3942,7 +3945,7 @@ header ._header_top .bg_header {
   #page-14 .content-page14 .MEDIA-SECURITY h2 {
     display: none;
   }
-  #page-14 .content-page14 .MEDIA-SECURITY .container-2 {
+  #page-14 .content-page14 .MEDIA-SECURITY .container {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -3950,8 +3953,12 @@ header ._header_top .bg_header {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    width: 100%;
   }
-  #page-14 .content-page14 .MEDIA-SECURITY .container-2 img {
+  #page-14 .content-page14 .MEDIA-SECURITY .container .col {
+    width: 25%;
+  }
+  #page-14 .content-page14 .MEDIA-SECURITY .container .col img {
     padding: 0 37px;
     width: initial;
     height: initial;

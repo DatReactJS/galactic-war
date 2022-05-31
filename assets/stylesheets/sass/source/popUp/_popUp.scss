@@ -1,10 +1,13 @@
 #popUp{
     display: flex;
+    opacity: 0;
     &.fadeOut{
-        animation-name: fadeOut;
+        animation-name: fadeOut;        
+        animation-fill-mode: forwards;
     }
     &.fadeIn{
         animation-name: fadeIn;
+        animation-fill-mode: forwards;
     }
     width: 100vw;
     height: 100vh;

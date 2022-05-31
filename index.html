@@ -353,6 +353,7 @@
                 </a>
               </div>
             </div>
+            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
           </div>
 
           <div class="swiper-slide" data-hash="Trailer">
@@ -1181,7 +1182,7 @@
                 <picture>
                   <source
                     media="(min-width:1024px)"
-                    data-srcset="https://dvibdyqjx.mo.cloudinary.net/assets/images/slider/page11/gif.gif"
+                    data-srcset="./assets/images/slider/page11/gif.gif"
                     class="swiper-lazy"
                   />
                   <img
@@ -2078,8 +2079,9 @@
         prevEl: "#slide_home .swiper-button-prev",
       },
       lazy: {
-        // loadPrevNext:true
+        loadPrevNext:true
       },
+      preloadImages: false,
     });
     SlideHome.on("transitionEnd", function () {
       // play pasued video when on screen

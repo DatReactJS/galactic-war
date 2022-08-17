@@ -325,7 +325,7 @@ body {
                 font-size: 13px;
                 line-height: 16px;
                 margin-bottom: 12px;
-                height: calc(16px * 2);
+                max-height: calc(16px * 2);
                 display: -webkit-box;
                 -webkit-line-clamp: 2;
                 -webkit-box-orient: vertical;
@@ -335,7 +335,7 @@ body {
                   font-weight: 600;
                   font-size: 25px;
                   line-height: 31px;
-                  height: calc(31px * 2);
+                  max-height: calc(31px * 2);
                   margin-bottom: 20px;
                 }
               }

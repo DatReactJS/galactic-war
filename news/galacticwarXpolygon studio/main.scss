@@ -211,6 +211,21 @@
         }
       }
     }
+    ul{
+      list-style-type:disc;
+      padding-left: 4em;
+      margin-bottom: 1em;
+      li{
+        font-size: 20px;
+        margin-bottom: 0.75em;
+      }
+    }
+    a{
+      color: #1AD7FD;
+    }
+    b{
+      font-weight: 700;
+    }
   }
   padding: 52px 0px 0;
   .topnews {

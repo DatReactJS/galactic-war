@@ -1063,18 +1063,6 @@ body * {
      object-fit: cover;
 }
 
-#news .topnews .grid .slider .new .content > figure::after,
-#new .topnews .grid .slider .new .content > figure::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), color-stop(79.36%, rgba(0, 0, 0, 0.3)));
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 79.36%);
-}
-
 #news .topnews .grid .slider .new .content > figcaption,
 #new .topnews .grid .slider .new .content > figcaption {
   position: absolute;

@@ -272,6 +272,25 @@
   }
 }
 
+#new .new ul {
+  list-style-type: disc;
+  padding-left: 4em;
+  margin-bottom: 1em;
+}
+
+#new .new ul li {
+  font-size: 20px;
+  margin-bottom: 0.75em;
+}
+
+#new .new a {
+  color: #1AD7FD;
+}
+
+#new .new b {
+  font-weight: 700;
+}
+
 #new .topnews {
   margin: 0;
 }

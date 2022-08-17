@@ -1085,7 +1085,7 @@ body * {
     position: absolute;
     left: 20px;
     bottom: 0px;
-    background-color: #1AD7FD;
+    background-color: #1ad7fd;
   }
 }
 
@@ -1275,6 +1275,15 @@ body * {
     left: 0;
     padding: 0 20px 20px;
   }
+  #news .newsboard main aside .container .new figcaption::after {
+    content: "";
+    width: 121px;
+    height: 5px;
+    position: absolute;
+    left: 20px;
+    bottom: 0px;
+    background-color: #1ad7fd;
+  }
 }
 
 #news .newsboard main aside .container .new figcaption h3 {
@@ -1318,16 +1327,6 @@ body * {
     line-height: 120%;
     height: calc(16px * 1);
   }
-}
-
-#news .newsboard main aside .container .new figcaption::after {
-  content: "";
-  width: 121px;
-  height: 5px;
-  position: absolute;
-  left: 20px;
-  bottom: 0px;
-  background-color: #1AD7FD;
 }
 
 #news .newsboard main aside button {

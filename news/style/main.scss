@@ -177,7 +177,7 @@ body {
                   position: absolute;
                   left: 20px;
                   bottom: 0px;
-                  background-color: #1AD7FD;
+                  background-color: #1ad7fd;
                 }
               }
             }
@@ -277,7 +277,7 @@ body {
               gap: 50px;
               &::before {
                 display: none;
-              }            
+              }
             }
             figure {
               box-sizing: border-box;
@@ -319,6 +319,15 @@ body {
                 bottom: 0;
                 left: 0;
                 padding: 0 20px 20px;
+                &::after {
+                  content: "";
+                  width: 121px;
+                  height: 5px;
+                  position: absolute;
+                  left: 20px;
+                  bottom: 0px;
+                  background-color: #1ad7fd;
+                }
               }
               h3 {
                 font-weight: 700;
@@ -355,15 +364,6 @@ body {
                   height: calc(16px * 1);
                 }
               }
-              &::after {
-                content: "";
-                width: 121px;
-                height: 5px;
-                position: absolute;
-                left: 20px;
-                bottom: 0px;
-                background-color: #1AD7FD;
-              }
             }
           }
         }
@@ -379,9 +379,9 @@ body {
     }
   }
 }
-footer{
+footer {
   width: 100%;
-  img{
+  img {
     width: 100%;
-  }  
+  }
 }

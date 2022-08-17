@@ -1220,13 +1220,18 @@ body * {
 
 #news .newsboard main aside,
 #new .newsboard main aside {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+#news .newsboard main aside.active,
+#new .newsboard main aside.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 #news .newsboard main aside .container,

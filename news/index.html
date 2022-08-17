@@ -309,11 +309,41 @@
       </section>
       <section class="newsboard">
         <header>
-          <button class="active">Most recent</button>
-          <button>Most read</button>
+          <button
+            class="active"
+            id="title_most_recent"
+            onclick="onActiveTab('title_most_recent')"
+          >
+            Most recent
+          </button>
+          <button onclick="onActiveTab('title_most_read')" id="title_most_read">
+            Most read
+          </button>
+          <script>
+            function onActiveTab(tab) {
+              let tl1 = document.getElementById("title_most_recent");
+              let tl2 = document.getElementById("title_most_read");
+
+              let tab1 = document.getElementById("most_recent");
+              let tab2 = document.getElementById("most_read");
+
+              tl1.classList.remove("active");
+              tl2.classList.remove("active");
+              tab1.classList.remove("active");
+              tab2.classList.remove("active");
+
+              if (tab === "title_most_recent") {
+                tl1.classList.add("active");
+                tab1.classList.add("active");
+              } else {
+                tl2.classList.add("active");
+                tab2.classList.add("active");
+              }
+            }
+          </script>
         </header>
         <main>
-          <aside>
+          <aside id="most_recent" class="active">
             <div class="container">
               <div class="new">
                 <figure>
@@ -390,7 +420,35 @@
             </div>
             <button>LOAD MORE</button>
           </aside>
-          <aside></aside>
+          <aside id="most_read">
+            <div class="container">
+              <div class="new">
+                <figure>
+                  <img src="../assets/images/news/image.webp" alt="" />
+                </figure>
+                <figcaption>
+                  <h3>
+                    Lorem ipsum dolor sit amet, ulangabto consectetur adipiscing
+                    elit...
+                  </h3>
+                  <p>Jun 30, 2022</p>
+                </figcaption>
+              </div>
+              <div class="new">
+                <figure>
+                  <img src="../assets/images/news/image.webp" alt="" />
+                </figure>
+                <figcaption>
+                  <h3>
+                    Lorem ipsum dolor sit amet, ulangabto consectetur adipiscing
+                    elit...
+                  </h3>
+                  <p>Jun 30, 2022</p>
+                </figcaption>
+              </div>
+            </div>
+            <button>LOAD MORE</button>
+          </aside>
         </main>
       </section>
     </div>

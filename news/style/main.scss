@@ -252,8 +252,11 @@ body {
     }
     main {
       aside {
-        display: flex;
+        display: none;
         flex-direction: column;
+        &.active{
+          display: flex;
+        }
         .container {
           display: grid;
           gap: 20px;

@@ -1,12 +1,194 @@
 @import "../../assets/stylesheets/sass/source/layout/navbar";
 @import "../../assets/stylesheets/sass/source/layout/header";
 @import "../../assets/stylesheets/sass/source/abstracts/_mixins";
-@import "../../assets/stylesheets/sass/source/base/_fonts";
 @import "../../assets/stylesheets/sass/source/base/agent";
 @import "../../assets/stylesheets/sass/source/popUp/popUp";
-body {
-  background-color: black;
+@import "./swiper";
+// font old
+@font-face {
+  font-family: "VARIEN";
+  src: url("../../assets/fonts/VARIEN.OTF") format("opentype");
+  font-weight: normal;
+  font-style: normal;
 }
-.news {
-  background-color: red;
+@font-face {
+  font-family: "MUDHEAD";
+  src: url("../../assets/fonts/MUDHEAD.OTF") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "MUDHEAD-BOLD";
+  src: url("../../assets/fonts/MUDHEAD-BOLD.OTF") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "MUDHEAD-LIGHT";
+  src: url("../../assets/fonts/MUDHEAD-LIGHT.OTF") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Microgramma-D-OT-Bold";
+  src: url("../../assets/fonts/Microgramma-D-OT-Bold-Extended_30403.ttf")
+    format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Microgramma-D-OT-Medium";
+  src: url("../../assets/fonts/Microgramma-D-OT-Medium-Extended_30404.ttf")
+    format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.Barlow {
+  font-family: "Barlow", sans-serif;
+}
+.Microgramma {
+  font-family: "Microgramma-D-OT-Medium", sans-serif;
+}
+.Microgramma-b {
+  font-family: "Microgramma-D-OT-Bold", sans-serif;
+}
+body {
+  background-color: #19181f;
+  * {
+    box-sizing: border-box;
+  }
+  font-family: "Barlow", sans-serif;
+}
+#news {
+  width: 100%;
+  max-width: 1226px;
+  margin: auto;
+  padding: 52px 15px;
+  @media (max-width: 566px) {
+    padding: 52px 15px;
+  }
+  @media (min-width: 1024px) {
+    padding: 89px 0;
+  }
+  .topnews {
+    @media (max-width: 566px) {
+      margin: 0 -15px;
+    }
+    & > h1 {
+      @media (max-width: 566px) {
+        display: none;
+      }
+      display: block;
+      margin-top: 110px;
+      margin-bottom: 40px;
+      color: white;
+      font-size: 48px;
+      text-transform: uppercase;
+    }
+    .grid {
+      display: block;
+      width: 100%;
+      grid-template-columns: 100%;
+      .link_social {
+        display: none;
+      }
+      @media (min-width: 566px) {
+        display: grid;
+        gap: 70px;
+        grid-template-columns: calc(100% - 50px - 70px) 50px;
+        .link_social {
+          display: block;
+          .container {
+            display: flex;
+            flex-direction: column;
+          }
+        }
+      }
+      .slider {
+        display: block;
+        .new {
+          .content {
+            position: relative;
+            figure {
+              padding-top: 74.93%;
+              position: relative;
+              overflow: hidden;
+              @media (min-width: 1024px) {
+                padding-top: 56.14%;                
+              }
+              img {
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                object-fit: cover;
+              }
+              &::after {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-image: linear-gradient(
+                    0deg,
+                    rgba(0, 0, 0, 0.2),
+                    rgba(0, 0, 0, 0.2)
+                  ),
+                  linear-gradient(
+                    180deg,
+                    rgba(0, 0, 0, 0) 0%,
+                    rgba(0, 0, 0, 0.3) 79.36%
+                  );
+              }
+            }
+            figcaption {
+              position: absolute;
+              bottom: 0;
+              color: white;
+              padding: 20px;
+              h3 {
+                font-size: 21px;
+                line-height: 100%;
+                margin-bottom: 12px;
+              }
+              p {
+                font-size: 13px;
+                line-height: 16px;
+              }
+            }
+          }
+          @media (min-width: 1024px) {            
+            padding-bottom: 40px;
+          }
+        }
+      }
+      .link_social {
+        a {
+          position: relative;
+          box-sizing: border-box;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 50px;
+          width: 50px;
+          margin-bottom: 25px;
+          &::before {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+            -webkit-transform: matrix(0.98, 0, -0.19, 1, 0, 0);
+            transform: matrix(0.98, 0, -0.19, 1, 0, 0);
+            background: #000000;
+            content: "";
+            z-index: -1;
+          }
+        }
+      }
+    }
+  }
 }

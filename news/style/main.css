@@ -934,7 +934,8 @@ body * {
   cursor: url("../../assets/images/icon/cursor.png") 10 10, default !important;
 }
 
-#news {
+#news,
+#new {
   width: 100%;
   max-width: 1226px;
   margin: auto;
@@ -942,29 +943,34 @@ body * {
 }
 
 @media (max-width: 566px) {
-  #news {
+  #news,
+  #new {
     padding: 52px 15px;
   }
 }
 
 @media (min-width: 1024px) {
-  #news {
+  #news,
+  #new {
     padding: 89px 0 0;
     margin-bottom: 150px;
   }
 }
 
-#news .topnews {
+#news .topnews,
+#new .topnews {
   margin: 0 0px 25px;
 }
 
 @media (max-width: 566px) {
-  #news .topnews {
+  #news .topnews,
+  #new .topnews {
     margin: 0 -15px 40px;
   }
 }
 
-#news .topnews > h1 {
+#news .topnews > h1,
+#new .topnews > h1 {
   display: block;
   margin-top: 110px;
   margin-bottom: 40px;
@@ -974,37 +980,49 @@ body * {
 }
 
 @media (max-width: 566px) {
-  #news .topnews > h1 {
+  #news .topnews > h1,
+  #new .topnews > h1 {
     display: none;
   }
 }
 
-#news .topnews .grid {
+#news .topnews .grid,
+#new .topnews .grid {
   display: block;
   width: 100%;
   -ms-grid-columns: 100%;
       grid-template-columns: 100%;
 }
 
-#news .topnews .grid .link_social {
+#news .topnews .grid .link_social,
+#new .topnews .grid .link_social {
   display: none;
 }
 
 @media (min-width: 566px) {
-  #news .topnews .grid {
+  #news .topnews .grid,
+  #new .topnews .grid {
     display: -ms-grid;
     display: grid;
     gap: 70px;
     -ms-grid-columns: calc(100% - 50px - 70px) 50px;
         grid-template-columns: calc(100% - 50px - 70px) 50px;
   }
-  #news .topnews .grid .link_social {
+  #news .topnews .grid .link_social,
+  #new .topnews .grid .link_social {
     display: block;
+    height: 100%;
   }
-  #news .topnews .grid .link_social .container {
+  #news .topnews .grid .link_social .container,
+  #new .topnews .grid .link_social .container {
+    height: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 60px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1012,21 +1030,25 @@ body * {
   }
 }
 
-#news .topnews .grid .slider {
+#news .topnews .grid .slider,
+#new .topnews .grid .slider {
   display: block;
 }
 
-#news .topnews .grid .slider .new .content {
+#news .topnews .grid .slider .new .content,
+#new .topnews .grid .slider .new .content {
   position: relative;
 }
 
-#news .topnews .grid .slider .new .content figure {
+#news .topnews .grid .slider .new .content figure,
+#new .topnews .grid .slider .new .content figure {
   padding-top: 56.14%;
   position: relative;
   overflow: hidden;
 }
 
-#news .topnews .grid .slider .new .content figure img {
+#news .topnews .grid .slider .new .content figure img,
+#new .topnews .grid .slider .new .content figure img {
   height: 100%;
   position: absolute;
   top: 0;
@@ -1037,7 +1059,8 @@ body * {
      object-fit: cover;
 }
 
-#news .topnews .grid .slider .new .content figure::after {
+#news .topnews .grid .slider .new .content figure::after,
+#new .topnews .grid .slider .new .content figure::after {
   content: "";
   position: absolute;
   top: 0;
@@ -1048,37 +1071,43 @@ body * {
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 79.36%);
 }
 
-#news .topnews .grid .slider .new .content figcaption {
+#news .topnews .grid .slider .new .content figcaption,
+#new .topnews .grid .slider .new .content figcaption {
   position: absolute;
   bottom: 0;
   color: white;
   padding: 20px;
 }
 
-#news .topnews .grid .slider .new .content figcaption h3 {
+#news .topnews .grid .slider .new .content figcaption h3,
+#new .topnews .grid .slider .new .content figcaption h3 {
   font-size: 21px;
   line-height: 100%;
   margin-bottom: 12px;
 }
 
 @media (min-width: 1024px) {
-  #news .topnews .grid .slider .new .content figcaption h3 {
+  #news .topnews .grid .slider .new .content figcaption h3,
+  #new .topnews .grid .slider .new .content figcaption h3 {
     font-size: 25px;
     line-height: 31px;
   }
 }
 
-#news .topnews .grid .slider .new .content figcaption p {
+#news .topnews .grid .slider .new .content figcaption p,
+#new .topnews .grid .slider .new .content figcaption p {
   font-size: 13px;
   line-height: 16px;
 }
 
 @media (min-width: 1024px) {
-  #news .topnews .grid .slider .new .content figcaption {
+  #news .topnews .grid .slider .new .content figcaption,
+  #new .topnews .grid .slider .new .content figcaption {
     font-size: 25px;
     line-height: 31px;
   }
-  #news .topnews .grid .slider .new .content figcaption::after {
+  #news .topnews .grid .slider .new .content figcaption::after,
+  #new .topnews .grid .slider .new .content figcaption::after {
     content: "";
     width: 121px;
     height: 5px;
@@ -1090,12 +1119,14 @@ body * {
 }
 
 @media (min-width: 1024px) {
-  #news .topnews .grid .slider .new {
+  #news .topnews .grid .slider .new,
+  #new .topnews .grid .slider .new {
     padding-bottom: 40px;
   }
 }
 
-#news .topnews .grid .link_social a {
+#news .topnews .grid .link_social a,
+#new .topnews .grid .link_social a {
   position: relative;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1113,7 +1144,8 @@ body * {
   margin-bottom: 25px;
 }
 
-#news .topnews .grid .link_social a::before {
+#news .topnews .grid .link_social a::before,
+#new .topnews .grid .link_social a::before {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -1125,17 +1157,20 @@ body * {
   z-index: -1;
 }
 
-#news .newsboard {
+#news .newsboard,
+#new .newsboard {
   width: 100%;
 }
 
 @media (min-width: 566px) {
-  #news .newsboard {
+  #news .newsboard,
+  #new .newsboard {
     max-width: calc(100% - 50px - 70px);
   }
 }
 
-#news .newsboard > header {
+#news .newsboard > header,
+#new .newsboard > header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1146,7 +1181,8 @@ body * {
 }
 
 @media (min-width: 768px) {
-  #news .newsboard > header {
+  #news .newsboard > header,
+  #new .newsboard > header {
     margin-bottom: 40px;
     -webkit-box-pack: left;
         -ms-flex-pack: left;
@@ -1154,7 +1190,8 @@ body * {
   }
 }
 
-#news .newsboard > header button {
+#news .newsboard > header button,
+#new .newsboard > header button {
   background-color: transparent;
   color: #acafc3;
   font-size: 16px;
@@ -1164,18 +1201,21 @@ body * {
 }
 
 @media (min-width: 768px) {
-  #news .newsboard > header button {
+  #news .newsboard > header button,
+  #new .newsboard > header button {
     font-size: 21px;
     line-height: 26px;
     padding: 0 20px;
   }
 }
 
-#news .newsboard > header button.active {
+#news .newsboard > header button.active,
+#new .newsboard > header button.active {
   color: #ffffff;
 }
 
-#news .newsboard main aside {
+#news .newsboard main aside,
+#new .newsboard main aside {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1185,7 +1225,8 @@ body * {
           flex-direction: column;
 }
 
-#news .newsboard main aside .container {
+#news .newsboard main aside .container,
+#new .newsboard main aside .container {
   display: -ms-grid;
   display: grid;
   gap: 20px;
@@ -1195,14 +1236,16 @@ body * {
 }
 
 @media (min-width: 566px) {
-  #news .newsboard main aside .container {
+  #news .newsboard main aside .container,
+  #new .newsboard main aside .container {
     -ms-grid-columns: calc(50% - 25px) calc(50% - 25px);
         grid-template-columns: calc(50% - 25px) calc(50% - 25px);
     gap: 50px;
   }
 }
 
-#news .newsboard main aside .container .new {
+#news .newsboard main aside .container .new,
+#new .newsboard main aside .container .new {
   display: -ms-grid;
   display: grid;
   gap: 10px;
@@ -1212,7 +1255,8 @@ body * {
   position: relative;
 }
 
-#news .newsboard main aside .container .new::before {
+#news .newsboard main aside .container .new::before,
+#new .newsboard main aside .container .new::before {
   content: "";
   position: absolute;
   height: 100%;
@@ -1223,17 +1267,20 @@ body * {
 }
 
 @media (min-width: 566px) {
-  #news .newsboard main aside .container .new {
+  #news .newsboard main aside .container .new,
+  #new .newsboard main aside .container .new {
     -ms-grid-columns: 100%;
         grid-template-columns: 100%;
     gap: 50px;
   }
-  #news .newsboard main aside .container .new::before {
+  #news .newsboard main aside .container .new::before,
+  #new .newsboard main aside .container .new::before {
     display: none;
   }
 }
 
-#news .newsboard main aside .container .new figure {
+#news .newsboard main aside .container .new figure,
+#new .newsboard main aside .container .new figure {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding-top: 56.14%;
@@ -1241,7 +1288,8 @@ body * {
   overflow: hidden;
 }
 
-#news .newsboard main aside .container .new figure img {
+#news .newsboard main aside .container .new figure img,
+#new .newsboard main aside .container .new figure img {
   height: 100%;
   position: absolute;
   top: 0;
@@ -1252,7 +1300,8 @@ body * {
      object-fit: cover;
 }
 
-#news .newsboard main aside .container .new figure::after {
+#news .newsboard main aside .container .new figure::after,
+#new .newsboard main aside .container .new figure::after {
   display: block;
   width: 100%;
   height: 100%;
@@ -1264,18 +1313,21 @@ body * {
   left: 0;
 }
 
-#news .newsboard main aside .container .new figcaption {
+#news .newsboard main aside .container .new figcaption,
+#new .newsboard main aside .container .new figcaption {
   padding: 12px;
 }
 
 @media (min-width: 566px) {
-  #news .newsboard main aside .container .new figcaption {
+  #news .newsboard main aside .container .new figcaption,
+  #new .newsboard main aside .container .new figcaption {
     position: absolute;
     bottom: 0;
     left: 0;
     padding: 0 20px 20px;
   }
-  #news .newsboard main aside .container .new figcaption::after {
+  #news .newsboard main aside .container .new figcaption::after,
+  #new .newsboard main aside .container .new figcaption::after {
     content: "";
     width: 121px;
     height: 5px;
@@ -1286,7 +1338,8 @@ body * {
   }
 }
 
-#news .newsboard main aside .container .new figcaption h3 {
+#news .newsboard main aside .container .new figcaption h3,
+#new .newsboard main aside .container .new figcaption h3 {
   font-weight: 700;
   font-size: 13px;
   line-height: 16px;
@@ -1300,7 +1353,8 @@ body * {
 }
 
 @media (min-width: 566px) {
-  #news .newsboard main aside .container .new figcaption h3 {
+  #news .newsboard main aside .container .new figcaption h3,
+  #new .newsboard main aside .container .new figcaption h3 {
     font-weight: 600;
     font-size: 25px;
     line-height: 31px;
@@ -1309,7 +1363,8 @@ body * {
   }
 }
 
-#news .newsboard main aside .container .new figcaption p {
+#news .newsboard main aside .container .new figcaption p,
+#new .newsboard main aside .container .new figcaption p {
   font-size: 13px;
   line-height: 120%;
   height: calc(13px * 1);
@@ -1321,7 +1376,8 @@ body * {
 }
 
 @media (min-width: 566px) {
-  #news .newsboard main aside .container .new figcaption p {
+  #news .newsboard main aside .container .new figcaption p,
+  #new .newsboard main aside .container .new figcaption p {
     font-weight: 400;
     font-size: 16px;
     line-height: 120%;
@@ -1329,7 +1385,8 @@ body * {
   }
 }
 
-#news .newsboard main aside button {
+#news .newsboard main aside button,
+#new .newsboard main aside button {
   width: 181px;
   height: 50px;
   background: #000000;
@@ -1340,9 +1397,10 @@ body * {
 
 footer {
   width: 100%;
-}
-
-footer img {
-  width: 100%;
+  min-height: 208px;
+  position: relative;
+  overflow: hidden;
+  background-image: url("../../assets/images/news/footer.png");
+  background-position: center;
 }
 /*# sourceMappingURL=main.css.map */

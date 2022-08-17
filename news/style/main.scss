@@ -67,7 +67,8 @@ body {
     cursor: url("../../assets/images/icon/cursor.png") 10 10, default !important;
   }
 }
-#news {
+#news,
+#new {
   width: 100%;
   max-width: 1226px;
   margin: auto;
@@ -107,8 +108,12 @@ body {
         grid-template-columns: calc(100% - 50px - 70px) 50px;
         .link_social {
           display: block;
+          height: 100%;
           .container {
+            height: 100%;
             display: flex;
+            align-items: center;
+            padding-top: 60px;
             flex-direction: column;
           }
         }
@@ -381,7 +386,9 @@ body {
 }
 footer {
   width: 100%;
-  img {
-    width: 100%;
-  }
+  min-height: 208px;
+  position: relative;
+  overflow: hidden;
+  background-image: url("../../assets/images/news/footer.png");
+  background-position: center;
 }

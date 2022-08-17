@@ -824,11 +824,10 @@ table {
 
 @media (max-width: 568px) {
   #slide_news {
-    overflow: visible;
     margin-bottom: calc(8px + 12px + 40px);
   }
   #slide_news .swiper-pagination {
-    top: calc(100% + 12px);
+    bottom: 0;
   }
 }
 
@@ -1033,6 +1032,11 @@ body * {
 #news .topnews .grid .slider,
 #new .topnews .grid .slider {
   display: block;
+}
+
+#news .topnews .grid .slider .new,
+#new .topnews .grid .slider .new {
+  padding-bottom: 20px;
 }
 
 #news .topnews .grid .slider .new .content,

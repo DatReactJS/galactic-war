@@ -41,10 +41,9 @@
     width: 100%;
   }
   @media (max-width: 568px) {
-    overflow: visible;
     margin-bottom: calc(8px + 12px + 40px);
     .swiper-pagination {
-      top: calc(100% + 12px);
+      bottom: 0;      
     }
   }
   @media (min-width: 1024px) {

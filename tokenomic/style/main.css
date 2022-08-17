@@ -1044,7 +1044,7 @@ header ._header_top .bg_header {
 
 body {
   min-height: 100vh;
-  cursor: url("../../assets/") 10 10, default !important;
+  cursor: url("../../../images/icon/cursor.png") 10 10, default !important;
 }
 
 body a,

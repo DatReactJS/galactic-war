@@ -13,7 +13,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: rgba(238, 238, 238, 0.1);
+  background: rgba(38, 38, 38, 0.8);
   -webkit-backdrop-filter: blur(30px);
           backdrop-filter: blur(30px);
   -webkit-transition: 0.3s ease-in-out;
@@ -46,7 +46,7 @@
   line-height: 25px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .main-nav .menu__content .list_menu li img {
@@ -826,5 +826,9 @@ table {
 
 body {
   background-color: black;
+}
+
+.news {
+  background-color: red;
 }
 /*# sourceMappingURL=main.css.map */

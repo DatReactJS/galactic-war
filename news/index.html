@@ -103,7 +103,7 @@
               <a href="../#home" data-attr="section_video" class="Barlow">
                 <span> Home </span>
               </a>
-              <img src=".\assets\images\Btn_WeaponMenu_p 2.svg" alt="" />
+              <img src="..\assets\images\Btn_WeaponMenu_p 2.svg" alt="" />
             </li>
             <li onclick="openPopUp()">
               <a
@@ -113,13 +113,13 @@
               >
                 <span> marketplace </span>
               </a>
-              <img src=".\assets\images\Btn_WeaponMenu_p 2.svg" alt="" />
+              <img src="..\assets\images\Btn_WeaponMenu_p 2.svg" alt="" />
             </li>
             <li>
               <a href="/news" data-attr="section_game_future" class="Barlow">
                 <span> news </span>
               </a>
-              <img src=".\assets\images\Btn_WeaponMenu_p 2.svg" alt="" />
+              <img src="..\assets\images\Btn_WeaponMenu_p 2.svg" alt="" />
             </li>
             <li>
               <a
@@ -129,7 +129,7 @@
               >
                 <span> roadmap </span>
               </a>
-              <img src=".\assets\images\Btn_WeaponMenu_p 2.svg" alt="" />
+              <img src="..\assets\images\Btn_WeaponMenu_p 2.svg" alt="" />
             </li>
             <li>
               <a
@@ -139,7 +139,7 @@
               >
                 <span> our team </span>
               </a>
-              <img src=".\assets\images\Btn_WeaponMenu_p 2.svg" alt="" />
+              <img src="..\assets\images\Btn_WeaponMenu_p 2.svg" alt="" />
             </li>
             <li>
               <a
@@ -150,7 +150,7 @@
               >
                 <span> documents </span>
               </a>
-              <img src=".\assets\images\Btn_WeaponMenu_p 2.svg" alt="" />
+              <img src="..\assets\images\Btn_WeaponMenu_p 2.svg" alt="" />
             </li>
             <li>
               <a
@@ -161,7 +161,7 @@
               >
                 <span> pitch deck </span>
               </a>
-              <img src=".\assets\images\Btn_WeaponMenu_p 2.svg" alt="" />
+              <img src="..\assets\images\Btn_WeaponMenu_p 2.svg" alt="" />
             </li>
           </ul>
         </div>
@@ -171,22 +171,22 @@
             href="https://www.facebook.com/groups/galacticwario"
             target="_blank"
           >
-            <img src=".\assets\images\ldp\face.png" alt="" />
+            <img src="..\assets\images\ldp\face.png" alt="" />
           </a>
           <a
             href="https://www.youtube.com/channel/UCkEQfE0g0b1hQeaddRmKjWg"
             target="_blank"
           >
-            <img src=".\assets\images\ldp\youtube.png" alt="" />
+            <img src="..\assets\images\ldp\youtube.png" alt="" />
           </a>
           <a href="https://t.me/GalacticWarGlobal" target="_blank">
-            <img src=".\assets\images\ldp\Vector.png" alt="" />
+            <img src="..\assets\images\ldp\Vector.png" alt="" />
           </a>
           <a href="https://twitter.com/GalacticWarGame" target="_blank">
-            <img src=".\assets\images\ldp\twitter.png" alt="" />
+            <img src="..\assets\images\ldp\twitter.png" alt="" />
           </a>
           <a href="https://discord.com/invite/pThDVhfuHd" target="_blank">
-            <img src=".\assets\images\ldp\discord.png" alt="" />
+            <img src="..\assets\images\ldp\discord.png" alt="" />
           </a>
         </div>
       </nav>
@@ -199,6 +199,92 @@
         }
       </script>
     </header>
-    <div id="news"></div>
+    <div id="news">
+      <section class="topnews">
+        <h1>News</h1>
+        <div class="grid">
+          <aside class="slider">
+            <div class="swiper-container" id="slide_news">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="new">
+                    <figure>
+                      <img />
+                      <figcaption>
+                        <h3>title</h3>
+                        <p>date</p>
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button-next">
+                <img src="./assets/images/ldp/next.png" alt="" />
+              </div>
+              <div class="swiper-button-prev">
+                <img src="./assets/images/ldp/prev.png" alt="" />
+              </div>
+            </div>
+          </aside>
+          <aside class="link_social">
+            <div class="container">
+              <a
+                href="https://www.facebook.com/groups/galacticwario"
+                target="_blank"
+              >
+                <img src="..\assets\images\ldp\face.png" alt="" />
+              </a>
+              <a
+                href="https://www.youtube.com/channel/UCkEQfE0g0b1hQeaddRmKjWg"
+                target="_blank"
+              >
+                <img src="..\assets\images\ldp\youtube.png" alt="" />
+              </a>
+              <a href="https://t.me/GalacticWarGlobal" target="_blank">
+                <img src="..\assets\images\ldp\Vector.png" alt="" />
+              </a>
+              <a href="https://twitter.com/GalacticWarGame" target="_blank">
+                <img src="..\assets\images\ldp\twitter.png" alt="" />
+              </a>
+              <a href="https://discord.com/invite/pThDVhfuHd" target="_blank">
+                <img src="..\assets\images\ldp\discord.png" alt="" />
+              </a>
+            </div>
+          </aside>
+        </div>
+      </section>
+    </div>
+    <script>
+      jQuery(document).ready(function () {
+        var SlideHome = new Swiper("#slide_news", {
+          mousewheel: true,
+          direction: "horizontal",
+          slidesPerView: 1,
+          pagination: {
+            el: "#slide_news .swiper-pagination",
+            clickable: true,
+            renderBullet: function (index, className) {
+              let number = "";
+              if (index < 9) {
+                number = "0" + (index + 1);
+              } else {
+                number = index + 1;
+              }
+              return '<span class="' + className + '">' + number + "</span>";
+            },
+          },
+          navigation: {
+            nextEl: "#slide_news .swiper-button-next",
+            prevEl: "#slide_news .swiper-button-prev",
+          },
+          lazy: {
+            loadPrevNext: true,
+            enabled: true,
+            preloaderClass: "swiper-preloader",
+          },
+        });
+      });
+    </script>
   </body>
 </html>

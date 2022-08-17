@@ -1040,15 +1040,15 @@ body * {
   position: relative;
 }
 
-#news .topnews .grid .slider .new .content figure,
-#new .topnews .grid .slider .new .content figure {
+#news .topnews .grid .slider .new .content > figure,
+#new .topnews .grid .slider .new .content > figure {
   padding-top: 56.14%;
   position: relative;
   overflow: hidden;
 }
 
-#news .topnews .grid .slider .new .content figure img,
-#new .topnews .grid .slider .new .content figure img {
+#news .topnews .grid .slider .new .content > figure img,
+#new .topnews .grid .slider .new .content > figure img {
   height: 100%;
   position: absolute;
   top: 0;
@@ -1059,8 +1059,8 @@ body * {
      object-fit: cover;
 }
 
-#news .topnews .grid .slider .new .content figure::after,
-#new .topnews .grid .slider .new .content figure::after {
+#news .topnews .grid .slider .new .content > figure::after,
+#new .topnews .grid .slider .new .content > figure::after {
   content: "";
   position: absolute;
   top: 0;
@@ -1071,43 +1071,43 @@ body * {
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 79.36%);
 }
 
-#news .topnews .grid .slider .new .content figcaption,
-#new .topnews .grid .slider .new .content figcaption {
+#news .topnews .grid .slider .new .content > figcaption,
+#new .topnews .grid .slider .new .content > figcaption {
   position: absolute;
   bottom: 0;
   color: white;
   padding: 20px;
 }
 
-#news .topnews .grid .slider .new .content figcaption h3,
-#new .topnews .grid .slider .new .content figcaption h3 {
+#news .topnews .grid .slider .new .content > figcaption h3,
+#new .topnews .grid .slider .new .content > figcaption h3 {
   font-size: 21px;
   line-height: 100%;
   margin-bottom: 12px;
 }
 
 @media (min-width: 1024px) {
-  #news .topnews .grid .slider .new .content figcaption h3,
-  #new .topnews .grid .slider .new .content figcaption h3 {
+  #news .topnews .grid .slider .new .content > figcaption h3,
+  #new .topnews .grid .slider .new .content > figcaption h3 {
     font-size: 25px;
     line-height: 31px;
   }
 }
 
-#news .topnews .grid .slider .new .content figcaption p,
-#new .topnews .grid .slider .new .content figcaption p {
+#news .topnews .grid .slider .new .content > figcaption p,
+#new .topnews .grid .slider .new .content > figcaption p {
   font-size: 13px;
   line-height: 16px;
 }
 
 @media (min-width: 1024px) {
-  #news .topnews .grid .slider .new .content figcaption,
-  #new .topnews .grid .slider .new .content figcaption {
+  #news .topnews .grid .slider .new .content > figcaption,
+  #new .topnews .grid .slider .new .content > figcaption {
     font-size: 25px;
     line-height: 31px;
   }
-  #news .topnews .grid .slider .new .content figcaption::after,
-  #new .topnews .grid .slider .new .content figcaption::after {
+  #news .topnews .grid .slider .new .content > figcaption::after,
+  #new .topnews .grid .slider .new .content > figcaption::after {
     content: "";
     width: 121px;
     height: 5px;
@@ -1255,23 +1255,22 @@ body * {
   position: relative;
 }
 
-#news .newsboard main aside .container .new::before,
-#new .newsboard main aside .container .new::before {
-  content: "";
-  position: absolute;
-  height: 100%;
-  width: 5px;
-  right: calc(100% + 16px - 5px);
-  top: 0;
-  background-color: #1ad7fd;
-}
-
 @media (min-width: 566px) {
   #news .newsboard main aside .container .new,
   #new .newsboard main aside .container .new {
     -ms-grid-columns: 100%;
         grid-template-columns: 100%;
     gap: 50px;
+  }
+  #news .newsboard main aside .container .new::before,
+  #new .newsboard main aside .container .new::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 5px;
+    right: calc(100% + 16px - 5px);
+    top: 0;
+    background-color: #1ad7fd;
   }
   #news .newsboard main aside .container .new::before,
   #new .newsboard main aside .container .new::before {

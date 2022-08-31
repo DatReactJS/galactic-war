@@ -3,6 +3,7 @@
 @import "../../assets/stylesheets/sass/source/abstracts/_mixins";
 @import "../../assets/stylesheets/sass/source/base/agent";
 @import "../../assets/stylesheets/sass/source/popUp/popUp";
+@import "../../assets/stylesheets/sass/source/mouseclick";
 @import "./swiper";
 // font old
 @font-face {
@@ -134,7 +135,7 @@ body {
                 left: 50%;
                 transform: translateX(-50%);
                 object-fit: cover;
-              }             
+              }
             }
             & > figcaption {
               position: absolute;
@@ -236,7 +237,7 @@ body {
       aside {
         display: none;
         flex-direction: column;
-        &.active{
+        &.active {
           display: flex;
         }
         .container {

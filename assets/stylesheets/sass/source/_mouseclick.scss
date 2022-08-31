@@ -1,0 +1,23 @@
+#cursor-click {
+    position: fixed;
+    width: 32px;
+    height: 32px;
+    background: #1ad7fd;
+    opacity: 0.1;
+    border-radius: 50%;
+    z-index: 999;
+    border: 1px solid #1ad7fd;
+    animation: clickAnimation 0.4s ease-out;
+  }
+  @keyframes clickAnimation {
+    from {
+      opacity: 0.1;
+      background: #1ad7fd;
+      transform: translate(-50%, -50%) scale(0);
+    }
+    to {
+      opacity: 1;
+      background: transparent;
+      transform: translate(-50%, -50%) scale(1.5);
+    }
+  }

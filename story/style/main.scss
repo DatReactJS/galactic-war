@@ -1,0 +1,73 @@
+@import "../../assets/stylesheets/sass/source/layout/navbar";
+@import "../../assets/stylesheets/sass/source/layout/header";
+@import "../../assets/stylesheets/sass/source/abstracts/_mixins";
+@import "../../assets/stylesheets/sass/source/base/agent";
+@import "../../assets/stylesheets/sass/source/popUp/popUp";
+@import '../../assets/stylesheets/sass/source/mouseclick';
+// font old
+@font-face {
+  font-family: "VARIEN";
+  src: url("../../assets/fonts/VARIEN.OTF") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "MUDHEAD";
+  src: url("../../assets/fonts/MUDHEAD.OTF") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "MUDHEAD-BOLD";
+  src: url("../../assets/fonts/MUDHEAD-BOLD.OTF") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "MUDHEAD-LIGHT";
+  src: url("../../assets/fonts/MUDHEAD-LIGHT.OTF") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Microgramma-D-OT-Bold";
+  src: url("../../assets/fonts/Microgramma-D-OT-Bold-Extended_30403.ttf")
+    format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Microgramma-D-OT-Medium";
+  src: url("../../assets/fonts/Microgramma-D-OT-Medium-Extended_30404.ttf")
+    format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.Barlow {
+  font-family: "Barlow", sans-serif;
+}
+.Microgramma {
+  font-family: "Microgramma-D-OT-Medium", sans-serif;
+}
+.Microgramma-b {
+  font-family: "Microgramma-D-OT-Bold", sans-serif;
+}
+body {
+  background-color: #19181f;
+  * {
+    box-sizing: border-box;
+  }
+  font-family: "Barlow", sans-serif;
+  cursor: url("../../assets/images/icon/cursor.png") 10 10, default !important;
+  a,
+  button,
+  * {
+    cursor: url("../../assets/images/icon/cursor.png") 10 10, default !important;
+  }
+}
+#story{
+  height:800px;
+  background-color: white;
+}

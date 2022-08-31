@@ -3362,24 +3362,6 @@ header ._header_top .bg_header {
     z-index: -1;
   }
 }
-:root {
-  --theme-color: #1ad7fd;
-}
-
-body {
-  min-height: 100vh;
-  cursor: url("../../../images/icon/cursor.png") 10 10, default !important;
-}
-body a,
-body button,
-body * {
-  cursor: url("../../../images/icon/cursor.png") 10 10, default !important;
-}
-
-.cwhite {
-  color: white;
-}
-
 #cursor-click {
   position: fixed;
   width: 32px;
@@ -3418,6 +3400,24 @@ body * {
     transform: translate(-50%, -50%) scale(1.5);
   }
 }
+:root {
+  --theme-color: #1ad7fd;
+}
+
+body {
+  min-height: 100vh;
+  cursor: url("../../../images/icon/cursor.png") 10 10, default !important;
+}
+body a,
+body button,
+body * {
+  cursor: url("../../../images/icon/cursor.png") 10 10, default !important;
+}
+
+.cwhite {
+  color: white;
+}
+
 .homepage {
   position: relative;
 }

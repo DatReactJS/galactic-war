@@ -51,6 +51,18 @@
             @media (max-width: 1024px) {
               height: 34.67px;
               width: auto;
+              object-fit: cover;
+            }
+          }
+          &:last-child {
+            img {
+              display: block;
+              margin: auto;
+              @media (max-width: 1024px) {
+                height: 40px;
+                width: 250px;
+                object-fit: cover;
+              }
             }
           }
         }

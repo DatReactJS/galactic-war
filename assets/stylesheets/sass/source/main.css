@@ -2895,6 +2895,20 @@ header ._header_top .bg_header {
   #page-14 .content-page14 .MEDIA-SECURITY .container .col img {
     height: 34.67px;
     width: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+#page-14 .content-page14 .MEDIA-SECURITY .container .col:last-child img {
+  display: block;
+  margin: auto;
+}
+@media (max-width: 1024px) {
+  #page-14 .content-page14 .MEDIA-SECURITY .container .col:last-child img {
+    height: 40px;
+    width: 250px;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 #page-14 .my_team {

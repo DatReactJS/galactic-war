@@ -1900,6 +1900,8 @@
                           data-src="./assets/images/slider/page14/polygon.png"
                           alt="logo"
                           class="logoitem2 swiper-lazy"
+                          style="
+                          min-height: 100px !important;"
                         />
                       </div>            
                       <div class="col">
@@ -1979,7 +1981,8 @@
         #popUpcollectGmail{      
           background: #F3F4F6;    
           position: fixed;
-          width: 444px;          
+          width: 444px; 
+          max-width: calc(100vw - 40px);         
           top: 50%;
           left: 50%;          
           z-index: 1;
@@ -1991,6 +1994,7 @@
           font-family: 'Barlow';
           font-style: normal;        
           overflow: hidden;
+          box-sizing: border-box;
         }
         #popUpcollectGmail::before{          
           content: '';

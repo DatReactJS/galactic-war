@@ -42,6 +42,13 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "nasalization";
+  src: url("../../../fonts/nasalization rg.ttf")
+    format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
 
 .Barlow {
   font-family: "Barlow", sans-serif;
@@ -51,4 +58,7 @@
 }
 .Microgramma-b {
   font-family: "Microgramma-D-OT-Bold", sans-serif;
+}
+.nasalization{
+  font-family: "nasalization";
 }

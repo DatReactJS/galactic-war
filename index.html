@@ -1992,16 +1992,16 @@
     <div id="popUpcollectGmail">
       <style>
         #popUpcollectGmail{      
-          background: #F3F4F6;    
+          background:  linear-gradient(90deg, #89EEFF ,#E4ABFF);
+          border-radius: 12px;
           position: fixed;
-          width: 444px; 
+          width: 848px; 
           max-width: calc(100vw - 40px);         
           top: 50%;
           left: 50%;          
           z-index: 1;
           transition: 0.3s ease-in-out;
-          transform:translate(-50%,-50%) scale(0);          
-          border-radius: 20px;
+          transform:translate(-50%,-50%) scale(0);                    
           text-align: center;
           padding: 30px;
           font-family: 'Barlow';
@@ -2014,12 +2014,13 @@
           position: absolute;
           width: calc(100% - 14px);
           height: calc(100% - 14px);
-          background: #4C9EBF;
-          opacity: 0.1;
+          background-image: linear-gradient(90deg, transparent 0,rgba(0, 0, 0, 1) 50% 50%, transparent 100%), url('./assets/images/popUpForm.jpeg');
+          border-radius: 12px;
+          opacity: 1;
           top: 7px;
           left:7px;
           z-index: -1;
-          border-radius: 20px;
+          background-size: cover;
         }
         #popUpcollectGmail.show{
           transform:translate(-50%,-50%) scale(1);
@@ -2030,27 +2031,64 @@
           top: 14px;
           width: 30px;
         }
-        #popUpcollectGmail p{          
-          font-weight: 500;
-          font-size: 16px;
-          line-height: 19px;
+        #popUpcollectGmail .title{
+          margin-bottom: 18px;
+        }
+        #popUpcollectGmail p{
+          font-weight: 300;
+          font-size: 21px;
+          line-height: 25px;
           text-align: center;
-          color: #7C82A1;
-          margin-bottom: 11px;
+          color: #FFFFFF;          
+          margin-bottom: 14px;
+          width: 557px;
+          margin: auto;
+          position: relative;
+        }     
+        #popUpcollectGmail p::before,#popUpcollectGmail p::after{
+          position: absolute;
+          content: '';
+          display: block;
+          width: 40px;
+          height: 40px;
+          background-image: url('./assets//images/Mask\ group.png');
+          background-size: cover;
+          filter: brightness(0) invert(1);
+        }
+        #popUpcollectGmail p::before{
+          top: 50%;
+          right: calc(100% + 15px);
+          transform: translateY(-50%);
+        }
+        #popUpcollectGmail p::after{
+          top: 50%;
+          left: calc(100% + 15px);
+          transform: translateY(-50%);
+        }
+        #popUpcollectGmail p span{
+          color: #FF8AF3;
         }
         #popUpcollectGmail div{
           margin-bottom: 35px;
         }
         #popUpcollectGmail a{
-          width: 292px;
-          height: 52px;
-          background: #0D99B1;
-          border-radius: 10px;
-          text-align: center;
-          padding: 14px 50px;
-          color: white;
-          font-weight: 600;    
-          text-decoration: none;      
+          width: 298px;
+          height: 86px;
+          background: url('./assets//images/buttonsubmitForm.png');
+          background-size: cover;                                                        
+          display: block;
+          margin: auto;
+          position: relative;
+        }
+        #popUpcollectGmail a::after{
+          content: '';
+          background-image: url('./assets/images/bottombutton.png');
+          width: 236px;
+          height: 11px;
+          position: absolute;
+          top: 100%;
+          left: 50%;
+          transform: translateX(-50%);
         }
       </style>
       <span class="close" onclick="document
@@ -2060,15 +2098,23 @@
           <path d="M10.175 8.99995L17.0834 2.09162C17.2199 1.9322 17.2912 1.72714 17.2831 1.51741C17.275 1.30768 17.1881 1.10873 17.0397 0.960315C16.8912 0.811903 16.6923 0.724959 16.4826 0.716858C16.2728 0.708757 16.0678 0.780096 15.9084 0.916618L9.00002 7.82495L2.09169 0.908284C1.93477 0.751365 1.72194 0.663208 1.50002 0.663208C1.2781 0.663208 1.06527 0.751365 0.908352 0.908284C0.751432 1.0652 0.663275 1.27803 0.663275 1.49995C0.663275 1.72187 0.751432 1.9347 0.908352 2.09162L7.82502 8.99995L0.908352 15.9083C0.821117 15.983 0.750267 16.0749 0.700247 16.1783C0.650228 16.2817 0.622119 16.3943 0.617686 16.5091C0.613254 16.6238 0.632591 16.7383 0.674487 16.8452C0.716382 16.9522 0.779931 17.0493 0.861143 17.1305C0.942355 17.2117 1.03948 17.2753 1.14642 17.3171C1.25335 17.359 1.3678 17.3784 1.48256 17.3739C1.59733 17.3695 1.70994 17.3414 1.81333 17.2914C1.91671 17.2414 2.00865 17.1705 2.08335 17.0833L9.00002 10.175L15.9084 17.0833C16.0678 17.2198 16.2728 17.2911 16.4826 17.283C16.6923 17.2749 16.8912 17.188 17.0397 17.0396C17.1881 16.8912 17.275 16.6922 17.2831 16.4825C17.2912 16.2728 17.2199 16.0677 17.0834 15.9083L10.175 8.99995Z" fill="#0D99B1"/>
         </svg>            
       </span>
-      <p>
-        Please follow the link below to confirm your information
+      <img src="./assets/images/Don’t miss out.png" alt="none" class="title">      
+      <p class="p nasalization">
+        This is one of the
+        <span>
+          special events
+        </span>
+        the Galactic War team brings you guys. We'd like to thank you and invite you to fill out the form below to get notification of the 
+        <span>
+          hottest deals and information
+        </span>
+        about Galactic War.
       </p>
       <div>
-        <img src="./assets/images/Mask group.png" alt="">
+        <!-- <img src="./assets/images/Mask group.png" alt=""> -->
           
       </div>
-        <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSe3PjHOBQRO8w031BTmx6g2-3O66kS6VA0Z-YRQmsbGLAFHKA/viewform"> Submit your info</a>
-        
+        <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSe3PjHOBQRO8w031BTmx6g2-3O66kS6VA0Z-YRQmsbGLAFHKA/viewform"></a>        
     </div>
   </body>
 </html>
@@ -2109,6 +2155,8 @@
           document.getElementById("swiper-load-done").classList.add("show")
           const loading = document.getElementById("swiper-loading");
           loading.parentNode.removeChild(loading);          
+          // open popup
+          document.getElementById('popUpcollectGmail').classList.add('show');
         }
           ,
           3000
@@ -2141,8 +2189,9 @@
           .getElementById("control-sound-video-page-2")
           .classList.add("playing");
       }
-      //show popbox in slide 2
-      if (videoOnactive) {
+      //show popbox in slide 1
+      let page1isActive = sliderActive.querySelector("#page-1");
+      if (page1isActive) {
         document
         .getElementById("popUpcollectGmail").classList.add("show");
       }

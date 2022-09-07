@@ -2022,8 +2022,10 @@
           z-index: -1;
           background-size: cover;
         }
-        #popUpcollectGmail.show{
-          transform:translate(-50%,-50%) scale(1);
+        @media (min-width:1420px) {          
+          #popUpcollectGmail.show{
+            transform:translate(-50%,-50%) scale(1);
+          }
         }
         #popUpcollectGmail .close{
           position: absolute;          

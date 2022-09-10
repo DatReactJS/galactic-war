@@ -185,7 +185,9 @@
         }
       }
       .MEDIA-SECURITY {
-        padding: 75px 0 0;
+        background: rgba(12, 12, 12, 0.5);
+        backdrop-filter: blur(30px);
+        margin-top: 75px;
         h2 {
           display: none;
         }

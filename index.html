@@ -157,16 +157,7 @@
         }
       </script>
     </header>
-    <div class="homepage">
-      <a class="Play-trailer" href="#Trailer" onclick="()=>{
-          let video = document.getElementById('video-page2');
-          video.play()
-          video.muted = true;
-        }">
-        <img src=".\assets\images\ldp\play_trailer.png" alt="" class="arrowHorizontal" />
-        <span class="Barlow"> Play trailer </span>
-      </a>
-      <!--  -->
+    <div class="homepage">      
       <div class="social">
         <a href="https://www.facebook.com/groups/galacticwario" target="_blank">
           <img src=".\assets\images\ldp\face.png" alt="" />
@@ -369,8 +360,7 @@
                   class="bg-2 swiper-lazy" />
               </div>
               <div class="bg-desktop">
-                <img data-src="./assets/images//slider/page4/bg-desktop.png" alt="" class="swiper-lazy bg-1" />
-                <img data-src="./assets/images//slider/page4/planet20-3-(1).png" alt="" class="swiper-lazy bg-2" />
+                <img data-src="./assets/images//slider/page4/bg.jpeg" alt="" class="swiper-lazy bg-1" />                
               </div>
               <div class="container">
                 <h2 class="Microgramma-b">roadmap</h2>
@@ -1145,8 +1135,7 @@
         document.getElementById("popUp").classList.remove("fadeIn");
         document.getElementById("popUp").classList.add("fadeOut");
       }
-      function openPopUp() {
-        console.log("run");
+      function openPopUp() {        
         document.getElementById("popUp").classList.remove("fadeOut");
         document.getElementById("popUp").classList.add("fadeIn");
       }

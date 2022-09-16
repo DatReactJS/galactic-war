@@ -31,20 +31,17 @@ body {
     cursor: url("../../../images/icon/cursor.png") 10 10, default !important;
   }
 }
-.cwhite{
-  color:white
+.cwhite {
+  color: white;
 }
 .homepage {
   position: relative;
-  .Play-trailer {
-    display: none;
-  }
   .social {
     display: none;
   }
   .swiper-container {
     .swiper-wrapper {
-      .swiper-slide {        
+      .swiper-slide {
         width: 100%;
         background: black;
       }
@@ -93,30 +90,6 @@ body {
     }
   }
   @media (min-width: 1024px) {
-    .Play-trailer {
-      background: transparent;
-      border: none;
-      display: flex;
-      align-items: center;
-      position: absolute;
-      left: 3%;
-      bottom: 12%;
-      z-index: 99;
-      text-decoration: none;
-      img {
-        height: 1.5em;
-        margin-right: 1em;
-      }
-      span {
-        font-style: normal;
-        font-weight: 600;
-        font-size: 14px;
-        line-height: 0.5em;
-        letter-spacing: 0.1em;
-        text-transform: uppercase;
-        color: var(--theme-color);
-      }
-    }
     .social {
       z-index: 99;
       display: flex;
@@ -168,23 +141,13 @@ body {
     }
   }
   @media (min-width: 1620px) {
-    .Play-trailer {
-      img {
-        height: auto;
-        margin-right: 34px;
-      }
-      span {
-        font-size: 16px;
-        line-height: 19px;
-      }
-    }
     .social {
       right: 3%;
       bottom: 9%;
       a {
         width: 50px;
         height: 50px;
-        margin-right: 5px;       
+        margin-right: 5px;
       }
     }
   }
@@ -214,7 +177,7 @@ body {
 .upcase {
   text-transform: uppercase;
 }
-#swiper-load-done{
+#swiper-load-done {
   opacity: 0;
   &.show {
     opacity: 1;
@@ -261,10 +224,10 @@ body {
       top: 8px;
       height: 64px;
     }
-    50%, 100% {
+    50%,
+    100% {
       top: 24px;
       height: 33px;
     }
   }
-  
 }

@@ -102,8 +102,8 @@
   }
   .main-nav .menu__content .list_menu a {
     font-weight: 400;
-    font-size: 16px;
-    padding: 6px 50px;
+    font-size: 14px;
+    padding: 6px 24px;
     height: 100%;
     display: flex;
     text-align: center;
@@ -124,6 +124,10 @@
 @media (min-width: 1620px) {
   .main-nav .menu__content .list_menu .a {
     font-size: 16px;
+  }
+  .main-nav .menu__content .list_menu a {
+    font-size: 16px;
+    padding: 6px 50px;
   }
 }
 

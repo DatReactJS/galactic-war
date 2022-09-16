@@ -1,2163 +1,1328 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Galactic War</title>
-    <meta name="keywords" content="Galactic War,Galactic,war,NFT,Game" />
-    <meta
-      name="description"
-      content="Galactic War is the first FPS NFTs game with top-notch graphics. Built on the Unreal Engine platform, Galatic War promises amazing gameplay and effects. Down the road, we aim to engage in the metaverse with VR technology, bringing a more realistic experience to the e-sports game as players battle in the Milky Way."
-    />
-    <meta property="og:title" content="Galactic War" />
-    <meta
-      property="og:image"
-      content="./assets/images/logo.png"
-    />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-      rel="shortcut icon"
-      type="image/png"
-      href="./assets/images/logo.png"
-    />
-    <!-- <script>
+
+<head>
+  <title>Galactic War</title>
+  <meta name="keywords" content="Galactic War,Galactic,war,NFT,Game" />
+  <meta name="description"
+    content="Galactic War is the first FPS NFTs game with top-notch graphics. Built on the Unreal Engine platform, Galatic War promises amazing gameplay and effects. Down the road, we aim to engage in the metaverse with VR technology, bringing a more realistic experience to the e-sports game as players battle in the Milky Way." />
+  <meta property="og:title" content="Galactic War" />
+  <meta property="og:image" content="./assets/images/logo.png" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="shortcut icon" type="image/png" href="./assets/images/logo.png" />
+  <!-- <script>
       if(window.innerWidth<768){
         window.location.replace("/m");
       }
     </script> -->
-    <link rel="stylesheet" href="./assets/stylesheets/sass/dist/main.css" />
-    <link rel="stylesheet" href="./assets/stylesheets/sass/source/main.css" />
-    <script
-      src="https://code.jquery.com/jquery-3.6.0.js"
-      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="./assets/scripts/main.js"
-      type="text/javascript"
-    ></script>
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper@6/swiper-bundle.min.css"
-    />
-    <script src="https://unpkg.com/swiper@6/swiper-bundle.min.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <div id="swiper-loading">
-      <div class="lds-facebook"><div></div><div></div><div></div></div>
-      <h1 class='Microgramma-b cwhite'>
-        Please wait
-      </h1>
+  <link rel="stylesheet" href="./assets/stylesheets/sass/dist/main.css" />
+  <link rel="stylesheet" href="./assets/stylesheets/sass/source/main.css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+  <script src="./assets/scripts/main.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="https://unpkg.com/swiper@6/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper@6/swiper-bundle.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <div id="swiper-loading">
+    <div class="lds-facebook">
+      <div></div>
+      <div></div>
+      <div></div>
     </div>
-    <div id="swiper-load-done">
-      <header class="main-header">
-        <div class="container">
-          <div class="logo">
-            <a href="/#home">
-              <img
-                src="./assets/images/logo.png"
-                alt="logo"
-              />
-            </a>
-          </div>
-
-          <div class="breadcrum">
-            <p class="Barlow">galactic war</p>
-          </div>
-
-          <button
-            class="switch"
-            onclick="toggleNavMobile()"
-            id="switchNavBarMobile"
-          >
-            <!-- svg open -->
-            <svg
-              width="22"
-              height="18"
-              viewBox="0 0 22 18"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              class="open"
-            >
-              <path
-                d="M0.5 10.5H21.5V7.5H0.5V10.5ZM0.5 18H21.5V15H0.5V18ZM0.5 0V3H21.5V0H0.5Z"
-                fill="white"
-              />
-            </svg>
-            <!-- svg close -->
-            <svg
-              width="18"
-              height="18"
-              viewBox="0 0 18 18"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              class="close"
-            >
-              <path
-                d="M15.9875 0.25L9 7.2375L2.0125 0.25L0.25 2.0125L7.2375 9L0.25 15.9875L2.0125 17.75L9 10.7625L15.9875 17.75L17.75 15.9875L10.7625 9L17.75 2.0125L15.9875 0.25Z"
-                fill="white"
-              />
-            </svg>
-          </button>
+    <h1 class="Microgramma-b cwhite">Please wait</h1>
+  </div>
+  <div id="swiper-load-done">
+    <header class="main-header">
+      <div class="container">
+        <div class="logo">
+          <a href="/#home">
+            <img src="./assets/images/logo.png" alt="logo" />
+          </a>
         </div>
 
-        <!-- toggle class='active' -->
-        <nav class="main-nav" id="NavBarMobile">
-          <div class="menu__content">
-            <ul class="list_menu">
-              <li class="active">
-                <a href="#home" data-attr="section_video" class="Barlow">
-                  <span> Home </span>
-                </a>
-                <img
-                  src=".\assets\images\Btn_WeaponMenu_p 2.svg"
-                  alt=""
-                />
-              </li>
-              <li onclick="openPopUp()">
-                <a
-                  href="#marketplace"
-                  data-attr="section_what_race"
-                  class="Barlow"
-                >
-                  <span> marketplace </span>
-                </a>
-                <img
-                  src=".\assets\images\Btn_WeaponMenu_p 2.svg"
-                  alt=""
-                />
-              </li>
-              <li>
-                <a href="/news" data-attr="section_game_future" class="Barlow">
-                  <span> news </span>
-                </a>
-                <img
-                  src=".\assets\images\Btn_WeaponMenu_p 2.svg"
-                  alt=""
-                />
-              </li>
-              <li>
-                <a href="#roadmap" data-attr="section_what_race" class="Barlow">
-                  <span> roadmap </span>
-                </a>
-                <img
-                  src=".\assets\images\Btn_WeaponMenu_p 2.svg"
-                  alt=""
-                />
-              </li>
-              <li>
-                <a
-                  href="#team&advisors"
-                  data-attr="section_what_race"
-                  class="Barlow"
-                >
-                  <span> our team </span>
-                </a>
-                <img
-                  src=".\assets\images\Btn_WeaponMenu_p 2.svg"
-                  alt=""
-                />
-              </li>
-              <li>
-                <a
-                  href="https://docs.galacticwar.io/"
-                  target="_blank"
-                  data-attr="section_what_race"
-                  class="Barlow"
-                >
-                  <span> documents </span>
-                </a>
-                <img
-                  src=".\assets\images\Btn_WeaponMenu_p 2.svg"
-                  alt=""
-                />
-              </li>
-              <li>
-                <a
-                  href="https://drive.google.com/drive/folders/18Rqg9iExUBXP0oPjAm-XBQ5sPHZfE-TA"
-                  target="_blank"
-                  data-attr="section_what_race"
-                  class="Barlow"
-                >
-                  <span> pitch deck </span>
-                </a>
-                <img
-                  src=".\assets\images\Btn_WeaponMenu_p 2.svg"
-                  alt=""
-                />
-              </li>
-              <li>
-                <a
-                  href="https://drive.google.com/drive/u/1/folders/1X8En4unAZV9DS0PN0ZQrsGUWrSRWr8fd"
-                  target="_blank"
-                  data-attr="section_what_race"
-                  class="Barlow"
-                >
-                  <span> game Demo </span>
-                </a>
-                <img
-                  src=".\assets\images\Btn_WeaponMenu_p 2.svg"
-                  alt=""
-                />
-              </li>
-              <li>
-                <a
-                  href="./airdrop"
-                  data-attr="section_what_race"
-                  class="Barlow"
-                >
-                  <span> claim token </span>
-                </a>
-                <img
-                  src=".\assets\images\Btn_WeaponMenu_p 2.svg"
-                  alt=""
-                />
-              </li>
-            </ul>
-          </div>
+        <div class="breadcrum">
+          <p class="Barlow">galactic war</p>
+        </div>
 
-          <div class="social">
-            <a
-              href="https://www.facebook.com/groups/galacticwario"
-              target="_blank"
-            >
-              <img
-                src=".\assets\images\ldp\face.png"
-                alt=""
-              />
-            </a>
-            <a
-              href="https://www.youtube.com/channel/UCkEQfE0g0b1hQeaddRmKjWg"
-              target="_blank"
-            >
-              <img
-                src=".\assets\images\ldp\youtube.png"
-                alt=""
-              />
-            </a>
-            <a href="https://t.me/GalacticWarGlobal" target="_blank">
-              <img
-                src=".\assets\images\ldp\Vector.png"
-                alt=""
-              />
-            </a>
-            <a href="https://twitter.com/GalacticWarGame" target="_blank">
-              <img
-                src=".\assets\images\ldp\twitter.png"
-                alt=""
-              />
-            </a>
-            <a href="https://discord.com/invite/pThDVhfuHd" target="_blank">
-              <img
-                src=".\assets\images\ldp\discord.png"
-                alt=""
-              />
-            </a>
-          </div>
-        </nav>
-        <script>
-          function toggleNavMobile() {
-            document.getElementById("NavBarMobile").classList.toggle("active");
-            document
-              .getElementById("switchNavBarMobile")
-              .classList.toggle("active");
-          }
-        </script>
-      </header>
-      <div class="homepage">
-        <a
-          class="Play-trailer"
-          href="#Trailer"
-          onclick="()=>{
+        <button class="switch" onclick="toggleNavMobile()" id="switchNavBarMobile">
+          <!-- svg open -->
+          <svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg" class="open">
+            <path d="M0.5 10.5H21.5V7.5H0.5V10.5ZM0.5 18H21.5V15H0.5V18ZM0.5 0V3H21.5V0H0.5Z" fill="white" />
+          </svg>
+          <!-- svg close -->
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" class="close">
+            <path
+              d="M15.9875 0.25L9 7.2375L2.0125 0.25L0.25 2.0125L7.2375 9L0.25 15.9875L2.0125 17.75L9 10.7625L15.9875 17.75L17.75 15.9875L10.7625 9L17.75 2.0125L15.9875 0.25Z"
+              fill="white" />
+          </svg>
+        </button>
+      </div>
+
+      <!-- toggle class='active' -->
+      <nav class="main-nav" id="NavBarMobile">
+        <div class="menu__content">
+          <ul class="list_menu">
+            <li class="active">
+              <a href="#home" data-attr="section_video" class="Barlow">
+                <span> Home </span>
+              </a>
+              <img src=".\assets\images\Btn_WeaponMenu_p 2.svg" alt="" />
+            </li>
+            <li onclick="openPopUp()">
+              <a href="#marketplace" data-attr="section_what_race" class="Barlow">
+                <span> marketplace </span>
+              </a>
+              <img src=".\assets\images\Btn_WeaponMenu_p 2.svg" alt="" />
+            </li>
+            <li>
+              <a href="/news" data-attr="section_game_future" class="Barlow">
+                <span> news </span>
+              </a>
+              <img src=".\assets\images\Btn_WeaponMenu_p 2.svg" alt="" />
+            </li>
+            <li>
+              <a href="#roadmap" data-attr="section_what_race" class="Barlow">
+                <span> roadmap </span>
+              </a>
+              <img src=".\assets\images\Btn_WeaponMenu_p 2.svg" alt="" />
+            </li>
+            <li>
+              <a href="#team&advisors" data-attr="section_what_race" class="Barlow">
+                <span> our team </span>
+              </a>
+              <img src=".\assets\images\Btn_WeaponMenu_p 2.svg" alt="" />
+            </li>
+            <li>
+              <a href="https://docs.galacticwar.io/" target="_blank" data-attr="section_what_race" class="Barlow">
+                <span> documents </span>
+              </a>
+              <img src=".\assets\images\Btn_WeaponMenu_p 2.svg" alt="" />
+            </li>
+            <li>
+              <a href="https://drive.google.com/drive/folders/18Rqg9iExUBXP0oPjAm-XBQ5sPHZfE-TA" target="_blank"
+                data-attr="section_what_race" class="Barlow">
+                <span> pitch deck </span>
+              </a>
+              <img src=".\assets\images\Btn_WeaponMenu_p 2.svg" alt="" />
+            </li>
+            <li>
+              <a href="https://drive.google.com/drive/u/1/folders/1X8En4unAZV9DS0PN0ZQrsGUWrSRWr8fd" target="_blank"
+                data-attr="section_what_race" class="Barlow">
+                <span> game Demo </span>
+              </a>
+              <img src=".\assets\images\Btn_WeaponMenu_p 2.svg" alt="" />
+            </li>
+            <li>
+              <a href="./airdrop" data-attr="section_what_race" class="Barlow">
+                <span> claim token </span>
+              </a>
+              <img src=".\assets\images\Btn_WeaponMenu_p 2.svg" alt="" />
+            </li>
+          </ul>
+        </div>
+
+        <div class="social">
+          <a href="https://www.facebook.com/groups/galacticwario" target="_blank">
+            <img src=".\assets\images\ldp\face.png" alt="" />
+          </a>
+          <a href="https://www.youtube.com/channel/UCkEQfE0g0b1hQeaddRmKjWg" target="_blank">
+            <img src=".\assets\images\ldp\youtube.png" alt="" />
+          </a>
+          <a href="https://t.me/GalacticWarGlobal" target="_blank">
+            <img src=".\assets\images\ldp\Vector.png" alt="" />
+          </a>
+          <a href="https://twitter.com/GalacticWarGame" target="_blank">
+            <img src=".\assets\images\ldp\twitter.png" alt="" />
+          </a>
+          <a href="https://discord.com/invite/pThDVhfuHd" target="_blank">
+            <img src=".\assets\images\ldp\discord.png" alt="" />
+          </a>
+        </div>
+      </nav>
+      <script>
+        function toggleNavMobile() {
+          document.getElementById("NavBarMobile").classList.toggle("active");
+          document
+            .getElementById("switchNavBarMobile")
+            .classList.toggle("active");
+        }
+      </script>
+    </header>
+    <div class="homepage">
+      <a class="Play-trailer" href="#Trailer" onclick="()=>{
           let video = document.getElementById('video-page2');
           video.play()
           video.muted = true;
-        }"
-        >
-          <img
-            src=".\assets\images\ldp\play_trailer.png"
-            alt=""
-            class="arrowHorizontal"
-          />
-          <span class="Barlow"> Play trailer </span>
+        }">
+        <img src=".\assets\images\ldp\play_trailer.png" alt="" class="arrowHorizontal" />
+        <span class="Barlow"> Play trailer </span>
+      </a>
+      <!--  -->
+      <div class="social">
+        <a href="https://www.facebook.com/groups/galacticwario" target="_blank">
+          <img src=".\assets\images\ldp\face.png" alt="" />
         </a>
-        <!--  -->
-        <div class="social">
-          <a
-            href="https://www.facebook.com/groups/galacticwario"
-            target="_blank"
-          >
-            <img
-              src=".\assets\images\ldp\face.png"
-              alt=""
-            />
-          </a>
-          <a
-            href="https://www.youtube.com/channel/UCkEQfE0g0b1hQeaddRmKjWg"
-            target="_blank"
-          >
-            <img
-              src=".\assets\images\ldp\youtube.png"
-              alt=""
-            />
-          </a>
-          <a href="https://t.me/GalacticWarGlobal" target="_blank">
-            <img
-              src=".\assets\images\ldp\Vector.png"
-              alt=""
-            />
-          </a>
-          <a href="https://twitter.com/GalacticWarGame" target="_blank">
-            <img
-              src=".\assets\images\ldp\twitter.png"
-              alt=""
-            />
-          </a>
-          <a href="https://discord.com/invite/pThDVhfuHd" target="_blank">
-            <img
-              src=".\assets\images\ldp\discord.png"
-              alt=""
-            />
-          </a>
-        </div>
-        <div class="swiper-container" id="slide_home">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide" data-hash="home">
-              <div id="page-1">
-                <div class="bg">
+        <a href="https://www.youtube.com/channel/UCkEQfE0g0b1hQeaddRmKjWg" target="_blank">
+          <img src=".\assets\images\ldp\youtube.png" alt="" />
+        </a>
+        <a href="https://t.me/GalacticWarGlobal" target="_blank">
+          <img src=".\assets\images\ldp\Vector.png" alt="" />
+        </a>
+        <a href="https://twitter.com/GalacticWarGame" target="_blank">
+          <img src=".\assets\images\ldp\twitter.png" alt="" />
+        </a>
+        <a href="https://discord.com/invite/pThDVhfuHd" target="_blank">
+          <img src=".\assets\images\ldp\discord.png" alt="" />
+        </a>
+      </div>
+      <div class="swiper-container" id="slide_home">
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide" data-hash="home">
+            <div id="page-1">
+              <div class="bg">
+                <picture>
+                  <source media="(min-width:1024px)" data-srcset="./assets/images/slider/page1/bannerPage1.png"
+                    class="swiper-lazy" />
+                  <img data-src="./assets/images/slider/page1/bannerPage1.png" alt="bh" class="swiper-lazy" />
+                </picture>
+              </div>
+              <!--  -->
+              <div class="cointaier">
+                <img data-src="./assets/images/slider/page1/GalacticWar_PNG 2.png" alt="logo"
+                  class="swiper-lazy logo" />
+                <h2 class="Barlow">galactic war</h2>
+                <h3 class="Microgramma-b">
+                  <span> A World </span>
+                  Vast
+                  <br />
+                  <p>Beyond IMAGINATION</p>
+                </h3>
+                <a href="./play-game">
                   <picture>
-                    <source
-                      media="(min-width:1024px)"
-                      data-srcset="./assets/images/slider/page1/bannerPage1.png"
-                      class="swiper-lazy"
-                    />
-                    <img
-                      data-src="./assets/images/slider/page1/bannerPage1.png"
-                      alt="bh"
-                      class="swiper-lazy"
-                    />
-                  </picture>                 
-                </div>
-                <!--  -->
-                <div class="cointaier">                  
-                  <img
-                    data-src="./assets/images/slider/page1/GalacticWar_PNG 2.png"
-                    alt="logo"
-                    class="swiper-lazy logo"
-                  />
-                  <h2 class="Barlow">galactic war</h2>
-                  <h3 class="Microgramma-b">
-                    <span> A World </span>
-                    Vast
-                    <br />
-                    <p>
-                      Beyond IMAGINATION
-                    </p>
-                  </h3>
-                  <a href="./play-game">
-                    <picture>
-                      <source
-                        media="(min-width:1024px)"
-                        srcset="
-                          ./assets/images/slider/page1/btndesktop.png
-                        "
-                        class="swiper-lazy"
-                      />
-                      <img
-                        src="./assets/images/ldp/Group 230.png"
-                        alt=""
-                        class="swiper-lazy"
-                      />
-                    </picture>
-                    <span class="Microgramma-b">PLAY now</span>
-                  </a>
-                  <a href="./story">
-                    <picture>
-                      <source
-                        media="(min-width:1024px)"
-                        srcset="
-                          ./assets/images/slider/page1/buttonStory.png
-                        "
-                        class="swiper-lazy"
-                      />
-                      <img
-                        src="./assets/images/slider/page1/buttonStorymobile.png"
-                        alt=""
-                        class="swiper-lazy"
-                      />
-                    </picture>
-                  </a>
-                </div>
-              </div>
-
-              <div class="swiper-preloader"></div>
-            </div>
-
-            <div class="swiper-slide" data-hash="Trailer">
-              <script>
-                var videoPage2Stage = {
-                  play: true,
-                  sound: false,
-                };
-                function pausevideo2() {
-                  let video = document.getElementById("video-page2");
-                  video.pause();
-                }
-                function playVideoPages2() {
-                  let video = document.getElementById("video-page2");
-                  if (video.paused) {
-                    video.play();
-                  } else video.pause();
-                  document
-                    .getElementById("control-video-page-2")
-                    .classList.toggle("playing");
-                }
-                function playSoundVideoPages2() {
-                  let video = document.getElementById("video-page2");
-                  if (video.muted) {
-                    video.muted = false;
-                  } else video.muted = true;
-                  document
-                    .getElementById("control-sound-video-page-2")
-                    .classList.toggle("playing");
-                }
-                function openFullscreenVideoPages2() {
-                  let elem = document.getElementById("video-page2");
-                  if (elem.requestFullscreen) {
-                    elem.requestFullscreen();
-                  } else if (elem.webkitRequestFullscreen) {
-                    /* Safari */
-                    elem.webkitRequestFullscreen();
-                  } else if (elem.msRequestFullscreen) {
-                    /* IE11 */
-                    elem.msRequestFullscreen();
-                  }
-                }
-              </script>
-              <div id="page-2">
-                <video
-                  data-src="./assets/images//slider/page2/Video Trailer Galacticwar_1.mp4"
-                  autoplay
-                  muted
-                  controls
-                  id="video-page2"
-                  class="swiper-lazy"
-                ></video>
-                <!--  -->
-                <button class="control playing" id="control-video-page-2">
-                  <img
-                    data-src="./assets//images//ldp/play.png"
-                    alt=""
-                    class="swiper-lazy play"
-                    onclick="playVideoPages2()"
-                  />
-                  <img
-                    data-src="./assets//images//ldp/pause.png"
-                    alt=""
-                    class="swiper-lazy pause"
-                    onclick="playVideoPages2()"
-                  />
-                </button>
-
-                <button
-                  class="control-sound playing"
-                  id="control-sound-video-page-2"
-                >
-                  <img
-                    data-src="./assets//images//ldp/sound.png"
-                    alt=""
-                    class="swiper-lazy play"
-                    onclick="playSoundVideoPages2()"
-                  />
-                  <img
-                    data-src="./assets//images//ldp/sound-off.png"
-                    alt=""
-                    class="swiper-lazy pause"
-                    onclick="playSoundVideoPages2()"
-                  />
-                  <img
-                    data-src="./assets//images/icon/Vector.png"
-                    alt=""
-                    class="swiper-lazy fullscreen"
-                    onclick="openFullscreenVideoPages2()"
-                  />
-                </button>
+                    <source media="(min-width:1024px)" srcset="./assets/images/slider/page1/btndesktop.png"
+                      class="swiper-lazy" />
+                    <img src="./assets/images/ldp/Group 230.png" alt="" class="swiper-lazy" />
+                  </picture>
+                  <span class="Microgramma-b">PLAY now</span>
+                </a>
+                <a href="./story">
+                  <picture>
+                    <source media="(min-width:1024px)" srcset="./assets/images/slider/page1/buttonStory.png"
+                      class="swiper-lazy" />
+                    <img src="./assets/images/slider/page1/buttonStorymobile.png" alt="" class="swiper-lazy" />
+                  </picture>
+                </a>
               </div>
             </div>
 
-            <div class="swiper-slide" data-hash="features">
-              <div id="page-3">
-                <div class="bg">
-                  <img
-                    data-src="./assets//images/slider/page3/226347986-AdobeStock_226347986 3.png"
-                    class="swiper-lazy"
-                    alt=""
-                  />
-                </div>
-                <div class="group730">
-                  <img
-                    data-src="./assets//images/slider//page3/Group 730.png"
-                    class="swiper-lazy"
-                    alt=""
-                  />
-                </div>
-                <div class="Greenplanet">
-                  <img
-                    data-src="./assets//images//slider//page3/2 26347989.png"
-                    class="swiper-lazy"
-                    alt=""
-                  />
-                </div>
-                <div class="group111">
-                  <img
-                    data-src="./assets//images//slider//page3/111 2 (1).png"
-                    class="swiper-lazy"
-                    alt=""
-                  />
-                </div>
-                <div class="group235">
-                  <img
-                    data-src="./assets/images/slider/page3/Group235.png"
-                    class="swiper-lazy"
-                    alt=""
-                  />
-                </div>
-                <div class="group236">
-                  <img
-                    data-src="./assets/images//slider/page3/Group236.png"
-                    class="swiper-lazy"
-                    alt=""
-                  />
-                </div>
-                <!-- list img -->
-                <div class="container">
-                  <h2 class="Microgramma-b">features</h2>
+            <div class="swiper-preloader"></div>
+          </div>
 
-                  <ul class="list-features">
-                    <li class="Barlow l1 upcase">
-                      <div class="li-border-1">
-                        <img
-                          data-src="./assets//images/slider//page3/s3-01.png"
-                          alt=""
-                          class="swiper-lazy"
-                        />
-                      </div>
-                      COMBINE THE GREATEST ASPECTS OF GAMING AND DIGITAL
-                      COLLECTIBLES
-                    </li>
-                    <li class="Barlow l2 upcase">
-                      <div class="li-border-2">
-                        <img
-                          data-src="./assets//images/slider//page3/s3-02.png"
-                          alt=""
-                          class="swiper-lazy"
-                        />
-                      </div>
-                      PvP Arena rewards
-                    </li>
-                    <li class="Barlow l3 upcase">
-                      <div class="li-border-3">
-                        <img
-                          data-src="./assets//images/slider//page3/s3-03.png"
-                          class="swiper-lazy"
-                          alt=""
-                        />
-                      </div>
-                      Idle campaign rewards
-                    </li>
-                    <li class="Barlow l4 upcase">
-                      <div class="li-border-4">
-                        <img
-                          data-src="./assets//images/slider//page3/s3-04.png"
-                          alt=""
-                          class="swiper-lazy"
-                        />
-                      </div>
-                      Evolutionary system
-                    </li>
-                    <li class="Barlow l5 upcase">
-                      <div class="li-border-5">
-                        <img
-                          data-src="./assets//images/slider//page3/s3-05.png"
-                          alt=""
-                          class="swiper-lazy"
-                        />
-                      </div>
-                      Quest and Ranking system
-                    </li>
-                    <li class="Barlow l6">
-                      <div class="li-border-6">
-                        <img
-                          data-src="./assets//images/slider//page3/s3-center.png"
-                          alt=""
-                          class="swiper-lazy"
-                        />
-                      </div>
-                      Galactic War is a unique AAA-grade platform of digital
-                      battles that will enable FPS enthusiasts to participate in
-                      the Milky Way NFT and blockchain-based gaming world in a
-                      creative, yet realistically magnificent way. Be prepared
-                      to immerse in the best NFT game of 2022!
-                    </li>
-                  </ul>
-                  <div class="flex-center">
-                    <button class="read">
-                      <img
-                        data-src=".\assets\images\ldp\play_trailer.png"
-                        alt=""
-                        class="swiper-lazy"
-                      />
-                      <span class="Barlow"> read our story </span>
-                    </button>
-                  </div>
+          <div class="swiper-slide" data-hash="Trailer">
+            <script>
+              var videoPage2Stage = {
+                play: true,
+                sound: false,
+              };
+              function pausevideo2() {
+                let video = document.getElementById("video-page2");
+                video.pause();
+              }
+              function playVideoPages2() {
+                let video = document.getElementById("video-page2");
+                if (video.paused) {
+                  video.play();
+                } else video.pause();
+                document
+                  .getElementById("control-video-page-2")
+                  .classList.toggle("playing");
+              }
+              function playSoundVideoPages2() {
+                let video = document.getElementById("video-page2");
+                if (video.muted) {
+                  video.muted = false;
+                } else video.muted = true;
+                document
+                  .getElementById("control-sound-video-page-2")
+                  .classList.toggle("playing");
+              }
+              function openFullscreenVideoPages2() {
+                let elem = document.getElementById("video-page2");
+                if (elem.requestFullscreen) {
+                  elem.requestFullscreen();
+                } else if (elem.webkitRequestFullscreen) {
+                  /* Safari */
+                  elem.webkitRequestFullscreen();
+                } else if (elem.msRequestFullscreen) {
+                  /* IE11 */
+                  elem.msRequestFullscreen();
+                }
+              }
+            </script>
+            <div id="page-2">
+              <video data-src="./assets/images//slider/page2/Video Trailer Galacticwar_1.mp4" autoplay muted controls
+                id="video-page2" class="swiper-lazy"></video>
+              <!--  -->
+              <button class="control playing" id="control-video-page-2">
+                <img data-src="./assets//images//ldp/play.png" alt="" class="swiper-lazy play"
+                  onclick="playVideoPages2()" />
+                <img data-src="./assets//images//ldp/pause.png" alt="" class="swiper-lazy pause"
+                  onclick="playVideoPages2()" />
+              </button>
+
+              <button class="control-sound playing" id="control-sound-video-page-2">
+                <img data-src="./assets//images//ldp/sound.png" alt="" class="swiper-lazy play"
+                  onclick="playSoundVideoPages2()" />
+                <img data-src="./assets//images//ldp/sound-off.png" alt="" class="swiper-lazy pause"
+                  onclick="playSoundVideoPages2()" />
+                <img data-src="./assets//images/icon/Vector.png" alt="" class="swiper-lazy fullscreen"
+                  onclick="openFullscreenVideoPages2()" />
+              </button>
+            </div>
+          </div>
+
+          <div class="swiper-slide" data-hash="features">
+            <div id="page-3">
+              <div class="bg">
+                <img data-src="./assets//images/slider/page3/bg.jpeg" class="swiper-lazy" alt="" />
+              </div>
+
+              <div class="group235">
+                <img data-src="./assets/images/slider/page3/Group235.png" class="swiper-lazy" alt="" />
+              </div>
+              <div class="group236">
+                <img data-src="./assets/images//slider/page3/Group236.png" class="swiper-lazy" alt="" />
+              </div>
+              <!-- list img -->
+              <div class="container">
+                <h2 class="Microgramma-b">features</h2>
+
+                <ul class="list-features">
+                  <li class="Barlow l1 upcase">
+                    <div class="li-border-1">
+                      <img data-src="./assets//images/slider//page3/s3-01.png" alt="" class="swiper-lazy" />
+                    </div>
+                    COMBINE THE GREATEST ASPECTS OF GAMING AND DIGITAL
+                    COLLECTIBLES
+                  </li>
+                  <li class="Barlow l2 upcase">
+                    <div class="li-border-2">
+                      <img data-src="./assets//images/slider//page3/s3-02.png" alt="" class="swiper-lazy" />
+                    </div>
+                    PvP Arena rewards
+                  </li>
+                  <li class="Barlow l3 upcase">
+                    <div class="li-border-3">
+                      <img data-src="./assets//images/slider//page3/s3-03.png" class="swiper-lazy" alt="" />
+                    </div>
+                    Idle campaign rewards
+                  </li>
+                  <li class="Barlow l4 upcase">
+                    <div class="li-border-4">
+                      <img data-src="./assets//images/slider//page3/s3-04.png" alt="" class="swiper-lazy" />
+                    </div>
+                    Evolutionary system
+                  </li>
+                  <li class="Barlow l5 upcase">
+                    <div class="li-border-5">
+                      <img data-src="./assets//images/slider//page3/s3-05.png" alt="" class="swiper-lazy" />
+                    </div>
+                    Quest and Ranking system
+                  </li>
+                  <li class="Barlow l6">
+                    <div class="li-border-6">
+                      <img data-src="./assets//images/slider//page3/s3-center.png" alt="" class="swiper-lazy" />
+                    </div>
+                    Galactic War is a unique AAA-grade platform of digital
+                    battles that will enable FPS enthusiasts to participate in
+                    the Milky Way NFT and blockchain-based gaming world in a
+                    creative, yet realistically magnificent way. Be prepared
+                    to immerse in the best NFT game of 2022!
+                  </li>
+                </ul>
+                <div class="flex-center">
+                  <button class="read">
+                    <img data-src=".\assets\images\ldp\play_trailer.png" alt="" class="swiper-lazy" />
+                    <span class="Barlow"> read our story </span>
+                  </button>
                 </div>
               </div>
             </div>
+          </div>
 
-            <div class="swiper-slide" data-hash="roadmap">
-              <div id="page-4">
-                <div class="bg-mobie">
-                  <img
-                    data-src="./assets//images//slider/page4/226347986-AdobeStock_226347986 3.png"
-                    alt=""
-                    class="bg-1 swiper-lazy"
-                  />
-                  <img
-                    data-src="./assets//images//slider/page4/338566170-AdobeStock_338566170 1.png"
-                    alt=""
-                    class="bg-2 swiper-lazy"
-                  />
-                </div>
-                <div class="bg-desktop">
-                  <img
-                    data-src="./assets/images//slider/page4/bg-desktop.png"
-                    alt=""
-                    class="swiper-lazy bg-1"
-                  />
-                  <img
-                    data-src="./assets/images//slider/page4/planet20-3-(1).png"
-                    alt=""
-                    class="swiper-lazy bg-2"
-                  />
-                </div>
-                <div class="container">
-                  <h2 class="Microgramma-b">roadmap</h2>
+          <div class="swiper-slide" data-hash="roadmap">
+            <div id="page-4">
+              <div class="bg-mobie">
+                <img data-src="./assets//images//slider/page4/226347986-AdobeStock_226347986 3.png" alt=""
+                  class="bg-1 swiper-lazy" />
+                <img data-src="./assets//images//slider/page4/338566170-AdobeStock_338566170 1.png" alt=""
+                  class="bg-2 swiper-lazy" />
+              </div>
+              <div class="bg-desktop">
+                <img data-src="./assets/images//slider/page4/bg-desktop.png" alt="" class="swiper-lazy bg-1" />
+                <img data-src="./assets/images//slider/page4/planet20-3-(1).png" alt="" class="swiper-lazy bg-2" />
+              </div>
+              <div class="container">
+                <h2 class="Microgramma-b">roadmap</h2>
 
-                  <dl class="phases">
-                    <div class="phase">
-                      <header>
-                        <div class="desktop-icon">
-                          <img
-                            data-src="./assets//images//slider//page4/Mask.png"
-                            alt=""
-                            class="swiper-lazy planet"
-                          />
-                          <img
-                            data-src="./assets/images/slider/page4/Vector3.png"
-                            alt=""
-                            class="core swiper-lazy"
-                          />
-                        </div>
-                        <h4 class="Microgramma-b">Q3-4 2021</h4>
-                      </header>
-                      <ul>
-                        <li>Core Team Gathering</li>
-                        <li>Game Ideation</li>
-                        <li>Game Conceptualisation</li>
-                        <li>UX/UI Design</li>
-                        <div class="border">
-                          <img
-                            data-src="./assets//images//slider//page4/Vector.png"
-                            alt=""
-                            class="top-left swiper-lazy"
-                          />
-                          <img
-                            data-src="./assets//images//slider//page4/Group 180.png"
-                            alt=""
-                            class="swiper-lazy"
-                          />
-                          <img
-                            data-src="./assets//images//slider//page4/Vector (1).png"
-                            alt=""
-                            class="top swiper-lazy"
-                          />
-                          <img
-                            data-src="./assets//images//slider//page4/Vector (2).png"
-                            alt=""
-                            class="top-right swiper-lazy"
-                          />
-                        </div>
-                      </ul>
-                    </div>
-                    <div class="phase">
-                      <header>
-                        <div class="desktop-icon">
-                          <img
-                            data-src="./assets//images//slider//page4/Mask.png"
-                            alt=""
-                            class="planet swiper-lazy"
-                          />
-                          <img
-                            data-src="./assets/images/slider/page4/Vector3.png"
-                            alt=""
-                            class="core swiper-lazy"
-                          />
-                        </div>
-                        <h4 class="Microgramma-b">Q1 2022</h4>
-                      </header>
-                      <ul>
-                        <li>Website Design</li>
-                        <li>LitePaper</li>
-                        <li>Social Media Branding</li>
-                        <div class="border">
-                          <img
-                            data-src="./assets//images//slider//page4/Vector.png"
-                            alt=""
-                            class="top-left swiper-lazy"
-                          />
-                          <img
-                            data-src="./assets//images//slider//page4/Group 180.png"
-                            alt=""
-                            class="swiper-lazy"
-                          />
-                          <img
-                            data-src="./assets//images//slider//page4/Vector (1).png"
-                            alt=""
-                            class="top swiper-lazy"
-                          />
-                          <img
-                            data-src="./assets//images//slider//page4/Vector (2).png"
-                            alt=""
-                            class="top-right swiper-lazy"
-                          />
-                        </div>
-                      </ul>
-                    </div>
-                    <div class="phase">
-                      <header>
-                        <div class="desktop-icon">
-                          <img
-                            data-src="./assets//images//slider//page4/Mask.png"
-                            alt=""
-                            class="planet swiper-lazy"
-                          />
-                          <img
-                            data-src="./assets/images/slider/page4/Vector3.png"
-                            alt=""
-                            class="core swiper-lazy"
-                          />
-                        </div>
-                        <h4 class="Microgramma-b">Q2 2022</h4>
-                      </header>
-                      <ul>
-                        <li>Website Completion</li>
-                        <li>Whitepaper, Pitchdeck</li>
-                        <li>Fundraising Activities</li>
-                        <div class="border">
-                          <img
-                            data-src="./assets//images//slider//page4/Vector.png"
-                            alt=""
-                            class="top-left swiper-lazy"
-                          />
-                          <img
-                            data-src="./assets//images//slider//page4/Group 180.png"
-                            alt=""
-                            class="swiper-lazy"
-                          />
-                          <img
-                            data-src="./assets//images//slider//page4/Vector (1).png"
-                            alt=""
-                            class="top swiper-lazy"
-                          />
-                          <img
-                            data-src="./assets//images//slider//page4/Vector (2).png"
-                            alt=""
-                            class="top-right swiper-lazy"
-                          />
-                        </div>
-                      </ul>
-                    </div>
-                    <div class="phase active">
-                      <header>
-                        <div class="desktop-icon">
-                          <img
-                            data-src="./assets//images//slider//page4/Mask.png"
-                            alt=""
-                            class="planet swiper-lazy"
-                          />
-
-                          <img
-                            data-src="./assets/images/slider/page4/Vector3.png"
-                            alt=""
-                            class="core swiper-lazy"
-                          />
-                        </div>
-                        <h4 class="Microgramma-b">Q3 2022</h4>
-                      </header>
-                      <ul>
-                        <li>Airdrop</li>
-                        <li>Game Production</li>
-                        <li>Publish Game</li>
-                        <li>Token Staking</li>
-                        <li>Running Marketing Strategies</li>
-                        <li>Audit</li>
-                        <div class="border">
-                          <img
-                            data-src="./assets//images//slider//page4/Vector.png"
-                            alt=""
-                            class="top-left swiper-lazy"
-                          />
-                          <img
-                            data-src="./assets//images//slider//page4/Group 180.png"
-                            alt=""
-                            class="swiper-lazy"
-                          />
-                          <img
-                            data-src="./assets//images//slider//page4/Vector (1).png"
-                            alt=""
-                            class="top swiper-lazy"
-                          />
-                          <img
-                            data-src="./assets//images//slider//page4/Vector (2).png"
-                            alt=""
-                            class="top-right swiper-lazy"
-                          />
-                        </div>
-                      </ul>
-                    </div>
-                    <div class="phase coming">
-                      <header>
-                        <div class="desktop-icon">
-                          <img
-                            data-src="./assets//images//slider//page4/Mask.png"
-                            alt=""
-                            class="planet swiper-lazy"
-                          />
-
-                          <img
-                            data-src="./assets/images/slider/page4/Vector3.png"
-                            alt=""
-                            class="core swiper-lazy"
-                          />
-                        </div>
-                        <h4 class="Microgramma-b">Q4 2022</h4>
-                      </header>
-                      <ul>
-                        <li>IDO</li>
-                        <li>INO</li>
-                        <li>CEX Listing</li>
-                        <li>DEX Listing</li>
-                        <li>Token Staking</li>
-                        <li>Alpha Test</li>
-                        <li>Anti-cheat System</li>
-                        <li>Testnet - Play with Bots</li>
-                        <div class="border">
-                          <img
-                            data-src="./assets//images//slider//page4/Vector.png"
-                            alt=""
-                            class="top-left swiper-lazy"
-                          />
-                          <img
-                            data-src="./assets//images//slider//page4/Group 180.png"
-                            alt=""
-                            class="swiper-lazy"
-                          />
-                          <img
-                            data-src="./assets//images//slider//page4/Vector (1).png"
-                            alt=""
-                            class="top swiper-lazy"
-                          />
-                          <img
-                            data-src="./assets//images//slider//page4/Vector (2).png"
-                            alt=""
-                            class="top-right swiper-lazy"
-                          />
-                        </div>
-                      </ul>
-                    </div>
-                    <div class="phase coming">
-                      <header>
-                        <div class="desktop-icon">
-                          <img
-                            data-src="./assets/images/slider/page4/Mask.png"
-                            alt=""
-                            class="planet swiper-lazy"
-                          />
-
-                          <img
-                            data-src="./assets/images/slider/page4/Vector3.png"
-                            alt=""
-                            class="core swiper-lazy"
-                          />
-                        </div>
-                        <h4 class="Microgramma-b">2023</h4>
-                      </header>
-                      <ul>
-                        <li>Marketplace</li>
-                        <li>Traditional Gameplay Release</li>
-                        <li>Mainnet Launch</li>
-                        <li>AR / VR Development</li>
-                        <li>Tournaments</li>
-                        <div class="border">
-                          <img
-                            data-src="./assets//images//slider//page4/Vector.png"
-                            alt=""
-                            class="top-left swiper-lazy"
-                          />
-                          <img
-                            data-src="./assets//images//slider//page4/Group 180.png"
-                            alt=""
-                            class="swiper-lazy"
-                          />
-                          <img
-                            data-src="./assets//images//slider//page4/Vector (1).png"
-                            alt=""
-                            class="top swiper-lazy"
-                          />
-                          <img
-                            data-src="./assets//images//slider//page4/Vector (2).png"
-                            alt=""
-                            class="top-right swiper-lazy"
-                          />
-                        </div>
-                      </ul>
-                    </div>
-                    <div class="phase coming phase-desktop">
-                      <header>
-                        <div class="desktop-icon">
-                          <img
-                            data-src="./assets//images//slider//page4/Mask.png"
-                            alt=""
-                            class="planet swiper-lazy"
-                          />
-
-                          <img
-                            data-src="./assets/images/slider/page4/Vector3.png"
-                            alt=""
-                            class="core swiper-lazy"
-                          />
-                        </div>
-                        <h4 class="Microgramma-b">2024 - 2025</h4>
-                      </header>
-                      <ul>
-                        <li>Metaverse Demo</li>
-                        <li>AR / VR Testing</li>
-                        <li>Metaverse Planet</li>
-                        <div class="border">
-                          <img
-                            data-src="./assets//images//slider//page4/Vector.png"
-                            alt=""
-                            class="top-left swiper-lazy"
-                          />
-                          <img
-                            data-src="./assets//images//slider//page4/Group 180.png"
-                            alt=""
-                            class="swiper-lazy"
-                          />
-                          <img
-                            data-src="./assets//images//slider//page4/Vector (1).png"
-                            alt=""
-                            class="top swiper-lazy"
-                          />
-                          <img
-                            data-src="./assets//images//slider//page4/Vector (2).png"
-                            alt=""
-                            class="top-right swiper-lazy"
-                          />
-                        </div>
-                      </ul>
-                    </div>
-                    <div class="infinity">
-                      <img
-                        data-src="./assets//images//slider//page4/Mask.png"
-                        alt=""
-                        class="planet swiper-lazy"
-                      />
-                      <h4 class="Barlow">to infinity</h4>
-                    </div>
-                  </dl>
-                  <div class="phase-mobile">
+                <dl class="phases">
+                  <div class="phase">
                     <header>
+                      <div class="desktop-icon">
+                        <img data-src="./assets//images//slider//page4/Mask.png" alt="" class="swiper-lazy planet" />
+                        <img data-src="./assets/images/slider/page4/Vector3.png" alt="" class="core swiper-lazy" />
+                      </div>
+                      <h4 class="Microgramma-b">Q3-4 2021</h4>
+                    </header>
+                    <ul>
+                      <li>Core Team Gathering</li>
+                      <li>Game Ideation</li>
+                      <li>Game Conceptualisation</li>
+                      <li>UX/UI Design</li>
+                      <div class="border">
+                        <img data-src="./assets//images//slider//page4/Vector.png" alt=""
+                          class="top-left swiper-lazy" />
+                        <img data-src="./assets//images//slider//page4/Group 180.png" alt="" class="swiper-lazy" />
+                        <img data-src="./assets//images//slider//page4/Vector (1).png" alt="" class="top swiper-lazy" />
+                        <img data-src="./assets//images//slider//page4/Vector (2).png" alt=""
+                          class="top-right swiper-lazy" />
+                      </div>
+                    </ul>
+                  </div>
+                  <div class="phase">
+                    <header>
+                      <div class="desktop-icon">
+                        <img data-src="./assets//images//slider//page4/Mask.png" alt="" class="planet swiper-lazy" />
+                        <img data-src="./assets/images/slider/page4/Vector3.png" alt="" class="core swiper-lazy" />
+                      </div>
+                      <h4 class="Microgramma-b">Q1 2022</h4>
+                    </header>
+                    <ul>
+                      <li>Website Design</li>
+                      <li>LitePaper</li>
+                      <li>Social Media Branding</li>
+                      <div class="border">
+                        <img data-src="./assets//images//slider//page4/Vector.png" alt=""
+                          class="top-left swiper-lazy" />
+                        <img data-src="./assets//images//slider//page4/Group 180.png" alt="" class="swiper-lazy" />
+                        <img data-src="./assets//images//slider//page4/Vector (1).png" alt="" class="top swiper-lazy" />
+                        <img data-src="./assets//images//slider//page4/Vector (2).png" alt=""
+                          class="top-right swiper-lazy" />
+                      </div>
+                    </ul>
+                  </div>
+                  <div class="phase">
+                    <header>
+                      <div class="desktop-icon">
+                        <img data-src="./assets//images//slider//page4/Mask.png" alt="" class="planet swiper-lazy" />
+                        <img data-src="./assets/images/slider/page4/Vector3.png" alt="" class="core swiper-lazy" />
+                      </div>
+                      <h4 class="Microgramma-b">Q2 2022</h4>
+                    </header>
+                    <ul>
+                      <li>Website Completion</li>
+                      <li>Whitepaper, Pitchdeck</li>
+                      <li>Fundraising Activities</li>
+                      <div class="border">
+                        <img data-src="./assets//images//slider//page4/Vector.png" alt=""
+                          class="top-left swiper-lazy" />
+                        <img data-src="./assets//images//slider//page4/Group 180.png" alt="" class="swiper-lazy" />
+                        <img data-src="./assets//images//slider//page4/Vector (1).png" alt="" class="top swiper-lazy" />
+                        <img data-src="./assets//images//slider//page4/Vector (2).png" alt=""
+                          class="top-right swiper-lazy" />
+                      </div>
+                    </ul>
+                  </div>
+                  <div class="phase active">
+                    <header>
+                      <div class="desktop-icon">
+                        <img data-src="./assets//images//slider//page4/Mask.png" alt="" class="planet swiper-lazy" />
+
+                        <img data-src="./assets/images/slider/page4/Vector3.png" alt="" class="core swiper-lazy" />
+                      </div>
+                      <h4 class="Microgramma-b">Q3 2022</h4>
+                    </header>
+                    <ul>
+                      <li>Airdrop</li>
+                      <li>Game Production</li>
+                      <li>Publish Game</li>
+                      <li>Token Staking</li>
+                      <li>Running Marketing Strategies</li>
+                      <li>Audit</li>
+                      <div class="border">
+                        <img data-src="./assets//images//slider//page4/Vector.png" alt=""
+                          class="top-left swiper-lazy" />
+                        <img data-src="./assets//images//slider//page4/Group 180.png" alt="" class="swiper-lazy" />
+                        <img data-src="./assets//images//slider//page4/Vector (1).png" alt="" class="top swiper-lazy" />
+                        <img data-src="./assets//images//slider//page4/Vector (2).png" alt=""
+                          class="top-right swiper-lazy" />
+                      </div>
+                    </ul>
+                  </div>
+                  <div class="phase coming">
+                    <header>
+                      <div class="desktop-icon">
+                        <img data-src="./assets//images//slider//page4/Mask.png" alt="" class="planet swiper-lazy" />
+
+                        <img data-src="./assets/images/slider/page4/Vector3.png" alt="" class="core swiper-lazy" />
+                      </div>
+                      <h4 class="Microgramma-b">Q4 2022</h4>
+                    </header>
+                    <ul>
+                      <li>IDO</li>
+                      <li>INO</li>
+                      <li>CEX Listing</li>
+                      <li>DEX Listing</li>
+                      <li>Token Staking</li>
+                      <li>Alpha Test</li>
+                      <li>Anti-cheat System</li>
+                      <li>Testnet - Play with Bots</li>
+                      <div class="border">
+                        <img data-src="./assets//images//slider//page4/Vector.png" alt=""
+                          class="top-left swiper-lazy" />
+                        <img data-src="./assets//images//slider//page4/Group 180.png" alt="" class="swiper-lazy" />
+                        <img data-src="./assets//images//slider//page4/Vector (1).png" alt="" class="top swiper-lazy" />
+                        <img data-src="./assets//images//slider//page4/Vector (2).png" alt=""
+                          class="top-right swiper-lazy" />
+                      </div>
+                    </ul>
+                  </div>
+                  <div class="phase coming">
+                    <header>
+                      <div class="desktop-icon">
+                        <img data-src="./assets/images/slider/page4/Mask.png" alt="" class="planet swiper-lazy" />
+
+                        <img data-src="./assets/images/slider/page4/Vector3.png" alt="" class="core swiper-lazy" />
+                      </div>
+                      <h4 class="Microgramma-b">2023</h4>
+                    </header>
+                    <ul>
+                      <li>Marketplace</li>
+                      <li>Traditional Gameplay Release</li>
+                      <li>Mainnet Launch</li>
+                      <li>AR / VR Development</li>
+                      <li>Tournaments</li>
+                      <div class="border">
+                        <img data-src="./assets//images//slider//page4/Vector.png" alt=""
+                          class="top-left swiper-lazy" />
+                        <img data-src="./assets//images//slider//page4/Group 180.png" alt="" class="swiper-lazy" />
+                        <img data-src="./assets//images//slider//page4/Vector (1).png" alt="" class="top swiper-lazy" />
+                        <img data-src="./assets//images//slider//page4/Vector (2).png" alt=""
+                          class="top-right swiper-lazy" />
+                      </div>
+                    </ul>
+                  </div>
+                  <div class="phase coming phase-desktop">
+                    <header>
+                      <div class="desktop-icon">
+                        <img data-src="./assets//images//slider//page4/Mask.png" alt="" class="planet swiper-lazy" />
+
+                        <img data-src="./assets/images/slider/page4/Vector3.png" alt="" class="core swiper-lazy" />
+                      </div>
                       <h4 class="Microgramma-b">2024 - 2025</h4>
                     </header>
                     <ul>
-                      <li>Metaverse Planet</li>
+                      <li>Metaverse Demo</li>
                       <li>AR / VR Testing</li>
                       <li>Metaverse Planet</li>
+                      <div class="border">
+                        <img data-src="./assets//images//slider//page4/Vector.png" alt=""
+                          class="top-left swiper-lazy" />
+                        <img data-src="./assets//images//slider//page4/Group 180.png" alt="" class="swiper-lazy" />
+                        <img data-src="./assets//images//slider//page4/Vector (1).png" alt="" class="top swiper-lazy" />
+                        <img data-src="./assets//images//slider//page4/Vector (2).png" alt=""
+                          class="top-right swiper-lazy" />
+                      </div>
                     </ul>
                   </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="swiper-slide" data-hash="face-the-enemies">
-              <div id="page-5">
-                <div class="bg">
-                  <picture>
-                    <source
-                      media="(min-width:1024px)"
-                      data-srcset="./assets//images//slider//page5/bannerpage5.png"
-                      class="swiper-lazy"
-                    />
-                    <img
-                      data-src="./assets//images//slider//page5/bannerpage5mobile.png"
-                      alt=""
-                      class="swiper-lazy"
-                    />
-                  </picture>
-                </div>
-                <div class="content">
-                  <h2 class="Microgramma-b">face the enemies</h2>
-                  <p class="Barlow">
-                    transform into a soldier, fighting against enemies in
-                    different gameplay modes:
-                    <span> Flag-Capture, Battle Royale </span>
-                    and more.
-                  </p>
-                  <img
-                    data-src="./assets//images/ldp/Group 270.png"
-                    alt=""
-                    class="swiper-lazy"
-                  />
-                </div>
-              </div>
-            </div>
-
-            <div class="swiper-slide" data-hash="inventory">
-              <div id="page-6">
-                <div class="bg">
-                  <picture>
-                    <source
-                      media="(min-width:1024px)"
-                      data-srcset="./assets//images//slider//page6/BGgun_1.png"
-                      class="swiper-lazy"
-                    />
-                    <img
-                      data-src="./assets//images//slider//page6/Screen Shot 2022-02-16 at 10.51 1.png"
-                      alt=""
-                      class="swiper-lazy"
-                    />
-                  </picture>
-                </div>
-                <img
-                  data-src="./assets//images//slider//page6//Rectangle 73.png"
-                  alt=""
-                  class="gun swiper-lazy"
-                />
-                <div class="content">
-                  <h2 class="Microgramma-b">inventory</h2>
-                  <p class="Barlow">
-                    there are many kind of equipments and weapon that will fit
-                    your style and the battle mode
-                    <!-- <span>
-                                  Flag-Capture, Battle Royale
-                              </span>
-                                  and more. -->
-                  </p>
-                  <img
-                    data-src="./assets//images/ldp/Group 270.png"
-                    alt=""
-                    class="swiper-lazy"
-                  />
-                </div>
-              </div>
-            </div>
-
-            <div class="swiper-slide" data-hash="characters">
-              <div id="page-7">
-                <div class="bg">
-                  <picture>
-                    <source
-                      media="(min-width:1024px)"
-                      data-srcset="./assets//images//slider//page7/bannerpage7.png"
-                      class="swiper-lazy"
-                    />
-                    <img
-                      data-src="./assets//images//slider//page7/Screen Shot 2022-02-16 at 10.51 1.png"
-                      alt=""
-                      class="swiper-lazy"
-                    />
-                  </picture>
-                </div>
-                <div class="content">
-                  <h2 class="Microgramma-b">characters</h2>
-                  <p class="Barlow">
-                    Each character in Galactic War is a unique NFT creature and
-                    players have multiple choices of characters to purchase in
-                    Marketplace.
-                    <!-- <span>
-                                  Flag-Capture, Battle Royale
-                              </span>
-                                  and more. -->
-                  </p>
-                  <img
-                    data-src="./assets//images/ldp/Group 270.png"
-                    alt=""
-                    class="swiper-lazy"
-                  />
-                </div>
-              </div>
-            </div>
-
-            <div class="swiper-slide" data-hash="futuristic-battlefield">
-              <div id="page-8">
-                <div class="bg">
-                  <picture>
-                    <source
-                      media="(min-width:1024px)"
-                      data-srcset="./assets//images//slider//page8/desktop.png"
-                      class="swiper-lazy"
-                    />
-                    <img
-                      data-src="./assets//images//slider//page8/mobile.png"
-                      alt=""
-                      class="swiper-lazy"
-                    />
-                  </picture>
-                </div>
-                <div class="content">
-                  <h2 class="Microgramma-b">FUTURistic BATTLEFIELD</h2>
-                  <p class="Barlow">
-                    The battlefield can be anywhere, in the spacecraft, inthe
-                    space center or maybe on a strange planet. Find the best way
-                    to get the terrain’s advantages.
-                    <!-- <span>
-                                  Flag-Capture, Battle Royale
-                              </span>
-                                  and more. -->
-                  </p>
-                  <img
-                    data-src="./assets//images/ldp/Group 270 rever.png"
-                    alt=""
-                    class="swiper-lazy"
-                  />
-                </div>
-              </div>
-            </div>
-
-            <div class="swiper-slide" data-hash="metaverse">
-              <div id="page-9">
-                <div class="bg">
-                  <picture>
-                    <source
-                      media="(min-width:1024px)"
-                      data-srcset="./assets//images//slider//page9/desktop.png"
-                      class="swiper-lazy"
-                    />
-                    <img
-                      data-src="./assets//images//slider//page9/mobile.png"
-                      alt=""
-                      class="swiper-lazy"
-                    />
-                  </picture>
-                </div>
-                <div class="content">
-                  <h2 class="Microgramma-b">metaverse</h2>
-                  <p class="Barlow">
-                    As a planet owner, you will have to contrucst building,
-                    training your own army to become the greatest empire in the
-                    universe.
-                    <!-- <span>
-                                  Flag-Capture, Battle Royale
-                              </span>
-                                  and more. -->
-                  </p>
-                  <picture>
-                    <source
-                      media="(min-width:1024px)"
-                      data-srcset="./assets//images//ldp/Group_270_left.png"
-                      class="swiper-lazy"
-                    />
-                    <img
-                      data-src="./assets//images/ldp/Group 270 top.png"
-                      alt=""
-                      class="swiper-lazy"
-                    />
-                  </picture>
-                </div>
-              </div>
-            </div>
-
-            <div class="swiper-slide" data-hash="universes-await">
-              <div id="page-10">
-                <div class="bg">
-                  <picture>
-                    <source
-                      media="(min-width:1024px)"
-                      data-srcset="./assets//images//slider//page10/desktop.png"
-                      class="swiper-lazy"
-                    />
-                    <img
-                      class="swiper-lazy"
-                      data-src="./assets//images//slider//page10/mobile.png"
-                      alt=""
-                    />
-                  </picture>
-                </div>
-                <div class="content">
-                  <h2 class="Microgramma-b">UNIVERSES AWAIT</h2>
-                  <p class="Barlow">
-                    The constant struggle of the 4 main universes:
-                    <span> Alpha, Beta, Gamma, Delta </span>
-                    always exists in the Milky Way. Every universe hides its
-                    mysterious secret about lives and minerals. They are
-                    constantly expanding their prestige and conflicts between
-                    them never seem to stop.
-                  </p>
-                  <!-- <img data-src="./assets//images/ldp/Group 270.png" alt="" class="right"> -->
-                  <img
-                    data-src="./assets//images/ldp/Group 731.png"
-                    alt=""
-                    class="right swiper-lazy"
-                  />
-                  <img
-                    data-src="./assets//images/ldp/Group 731.png"
-                    alt=""
-                    class="left swiper-lazy"
-                  />
-                </div>
-              </div>
-            </div>            
-
-            <div class="swiper-slide" data-hash="team&advisors">
-              <div id="page-13">
-                <div class="bg">
-                  <picture>
-                    <source
-                      media="(min-width:1024px)"
-                      srcset="
-                        ./assets//images//slider//page14/background.png
-                      "
-                      class="swiper-lazy"
-                    />
-                    <img
-                      src="./assets/images/slider/page14/mobile.png"
-                      alt="logo"
-                      class="logo swiper-lazy"
-                    />
-                  </picture>
-                </div>
-                <div class="main">
-                  <div class="title-page13">
-                    <p class="Microgramma-b">Our team</p>
+                  <div class="infinity">
+                    <img data-src="./assets//images//slider//page4/Mask.png" alt="" class="planet swiper-lazy" />
+                    <h4 class="Barlow">to infinity</h4>
                   </div>
-                  <p class="tittleChildren Barlow">
-                    The GALACTIC WAR team features a large number of highly
-                    skilled blockchain developers with years of experience in
-                    building DeFi and NFT products. Many team members come from
-                    the game development industry and are skilled in applying
-                    cutting-edge technologies and multimedia solutions. The
-                    GALACTIC WAR team hasn’t just created an amazing
-                    Play-to-Earn blockchain journey offering many opportunities
-                    and adventures, they’ve created a whole DeFi ecosystem with
-                    farming pools, staking, a marketplace, in-game launchpad,
-                    booster and more.
-                  </p>
+                </dl>
+                <div class="phase-mobile">
+                  <header>
+                    <h4 class="Microgramma-b">2024 - 2025</h4>
+                  </header>
+                  <ul>
+                    <li>Metaverse Planet</li>
+                    <li>AR / VR Testing</li>
+                    <li>Metaverse Planet</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide" data-hash="face-the-enemies">
+            <div id="page-5">
+              <div class="bg">
+                <picture>
+                  <source media="(min-width:1024px)" data-srcset="./assets//images//slider//page5/bannerpage5.png"
+                    class="swiper-lazy" />
+                  <img data-src="./assets//images//slider//page5/bannerpage5mobile.png" alt="" class="swiper-lazy" />
+                </picture>
+              </div>
+              <div class="content">
+                <h2 class="Microgramma-b">face the enemies</h2>
+                <p class="Barlow">
+                  transform into a soldier, fighting against enemies in
+                  different gameplay modes:
+                  <span> Flag-Capture, Battle Royale </span>
+                  and more.
+                </p>
+                <img data-src="./assets//images/ldp/Group 270.png" alt="" class="swiper-lazy" />
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide" data-hash="inventory">
+            <div id="page-6">
+              <div class="bg">
+                <picture>
+                  <source media="(min-width:1024px)" data-srcset="./assets//images//slider//page6/BGgun_1.png"
+                    class="swiper-lazy" />
+                  <img data-src="./assets//images//slider//page6/Screen Shot 2022-02-16 at 10.51 1.png" alt=""
+                    class="swiper-lazy" />
+                </picture>
+              </div>
+              <img data-src="./assets//images//slider//page6//Rectangle 73.png" alt="" class="gun swiper-lazy" />
+              <div class="content">
+                <h2 class="Microgramma-b">inventory</h2>
+                <p class="Barlow">
+                  there are many kind of equipments and weapon that will fit
+                  your style and the battle mode
+                  <!-- <span>
+                                  Flag-Capture, Battle Royale
+                              </span>
+                                  and more. -->
+                </p>
+                <img data-src="./assets//images/ldp/Group 270.png" alt="" class="swiper-lazy" />
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide" data-hash="characters">
+            <div id="page-7">
+              <div class="bg">
+                <picture>
+                  <source media="(min-width:1024px)" data-srcset="./assets//images//slider//page7/bannerpage7.png"
+                    class="swiper-lazy" />
+                  <img data-src="./assets//images//slider//page7/Screen Shot 2022-02-16 at 10.51 1.png" alt=""
+                    class="swiper-lazy" />
+                </picture>
+              </div>
+              <div class="content">
+                <h2 class="Microgramma-b">characters</h2>
+                <p class="Barlow">
+                  Each character in Galactic War is a unique NFT creature and
+                  players have multiple choices of characters to purchase in
+                  Marketplace.
+                  <!-- <span>
+                                  Flag-Capture, Battle Royale
+                              </span>
+                                  and more. -->
+                </p>
+                <img data-src="./assets//images/ldp/Group 270.png" alt="" class="swiper-lazy" />
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide" data-hash="futuristic-battlefield">
+            <div id="page-8">
+              <div class="bg">
+                <picture>
+                  <source media="(min-width:1024px)" data-srcset="./assets//images//slider//page8/desktop.png"
+                    class="swiper-lazy" />
+                  <img data-src="./assets//images//slider//page8/mobile.png" alt="" class="swiper-lazy" />
+                </picture>
+              </div>
+              <div class="content">
+                <h2 class="Microgramma-b">FUTURistic BATTLEFIELD</h2>
+                <p class="Barlow">
+                  The battlefield can be anywhere, in the spacecraft, inthe
+                  space center or maybe on a strange planet. Find the best way
+                  to get the terrain’s advantages.
+                  <!-- <span>
+                                  Flag-Capture, Battle Royale
+                              </span>
+                                  and more. -->
+                </p>
+                <img data-src="./assets//images/ldp/Group 270 rever.png" alt="" class="swiper-lazy" />
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide" data-hash="metaverse">
+            <div id="page-9">
+              <div class="bg">
+                <picture>
+                  <source media="(min-width:1024px)" data-srcset="./assets//images//slider//page9/desktop.png"
+                    class="swiper-lazy" />
+                  <img data-src="./assets//images//slider//page9/mobile.png" alt="" class="swiper-lazy" />
+                </picture>
+              </div>
+              <div class="content">
+                <h2 class="Microgramma-b">metaverse</h2>
+                <p class="Barlow">
+                  As a planet owner, you will have to contrucst building,
+                  training your own army to become the greatest empire in the
+                  universe.
+                  <!-- <span>
+                                  Flag-Capture, Battle Royale
+                              </span>
+                                  and more. -->
+                </p>
+                <picture>
+                  <source media="(min-width:1024px)" data-srcset="./assets//images//ldp/Group_270_left.png"
+                    class="swiper-lazy" />
+                  <img data-src="./assets//images/ldp/Group 270 top.png" alt="" class="swiper-lazy" />
+                </picture>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide" data-hash="universes-await">
+            <div id="page-10">
+              <div class="bg">
+                <picture>
+                  <source media="(min-width:1024px)" data-srcset="./assets//images//slider//page10/desktop.png"
+                    class="swiper-lazy" />
+                  <img class="swiper-lazy" data-src="./assets//images//slider//page10/mobile.png" alt="" />
+                </picture>
+              </div>
+              <div class="content">
+                <h2 class="Microgramma-b">UNIVERSES AWAIT</h2>
+                <p class="Barlow">
+                  The constant struggle of the 4 main universes:
+                  <span> Alpha, Beta, Gamma, Delta </span>
+                  always exists in the Milky Way. Every universe hides its
+                  mysterious secret about lives and minerals. They are
+                  constantly expanding their prestige and conflicts between
+                  them never seem to stop.
+                </p>
+                <!-- <img data-src="./assets//images/ldp/Group 270.png" alt="" class="right"> -->
+                <img data-src="./assets//images/ldp/Group 731.png" alt="" class="right swiper-lazy" />
+                <img data-src="./assets//images/ldp/Group 731.png" alt="" class="left swiper-lazy" />
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide" data-hash="team&advisors">
+            <div id="page-13">
+              <div class="bg">
+                <picture>
+                  <source media="(min-width:1024px)" srcset="
+                        ./assets//images//slider//page14/background.png
+                      " class="swiper-lazy" />
+                  <img src="./assets/images/slider/page14/mobile.png" alt="logo" class="logo swiper-lazy" />
+                </picture>
+              </div>
+              <div class="main">
+                <div class="title-page13">
+                  <p class="Microgramma-b">Our team</p>
+                </div>
+                <p class="tittleChildren Barlow">
+                  The GALACTIC WAR team features a large number of highly
+                  skilled blockchain developers with years of experience in
+                  building DeFi and NFT products. Many team members come from
+                  the game development industry and are skilled in applying
+                  cutting-edge technologies and multimedia solutions. The
+                  GALACTIC WAR team hasn’t just created an amazing
+                  Play-to-Earn blockchain journey offering many opportunities
+                  and adventures, they’ve created a whole DeFi ecosystem with
+                  farming pools, staking, a marketplace, in-game launchpad,
+                  booster and more.
+                </p>
+                <div class="my_team">
+                  <div class="person">
+                    <img src="./assets/images/slider/page13/lee_gray.png" alt="logo" class="avatar swiper-lazy" />
+                    <p class="person-name">Lee</p>
+                    <div class="description">
+                      <p class="position">
+                        co-founder ceo/ Head Of Game Design
+                      </p>
+                      <a href="https://www.linkedin.com/in/luiz-lee-74668b237/" target="_blank">
+                        <img src="./assets/images/ldp/Vector (3).png" alt="" class="swiper-lazy" />
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="person">
+                    <img src="./assets/images/slider/page13/eric_gray.png" alt="logo" class="avatar swiper-lazy" />
+                    <p class="person-name">eric</p>
+                    <div class="description">
+                      <p class="position">coO</p>
+                      <a href="https://www.linkedin.com/in/eric-alexandre-2184315/" target="_blank"
+                        rel="noopener noreferrer">
+                        <img src="./assets/images/ldp/Vector (3).png" alt="" class="swiper-lazy" />
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="person">
+                    <img src="./assets/images/slider/page13/qkus_gray.png" alt="logo" class="avatar swiper-lazy" />
+                    <p class="person-name">Qkus</p>
+                    <div class="description">
+                      <p class="position">CM0</p>
+                      <a href="https://www.linkedin.com/in/quockhanh1801/" target="_blank" rel="noopener noreferrer">
+                        <img src="./assets/images/ldp/Vector (3).png" alt="" class="swiper-lazy" />
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="person">
+                    <img src="./assets/images/slider/page13/mark_gray.png" alt="logo" class="avatar swiper-lazy" />
+                    <p class="person-name">Mark</p>
+                    <div class="description">
+                      <p class="position">Chief partnership officer</p>
+                      <a href="https://www.linkedin.com/in/markpham88/" target="_blank" rel="noopener noreferrer">
+                        <img src="./assets/images/ldp/Vector (3).png" alt="" class="swiper-lazy" />
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="person">
+                    <img src="./assets/images/slider/page13/thangNguyen.png" alt="logo" class="avatar swiper-lazy" />
+                    <p class="person-name">THANG NGUYEN</p>
+                    <div class="description">
+                      <p class="position">CTO</p>
+                      <a href="https://www.linkedin.com/in/thang-nguyen-agiletech/" target="_blank"
+                        rel="noopener noreferrer">
+                        <img src="./assets/images/ldp/Vector (3).png" alt="" class="swiper-lazy" />
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="person">
+                    <img src="./assets/images/slider/page13/thing_pham.png" alt="logo" class="avatar swiper-lazy" />
+                    <p class="person-name">thinh pham</p>
+                    <div class="description">
+                      <p class="position">chief product officer</p>
+                      <a href="https://www.linkedin.com/in/thinh-pham-71469639/" target="_blank"
+                        rel="noopener noreferrer">
+                        <img src="./assets/images/ldp/Vector (3).png" alt="" class="swiper-lazy" />
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="person">
+                    <img src="./assets/images/slider/page13/tim.png" alt="logo" class="avatar swiper-lazy" />
+                    <p class="person-name">Tim</p>
+                    <div class="description">
+                      <p class="position">CHIEF BLOCKCHAIN OFFICer</p>
+                      <a href="https://www.linkedin.com/in/trungquangnguyen/" target="_blank" rel="noopener noreferrer">
+                        <img src="./assets/images/ldp/Vector (3).png" alt="" class="swiper-lazy" />
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="person">
+                    <img src="./assets/images/slider/page13/thomas.png" alt="logo" class="avatar swiper-lazy" />
+                    <p class="person-name">THOMAS</p>
+                    <div class="description">
+                      <p class="position">blockchain engineer lead</p>
+                      <a href="https://www.linkedin.com/in/thomas-tr%E1%BA%A7n-556075239/" target="_blank"
+                        rel="noopener noreferrer">
+                        <img src="./assets/images/ldp/Vector (3).png" alt="" class="swiper-lazy" />
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="person">
+                    <img src="./assets/images/slider/page13/jhon.png" alt="logo" class="avatar swiper-lazy" />
+                    <p class="person-name">John</p>
+                    <div class="description">
+                      <p class="position">BLOCKCHAIN ENGINEER</p>
+                      <a href="https://www.linkedin.com/in/john-nguy%E1%BB%85n-578073239/" target="_blank"
+                        rel="noopener noreferrer">
+                        <img src="./assets/images/ldp/Vector (3).png" alt="" class="swiper-lazy" />
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="person">
+                    <img src="./assets/images/slider/page13/jane.png" alt="logo" class="avatar swiper-lazy" />
+                    <p class="person-name">Jane</p>
+                    <div class="description">
+                      <p class="position">BUSINESS ANALYST</p>
+                      <a href="https://www.linkedin.com/in/jane-la-a06079239/" target="_blank"
+                        rel="noopener noreferrer">
+                        <img src="./assets/images/ldp/Vector (3).png" alt="" class="swiper-lazy" />
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="person">
+                    <img src="./assets/images/slider/page13/larry.png" alt="logo" class="avatar swiper-lazy" />
+                    <p class="person-name">LARRY</p>
+                    <div class="description">
+                      <p class="position">BDM</p>
+                      <a href="https://www.linkedin.com/in/jane-la-a06079239/" target="_blank"
+                        rel="noopener noreferrer">
+                        <img src="./assets/images/ldp/Vector (3).png" alt="" class="swiper-lazy" />
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="person">
+                    <img src="./assets/images/slider/page13/tung_jay.png" alt="logo" class="avatar swiper-lazy" />
+                    <p class="person-name">TUNG JAY</p>
+                    <div class="description">
+                      <p class="position">PM</p>
+                      <a target="_blank" href="https://www.linkedin.com/in/jaynguyen2111/">
+                        <img src="./assets/images/ldp/Vector (3).png" alt="" class="swiper-lazy" />
+                    </div>
+                  </div>
+
+                  <div class="person">
+                    <img src="./assets/images/slider/page13/leo_gray.png" alt="logo" class="avatar swiper-lazy" />
+                    <p class="person-name">Leo</p>
+                    <div class="description">
+                      <p class="position">product owner</p>
+                      <a href="https://www.linkedin.com/in/nguyennam1208/" target="_blank" rel="noopener noreferrer">
+                        <img src="./assets/images/ldp/Vector (3).png" alt="" class="swiper-lazy" />
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="person">
+                    <img src="./assets/images/slider/page13/karol zacharski.png" alt="logo"
+                      class="avatar swiper-lazy" />
+                    <p class="person-name">Karol</p>
+                    <div class="description">
+                      <p class="position">Product manager</p>
+                      <a href="https://www.linkedin.com/in/karol-zacharski-64870620b" target="_blank"
+                        rel="noopener noreferrer">
+                        <img src="./assets/images/ldp/Vector (3).png" alt="" class="swiper-lazy" />
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="person">
+                    <img src="./assets/images/slider/page13/jay_gray.png" alt="logo" class="avatar swiper-lazy" />
+                    <p class="person-name">HWANG</p>
+                    <div class="description">
+                      <p class="position">head of community</p>
+                      <a href="https://www.linkedin.com/in/jay-minh-34b721172/" target="_blank"
+                        rel="noopener noreferrer">
+                        <img src="./assets/images/ldp/Vector (3).png" alt="" class="swiper-lazy" />
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="person">
+                    <img src="./assets/images/slider/page13/louis_gray.png" alt="logo" class="avatar swiper-lazy" />
+                    <p class="person-name">LOUIS</p>
+                    <div class="description">
+                      <p class="position">UX/UI LEADER</p>
+                      <a href="https://www.linkedin.com/in/tam-nguyen-a64821236/" target="_blank"
+                        rel="noopener noreferrer">
+                        <img src="./assets/images/ldp/Vector (3).png" alt="" class="swiper-lazy" />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="person">
+                    <img src="./assets/images/slider/page13/hung_tran.png" alt="logo" class="avatar swiper-lazy" />
+                    <p class="person-name">hung tran</p>
+                    <div class="description">
+                      <p class="position">LEAD 3D MODELING</p>
+                      <a href="https://www.artstation.com/kuteo?fbclid=IwAR0kDZewrUqzO5cVrAPifUhsVwWldlqo88_yxld6eSL3pDd1knvmJzr5S4I"
+                        target="_blank" rel="noopener noreferrer">
+                        <img src="./assets/images/slider/page13/cib_artstation.png" alt="" class="swiper-lazy" />
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="person">
+                    <img src="./assets/images/slider/page13/gustavo.png" alt="logo" class="avatar swiper-lazy" />
+                    <p class="person-name">GUSTAVO</p>
+                    <div class="description">
+                      <p class="position">community executive</p>
+                      <a href="https://www.linkedin.com/in/nonnenberg/" target="_blank" rel="noopener noreferrer">
+                        <img src="./assets/images/ldp/Vector (3).png" alt="" class="swiper-lazy" />
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="person">
+                    <img src="./assets/images/slider/page13/duc_pham.png" alt="logo" class="avatar swiper-lazy" />
+                    <p class="person-name">DUC PHAM</p>
+                    <div class="description">
+                      <p class="position">LEAD PROGRAMMER</p>
+                      <a href="https://www.linkedin.com/in/duc-pham-hong-a895761aa/" target="_blank"
+                        rel="noopener noreferrer">
+                        <img src="./assets/images/ldp/Vector (3).png" alt="" class="swiper-lazy" />
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="person">
+                    <img src="./assets/images/slider/page13/giap_vo.png" alt="logo" class="avatar swiper-lazy" />
+                    <p class="person-name">giap vo</p>
+                    <div class="description">
+                      <p class="position">Lead 3D Rigging and animation</p>
+                      <a href="https://www.linkedin.com/in/giap-vo-a3677941/" target="_blank" rel="noopener noreferrer">
+                        <img src="./assets/images/ldp/Vector (3).png" alt="" class="swiper-lazy" />
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="person">
+                    <img src="./assets/images/slider/page13/CRIS_NGUYEN.png" alt="logo" class="avatar swiper-lazy" />
+                    <p class="person-name">CRIS NGUYEN</p>
+                    <div class="description">
+                      <p class="position">graphic designer</p>
+                      <a href="https://www.linkedin.com/in/virgo-tu-071694237/" target="_blank"
+                        rel="noopener noreferrer">
+                        <img src="./assets/images/ldp/Vector (3).png" alt="" class="swiper-lazy" />
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="person">
+                    <img src="./assets/images/slider/page13/virgo_gray.png" alt="logo" class="avatar swiper-lazy" />
+                    <p class="person-name">VIRGO</p>
+                    <div class="description">
+                      <p class="position">Unreal Engine/ 3D Developer</p>
+                      <a href="https://www.linkedin.com/in/virgo-tu-071694237/" target="_blank"
+                        rel="noopener noreferrer">
+                        <img src="./assets/images/ldp/Vector (3).png" alt="" class="swiper-lazy" />
+                      </a>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide" data-hash="investors&partners">
+            <div id="page-14">
+              <div class="bg">
+                <picture>
+                  <source media="(min-width:1024px)" data-srcset="./assets//images//slider//page14/bgslide.jpeg"
+                    class="swiper-lazy" />
+                  <img data-src="./assets/images/slider/page14/mobile.png" alt="logo" class="logo swiper-lazy" />
+                </picture>
+              </div>
+              <div class="content-page14">
+                <div class="title">
+                  <h2 onclick="onActiveTab('title1')" id="title1" class="Microgramma-b active">
+                    ADVISORS
+                  </h2>
+                  <h2 onclick="onActiveTab('title2')" id="title2" class="Microgramma-b">
+                    partners
+                  </h2>
+                </div>
+                <script>
+                  function onActiveTab(title) {
+                    let tl1 = document.getElementById("title1");
+                    let tl2 = document.getElementById("title2");
+
+                    let tab1 = document.getElementById("Partners");
+                    let tab2 = document.getElementById("MEDIA-SECURITY");
+
+                    tl1.classList.remove("active");
+                    tl2.classList.remove("active");
+                    tab1.classList.remove("active");
+                    tab2.classList.remove("active");
+                    if (title === "title1") {
+                      tl1.classList.add("active");
+                      tab1.classList.add("active");
+                    } else {
+                      tl2.classList.add("active");
+                      tab2.classList.add("active");
+                    }
+                  }
+                </script>
+                <div class="Partners active" id="Partners">
                   <div class="my_team">
                     <div class="person">
-                      <img
-                        src="./assets/images/slider/page13/lee_gray.png"
-                        alt="logo"
-                        class="avatar swiper-lazy"
-                      />
-                      <p class="person-name">Lee</p>
+                      <img src="./assets/images/slider/page14/darren.png" alt="logo" class="avatar swiper-lazy" />
+                      <p class="person-name">Darren chu</p>
                       <div class="description">
-                        <p class="position">
-                          co-founder ceo/ Head Of Game Design
-                        </p>
-                        <a
-                          href="https://www.linkedin.com/in/luiz-lee-74668b237/"
-                          target="_blank"
-                        >
-                          <img
-                            src="./assets/images/ldp/Vector (3).png"
-                            alt=""
-                            class="swiper-lazy"
-                          />
-                        </a>
-                      </div>
-                    </div>
-
-                    <div class="person">
-                      <img
-                        src="./assets/images/slider/page13/eric_gray.png"
-                        alt="logo"
-                        class="avatar swiper-lazy"
-                      />
-                      <p class="person-name">eric</p>
-                      <div class="description">
-                        <p class="position">coO</p>
-                        <a
-                          href="https://www.linkedin.com/in/eric-alexandre-2184315/"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          <img
-                            src="./assets/images/ldp/Vector (3).png"
-                            alt=""
-                            class="swiper-lazy"
-                          />
-                        </a>
-                      </div>
-                    </div>
-
-                    <div class="person">
-                      <img
-                        src="./assets/images/slider/page13/qkus_gray.png"
-                        alt="logo"
-                        class="avatar swiper-lazy"
-                      />
-                      <p class="person-name">Qkus</p>
-                      <div class="description">
-                        <p class="position">CM0</p>
-                        <a
-                          href="https://www.linkedin.com/in/quockhanh1801/"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          <img
-                            src="./assets/images/ldp/Vector (3).png"
-                            alt=""
-                            class="swiper-lazy"
-                          />
-                        </a>
-                      </div>
-                    </div>
-
-                    <div class="person">
-                      <img
-                        src="./assets/images/slider/page13/mark_gray.png"
-                        alt="logo"
-                        class="avatar swiper-lazy"
-                      />
-                      <p class="person-name">Mark</p>
-                      <div class="description">
-                        <p class="position">Chief partnership officer</p>
-                        <a
-                          href="https://www.linkedin.com/in/markpham88/"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          <img
-                            src="./assets/images/ldp/Vector (3).png"
-                            alt=""
-                            class="swiper-lazy"
-                          />
-                        </a>
-                      </div>
-                    </div>
-
-                    <div class="person">
-                      <img
-                        src="./assets/images/slider/page13/thangNguyen.png"
-                        alt="logo"
-                        class="avatar swiper-lazy"
-                      />
-                      <p class="person-name">THANG NGUYEN</p>
-                      <div class="description">
-                        <p class="position">CTO</p>
-                        <a
-                          href="https://www.linkedin.com/in/thang-nguyen-agiletech/"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          <img
-                            src="./assets/images/ldp/Vector (3).png"
-                            alt=""
-                            class="swiper-lazy"
-                          />
-                        </a>
-                      </div>
-                    </div>
-
-                    <div class="person">
-                      <img
-                        src="./assets/images/slider/page13/thing_pham.png"
-                        alt="logo"
-                        class="avatar swiper-lazy"
-                      />
-                      <p class="person-name">thinh pham</p>
-                      <div class="description">
-                        <p class="position">chief product officer</p>
-                        <a
-                          href="https://www.linkedin.com/in/thinh-pham-71469639/"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          <img
-                            src="./assets/images/ldp/Vector (3).png"
-                            alt=""
-                            class="swiper-lazy"
-                          />
-                        </a>
-                      </div>
-                    </div>
-
-                    <div class="person">
-                      <img
-                        src="./assets/images/slider/page13/tim.png"
-                        alt="logo"
-                        class="avatar swiper-lazy"
-                      />
-                      <p class="person-name">Tim</p>
-                      <div class="description">
-                        <p class="position">CHIEF BLOCKCHAIN OFFICer</p>
-                        <a
-                          href="https://www.linkedin.com/in/trungquangnguyen/"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          <img
-                            src="./assets/images/ldp/Vector (3).png"
-                            alt=""
-                            class="swiper-lazy"
-                          />
-                        </a>
-                      </div>
-                    </div>
-
-                    <div class="person">
-                      <img
-                        src="./assets/images/slider/page13/thomas.png"
-                        alt="logo"
-                        class="avatar swiper-lazy"
-                      />
-                      <p class="person-name">THOMAS</p>
-                      <div class="description">
-                        <p class="position">blockchain engineer lead</p>
-                        <a
-                          href="https://www.linkedin.com/in/thomas-tr%E1%BA%A7n-556075239/"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          <img
-                            src="./assets/images/ldp/Vector (3).png"
-                            alt=""
-                            class="swiper-lazy"
-                          />
-                        </a>
-                      </div>
-                    </div>
-
-                    <div class="person">
-                      <img
-                        src="./assets/images/slider/page13/jhon.png"
-                        alt="logo"
-                        class="avatar swiper-lazy"
-                      />
-                      <p class="person-name">John</p>
-                      <div class="description">
-                        <p class="position">BLOCKCHAIN ENGINEER</p>
-                        <a
-                          href="https://www.linkedin.com/in/john-nguy%E1%BB%85n-578073239/"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          <img
-                            src="./assets/images/ldp/Vector (3).png"
-                            alt=""
-                            class="swiper-lazy"
-                          />
-                        </a>
-                      </div>
-                    </div>
-
-                    <div class="person">
-                      <img
-                        src="./assets/images/slider/page13/jane.png"
-                        alt="logo"
-                        class="avatar swiper-lazy"
-                      />
-                      <p class="person-name">Jane</p>
-                      <div class="description">
-                        <p class="position">BUSINESS ANALYST</p>
-                        <a
-                          href="https://www.linkedin.com/in/jane-la-a06079239/"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          <img
-                            src="./assets/images/ldp/Vector (3).png"
-                            alt=""
-                            class="swiper-lazy"
-                          />
-                        </a>
-                      </div>
-                    </div>
-
-                    <div class="person">
-                      <img
-                        src="./assets/images/slider/page13/larry.png"
-                        alt="logo"
-                        class="avatar swiper-lazy"
-                      />
-                      <p class="person-name">LARRY</p>
-                      <div class="description">
-                        <p class="position">BDM</p>
-                        <a
-                          href="https://www.linkedin.com/in/jane-la-a06079239/"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          <img
-                            src="./assets/images/ldp/Vector (3).png"
-                            alt=""
-                            class="swiper-lazy"
-                          />
-                        </a>
-                      </div>
-                    </div>           
-
-                    <div class="person">
-                      <img
-                        src="./assets/images/slider/page13/tung_jay.png"
-                        alt="logo"
-                        class="avatar swiper-lazy"
-                      />
-                      <p class="person-name">TUNG JAY</p>
-                      <div class="description">
-                        <p class="position">PM</p>
-                        <a target="_blank" href="https://www.linkedin.com/in/jaynguyen2111/">
-                        <img
-                          src="./assets/images/ldp/Vector (3).png"
-                          alt=""
-                          class="swiper-lazy"
-                        />
-                      </div>
-                    </div>
-
-                    <div class="person">
-                      <img
-                        src="./assets/images/slider/page13/leo_gray.png"
-                        alt="logo"
-                        class="avatar swiper-lazy"
-                      />
-                      <p class="person-name">Leo</p>
-                      <div class="description">
-                        <p class="position">product owner</p>
-                        <a
-                          href="https://www.linkedin.com/in/nguyennam1208/"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          <img
-                            src="./assets/images/ldp/Vector (3).png"
-                            alt=""
-                            class="swiper-lazy"
-                          />
-                        </a>
-                      </div>
-                    </div>
-
-                    <div class="person">
-                      <img
-                        src="./assets/images/slider/page13/karol zacharski.png"
-                        alt="logo"
-                        class="avatar swiper-lazy"
-                      />
-                      <p class="person-name">Karol</p>
-                      <div class="description">
-                        <p class="position">Product manager</p>
-                        <a
-                          href="https://www.linkedin.com/in/karol-zacharski-64870620b"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          <img
-                            src="./assets/images/ldp/Vector (3).png"
-                            alt=""
-                            class="swiper-lazy"
-                          />
-                        </a>
-                      </div>
-                    </div>
-
-                    <div class="person">
-                      <img
-                        src="./assets/images/slider/page13/jay_gray.png"
-                        alt="logo"
-                        class="avatar swiper-lazy"
-                      />
-                      <p class="person-name">HWANG</p>
-                      <div class="description">
-                        <p class="position">head of community</p>
-                        <a
-                          href="https://www.linkedin.com/in/jay-minh-34b721172/"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          <img
-                            src="./assets/images/ldp/Vector (3).png"
-                            alt=""
-                            class="swiper-lazy"
-                          />
-                        </a>
-                      </div>
-                    </div>
-
-                    <div class="person">
-                      <img
-                        src="./assets/images/slider/page13/louis_gray.png"
-                        alt="logo"
-                        class="avatar swiper-lazy"
-                      />
-                      <p class="person-name">LOUIS</p>
-                      <div class="description">
-                        <p class="position">UX/UI LEADER</p>
-                        <a
-                          href="https://www.linkedin.com/in/tam-nguyen-a64821236/"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          <img
-                            src="./assets/images/ldp/Vector (3).png"
-                            alt=""
-                            class="swiper-lazy"
-                          />
+                        <p class="position">Strategy ADVISOR</p>
+                        <a href="https://www.linkedin.com/in/darrenchu/" target="_blank" rel="noopener noreferrer">
+                          <img src="./assets/images/ldp/Vector (3).png" alt="" class="swiper-lazy" />
                         </a>
                       </div>
                     </div>
                     <div class="person">
-                      <img
-                        src="./assets/images/slider/page13/hung_tran.png"
-                        alt="logo"
-                        class="avatar swiper-lazy"
-                      />
-                      <p class="person-name">hung tran</p>
+                      <img src="./assets/images/slider/page14/rune.png" alt="logo" class="avatar swiper-lazy" />
+                      <p class="person-name">RUNE EVENSEN</p>
                       <div class="description">
-                        <p class="position">LEAD 3D MODELING</p>
-                        <a
-                          href="https://www.artstation.com/kuteo?fbclid=IwAR0kDZewrUqzO5cVrAPifUhsVwWldlqo88_yxld6eSL3pDd1knvmJzr5S4I"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          <img
-                            src="./assets/images/slider/page13/cib_artstation.png"
-                            alt=""
-                            class="swiper-lazy"
-                          />
+                        <p class="position">ADVISOR</p>
+                        <a href="https://www.linkedin.com/in/runeevensen/" target="_blank" rel="noopener noreferrer">
+                          <img src="./assets/images/ldp/Vector (3).png" alt="" class="swiper-lazy" />
                         </a>
                       </div>
                     </div>
-                  
-                    <div class="person">
-                      <img
-                        src="./assets/images/slider/page13/gustavo.png"
-                        alt="logo"
-                        class="avatar swiper-lazy"
-                      />
-                      <p class="person-name">GUSTAVO</p>
-                      <div class="description">
-                        <p class="position">community executive</p>
-                        <a
-                          href="https://www.linkedin.com/in/nonnenberg/"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          <img
-                            src="./assets/images/ldp/Vector (3).png"
-                            alt=""
-                            class="swiper-lazy"
-                          />
-                        </a>
-                      </div>
-                    </div>
-                    <!-- 
-                    <div class="person">
-                      <img
-                        src="./assets/images/slider/page13/andy_gray.png"
-                        alt="logo"
-                        class="avatar swiper-lazy"
-                      />
-                      <p class="person-name">ANDY</p>
-                      <div class="description">
-                        <p class="position">CHIEF PRODUCT OFFICER</p>
-                        <a
-                          href="https://www.linkedin.com/in/phi-hai-aa2001209/"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          <img
-                            src="./assets/images/ldp/Vector (3).png"
-                            alt=""
-                            class="swiper-lazy"
-                          />
-                        </a>
-                      </div>
-                    </div> -->
-
-                    <div class="person">
-                      <img
-                        src="./assets/images/slider/page13/duc_pham.png"
-                        alt="logo"
-                        class="avatar swiper-lazy"
-                      />
-                      <p class="person-name">DUC PHAM</p>
-                      <div class="description">
-                        <p class="position">LEAD PROGRAMMER</p>
-                        <a
-                          href="https://www.linkedin.com/in/duc-pham-hong-a895761aa/"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          <img
-                            src="./assets/images/ldp/Vector (3).png"
-                            alt=""
-                            class="swiper-lazy"
-                          />
-                        </a>
-                      </div>
-                    </div>
-
-                    <div class="person">
-                      <img
-                        src="./assets/images/slider/page13/giap_vo.png"
-                        alt="logo"
-                        class="avatar swiper-lazy"
-                      />
-                      <p class="person-name">giap vo</p>
-                      <div class="description">
-                        <p class="position">Lead 3D Rigging and animation</p>
-                        <a
-                          href="https://www.linkedin.com/in/giap-vo-a3677941/"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          <img
-                            src="./assets/images/ldp/Vector (3).png"
-                            alt=""
-                            class="swiper-lazy"
-                          />
-                        </a>
-                      </div>
-                    </div>                    
-
-                    <div class="person">
-                      <img
-                        src="./assets/images/slider/page13/CRIS_NGUYEN.png"
-                        alt="logo"
-                        class="avatar swiper-lazy"
-                      />
-                      <p class="person-name">CRIS NGUYEN</p>
-                      <div class="description">
-                        <p class="position">graphic designer</p>
-                        <a
-                          href="https://www.linkedin.com/in/virgo-tu-071694237/"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          <img
-                            src="./assets/images/ldp/Vector (3).png"
-                            alt=""
-                            class="swiper-lazy"
-                          />
-                        </a>
-                      </div>
-                    </div>
-
-                    <div class="person">
-                      <img
-                        src="./assets/images/slider/page13/virgo_gray.png"
-                        alt="logo"
-                        class="avatar swiper-lazy"
-                      />
-                      <p class="person-name">VIRGO</p>
-                      <div class="description">
-                        <p class="position">Unreal Engine/ 3D Developer</p>
-                        <a
-                          href="https://www.linkedin.com/in/virgo-tu-071694237/"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          <img
-                            src="./assets/images/ldp/Vector (3).png"
-                            alt=""
-                            class="swiper-lazy"
-                          />
-                        </a>
-                      </div>
-                    </div>
-                                      
                   </div>
                 </div>
-              </div>
-            </div>
-
-            <div class="swiper-slide" data-hash="investors&partners">
-              <div id="page-14">
-                <div class="bg">
-                  <picture>
-                    <source
-                      media="(min-width:1024px)"
-                      data-srcset="./assets//images//slider//page14/bgslide.jpeg"
-                      class="swiper-lazy"
-                    />
-                    <img
-                      data-src="./assets/images/slider/page14/mobile.png"
-                      alt="logo"
-                      class="logo swiper-lazy"
-                    />
-                  </picture>
-                </div>
-                <div class="content-page14">
-                  <div class="title">
-                    <h2
-                      onclick="onActiveTab('title1')"
-                      id="title1"
-                      class="Microgramma-b active"
-                    >
-                      ADVISORS
-                    </h2>
-                    <h2
-                      onclick="onActiveTab('title2')"
-                      id="title2"
-                      class="Microgramma-b"
-                    >
-                      partners
-                    </h2>
-                  </div>
-                  <script>
-                    function onActiveTab(title) {
-                      let tl1 = document.getElementById("title1");
-                      let tl2 = document.getElementById("title2");
-
-                      let tab1 = document.getElementById("Partners");
-                      let tab2 = document.getElementById("MEDIA-SECURITY");
-
-                      tl1.classList.remove("active");
-                      tl2.classList.remove("active");
-                      tab1.classList.remove("active");
-                      tab2.classList.remove("active");
-                      if (title === "title1") {
-                        tl1.classList.add("active");
-                        tab1.classList.add("active");
-                      } else {
-                        tl2.classList.add("active");
-                        tab2.classList.add("active");
-                      }
-                    }
-                  </script>
-                  <div class="Partners active" id="Partners">
-                    <div class="my_team">
-                      <div class="person">
-                        <img
-                          src="./assets/images/slider/page14/darren.png"
-                          alt="logo"
-                          class="avatar swiper-lazy"
-                        />
-                        <p class="person-name">Darren chu</p>
-                        <div class="description">
-                          <p class="position">Strategy ADVISOR</p>
-                          <a
-                            href="https://www.linkedin.com/in/darrenchu/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                          >
-                            <img
-                              src="./assets/images/ldp/Vector (3).png"
-                              alt=""
-                              class="swiper-lazy"
-                            />
-                          </a>
-                        </div>
-                      </div>
-                      <div class="person">
-                        <img
-                          src="./assets/images/slider/page14/rune.png"
-                          alt="logo"
-                          class="avatar swiper-lazy"
-                        />
-                        <p class="person-name">RUNE EVENSEN</p>
-                        <div class="description">
-                          <p class="position">ADVISOR</p>
-                          <a
-                            href="https://www.linkedin.com/in/runeevensen/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                          >
-                            <img
-                              src="./assets/images/ldp/Vector (3).png"
-                              alt=""
-                              class="swiper-lazy"
-                            />
-                          </a>
-                        </div>
-                      </div>
-                    </div>                  
-                  </div>
-                  <div class="MEDIA-SECURITY" id="MEDIA-SECURITY">
-                    <h2 class="Microgramma-b active">MEDIA & SECURITY</h2>
-                    <div class="container">
-                      <div class="col">
-                        <img
-                          data-src="./assets/images/slider/page14/appota.png"
-                          alt="logo"
-                          class="logoitem2 swiper-lazy"
-                        />
-                      </div>
-                      <div class="col">
-                        <img
-                          data-src="./assets/images/slider/page14/Acestarterlogo.png"
-                          alt="logo"
-                          class="logoitem2 swiper-lazy"
-                        />
-                      </div>
-                      <div class="col">
-                        <img
-                          data-src="./assets/images/slider/page14/polygon.png"
-                          alt="logo"
-                          class="logoitem2 swiper-lazy"
-                          style="
-                          min-height: 100px !important;"
-                        />
-                      </div>            
-                      <div class="col">
-                        <img
-                          data-src="./assets/images/slider/page14/chainplay.png"
-                          alt="logo"
-                          class="logoitem2 swiper-lazy"                          
-                          height="77px !important"
-                          width="476px"
-                          style="object-fit: cover;"
-                        />
-                      </div>
-                      <div class="col">
-                        <img
-                          data-src="./assets/images/slider/page14/coinIndex.png"
-                          alt="logo"
-                          class="logo_coinIndex swiper-lazy"                          
-                          height= '77px'
-                          width="328px"
-                          style="object-fit:cover;object-position: bottom
-                            "
-                        />
-                      </div>        
-                      <div class="col">
-                        <img
-                          data-src="./assets/images/slider/page14/coinindexsmartchain.png"
-                          alt="logo"
-                          class="logo_coinIndex swiper-lazy"
-                        />
-                      </div>                                          
+                <div class="MEDIA-SECURITY" id="MEDIA-SECURITY">
+                  <h2 class="Microgramma-b active">MEDIA & SECURITY</h2>
+                  <div class="container">
+                    <div class="col">
+                      <img data-src="./assets/images/slider/page14/appota.png" alt="logo"
+                        class="logoitem2 swiper-lazy" />
+                    </div>
+                    <div class="col">
+                      <img data-src="./assets/images/slider/page14/Acestarterlogo.png" alt="logo"
+                        class="logoitem2 swiper-lazy" />
+                    </div>
+                    <div class="col">
+                      <img data-src="./assets/images/slider/page14/polygon.png" alt="logo" class="logoitem2 swiper-lazy"
+                        style="
+                          min-height: 100px !important;" />
+                    </div>
+                    <div class="col">
+                      <img data-src="./assets/images/slider/page14/chainplay.png" alt="logo"
+                        class="logoitem2 swiper-lazy" height="77px !important" width="476px"
+                        style="object-fit: cover;" />
+                    </div>
+                    <div class="col">
+                      <img data-src="./assets/images/slider/page14/coinIndex.png" alt="logo"
+                        class="logo_coinIndex swiper-lazy" height='77px' width="328px" style="object-fit:cover;object-position: bottom
+                            " />
+                    </div>
+                    <div class="col">
+                      <img data-src="./assets/images/slider/page14/coinindexsmartchain.png" alt="logo"
+                        class="logo_coinIndex swiper-lazy" />
                     </div>
                   </div>
+                </div>
 
-                  <div class="titleFooter">
-                    <p class="Barlow">Copyright 2022 galactic war</p>
-                  </div>
+                <div class="titleFooter">
+                  <p class="Barlow">Copyright 2022 galactic war</p>
                 </div>
               </div>
             </div>
           </div>
+        </div>
 
-          <div class="swiper-pagination"></div>
-          <div class="swiper-button-next">
-            <img
-              src="./assets/images/ldp/next.png"
-              alt=""
-            />
-          </div>
-          <div class="swiper-button-prev">
-            <img
-              src="./assets/images/ldp/prev.png"
-              alt=""
-            />
-          </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next">
+          <img src="./assets/images/ldp/next.png" alt="" />
+        </div>
+        <div class="swiper-button-prev">
+          <img src="./assets/images/ldp/prev.png" alt="" />
         </div>
       </div>
     </div>
-    <script>
-      function clickEffect(e) {
-        var d = document.createElement("div");
-        d.id = "cursor-click";
-        d.style.top = e.clientY + "px";
-        d.style.left = e.clientX + "px";
-        document.body.appendChild(d);
-        d.addEventListener(
-          "animationend",
-          function () {
-            d.parentElement.removeChild(d);
-          }.bind(this)
-        );
-      }
-      document.addEventListener("click", clickEffect);
-    </script>
+  </div>
+  <script>
+    function clickEffect(e) {
+      var d = document.createElement("div");
+      d.id = "cursor-click";
+      d.style.top = e.clientY + "px";
+      d.style.left = e.clientX + "px";
+      document.body.appendChild(d);
+      d.addEventListener(
+        "animationend",
+        function () {
+          d.parentElement.removeChild(d);
+        }.bind(this)
+      );
+    }
+    document.addEventListener("click", clickEffect);
+  </script>
 
-    <div id="popUp" onclick="closePopUp()">
-      <img
-        src="./assets/images/Group 788.png"
-        alt=""
-      />
-      <script>
-        function closePopUp() {
-          document.getElementById("popUp").classList.remove("fadeIn");
-          document.getElementById("popUp").classList.add("fadeOut");
+  <div id="popUp" onclick="closePopUp()">
+    <img src="./assets/images/Group 788.png" alt="" />
+    <script>
+      function closePopUp() {
+        document.getElementById("popUp").classList.remove("fadeIn");
+        document.getElementById("popUp").classList.add("fadeOut");
+      }
+      function openPopUp() {
+        console.log("run");
+        document.getElementById("popUp").classList.remove("fadeOut");
+        document.getElementById("popUp").classList.add("fadeIn");
+      }
+    </script>
+  </div>
+  <div id="popUpcollectGmail">
+    <style>
+      #popUpcollectGmail {
+        background: linear-gradient(90deg, #89eeff, #e4abff);
+        border-radius: 12px;
+        position: fixed;
+        width: 848px;
+        max-width: calc(100vw - 40px);
+        top: 50vh;
+        left: 50vw;
+        z-index: 1;
+        transition: 0.3s ease-in-out;
+        transform: translate(-50%, -50%) scale(0);
+        text-align: center;
+        padding: 30px;
+        font-family: "Barlow";
+        font-style: normal;
+        overflow: hidden;
+        box-sizing: border-box;
+      }
+
+      #popUpcollectGmail::before {
+        content: "";
+        position: absolute;
+        width: calc(100% - 14px);
+        height: calc(100% - 14px);
+        background-image: linear-gradient(90deg,
+            transparent 0,
+            rgba(0, 0, 0, 1) 50% 50%,
+            transparent 100%),
+          url("./assets/images/popUpForm.jpeg");
+        border-radius: 12px;
+        opacity: 1;
+        top: 7px;
+        left: 7px;
+        z-index: -1;
+        background-size: cover;
+      }
+
+      @media (min-width: 1420px) {
+        #popUpcollectGmail.show {
+          transform: translate(-50%, -50%) scale(1);
         }
-        function openPopUp() {
-          console.log("run");
-          document.getElementById("popUp").classList.remove("fadeOut");
-          document.getElementById("popUp").classList.add("fadeIn");
-        }
-      </script>
-    </div>
-    <div id="popUpcollectGmail">
-      <style>
-        #popUpcollectGmail{      
-          background:  linear-gradient(90deg, #89EEFF ,#E4ABFF);
-          border-radius: 12px;
-          position: fixed;
-          width: 848px; 
-          max-width: calc(100vw - 40px);         
-          top: 50%;
-          left: 50%;          
-          z-index: 1;
-          transition: 0.3s ease-in-out;
-          transform:translate(-50%,-50%) scale(0);                    
-          text-align: center;
-          padding: 30px;
-          font-family: 'Barlow';
-          font-style: normal;        
-          overflow: hidden;
-          box-sizing: border-box;
-        }
-        #popUpcollectGmail::before{          
-          content: '';
-          position: absolute;
-          width: calc(100% - 14px);
-          height: calc(100% - 14px);
-          background-image: linear-gradient(90deg, transparent 0,rgba(0, 0, 0, 1) 50% 50%, transparent 100%), url('./assets/images/popUpForm.jpeg');
-          border-radius: 12px;
-          opacity: 1;
-          top: 7px;
-          left:7px;
-          z-index: -1;
-          background-size: cover;
-        }
-        @media (min-width:1420px) {          
-          #popUpcollectGmail.show{
-            transform:translate(-50%,-50%) scale(1);
-          }
-        }
-        #popUpcollectGmail .close{
-          position: absolute;          
-          right: -5px;
-          top: 0px;     
-        }
-        #popUpcollectGmail .title{
-          margin-bottom: 18px;
-        }
-        #popUpcollectGmail p{
-          font-weight: 300;
-          font-size: 21px;
-          line-height: 25px;
-          text-align: center;
-          color: #FFFFFF;          
-          margin-bottom: 14px;
-          width: 557px;
-          margin: auto;
-          position: relative;
-        }     
-        #popUpcollectGmail p::before,#popUpcollectGmail p::after{
-          position: absolute;
-          content: '';
-          display: block;
-          width: 40px;
-          height: 40px;
-          background-image: url('./assets//images/Mask\ group.png');
-          background-size: cover;
-          filter: brightness(0) invert(1);
-        }
-        #popUpcollectGmail p::before{
-          top: 50%;
-          right: calc(100% + 15px);
-          transform: translateY(-50%);
-        }
-        #popUpcollectGmail p::after{
-          top: 50%;
-          left: calc(100% + 15px);
-          transform: translateY(-50%);
-        }
-        #popUpcollectGmail p span{
-          color: #FF8AF3;
-        }
-        #popUpcollectGmail div{
-          margin-bottom: 35px;
-        }
-        #popUpcollectGmail a{
-          width: 298px;
-          height: 86px;
-          background: url('./assets//images/buttonsubmitForm.png');
-          background-size: cover;                                                        
-          display: block;
-          margin: auto;
-          position: relative;
-        }
-        #popUpcollectGmail a::after{
-          content: '';
-          background-image: url('./assets/images/bottombutton.png');
-          width: 236px;
-          height: 11px;
-          position: absolute;
-          top: 100%;
-          left: 50%;
-          transform: translateX(-50%);
-        }
-      </style>
-      <span class="close" onclick="document
+      }
+
+      #popUpcollectGmail .close {
+        position: absolute;
+        right: -5px;
+        top: 0px;
+      }
+
+      #popUpcollectGmail .title {
+        margin-bottom: 18px;
+      }
+
+      #popUpcollectGmail p {
+        font-weight: 300;
+        font-size: 21px;
+        line-height: 25px;
+        text-align: center;
+        color: #ffffff;
+        margin-bottom: 14px;
+        width: 557px;
+        margin: auto;
+        position: relative;
+      }
+
+      #popUpcollectGmail p::before,
+      #popUpcollectGmail p::after {
+        position: absolute;
+        content: "";
+        display: block;
+        width: 40px;
+        height: 40px;
+        background-image: url("./assets//images/Mask\ group.png");
+        background-size: cover;
+        filter: brightness(0) invert(1);
+      }
+
+      #popUpcollectGmail p::before {
+        top: 50%;
+        right: calc(100% + 15px);
+        transform: translateY(-50%);
+      }
+
+      #popUpcollectGmail p::after {
+        top: 50%;
+        left: calc(100% + 15px);
+        transform: translateY(-50%);
+      }
+
+      #popUpcollectGmail p span {
+        color: #ff8af3;
+      }
+
+      #popUpcollectGmail div {
+        margin-bottom: 35px;
+      }
+
+      #popUpcollectGmail a {
+        width: 298px;
+        height: 86px;
+        background: url("./assets//images/buttonsubmitForm.png");
+        background-size: cover;
+        display: block;
+        margin: auto;
+        position: relative;
+      }
+
+      #popUpcollectGmail a::after {
+        content: "";
+        background-image: url("./assets/images/bottombutton.png");
+        width: 236px;
+        height: 11px;
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    </style>
+    <span class="close" onclick="document
       .getElementById('popUpcollectGmail').classList.remove('show');
       ">
-        <svg width="91" height="50" viewBox="0 0 91 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <g filter="url(#filter0_d_1756_14338)">
-          <path d="M28.9587 40.2808L5.35948 6.28081C3.51838 3.6283 5.41665 0 8.6455 0H82.2419C84.4511 0 86.2419 1.79086 86.2419 4V38C86.2419 40.2091 84.4511 42 82.2419 42H32.2447C30.9339 42 29.7062 41.3577 28.9587 40.2808Z" fill="#89EEFF"/>
-          </g>
-          <path d="M64.0073 13.9255L59.9123 10.1667L52.7495 16.7413L45.5867 10.1667L41.4917 13.9255L48.6545 20.5001L41.4917 27.0747L45.5867 30.8334L52.7495 24.2588L59.9123 30.8334L64.0073 27.0747L56.8445 20.5001L64.0073 13.9255Z" fill="black"/>
-          <defs>
-          <filter id="filter0_d_1756_14338" x="0.638672" y="0" width="89.603" height="50" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-          <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-          <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-          <feOffset dy="4"/>
-          <feGaussianBlur stdDeviation="2"/>
-          <feComposite in2="hardAlpha" operator="out"/>
-          <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
-          <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1756_14338"/>
-          <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1756_14338" result="shape"/>
+      <svg width="91" height="50" viewBox="0 0 91 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g filter="url(#filter0_d_1756_14338)">
+          <path
+            d="M28.9587 40.2808L5.35948 6.28081C3.51838 3.6283 5.41665 0 8.6455 0H82.2419C84.4511 0 86.2419 1.79086 86.2419 4V38C86.2419 40.2091 84.4511 42 82.2419 42H32.2447C30.9339 42 29.7062 41.3577 28.9587 40.2808Z"
+            fill="#89EEFF" />
+        </g>
+        <path
+          d="M64.0073 13.9255L59.9123 10.1667L52.7495 16.7413L45.5867 10.1667L41.4917 13.9255L48.6545 20.5001L41.4917 27.0747L45.5867 30.8334L52.7495 24.2588L59.9123 30.8334L64.0073 27.0747L56.8445 20.5001L64.0073 13.9255Z"
+          fill="black" />
+        <defs>
+          <filter id="filter0_d_1756_14338" x="0.638672" y="0" width="89.603" height="50" filterUnits="userSpaceOnUse"
+            color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+              result="hardAlpha" />
+            <feOffset dy="4" />
+            <feGaussianBlur stdDeviation="2" />
+            <feComposite in2="hardAlpha" operator="out" />
+            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1756_14338" />
+            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1756_14338" result="shape" />
           </filter>
-          </defs>
-          </svg>
-          
-            
-      </span>
-      <img src="./assets/images/Don’t miss out.png" alt="none" class="title">      
-      <p class="p nasalization">
-        This is one of the
-        <span>
-          special events
-        </span>
-        the Galactic War team brings you guys. We'd like to thank you and invite you to fill out the form below to get notification of the 
-        <span>
-          hottest deals and information
-        </span>
-        about Galactic War.
-      </p>
-      <div>
-        <!-- <img src="./assets/images/Mask group.png" alt=""> -->
-          
-      </div>
-        <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSe3PjHOBQRO8w031BTmx6g2-3O66kS6VA0Z-YRQmsbGLAFHKA/viewform"></a>        
+        </defs>
+      </svg>
+    </span>
+    <img src="./assets/images/Don’t miss out.png" alt="none" class="title" />
+    <p class="p nasalization-b">
+      This is one of the
+      <span> special events </span>
+      the Galactic War team brings you guys. We'd like to thank you and invite
+      you to fill out the form below to get notification of the
+      <span> hottest deals and information </span>
+      about Galactic War.
+    </p>
+    <div>
+      <!-- <img src="./assets/images/Mask group.png" alt=""> -->
     </div>
-  </body>
+    <a target="_blank"
+      href="https://docs.google.com/forms/d/e/1FAIpQLSe3PjHOBQRO8w031BTmx6g2-3O66kS6VA0Z-YRQmsbGLAFHKA/viewform"></a>
+  </div>
+</body>
+
 </html>
 <script>
   jQuery(document).ready(function () {
     var SlideHome = new Swiper("#slide_home", {
       mousewheel: true,
-      direction: "horizontal",
+      direction: "vertical",
       slidesPerView: 1,
       pagination: {
         el: "#slide_home .swiper-pagination",
@@ -2186,23 +1351,19 @@
         preloaderClass: "swiper-preloader",
       },
       on: {
-        imagesReady: setTimeout(()=>{
-          document.getElementById("swiper-load-done").classList.add("show")
+        imagesReady: setTimeout(() => {
+          document.getElementById("swiper-load-done").classList.add("show");
           const loading = document.getElementById("swiper-loading");
-          loading.parentNode.removeChild(loading);          
+          loading.parentNode.removeChild(loading);
           // open popup
-          document.getElementById('popUpcollectGmail').classList.add('show');
-        }
-          ,
-          3000
-        ),
+          document.getElementById("popUpcollectGmail").classList.add("show");
+        }, 0000),
       },
     });
     SlideHome.on("transitionEnd", function () {
-      
       let sliderActive = document
-      .getElementById("slide_home")
-      .getElementsByClassName("swiper-slide swiper-slide-active")[0];
+        .getElementById("slide_home")
+        .getElementsByClassName("swiper-slide swiper-slide-active")[0];
 
       // play pasued video when on screen
       let videoOnactive = sliderActive.querySelector("#video-page2");
@@ -2227,12 +1388,9 @@
       //show popbox in slide 1
       let page1isActive = sliderActive.querySelector("#page-1");
       if (page1isActive) {
-        document
-        .getElementById("popUpcollectGmail").classList.add("show");
-      }
-      else {
-        document
-        .getElementById("popUpcollectGmail").classList.remove("show");
+        document.getElementById("popUpcollectGmail").classList.add("show");
+      } else {
+        document.getElementById("popUpcollectGmail").classList.remove("show");
       }
 
       // pause mouse mousewheel when in screen 11

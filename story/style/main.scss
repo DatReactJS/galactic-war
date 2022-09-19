@@ -3,8 +3,8 @@
 @import "../../assets/stylesheets/sass/source/abstracts/_mixins";
 @import "../../assets/stylesheets/sass/source/base/agent";
 @import "../../assets/stylesheets/sass/source/popUp/popUp";
-@import '../../assets/stylesheets/sass/source/mouseclick';
-@import './section1';
+@import "../../assets/stylesheets/sass/source/mouseclick";
+@import "./section1";
 // font old
 @font-face {
   font-family: "VARIEN";
@@ -52,7 +52,7 @@
 .Microgramma {
   font-family: "Microgramma-D-OT-Medium", sans-serif;
 }
-.Microgramma-b {
+.nasalization-b {
   font-family: "Microgramma-D-OT-Bold", sans-serif;
 }
 body {
@@ -68,8 +68,8 @@ body {
     cursor: url("../../assets/images/icon/cursor.png") 10 10, default !important;
   }
 }
-#story{
-  min-height:800px;
+#story {
+  min-height: 800px;
   background-color: white;
   display: flex;
   flex-direction: column-reverse;

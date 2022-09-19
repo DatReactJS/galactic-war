@@ -998,101 +998,79 @@
             <div id="page-14">
               <div class="bg">
                 <picture>
-                  <source media="(min-width:1024px)" data-srcset="./assets//images//slider//page14/bgslide.jpeg"
+                  <source media="(min-width:1024px)" data-srcset="./assets/images/slider/page14/bg.jpeg"
                     class="swiper-lazy" />
                   <img data-src="./assets/images/slider/page14/mobile.png" alt="logo" class="logo swiper-lazy" />
                 </picture>
               </div>
-              <div class="content-page14">
-                <div class="title">
-                  <h2 onclick="onActiveTab('title1')" id="title1" class="nasalization-b active">
-                    ADVISORS
-                  </h2>
-                  <h2 onclick="onActiveTab('title2')" id="title2" class="nasalization-b">
-                    partners
-                  </h2>
-                </div>
-                <script>
-                  function onActiveTab(title) {
-                    let tl1 = document.getElementById("title1");
-                    let tl2 = document.getElementById("title2");
+              <div class="content-page14">             
+                <main>
+                  <div class="ADVISORS">
+                    <h3 class="nasalization-b active">
+                      ADVISORS
+                    </h3>
+                    <div class="my_team">
 
-                    let tab1 = document.getElementById("Partners");
-                    let tab2 = document.getElementById("MEDIA-SECURITY");
-
-                    tl1.classList.remove("active");
-                    tl2.classList.remove("active");
-                    tab1.classList.remove("active");
-                    tab2.classList.remove("active");
-                    if (title === "title1") {
-                      tl1.classList.add("active");
-                      tab1.classList.add("active");
-                    } else {
-                      tl2.classList.add("active");
-                      tab2.classList.add("active");
-                    }
-                  }
-                </script>
-                <div class="Partners active" id="Partners">
-                  <div class="my_team">
-                    <div class="person">
-                      <img src="./assets/images/slider/page14/darren.png" alt="logo" class="avatar swiper-lazy" />
-                      <p class="person-name">Darren chu</p>
-                      <div class="description">
-                        <p class="position">Strategy ADVISOR</p>
-                        <a href="https://www.linkedin.com/in/darrenchu/" target="_blank" rel="noopener noreferrer">
-                          <img src="./assets/images/ldp/Vector (3).png" alt="" class="swiper-lazy" />
-                        </a>
+                      <div class="person">
+                        <img src="./assets/images/slider/page14/darren.png" alt="logo" class="avatar swiper-lazy" />
+                        <div class="description">
+                          <p class="person-name">Darren chu</p>
+                          <p class="position">Strategy ADVISOR</p>
+                          <a href="https://www.linkedin.com/in/darrenchu/" target="_blank" rel="noopener noreferrer">
+                            <img src="./assets/images/ldp/Vector (3).png" alt="" class="swiper-lazy" />
+                          </a>
+                        </div>
                       </div>
+
+                      <div class="person">
+                        <img src="./assets/images/slider/page14/rune.png" alt="logo" class="avatar swiper-lazy" />
+                        <div class="description">
+                          <p class="person-name">RUNE EVENSEN</p>
+                          <p class="position">ADVISOR</p>
+                          <a href="https://www.linkedin.com/in/runeevensen/" target="_blank" rel="noopener noreferrer">
+                            <img src="./assets/images/ldp/Vector (3).png" alt="" class="swiper-lazy" />
+                          </a>
+                        </div>
+                      </div>
+
                     </div>
-                    <div class="person">
-                      <img src="./assets/images/slider/page14/rune.png" alt="logo" class="avatar swiper-lazy" />
-                      <p class="person-name">RUNE EVENSEN</p>
-                      <div class="description">
-                        <p class="position">ADVISOR</p>
-                        <a href="https://www.linkedin.com/in/runeevensen/" target="_blank" rel="noopener noreferrer">
-                          <img src="./assets/images/ldp/Vector (3).png" alt="" class="swiper-lazy" />
-                        </a>
+                  </div>
+                  <div class="PARTNERS">
+                    <h3 class="nasalization-b">PARTNERS</h3>
+                    <div class="container">
+                      <div class="item">
+                        <img data-src="./assets/images/slider/page14/appota.png" alt="logo" class="swiper-lazy" />
+                      </div>
+                      <div class="item">
+                        <img data-src="./assets/images/slider/page14/Acestarterlogo.png" alt="logo"
+                          class="swiper-lazy" />
+                      </div>
+                      <div class="item">
+                        <img data-src="./assets/images/slider/page14/polygon.png" alt="logo" class="swiper-lazy" style="
+                            height: 71px !important;" />
+                      </div>
+                      <div class="item">
+                        <img data-src="./assets/images/slider/page14/coinIndex.png" alt="logo"
+                          class="logo_coinIndex swiper-lazy" height='70px' width="140px"
+                          style="object-fit:cover;object-position: -20px -15px" />
+                      </div>
+                      <div class="item">
+                        <img data-src="./assets/images/slider/page14/chainplay.png" alt="logo" class="swiper-lazy"
+                          height="80px !important" width="476px" style="object-fit: cover;transform: scale(1.3);" />
+                      </div>
+
+                      <div class="item">
+                        <img data-src="./assets/images/slider/page14/coincu.png" alt="logo"
+                          class="logo_coinIndex swiper-lazy" />
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="MEDIA-SECURITY" id="MEDIA-SECURITY">
-                  <h2 class="nasalization-b active">MEDIA & SECURITY</h2>
-                  <div class="container">
-                    <div class="col">
-                      <img data-src="./assets/images/slider/page14/appota.png" alt="logo"
-                        class="logoitem2 swiper-lazy" />
-                    </div>
-                    <div class="col">
-                      <img data-src="./assets/images/slider/page14/Acestarterlogo.png" alt="logo"
-                        class="logoitem2 swiper-lazy" />
-                    </div>
-                    <div class="col">
-                      <img data-src="./assets/images/slider/page14/polygon.png" alt="logo" class="logoitem2 swiper-lazy"
-                        style="
-                          min-height: 100px !important;" />
-                    </div>
-                    <div class="col">
-                      <img data-src="./assets/images/slider/page14/chainplay.png" alt="logo"
-                        class="logoitem2 swiper-lazy" height="77px !important" width="476px"
-                        style="object-fit: cover;" />
-                    </div>
-                    <div class="col">
-                      <img data-src="./assets/images/slider/page14/coinIndex.png" alt="logo"
-                        class="logo_coinIndex swiper-lazy" height='77px' width="328px" style="object-fit:cover;object-position: bottom
-                            " />
-                    </div>
-                    <div class="col">
-                      <img data-src="./assets/images/slider/page14/coinindexsmartchain.png" alt="logo"
-                        class="logo_coinIndex swiper-lazy" />
-                    </div>
-                  </div>
-                </div>
+                </main>
 
                 <div class="titleFooter">
                   <p class="Barlow">Copyright 2022 galactic war</p>
                 </div>
+
               </div>
             </div>
           </div>

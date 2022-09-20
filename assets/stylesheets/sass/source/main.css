@@ -2509,6 +2509,7 @@ header ._header_top .bg_header {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  z-index: -1;
 }
 #page-13 .main,
 #clone-parner .main {

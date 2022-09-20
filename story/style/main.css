@@ -108,6 +108,7 @@
     display: flex;
     text-align: center;
     align-items: center;
+    white-space: nowrap;
   }
   .main-nav .menu__content .list_menu a span {
     display: inline-block;

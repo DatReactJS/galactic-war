@@ -110,6 +110,8 @@
           display: flex;
           text-align: center;
           align-items: center;
+
+          white-space: nowrap;
           span {
             display: inline-block;
             transition: 0.3s ease-in-out;
@@ -128,7 +130,7 @@
     }
   }
   @media (min-width: 1620px) {
-    .menu__content {      
+    .menu__content {
       .list_menu {
         .a {
           font-size: 16px;

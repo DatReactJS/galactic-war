@@ -955,6 +955,7 @@ header ._header_top .bg_header {
   align-items: center;
   display: flex;
   overflow: hidden;
+  background-color: black;
 }
 #page-2 video {
   width: 100%;
@@ -2567,9 +2568,11 @@ header ._header_top .bg_header {
   width: 100%;
   height: 100%;
   z-index: -1;
+  background-color: #020818;
 }
 #page-13 .bg img,
 #clone-parner .bg img {
+  display: none;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -2582,7 +2585,7 @@ header ._header_top .bg_header {
   max-width: 1420px;
   display: flex;
   flex-direction: column;
-  padding: 113px 27px 100px;
+  padding: 78px 27px 100px;
   box-sizing: border-box;
   height: 100%;
   overflow-y: scroll;
@@ -2592,11 +2595,12 @@ header ._header_top .bg_header {
   margin-bottom: 27px;
   font-style: normal;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 19px;
   line-height: 1.5em;
   text-transform: uppercase;
   color: #ffffff;
   text-shadow: 0px 10px 80px rgba(0, 0, 0, 0.5);
+  text-align: center;
 }
 #page-13 .main .tittleChildren,
 #clone-parner .main .tittleChildren {
@@ -2671,6 +2675,42 @@ header ._header_top .bg_header {
   text-transform: uppercase;
   color: #acafc3;
   margin-bottom: 20px;
+}
+#page-13 .main .listTeam,
+#clone-parner .main .listTeam {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding-bottom: 20px;
+}
+#page-13 .main .listTeam .person,
+#clone-parner .main .listTeam .person {
+  text-align: center;
+  margin-bottom: 20px;
+}
+#page-13 .main .listTeam .person .avatar,
+#clone-parner .main .listTeam .person .avatar {
+  width: 98px;
+  margin-bottom: 10px;
+}
+#page-13 .main .listTeam .person .person-name,
+#clone-parner .main .listTeam .person .person-name {
+  text-transform: uppercase;
+  font-size: 11px;
+  color: white;
+  font-family: "Microgramma-D-OT-Bold", sans-serif;
+}
+#page-13 .main .listTeam .person .description,
+#clone-parner .main .listTeam .person .description {
+  color: #1ad7fd;
+  margin: auto;
+  text-align: center;
+  width: 120px;
+  font-size: 10px;
+  font-family: "Barlow", sans-serif;
+}
+#page-13 .main .listTeam .person .description img,
+#clone-parner .main .listTeam .person .description img {
+  display: none;
 }
 
 #page-14 {
@@ -2965,6 +3005,40 @@ header ._header_top .bg_header {
   }
 }
 
+#team_slide {
+  position: relative;
+}
+#team_slide .swiper-pagination-bullet {
+  color: transparent;
+  background-color: white;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  border-radius: 2px;
+  width: 10px;
+  height: 10px;
+  position: relative;
+  margin: 9px;
+  opacity: 0.5;
+}
+#team_slide .swiper-pagination-bullet:first {
+  margin-left: 0 !important;
+}
+#team_slide .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  opacity: 1;
+}
+#team_slide .swiper-pagination-bullet:last-child::after {
+  display: none;
+}
+#team_slide .swiper-pagination_team {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  z-index: 99;
+}
+
 .arrowHorizontal {
   -webkit-animation-name: arrowHorizontal;
           animation-name: arrowHorizontal;
@@ -3138,7 +3212,6 @@ body * {
 }
 .homepage .swiper-container .swiper-wrapper .swiper-slide {
   width: 100%;
-  background: black;
 }
 .homepage .swiper-container .swiper-button-next,
 .homepage .swiper-container .swiper-button-prev {

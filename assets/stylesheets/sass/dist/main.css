@@ -73,9 +73,8 @@ table {
 }
 
 .homepage .swiper-container .swiper-wrapper .swiper-slide {
-  height: 100vh;
+  height: 100%;
   width: 100%;
-  background: black;
 }
 .homepage .swiper-container .swiper-button-next,
 .homepage .swiper-container .swiper-button-prev {

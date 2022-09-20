@@ -15,19 +15,21 @@
     width: 100%;
     height: 100%;
     z-index: -1;
+    background-color: #020818;
     img {
+      display: none;
       width: 100%;
       height: 100%;
       object-fit: cover;
       z-index: -1;
-    }    
+    }
   }
   .main {
     margin: auto;
     max-width: 1420px;
     display: flex;
     flex-direction: column;
-    padding: 113px 27px 100px;
+    padding: 78px 27px 100px;
     box-sizing: border-box;
     height: 100%;
     overflow-y: scroll;
@@ -35,11 +37,12 @@
       margin-bottom: 27px;
       font-style: normal;
       font-weight: bold;
-      font-size: 16px;
+      font-size: 19px;
       line-height: 1.5em;
       text-transform: uppercase;
       color: #ffffff;
       text-shadow: 0px 10px 80px rgba(0, 0, 0, 0.5);
+      text-align: center;
     }
     .tittleChildren {
       font-style: normal;
@@ -105,6 +108,36 @@
           text-transform: uppercase;
           color: #acafc3;
           margin-bottom: 20px;
+        }
+      }
+    }
+    .listTeam {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      padding-bottom: 20px;
+      .person {
+        text-align: center;
+        margin-bottom: 20px;
+        .avatar {
+          width: 98px;
+          margin-bottom: 10px;
+        }
+        .person-name {
+          text-transform: uppercase;
+          font-size: 11px;
+          color: white;
+          font-family: "Microgramma-D-OT-Bold", sans-serif;
+        }
+        .description {
+          color: #1ad7fd;
+          margin: auto;
+          text-align: center;
+          width: 120px;
+          font-size: 10px;
+          font-family: "Barlow", sans-serif;
+          img {
+            display: none;
+          }
         }
       }
     }

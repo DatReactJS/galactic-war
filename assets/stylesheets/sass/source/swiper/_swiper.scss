@@ -73,3 +73,41 @@
     // }
   }
 }
+#team_slide {
+  position: relative;
+  .swiper-pagination-bullet {
+    color: transparent;
+    // background: rgb(26,215,253);
+    background-color: white;
+    backdrop-filter: blur(10px);
+    border-radius: 2px;
+    width: 10px;
+    height: 10px;
+    position: relative;
+    margin: calc(9px);
+    opacity: 0.5;
+    &:first {
+      margin-left: 0 !important;
+    }
+    // &:last-child {
+    //   margin-right: 0 !important;
+    // }
+    &.swiper-pagination-bullet-active {
+      opacity: 1;
+    }
+    &:last-child {
+      &::after {
+        display: none;
+      }
+    }
+  }
+  .swiper-pagination_team {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    z-index: 99;
+  }
+}

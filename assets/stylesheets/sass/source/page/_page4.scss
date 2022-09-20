@@ -1,7 +1,6 @@
 #page-4 {
   height: 100vh;
   width: 100%;
-  overflow-y: scroll;
   overflow-x: hidden;
   position: relative;
   z-index: 1;
@@ -32,6 +31,7 @@
     display: none;
   }
   .container {
+    position: relative;
     height: 100vh;
     overflow: scroll;
     padding: 78px 15px 50px;
@@ -45,7 +45,7 @@
       text-transform: uppercase;
       color: #ffffff;
       text-shadow: 0px 10px 80px rgba(0, 0, 0, 0.5);
-      margin-bottom: 48px;
+      margin-bottom: 12px;
     }
     .phases {
       display: flex;
@@ -73,7 +73,7 @@
             font-family: "Barlow";
             font-weight: 500;
             font-size: 11px;
-            line-height: 24px;
+            line-height: 15px;
           }
         }
       }
@@ -149,7 +149,7 @@
         display: flex;
         justify-content: center;
         padding-top: 6vh;
-        transition: 0.3s ease-in-out;        
+        transition: 0.3s ease-in-out;
         flex-wrap: nowrap;
         height: 500px;
         position: relative;

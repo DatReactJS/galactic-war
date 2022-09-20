@@ -102,7 +102,8 @@
               <img src=".\assets\images\Btn_WeaponMenu_p 2.svg" alt="" />
             </li>
             <li>
-              <a href="https://docs.galacticwar.io/" target="_blank" data-attr="section_what_race" class="nasalization-b">
+              <a href="https://docs.galacticwar.io/" target="_blank" data-attr="section_what_race"
+                class="nasalization-b">
                 <span> documents </span>
               </a>
               <img src=".\assets\images\Btn_WeaponMenu_p 2.svg" alt="" />
@@ -285,7 +286,12 @@
           <div class="swiper-slide" data-hash="features">
             <div id="page-3">
               <div class="bg">
-                <img data-src="./assets//images/slider/page3/bg.jpeg" class="swiper-lazy" alt="" />
+                <picture>
+                  <source media="(min-width:1024px)" srcset="./assets/images/slider/page3/bg.jpeg" class='swiper-lazy'
+                    alt='galacticwa2' />
+                  <img data-src="./assets//images/slider/page3/bg.png" class="swiper-lazy" alt="galacticwa1" />
+                </picture>
+
               </div>
 
               <div class="group235">
@@ -356,8 +362,8 @@
               <div class="bg-mobie">
                 <img data-src="./assets//images//slider/page4/226347986-AdobeStock_226347986 3.png" alt=""
                   class="bg-1 swiper-lazy" />
-                <img data-src="./assets//images//slider/page4/338566170-AdobeStock_338566170 1.png" alt=""
-                  class="bg-2 swiper-lazy" />
+                <!-- <img data-src="./assets//images//slider/page4/338566170-AdobeStock_338566170 1.png" alt=""
+                  class="bg-2 swiper-lazy" /> -->
               </div>
               <div class="bg-desktop">
                 <img data-src="./assets/images//slider/page4/bg.jpeg" alt="" class="swiper-lazy bg-1" />
@@ -540,7 +546,7 @@
                     <h4 class="Barlow">to infinity</h4>
                   </div>
                   <div class="line">
-                    <img src='/assets/images//slider/page4/starLine.png' alt='star line' width="1920
+                    <img src=' /assets/images//slider/page4/starLine.png' alt='star line' width="1920
                     ">
                   </div>
                 </dl>
@@ -602,7 +608,8 @@
                   and more. -->
                 </p>
                 <picture>
-                  <source media="(min-width:1024px)" srcset="./assets//images/ldp/Group 270 rever.png" class="swiper-lazy">                  
+                  <source media="(min-width:1024px)" srcset="./assets//images/ldp/Group 270 rever.png"
+                    class="swiper-lazy">
                   <img data-src="./assets//images/ldp/Group 270.png" alt="" class="swiper-lazy" />
                 </picture>
               </div>
@@ -615,15 +622,14 @@
                 <picture>
                   <source media="(min-width:1024px)" data-srcset="./assets//images//slider//page7/bg7.jpeg"
                     class="swiper-lazy" />
-                  <img data-src="./assets//images//slider//page7/bg7.jpeg" alt=""
-                    class="swiper-lazy" />
+                  <img data-src="./assets//images//slider//page7/bg7.jpeg" alt="" class="swiper-lazy" />
                 </picture>
               </div>
               <div class="content">
                 <picture>
                   <source media="(min-width:1024px)" data-srcset="./assets//images/ldp/Group%20270%20rever.png"
-                    class="swiper-lazy" />                  
-                    <img data-src="./assets//images/ldp/Group 270.png" alt="" class="swiper-lazy" />
+                    class="swiper-lazy" />
+                  <img data-src="./assets//images/ldp/Group 270.png" alt="" class="swiper-lazy" />
                 </picture>
                 <h2 class="nasalization-b">characters</h2>
                 <p class="Barlow">
@@ -1277,8 +1283,11 @@
   jQuery(document).ready(function () {
     var SlideHome = new Swiper("#slide_home", {
       mousewheel: true,
+      autoHeight: true,
+      slidesPerView: "auto",
       direction: "vertical",
-      slidesPerView: 1,
+      // freeMode: true,
+      // slidesPerView: 1,
       pagination: {
         el: "#slide_home .swiper-pagination",
         clickable: true,

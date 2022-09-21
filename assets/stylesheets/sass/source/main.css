@@ -1820,14 +1820,15 @@ header ._header_top .bg_header {
     font-size: 48px;
     line-height: 58px;
     top: initial;
-    bottom: 95px;
+    bottom: 50px;
     margin-bottom: 0;
   }
   #page-4 .container .phases {
     transform: initial;
     width: 100%;
     flex-wrap: nowrap;
-    padding-top: 45px;
+    padding-top: 0px;
+    transform: translateY(-7%);
   }
 }
 
@@ -2588,7 +2589,6 @@ header ._header_top .bg_header {
   padding: 78px 27px 100px;
   box-sizing: border-box;
   height: 100%;
-  overflow-y: scroll;
 }
 #page-13 .main .title-page13,
 #clone-parner .main .title-page13 {
@@ -2614,18 +2614,23 @@ header ._header_top .bg_header {
 }
 #page-13 .main .my_team,
 #clone-parner .main .my_team {
-  display: flex;
+  display: none;
   flex-wrap: wrap;
+}
+@media (min-width: 1024px) {
+  #page-13 .main .my_team,
+#clone-parner .main .my_team {
+    display: flex;
+  }
 }
 #page-13 .main .my_team .person,
 #clone-parner .main .my_team .person {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 50%;
+  width: 15%;
   padding: 0 15px;
   box-sizing: border-box;
-  margin-bottom: 24px;
 }
 #page-13 .main .my_team .person .avatar,
 #clone-parner .main .my_team .person .avatar {
@@ -2646,6 +2651,12 @@ header ._header_top .bg_header {
   text-transform: uppercase;
   color: #ffffff;
   margin-top: 4px;
+}
+#page-13 .main .my_team .person .person-name img,
+#clone-parner .main .my_team .person .person-name img {
+  margin-left: 1em;
+  width: 11px;
+  height: 11px;
 }
 #page-13 .main .my_team .person .position,
 #clone-parner .main .my_team .person .position {
@@ -2674,13 +2685,18 @@ header ._header_top .bg_header {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: #acafc3;
-  margin-bottom: 20px;
 }
 #page-13 .main .listTeam,
 #clone-parner .main .listTeam {
   display: grid;
   grid-template-columns: 50% 50%;
   padding-bottom: 20px;
+}
+@media (min-width: 1024px) {
+  #page-13 .main .listTeam,
+#clone-parner .main .listTeam {
+    display: none;
+  }
 }
 #page-13 .main .listTeam .person,
 #clone-parner .main .listTeam .person {
@@ -2947,6 +2963,7 @@ header ._header_top .bg_header {
 }
 
 #slide_home {
+  position: relative;
   height: 100vh;
 }
 #slide_home .swiper-button-next,
@@ -2987,8 +3004,10 @@ header ._header_top .bg_header {
 }
 @media (min-width: 1024px) {
   #slide_home .swiper-pagination {
-    display: block;
+    position: absolute;
+    display: flex;
     top: 50vh;
+    transform: translateY(-50%);
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
@@ -2997,6 +3016,7 @@ header ._header_top .bg_header {
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
+    z-index: 99;
   }
   #slide_home .swiper-pagination-bullet {
     width: 14px;

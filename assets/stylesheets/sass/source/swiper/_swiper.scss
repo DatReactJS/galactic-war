@@ -1,4 +1,5 @@
 #slide_home {
+  position: relative;
   .swiper-button-next,
   .swiper-button-prev {
     display: none !important;
@@ -43,34 +44,21 @@
   height: 100vh;
   @media (min-width: 1024px) {
     .swiper-pagination {
-      display: block;
+      position: absolute;
+      display: flex;
       top: 50vh;
+      transform: translateY(-50%);
       width: fit-content;
       flex-direction: column;
       right: 1vw;
       height: fit-content;
+      z-index: 99;
     }
     .swiper-pagination-bullet {
       width: 14px;
       height: 14px;
       margin: 12px;
-    }
-    // .swiper-button-next,
-    // .swiper-button-prev {
-    // }
-    // .swiper-pagination-bullet {
-    //   &::before {
-    //   }
-    //   &::after {
-    //   }
-    //   &.swiper-pagination-bullet-active {
-    //     &::before {
-    //     }
-    //     &::after {
-    //       left: calc(6px * 5 + 30px);
-    //     }
-    //   }
-    // }
+    }   
   }
 }
 #team_slide {

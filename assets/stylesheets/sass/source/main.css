@@ -674,7 +674,8 @@ header ._header_top .bg_header {
     position: relative;
     width: 100%;
     max-width: 500px;
-    padding-top: 73px;
+    padding-top: 89px;
+    box-sizing: border-box;
   }
   #page-1 .cointaier .circle {
     position: absolute;
@@ -1206,7 +1207,7 @@ header ._header_top .bg_header {
   }
   #page-3 .container h2 {
     position: absolute;
-    top: 79.14%;
+    bottom: min(20%, 110px);
     left: 50%;
     transform: translateX(-50%);
     font-size: 32px;
@@ -1215,7 +1216,7 @@ header ._header_top .bg_header {
   }
   #page-3 .container .read {
     position: absolute;
-    top: 87.98%;
+    bottom: min(10%, 50px);
     left: 50%;
     transform: translateX(-50%);
   }
@@ -1323,6 +1324,7 @@ header ._header_top .bg_header {
     width: 35vw;
   }
   #page-3 .container h2 {
+    bottom: 150px;
     font-size: 48px;
   }
   #page-3 .container .read {
@@ -1518,13 +1520,13 @@ header ._header_top .bg_header {
   }
   #page-4 .container h2 {
     position: absolute;
-    bottom: 40px;
-    left: 50%;
     transform: translateX(-50%);
     font-size: 32px;
     line-height: 2em;
     text-shadow: 0px 10px 80px rgba(0, 0, 0, 0.5);
     margin-bottom: 0;
+    top: max(20%, 50px);
+    left: 10%;
   }
   #page-4 .container .phases {
     margin: auto;
@@ -1534,7 +1536,7 @@ header ._header_top .bg_header {
     padding-top: 6vh;
     transition: 0.3s ease-in-out;
     flex-wrap: nowrap;
-    height: 500px;
+    height: 300px;
     position: relative;
   }
   #page-4 .container .phases .phase {
@@ -1556,16 +1558,16 @@ header ._header_top .bg_header {
   }
   #page-4 .container .phases .phase ul li {
     background: rgba(26, 215, 253, 0.2);
-    width: 190px;
     box-sizing: border-box;
     min-height: 46px;
     padding: 8px;
     font-weight: 500;
-    font-size: 15.2157px;
+    font-size: 12px;
     line-height: 24px;
     transition: 0.3 s ease-in-out;
     display: flex;
     align-items: center;
+    width: 150px;
     margin-bottom: 10px;
     border: 1px dashed #1ad7fd;
   }
@@ -1679,9 +1681,17 @@ header ._header_top .bg_header {
   #page-4 .container .phases .phase:nth-last-child(2) .border .top-right {
     height: 98%;
   }
+  #page-4 .container .phases .phase .border {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
   #page-4 .container .phases .phase .border .top-left,
 #page-4 .container .phases .phase .border .top-right,
-#page-4 .container .phases .phase .border .top {
+#page-4 .container .phases .phase .border .top,
+#page-4 .container .phases .phase .border .bottom {
     position: absolute;
   }
   #page-4 .container .phases .phase .border .top-left {
@@ -1691,11 +1701,15 @@ header ._header_top .bg_header {
   #page-4 .container .phases .phase .border .top-right {
     top: -25px;
     right: -13px;
+    max-height: 70%;
   }
   #page-4 .container .phases .phase .border .top {
     top: -13px;
     right: 0;
     width: 86%;
+  }
+  #page-4 .container .phases .phase .border .bottom {
+    max-width: 100%;
   }
   #page-4 .container .phases .phase:hover {
     -webkit-animation: initial;
@@ -1720,48 +1734,53 @@ header ._header_top .bg_header {
             animation: none;
   }
   #page-4 .container .phases .phase:nth-child(1) {
-    left: 8%;
+    left: 3%;
     top: 47%;
   }
   #page-4 .container .phases .phase:nth-child(1) header {
-    top: calc(100% + 0px);
+    top: calc(100% - 38px);
   }
   #page-4 .container .phases .phase:nth-child(2) {
-    left: 19.5%;
+    left: 17.5%;
     top: 76%;
   }
+  #page-4 .container .phases .phase:nth-child(2) header {
+    top: calc(100% - 32px);
+  }
   #page-4 .container .phases .phase:nth-child(3) {
-    left: 32.5%;
+    left: 31.5%;
     top: 60%;
+  }
+  #page-4 .container .phases .phase:nth-child(3) header {
+    top: calc(100% - 21px);
   }
   #page-4 .container .phases .phase:nth-child(4) {
     left: 44.5%;
-    top: 50%;
+    top: 27%;
   }
   #page-4 .container .phases .phase:nth-child(4) header {
-    top: calc(100% + 48px);
-    z-index: 99;
+    top: calc(100% - 32px);
   }
   #page-4 .container .phases .phase:nth-child(5) {
-    left: 57%;
-    top: 16%;
+    left: 58%;
+    top: 9%;
   }
   #page-4 .container .phases .phase:nth-child(5) header {
-    top: calc(100% + 67px);
+    top: calc(100% - 45px);
   }
   #page-4 .container .phases .phase:nth-child(6) {
-    left: 69%;
+    left: 71%;
     top: 56%;
   }
   #page-4 .container .phases .phase:nth-child(6) header {
-    top: calc(100% + 77px);
+    top: calc(100% - 50px);
   }
   #page-4 .container .phases .phase:nth-child(7) {
-    left: 81.5%;
-    top: 34%;
+    left: 85.5%;
+    top: 84%;
   }
   #page-4 .container .phases .phase:nth-child(7) header {
-    top: calc(100% + 139px);
+    top: calc(100% - 49px);
   }
   #page-4 .container .phases .phase:nth-child(7) header .core {
     height: 250px;
@@ -1804,15 +1823,17 @@ header ._header_top .bg_header {
     left: 0;
     z-index: -1;
   }
-  #page-4 .line img {
-    width: 100%;
-    height: 200px;
-    z-index: -1;
+  #page-4 .line .line_1920 {
+    display: none;
   }
 }
 @media (min-width: 1600px) {
   #page-4 .container {
     padding-top: 109px;
+  }
+  #page-4 .container h2 {
+    bottom: 40px;
+    left: 50%;
   }
   #page-4::-webkit-scrollbar {
     display: none;
@@ -1825,11 +1846,87 @@ header ._header_top .bg_header {
     margin-bottom: 0;
   }
   #page-4 .container .phases {
+    height: 500px;
     transform: initial;
     width: 100%;
     flex-wrap: nowrap;
     padding-top: 0px;
     transform: translateY(-7%);
+  }
+  #page-4 .container .phases .phase ul li {
+    width: 190px;
+    font-size: 15.2157px;
+  }
+  #page-4 .container .phases .phase:nth-child(1) {
+    left: 8%;
+    top: 47%;
+  }
+  #page-4 .container .phases .phase:nth-child(1) header {
+    top: calc(100% + 0px);
+  }
+  #page-4 .container .phases .phase:nth-child(2) {
+    left: 19.5%;
+    top: 76%;
+  }
+  #page-4 .container .phases .phase:nth-child(3) {
+    left: 32.5%;
+    top: 60%;
+  }
+  #page-4 .container .phases .phase:nth-child(4) {
+    left: 44.5%;
+    top: 50%;
+  }
+  #page-4 .container .phases .phase:nth-child(4) header {
+    top: calc(100% + 62px);
+    z-index: 99;
+  }
+  #page-4 .container .phases .phase:nth-child(5) {
+    left: 57%;
+    top: 16%;
+  }
+  #page-4 .container .phases .phase:nth-child(5) header {
+    top: calc(100% + 67px);
+  }
+  #page-4 .container .phases .phase:nth-child(6) {
+    left: 69%;
+    top: 56%;
+  }
+  #page-4 .container .phases .phase:nth-child(6) header {
+    top: calc(100% + 77px);
+  }
+  #page-4 .container .phases .phase:nth-child(7) {
+    left: 81.5%;
+    top: 34%;
+  }
+  #page-4 .container .phases .phase:nth-child(7) header {
+    top: calc(100% + 139px);
+  }
+  #page-4 .container .phases .phase:nth-child(7) header .core {
+    height: 250px;
+  }
+  #page-4 .container .phases .phase .border .top-left,
+#page-4 .container .phases .phase .border .top-right,
+#page-4 .container .phases .phase .border .top {
+    position: absolute;
+  }
+  #page-4 .container .phases .phase .border .top-left {
+    top: -13px;
+    left: -13px;
+  }
+  #page-4 .container .phases .phase .border .top-right {
+    top: -25px;
+    right: -13px;
+  }
+  #page-4 .container .phases .phase .border .top {
+    top: -13px;
+    right: 0;
+    width: 86%;
+  }
+  #page-4 .line .line_1366 {
+    display: none;
+  }
+  #page-4 .line .line_1920 {
+    display: block;
   }
 }
 
@@ -2024,8 +2121,8 @@ header ._header_top .bg_header {
 }
 @media (min-width: 1024px) {
   #page-6 .bg img {
-    -o-object-fit: contain;
-       object-fit: contain;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   #page-6 .content {
     width: 100%;
@@ -2397,7 +2494,7 @@ header ._header_top .bg_header {
   #page-9 .content img {
     width: 55px;
     height: 288px;
-    bottom: 0;
+    bottom: -61px;
     top: initial;
   }
 }
@@ -2612,6 +2709,12 @@ header ._header_top .bg_header {
   text-shadow: 0px 10px 80px rgba(0, 0, 0, 0.5);
   text-align: center;
 }
+@media (min-width: 1024px) {
+  #page-13 .main .title-page13,
+#clone-parner .main .title-page13 {
+    opacity: 0;
+  }
+}
 #page-13 .main .tittleChildren,
 #clone-parner .main .tittleChildren {
   font-style: normal;
@@ -2651,16 +2754,30 @@ header ._header_top .bg_header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 16.66%;
+  width: 12%;
   padding: 0 15px;
   box-sizing: border-box;
 }
+@media (min-width: 1620px) {
+  #page-13 .main .my_team .person,
+#clone-parner .main .my_team .person {
+    width: 16.66%;
+  }
+}
 #page-13 .main .my_team .person .avatar,
 #clone-parner .main .my_team .person .avatar {
-  width: 117.88px;
-  height: 117.88px;
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
   margin-bottom: 22px;
+}
+@media (min-width: 1620px) {
+  #page-13 .main .my_team .person .avatar,
+#clone-parner .main .my_team .person .avatar {
+    width: 16.66%;
+    width: 117.88px;
+    height: 117.88px;
+  }
 }
 #page-13 .main .my_team .person .person-name,
 #clone-parner .main .my_team .person .person-name {
@@ -2688,7 +2805,7 @@ header ._header_top .bg_header {
   font-style: normal;
   font-weight: 600;
   font-size: 10.53px;
-  min-height: 2.5em;
+  height: 2.5em;
   display: flex;
   align-items: center;
   line-height: 1.0625rem;
@@ -2711,14 +2828,20 @@ header ._header_top .bg_header {
 }
 #page-13 .main .my_team > h3,
 #clone-parner .main .my_team > h3 {
-  font-size: 52px;
+  font-size: 22px;
   font-family: "nasalization";
-  color: #FFFFFF;
-  text-shadow: 4px 4px 4px #17D2FC;
+  color: #ffffff;
+  text-shadow: 4px 4px 4px #17d2fc;
   text-transform: uppercase;
   display: flex;
   align-items: center;
   margin: auto;
+}
+@media (min-width: 1620px) {
+  #page-13 .main .my_team > h3,
+#clone-parner .main .my_team > h3 {
+    font-size: 52px;
+  }
 }
 #page-13 .main .listTeam,
 #clone-parner .main .listTeam {
@@ -2820,34 +2943,37 @@ header ._header_top .bg_header {
   #page-14 .content-page14 > main > h3 {
     font-family: "nasalization";
     display: block;
-    font-size: 48px;
+    font-size: 20px;
     color: #ffffff;
     text-shadow: 0px 10px 80px rgba(0, 0, 0, 0.5);
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 18%;
+    left: 8%;
     white-space: nowrap;
     text-transform: uppercase;
+  }
+}
+@media (min-width: 1620px) {
+  #page-14 .content-page14 > main > h3 {
+    font-size: 48px;
+    top: 0;
+    left: 0;
   }
 }
 @media (min-width: 1024px) {
   #page-14 .content-page14 > main {
     display: grid;
-    grid-template-columns: 30% 60%;
+    grid-template-columns: 25% 60%;
     gap: 10%;
-    padding: 100px 0 100px;
-  }
-}
-@media (min-width: 1620px) {
-  #page-14 .content-page14 > main {
-    margin-top: 75px;
-    padding: 38px;
-    position: relative;
+    padding: 10px;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 50px;
   }
   #page-14 .content-page14 > main::before {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 115px;
+    right: 78px;
     content: "";
     width: 230px;
     height: 78px;
@@ -2855,16 +2981,39 @@ header ._header_top .bg_header {
     -webkit-clip-path: polygon(0% 0%, calc(100% - 40px) 0%, 100% 40px, 100% 100%, calc(100% - 2px) 100%, calc(100% - 2px) 40px, calc(100% - 40px) calc(0% + 2px), 0% calc(0% + 2px));
             clip-path: polygon(0% 0%, calc(100% - 40px) 0%, 100% 40px, 100% 100%, calc(100% - 2px) 100%, calc(100% - 2px) 40px, calc(100% - 40px) calc(0% + 2px), 0% calc(0% + 2px));
   }
+}
+@media (min-width: 1024px) and (min-width: 1620px) {
+  #page-14 .content-page14 > main::before {
+    top: 0;
+    right: 0;
+  }
+}
+@media (min-width: 1024px) {
   #page-14 .content-page14 > main::after {
     position: absolute;
-    bottom: 0;
-    left: 0;
+    bottom: 115px;
+    left: 78px;
     content: "";
     width: 230px;
     height: 78px;
     background-color: white;
     -webkit-clip-path: polygon(0% 0%, 0% calc(100% - 40px), 40px 100%, 100% 100%, 100% calc(100% - 2px), 40px calc(100% - 2px), calc(0% + 2px) calc(100% - 40px), calc(0% + 2px) 0%);
             clip-path: polygon(0% 0%, 0% calc(100% - 40px), 40px 100%, 100% 100%, 100% calc(100% - 2px), 40px calc(100% - 2px), calc(0% + 2px) calc(100% - 40px), calc(0% + 2px) 0%);
+  }
+}
+@media (min-width: 1024px) and (min-width: 1620px) {
+  #page-14 .content-page14 > main::after {
+    bottom: 0;
+    left: 0;
+  }
+}
+@media (min-width: 1620px) {
+  #page-14 .content-page14 > main {
+    grid-template-columns: 30% 60%;
+    margin-top: 75px;
+    padding: 38px;
+    position: relative;
+    max-width: initial;
   }
 }
 #page-14 .content-page14 > main .ADVISORS {
@@ -2909,6 +3058,12 @@ header ._header_top .bg_header {
     flex-direction: column;
     justify-content: center;
     height: 100%;
+    padding: 0;
+  }
+}
+@media (min-width: 1620px) {
+  #page-14 .content-page14 > main .ADVISORS .my_team {
+    padding: 0 50px;
   }
 }
 #page-14 .content-page14 > main .ADVISORS .my_team .person {
@@ -2921,9 +3076,14 @@ header ._header_top .bg_header {
 @media (min-width: 1024px) {
   #page-14 .content-page14 > main .ADVISORS .my_team .person {
     width: 100%;
-    grid-template-columns: 106px auto 16px;
+    grid-template-columns: 64px auto 16px;
     gap: 30px;
     margin-bottom: 3em;
+  }
+}
+@media (min-width: 1620px) {
+  #page-14 .content-page14 > main .ADVISORS .my_team .person {
+    grid-template-columns: 106px auto 16px;
   }
 }
 #page-14 .content-page14 > main .ADVISORS .my_team .person .avatar {
@@ -2932,6 +3092,12 @@ header ._header_top .bg_header {
   border-radius: 50%;
 }
 @media (min-width: 1024px) {
+  #page-14 .content-page14 > main .ADVISORS .my_team .person .avatar {
+    width: 64px;
+    height: 64px;
+  }
+}
+@media (min-width: 1620px) {
   #page-14 .content-page14 > main .ADVISORS .my_team .person .avatar {
     width: 106px;
     height: 106px;
@@ -2952,6 +3118,11 @@ header ._header_top .bg_header {
   color: #ffffff;
 }
 @media (min-width: 1024px) {
+  #page-14 .content-page14 > main .ADVISORS .my_team .person .description .person-name {
+    font-size: 12px;
+  }
+}
+@media (min-width: 1620px) {
   #page-14 .content-page14 > main .ADVISORS .my_team .person .description .person-name {
     font-size: 14px;
   }
@@ -3017,6 +3188,62 @@ header ._header_top .bg_header {
 @media (min-width: 1024px) {
   #page-14 .content-page14 > main .PARTNERS .container .item {
     width: 33.33%;
+    height: 100px;
+    box-sizing: border-box;
+  }
+  #page-14 .content-page14 > main .PARTNERS .container .item img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #page-14 .content-page14 > main .PARTNERS .container .item:nth-child(1) img {
+    width: 149px;
+    height: 46.5px;
+  }
+  #page-14 .content-page14 > main .PARTNERS .container .item:nth-child(2) img {
+    width: 173.25px;
+    height: 46.5px;
+  }
+  #page-14 .content-page14 > main .PARTNERS .container .item:nth-child(3) img {
+    width: 191.01px;
+    height: 99.75px;
+  }
+  #page-14 .content-page14 > main .PARTNERS .container .item:nth-child(4) img {
+    width: 137.26px;
+    height: 37.68px;
+  }
+  #page-14 .content-page14 > main .PARTNERS .container .item:nth-child(5) img {
+    width: 192.07px;
+    height: 78.54px;
+  }
+  #page-14 .content-page14 > main .PARTNERS .container .item:nth-child(6) img {
+    width: 146.25px;
+    height: 33.54px;
+  }
+  #page-14 .content-page14 > main .PARTNERS .container .item:nth-child(7) img {
+    width: 222.75px;
+    height: 49.02px;
+  }
+  #page-14 .content-page14 > main .PARTNERS .container .item:nth-child(8) {
+    width: 66.66%;
+  }
+  #page-14 .content-page14 > main .PARTNERS .container .item:nth-child(8) img {
+    width: 427, 8px;
+    height: 223, 5px;
+  }
+  #page-14 .content-page14 > main .PARTNERS .container .item:nth-child(9) img {
+    width: 162px;
+    height: 152.35px;
+  }
+  #page-14 .content-page14 > main .PARTNERS .container .item:nth-child(10) img {
+    width: 162px;
+    height: 43.02px;
+  }
+}
+@media (min-width: 1620px) {
+  #page-14 .content-page14 > main .PARTNERS .container .item {
+    width: 33.33%;
     height: 135px;
     box-sizing: border-box;
   }
@@ -3030,7 +3257,7 @@ header ._header_top .bg_header {
     width: 199px;
     height: 62px;
   }
-  #page-14 .content-page14 > main .PARTNERS .container .item:nth-child(1) img {
+  #page-14 .content-page14 > main .PARTNERS .container .item:nth-child(2) img {
     width: 231px;
     height: 62px;
   }
@@ -3401,7 +3628,7 @@ body * {
     display: flex;
     position: absolute;
     right: 2%;
-    bottom: 12%;
+    bottom: 2%;
   }
   .homepage .social a {
     display: flex;

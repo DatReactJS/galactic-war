@@ -1799,7 +1799,7 @@ header ._header_top .bg_header {
   #page-4 .line {
     display: block;
     position: absolute;
-    top: 110%;
+    bottom: -50%;
     width: 100%;
     left: 0;
     z-index: -1;

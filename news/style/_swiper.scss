@@ -16,7 +16,7 @@
     width: $size;
     height: $size;
     position: relative;
-    margin: auto calc(&size / 2);
+    margin: auto calc(8px / 2);
     opacity: 0.5;
     &:first {
       margin-left: 0 !important;
@@ -43,7 +43,7 @@
   @media (max-width: 568px) {
     margin-bottom: calc(8px + 12px + 40px);
     .swiper-pagination {
-      bottom: 0;      
+      bottom: 0;
     }
   }
   @media (min-width: 1024px) {

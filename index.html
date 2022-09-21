@@ -1515,11 +1515,11 @@
           background-size: cover;
         }
 
-        /* @media (min-width: 1420px) {
+        @media (min-width: 1420px) {
           #popUpcollectGmail.show {
             transform: translate(-50%, -50%) scale(1);
           }
-        } */
+        }
 
         #popUpcollectGmail .close {
           position: absolute;
@@ -1702,7 +1702,7 @@
           loading.parentNode.removeChild(loading);
           // open popup
           document.getElementById("popUpcollectGmail").classList.add("show");
-        }, 0000),
+        }, 3000),
       },
     });
     SlideHome.on("transitionEnd", function () {

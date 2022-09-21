@@ -477,16 +477,22 @@
           }
           &:nth-child(1) {
             header {
-              top: calc(100% + 0px);
+              top: calc(100% + 12px);
             }
             left: 8%;
-            top: 47%;
+            top: 49%;
           }
           &:nth-child(2) {
+            header {
+              top: calc(100% + 48px);
+            }
             left: 19.5%;
             top: 76%;
           }
           &:nth-child(3) {
+            header {
+              top: calc(100% + 53px);
+            }
             left: 32.5%;
             top: 60%;
           }
@@ -502,21 +508,21 @@
             left: 57%;
             top: 16%;
             header {
-              top: calc(100% + 67px);
+              top: calc(100% + 84px);
             }
           }
           &:nth-child(6) {
             left: 69%;
             top: 56%;
             header {
-              top: calc(100% + 77px);
+              top: calc(100% + 91px);
             }
           }
           &:nth-child(7) {
             left: 81.5%;
             top: 34%;
             header {
-              top: calc(100% + 139px);
+              top: calc(100% + 161px);
               .core {
                 height: 250px;
               }

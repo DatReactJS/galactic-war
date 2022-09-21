@@ -962,6 +962,12 @@ table {
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "nasalization";
+  src: url("../../assets/fonts/nasalization-rg.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
 .Barlow {
   font-family: "Barlow", sans-serif;
 }
@@ -970,8 +976,12 @@ table {
   font-family: "Microgramma-D-OT-Medium", sans-serif;
 }
 
-.nasalization-b {
+.Microgramma-b {
   font-family: "Microgramma-D-OT-Bold", sans-serif;
+}
+
+.nasalization-b {
+  font-family: "nasalization";
 }
 
 body {

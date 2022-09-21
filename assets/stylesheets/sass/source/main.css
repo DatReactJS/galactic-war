@@ -1859,18 +1859,24 @@ header ._header_top .bg_header {
   }
   #page-4 .container .phases .phase:nth-child(1) {
     left: 8%;
-    top: 47%;
+    top: 49%;
   }
   #page-4 .container .phases .phase:nth-child(1) header {
-    top: calc(100% + 0px);
+    top: calc(100% + 12px);
   }
   #page-4 .container .phases .phase:nth-child(2) {
     left: 19.5%;
     top: 76%;
   }
+  #page-4 .container .phases .phase:nth-child(2) header {
+    top: calc(100% + 48px);
+  }
   #page-4 .container .phases .phase:nth-child(3) {
     left: 32.5%;
     top: 60%;
+  }
+  #page-4 .container .phases .phase:nth-child(3) header {
+    top: calc(100% + 53px);
   }
   #page-4 .container .phases .phase:nth-child(4) {
     left: 44.5%;
@@ -1885,21 +1891,21 @@ header ._header_top .bg_header {
     top: 16%;
   }
   #page-4 .container .phases .phase:nth-child(5) header {
-    top: calc(100% + 67px);
+    top: calc(100% + 84px);
   }
   #page-4 .container .phases .phase:nth-child(6) {
     left: 69%;
     top: 56%;
   }
   #page-4 .container .phases .phase:nth-child(6) header {
-    top: calc(100% + 77px);
+    top: calc(100% + 91px);
   }
   #page-4 .container .phases .phase:nth-child(7) {
     left: 81.5%;
     top: 34%;
   }
   #page-4 .container .phases .phase:nth-child(7) header {
-    top: calc(100% + 139px);
+    top: calc(100% + 161px);
   }
   #page-4 .container .phases .phase:nth-child(7) header .core {
     height: 250px;

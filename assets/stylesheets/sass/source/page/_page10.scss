@@ -97,8 +97,8 @@
   }
   @media (min-width: 1620px) {
     .content {
-      width: 577px;
-      margin: auto auto 22.44vh auto;
+      width: 669px;
+      margin: auto auto 15.44vh;
       text-align: left;
       padding: 21px 70px 0px 70px;
       h2 {
@@ -119,7 +119,7 @@
           transform: rotateY(180deg) rotateX(180deg);
           left: 0;
           top: initial;
-          bottom: 0;
+          bottom: -31px;
         }
       }
     }

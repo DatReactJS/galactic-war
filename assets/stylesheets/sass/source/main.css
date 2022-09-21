@@ -2417,6 +2417,9 @@ header ._header_top .bg_header {
     line-height: 22px;
     width: 622px;
   }
+  #page-9 .content img {
+    bottom: -64px;
+  }
 }
 
 #page-10 {
@@ -2521,8 +2524,8 @@ header ._header_top .bg_header {
 }
 @media (min-width: 1620px) {
   #page-10 .content {
-    width: 577px;
-    margin: auto auto 22.44vh auto;
+    width: 669px;
+    margin: auto auto 15.44vh;
     text-align: left;
     padding: 21px 70px 0px 70px;
   }
@@ -2545,7 +2548,7 @@ header ._header_top .bg_header {
     transform: rotateY(180deg) rotateX(180deg);
     left: 0;
     top: initial;
-    bottom: 0;
+    bottom: -31px;
   }
 }
 
@@ -2578,7 +2581,13 @@ header ._header_top .bg_header {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  z-index: -1;
+  z-index: 0;
+}
+@media (min-width: 1024px) {
+  #page-13 .bg img,
+#clone-parner .bg img {
+    display: block;
+  }
 }
 #page-13 .main,
 #clone-parner .main {
@@ -2621,6 +2630,19 @@ header ._header_top .bg_header {
   #page-13 .main .my_team,
 #clone-parner .main .my_team {
     display: flex;
+    position: relative;
+  }
+  #page-13 .main .my_team::before,
+#clone-parner .main .my_team::before {
+    content: "";
+    position: absolute;
+    height: 611px;
+    width: 7px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -70px;
+    background-image: url("/assets/images/slider/page13/separateLine.png");
+    background-repeat: no-repeat;
   }
 }
 #page-13 .main .my_team .person,
@@ -2628,7 +2650,7 @@ header ._header_top .bg_header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 15%;
+  width: 16.66%;
   padding: 0 15px;
   box-sizing: border-box;
 }
@@ -2685,6 +2707,17 @@ header ._header_top .bg_header {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: #acafc3;
+}
+#page-13 .main .my_team > h3,
+#clone-parner .main .my_team > h3 {
+  font-size: 52px;
+  font-family: "nasalization";
+  color: #FFFFFF;
+  text-shadow: 4px 4px 4px #17D2FC;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  margin: auto;
 }
 #page-13 .main .listTeam,
 #clone-parner .main .listTeam {
@@ -3302,7 +3335,7 @@ body * {
     height: 100%;
     border-radius: 10px;
     transform: matrix(0.98, 0, -0.19, 1, 0, 0);
-    background: #1ad7fd;
+    background: black;
     content: "";
     z-index: -1;
     box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.35);

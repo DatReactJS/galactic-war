@@ -1759,7 +1759,7 @@ header ._header_top .bg_header {
     top: 27%;
   }
   #page-4 .container .phases .phase:nth-child(4) header {
-    top: calc(100% - 32px);
+    top: calc(100% - 53px);
   }
   #page-4 .container .phases .phase:nth-child(5) {
     left: 58%;
@@ -1773,7 +1773,7 @@ header ._header_top .bg_header {
     top: 56%;
   }
   #page-4 .container .phases .phase:nth-child(6) header {
-    top: calc(100% - 50px);
+    top: calc(100% - 80px);
   }
   #page-4 .container .phases .phase:nth-child(7) {
     left: 85.5%;
@@ -1883,7 +1883,7 @@ header ._header_top .bg_header {
     top: 50%;
   }
   #page-4 .container .phases .phase:nth-child(4) header {
-    top: calc(100% + 62px);
+    top: calc(100% + 43px);
     z-index: 99;
   }
   #page-4 .container .phases .phase:nth-child(5) {
@@ -1891,7 +1891,7 @@ header ._header_top .bg_header {
     top: 16%;
   }
   #page-4 .container .phases .phase:nth-child(5) header {
-    top: calc(100% + 84px);
+    top: calc(100% + 29px);
   }
   #page-4 .container .phases .phase:nth-child(6) {
     left: 69%;

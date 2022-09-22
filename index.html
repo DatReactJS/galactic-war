@@ -116,8 +116,8 @@
               <img src=".\assets\images\Btn_WeaponMenu_p 2.svg" alt="" />
             </li>
             <li>
-              <a href="https://drive.google.com/drive/u/1/folders/1X8En4unAZV9DS0PN0ZQrsGUWrSRWr8fd" target="_blank"
-                data-attr="section_what_race" class="nasalization-b">
+              <a href="https://drive.google.com/file/d/105nykwwWaB7ZUGz3V74-T5yEIri8F8bk/view?usp=sharing"
+                target="_blank" data-attr="section_what_race" class="nasalization-b">
                 <span> game Demo </span>
               </a>
               <img src=".\assets\images\Btn_WeaponMenu_p 2.svg" alt="" />
@@ -442,7 +442,7 @@
                       </div>
                     </ul>
                   </div>
-                  <div class="phase active">
+                  <div class="phase ">
                     <header>
                       <div class="desktop-icon">
                         <img data-src="./assets//images//slider//page4/Mask.png" alt="" class="planet swiper-lazy" />
@@ -455,9 +455,10 @@
                       <li>Airdrop</li>
                       <li>Game Production</li>
                       <li>Publish Game</li>
-                      <li>Token Staking</li>
-                      <li>Running Marketing Strategies</li>
-                      <li>Audit</li>
+                      <li>Running Marketing strategies</li>
+                      <li>MVP Version </li>
+                      <li>Deathmatch Mode - Play with Bots</li>
+
                       <div class="border">
                         <img data-src="./assets//images//slider//page4/Vector.png" alt=""
                           class="top-left swiper-lazy" />
@@ -469,7 +470,7 @@
                       </div>
                     </ul>
                   </div>
-                  <div class="phase coming">
+                  <div class="phase active">
                     <header>
                       <div class="desktop-icon">
                         <img data-src="./assets//images//slider//page4/Mask.png" alt="" class="planet swiper-lazy" />
@@ -479,6 +480,7 @@
                       <h4 class="nasalization-b">Q4 2022</h4>
                     </header>
                     <ul>
+                      <li>Audit</li>
                       <li>IDO</li>
                       <li>INO</li>
                       <li>CEX Listing</li>
@@ -486,7 +488,7 @@
                       <li>Token Staking</li>
                       <li>Alpha Test</li>
                       <li>Anti-cheat System</li>
-                      <li>Testnet - Play with Bots</li>
+                      <li>Testnet</li>
                       <div class="border">
                         <img data-src="./assets//images//slider//page4/Vector.png" alt=""
                           class="top-left swiper-lazy" />
@@ -569,8 +571,8 @@
                       l 155 -120
                       l 220 120
                       l 255 -80
-                      l 228 150" stroke="#1AD7FD" stroke-width="5" fill="none" />
-
+                      l 228 150
+                      l 244 -60" stroke="#1AD7FD" stroke-width="5" fill="none" />
                     </svg>
 
                     <svg class="line_1366" width="1366" height="200">
@@ -587,7 +589,8 @@
                       l 40 -30
                       l 205 20
                       l 200 -40
-                      l 165 60" stroke="#1AD7FD" stroke-width="5" fill="none" />
+                      l 165 60
+                      l 185 40" stroke="#1AD7FD" stroke-width="5" fill="none" />
 
                     </svg>
 
@@ -1478,7 +1481,21 @@
 
     <div id="popUpcollectGmail">
       <style>
-        #popUpcollectGmail {
+        #popUpcollectGmail::before {
+          content: '';
+          position: fixed;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background: black;
+          opacity: 0;
+          z-index: 1;
+          transition: 0.3s ease-in-out;
+          display: none;
+        }
+
+        #popUpcollectGmail>.content {
           background: linear-gradient(90deg, #89eeff, #e4abff);
           border-radius: 12px;
           position: fixed;
@@ -1497,7 +1514,7 @@
           box-sizing: border-box;
         }
 
-        #popUpcollectGmail::before {
+        #popUpcollectGmail>.content::before {
           content: "";
           position: absolute;
           width: calc(100% - 14px);
@@ -1516,22 +1533,27 @@
         }
 
         @media (min-width: 1420px) {
-          #popUpcollectGmail.show {
+          #popUpcollectGmail.show>.content {
             transform: translate(-50%, -50%) scale(1);
+          }
+
+          #popUpcollectGmail.show::before {
+            display: block;
+            opacity: 0.3;
           }
         }
 
-        #popUpcollectGmail .close {
+        #popUpcollectGmail>.content .close {
           position: absolute;
           right: -5px;
           top: 0px;
         }
 
-        #popUpcollectGmail .title {
+        #popUpcollectGmail>.content .title {
           margin-bottom: 18px;
         }
 
-        #popUpcollectGmail p {
+        #popUpcollectGmail>.content p {
           font-weight: 300;
           font-size: 21px;
           line-height: 25px;
@@ -1543,8 +1565,8 @@
           position: relative;
         }
 
-        #popUpcollectGmail p::before,
-        #popUpcollectGmail p::after {
+        #popUpcollectGmail>.content p::before,
+        #popUpcollectGmail>.content p::after {
           position: absolute;
           content: "";
           display: block;
@@ -1555,27 +1577,27 @@
           filter: brightness(0) invert(1);
         }
 
-        #popUpcollectGmail p::before {
+        #popUpcollectGmail>.content p::before {
           top: 50%;
           right: calc(100% + 15px);
           transform: translateY(-50%);
         }
 
-        #popUpcollectGmail p::after {
+        #popUpcollectGmail>.content p::after {
           top: 50%;
           left: calc(100% + 15px);
           transform: translateY(-50%);
         }
 
-        #popUpcollectGmail p span {
+        #popUpcollectGmail>.content p span {
           color: #ff8af3;
         }
 
-        #popUpcollectGmail div {
+        #popUpcollectGmail>.content div {
           margin-bottom: 35px;
         }
 
-        #popUpcollectGmail a {
+        #popUpcollectGmail>.content a {
           width: 298px;
           height: 86px;
           background: url("./assets//images/buttonsubmitForm.png");
@@ -1585,7 +1607,7 @@
           position: relative;
         }
 
-        #popUpcollectGmail a::after {
+        #popUpcollectGmail>.content a::after {
           content: "";
           background-image: url("./assets/images/bottombutton.png");
           width: 236px;
@@ -1596,48 +1618,49 @@
           transform: translateX(-50%);
         }
       </style>
-      <span class="close" onclick="document
-      .getElementById('popUpcollectGmail').classList.remove('show');
-      ">
-        <svg width="91" height="50" viewBox="0 0 91 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <g filter="url(#filter0_d_1756_14338)">
+      <div class="content">
+        <span class="close" onclick="document
+        .getElementById('popUpcollectGmail').classList.remove('show');
+        ">
+          <svg width="91" height="50" viewBox="0 0 91 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g filter="url(#filter0_d_1756_14338)">
+              <path
+                d="M28.9587 40.2808L5.35948 6.28081C3.51838 3.6283 5.41665 0 8.6455 0H82.2419C84.4511 0 86.2419 1.79086 86.2419 4V38C86.2419 40.2091 84.4511 42 82.2419 42H32.2447C30.9339 42 29.7062 41.3577 28.9587 40.2808Z"
+                fill="#89EEFF" />
+            </g>
             <path
-              d="M28.9587 40.2808L5.35948 6.28081C3.51838 3.6283 5.41665 0 8.6455 0H82.2419C84.4511 0 86.2419 1.79086 86.2419 4V38C86.2419 40.2091 84.4511 42 82.2419 42H32.2447C30.9339 42 29.7062 41.3577 28.9587 40.2808Z"
-              fill="#89EEFF" />
-          </g>
-          <path
-            d="M64.0073 13.9255L59.9123 10.1667L52.7495 16.7413L45.5867 10.1667L41.4917 13.9255L48.6545 20.5001L41.4917 27.0747L45.5867 30.8334L52.7495 24.2588L59.9123 30.8334L64.0073 27.0747L56.8445 20.5001L64.0073 13.9255Z"
-            fill="black" />
-          <defs>
-            <filter id="filter0_d_1756_14338" x="0.638672" y="0" width="89.603" height="50" filterUnits="userSpaceOnUse"
-              color-interpolation-filters="sRGB">
-              <feFlood flood-opacity="0" result="BackgroundImageFix" />
-              <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                result="hardAlpha" />
-              <feOffset dy="4" />
-              <feGaussianBlur stdDeviation="2" />
-              <feComposite in2="hardAlpha" operator="out" />
-              <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
-              <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1756_14338" />
-              <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1756_14338" result="shape" />
-            </filter>
-          </defs>
-        </svg>
-      </span>
-      <img src="./assets/images/Don’t miss out.png" alt="none" class="title" />
-      <p class="p nasalization-b">
-        This is one of the
-        <span> special events </span>
-        the Galactic War team brings you guys. We'd like to thank you and invite
-        you to fill out the form below to get notification of the
-        <span> hottest deals and information </span>
-        about Galactic War.
-      </p>
-      <div>
-        <!-- <img src="./assets/images/Mask group.png" alt=""> -->
+              d="M64.0073 13.9255L59.9123 10.1667L52.7495 16.7413L45.5867 10.1667L41.4917 13.9255L48.6545 20.5001L41.4917 27.0747L45.5867 30.8334L52.7495 24.2588L59.9123 30.8334L64.0073 27.0747L56.8445 20.5001L64.0073 13.9255Z"
+              fill="black" />
+            <defs>
+              <filter id="filter0_d_1756_14338" x="0.638672" y="0" width="89.603" height="50"
+                filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                  result="hardAlpha" />
+                <feOffset dy="4" />
+                <feGaussianBlur stdDeviation="2" />
+                <feComposite in2="hardAlpha" operator="out" />
+                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1756_14338" />
+                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1756_14338" result="shape" />
+              </filter>
+            </defs>
+          </svg>
+        </span>
+        <img src="./assets/images/Don’t miss out.png" alt="none" class="title" />
+        <p class="p nasalization-b">
+          This is one of the
+          <span> special events </span>
+          the Galactic War team brings you guys. We'd like to thank you and invite
+          you to fill out the form below to get notification of the
+          <span> hottest deals and information </span>
+          about Galactic War.
+        </p>
+        <div>
+        </div>
+        <a target="_blank"
+          href="https://docs.google.com/forms/d/e/1FAIpQLSfTUAvQG_OhV4S5UfOW8QkTxUOP8MWwbGEfAqYdXjMaIKHS7g/viewform"></a>
       </div>
-      <a target="_blank"
-        href="https://docs.google.com/forms/d/e/1FAIpQLSfTUAvQG_OhV4S5UfOW8QkTxUOP8MWwbGEfAqYdXjMaIKHS7g/viewform"></a>
     </div>
 
 </body>

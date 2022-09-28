@@ -101,6 +101,21 @@
               }
             }
           }
+          &::after {
+            position: absolute;
+            left: 100%;
+            top: 50%;
+            transform: translateY(-50%);
+            content: "";
+            width: 1px;
+            height: 55px;
+            background: linear-gradient(
+              180deg,
+              rgba(26, 215, 253, 0) 0%,
+              #1ad7fd 48.44%,
+              rgba(26, 215, 253, 0) 100%
+            );
+          }
         }
         a {
           font-weight: 400;

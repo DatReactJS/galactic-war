@@ -62,14 +62,10 @@
     }
   }
   @media (min-width: 1024px) {
-    .bg {
-      width: auto;
-      height: auto;
-      min-width: 100%;
-      min-height: 100%;
+    .bg {      
       img {
         object-position: center;
-        object-fit: contain;
+        object-fit: cover;
       }
     }
     .content {

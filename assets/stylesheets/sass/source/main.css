@@ -3202,96 +3202,131 @@ header ._header_top .bg_header {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-#page-14 .content-page14 > main .PARTNERS .container .item:nth-child(1) img {
+#page-14 .content-page14 > main .PARTNERS .container .item.appoata img {
   width: 99.5px;
   height: 31px;
 }
-#page-14 .content-page14 > main .PARTNERS .container .item:nth-child(2) img {
+#page-14 .content-page14 > main .PARTNERS .container .item.acestarter img {
   width: 115.5px;
   height: 31px;
 }
-#page-14 .content-page14 > main .PARTNERS .container .item:nth-child(3) img {
+#page-14 .content-page14 > main .PARTNERS .container .item.polygon img {
   width: 127.43px;
   height: 66.5px;
 }
-#page-14 .content-page14 > main .PARTNERS .container .item:nth-child(4) img {
+#page-14 .content-page14 > main .PARTNERS .container .item.klaytn img {
   width: 91.5px;
   height: 25.12px;
 }
-#page-14 .content-page14 > main .PARTNERS .container .item:nth-child(5) img {
+#page-14 .content-page14 > main .PARTNERS .container .item.chainplay img {
   width: 128.05px;
   height: 52.365px;
 }
-#page-14 .content-page14 > main .PARTNERS .container .item:nth-child(6) img {
+#page-14 .content-page14 > main .PARTNERS .container .item.coincu img {
   width: 97.5px;
   height: 22.365px;
 }
-#page-14 .content-page14 > main .PARTNERS .container .item:nth-child(7) img {
+#page-14 .content-page14 > main .PARTNERS .container .item.Dorahack img {
   width: 148.5px;
   height: 32.68px;
 }
-#page-14 .content-page14 > main .PARTNERS .container .item:nth-child(8) {
-  width: 100%;
+#page-14 .content-page14 > main .PARTNERS .container .item.coinex img {
+  width: 116px;
+  height: 52.93px;
+  top: 26px;
+  left: 75px;
 }
-#page-14 .content-page14 > main .PARTNERS .container .item:nth-child(8) img {
-  width: 285.205px;
-  height: 149px;
-}
-#page-14 .content-page14 > main .PARTNERS .container .item:nth-child(9) img {
+#page-14 .content-page14 > main .PARTNERS .container .item.irons img {
   width: 108.645px;
   height: 101.5px;
 }
-#page-14 .content-page14 > main .PARTNERS .container .item:nth-child(10) img {
+#page-14 .content-page14 > main .PARTNERS .container .item.abga img {
   width: 109.265px;
   height: 28.685px;
+}
+#page-14 .content-page14 > main .PARTNERS .container .item.techfest img {
+  width: 114.18px;
+  height: 43.24px;
+}
+#page-14 .content-page14 > main .PARTNERS .container .item.eos img {
+  width: 143px;
+  height: 43.71px;
+}
+#page-14 .content-page14 > main .PARTNERS .container .item.evm img {
+  width: 117.685px;
+  height: 25.795px;
 }
 @media (min-width: 1024px) {
   #page-14 .content-page14 > main .PARTNERS .container .item {
     height: 100px;
     width: 33.33%;
   }
-  #page-14 .content-page14 > main .PARTNERS .container .item:nth-child(1) img {
+  #page-14 .content-page14 > main .PARTNERS .container .item.appoata img {
     width: 149px;
     height: 46.5px;
   }
-  #page-14 .content-page14 > main .PARTNERS .container .item:nth-child(2) img {
+  #page-14 .content-page14 > main .PARTNERS .container .item.acestarter img {
     width: 173.25px;
     height: 46.5px;
   }
-  #page-14 .content-page14 > main .PARTNERS .container .item:nth-child(3) img {
+  #page-14 .content-page14 > main .PARTNERS .container .item.polygon img {
     width: 191.01px;
     height: 99.75px;
   }
-  #page-14 .content-page14 > main .PARTNERS .container .item:nth-child(4) img {
-    width: 137.26px;
-    height: 37.68px;
+  #page-14 .content-page14 > main .PARTNERS .container .item.klaytn {
+    width: 25%;
   }
-  #page-14 .content-page14 > main .PARTNERS .container .item:nth-child(5) img {
-    width: 192.07px;
-    height: 78.54px;
+  #page-14 .content-page14 > main .PARTNERS .container .item.klaytn img {
+    width: 109.808px;
+    height: 30.144px;
   }
-  #page-14 .content-page14 > main .PARTNERS .container .item:nth-child(6) img {
+  #page-14 .content-page14 > main .PARTNERS .container .item.chainplay {
+    width: 25%;
+  }
+  #page-14 .content-page14 > main .PARTNERS .container .item.chainplay img {
+    width: 172.863px;
+    height: 70.686px;
+  }
+  #page-14 .content-page14 > main .PARTNERS .container .item.coincu img {
     width: 146.25px;
     height: 33.54px;
   }
-  #page-14 .content-page14 > main .PARTNERS .container .item:nth-child(7) img {
-    width: 222.75px;
-    height: 49.02px;
+  #page-14 .content-page14 > main .PARTNERS .container .item.Dorahack {
+    width: 25%;
   }
-  #page-14 .content-page14 > main .PARTNERS .container .item:nth-child(8) {
-    width: 66.66%;
+  #page-14 .content-page14 > main .PARTNERS .container .item.Dorahack img {
+    width: 178.2px;
+    height: 39.216px;
   }
-  #page-14 .content-page14 > main .PARTNERS .container .item:nth-child(8) img {
+  #page-14 .content-page14 > main .PARTNERS .container .item.coinex {
+    width: 33.33%;
+  }
+  #page-14 .content-page14 > main .PARTNERS .container .item.coinex img {
     width: 427, 8px;
     height: 223, 5px;
   }
-  #page-14 .content-page14 > main .PARTNERS .container .item:nth-child(9) img {
+  #page-14 .content-page14 > main .PARTNERS .container .item.irons img {
     width: 162px;
     height: 152.35px;
   }
-  #page-14 .content-page14 > main .PARTNERS .container .item:nth-child(10) img {
-    width: 162px;
-    height: 43.02px;
+  #page-14 .content-page14 > main .PARTNERS .container .item.abga {
+    width: 25%;
+  }
+  #page-14 .content-page14 > main .PARTNERS .container .item.abga img {
+    width: 129.6px;
+    height: 34.416px;
+  }
+  #page-14 .content-page14 > main .PARTNERS .container .item.techfest img {
+    width: 159.852px;
+    height: 60.536px;
+  }
+  #page-14 .content-page14 > main .PARTNERS .container .item.eos img {
+    width: 200.2px;
+    height: 61.194px;
+  }
+  #page-14 .content-page14 > main .PARTNERS .container .item.evm img {
+    width: 164.759px;
+    height: 36.113px;
   }
 }
 @media (min-width: 1620px) {
@@ -3300,48 +3335,72 @@ header ._header_top .bg_header {
     height: 135px;
     box-sizing: border-box;
   }
-  #page-14 .content-page14 > main .PARTNERS .container .item:nth-child(1) img {
+  #page-14 .content-page14 > main .PARTNERS .container .item.appoata img {
     width: 199px;
     height: 62px;
   }
-  #page-14 .content-page14 > main .PARTNERS .container .item:nth-child(2) img {
+  #page-14 .content-page14 > main .PARTNERS .container .item.acestarter img {
     width: 231px;
     height: 62px;
   }
-  #page-14 .content-page14 > main .PARTNERS .container .item:nth-child(3) img {
+  #page-14 .content-page14 > main .PARTNERS .container .item.polygon img {
     width: 254.86px;
     height: 133px;
   }
-  #page-14 .content-page14 > main .PARTNERS .container .item:nth-child(4) img {
-    width: 183px;
-    height: 50.24px;
+  #page-14 .content-page14 > main .PARTNERS .container .item.klaytn {
+    width: 25%;
   }
-  #page-14 .content-page14 > main .PARTNERS .container .item:nth-child(5) img {
-    width: 256.1px;
-    height: 104.73px;
+  #page-14 .content-page14 > main .PARTNERS .container .item.klaytn img {
+    width: 146.4px;
+    height: 40.192px;
   }
-  #page-14 .content-page14 > main .PARTNERS .container .item:nth-child(6) img {
+  #page-14 .content-page14 > main .PARTNERS .container .item.chainplay {
+    width: 25%;
+  }
+  #page-14 .content-page14 > main .PARTNERS .container .item.chainplay img {
+    width: 204.88px;
+    height: 83.784px;
+  }
+  #page-14 .content-page14 > main .PARTNERS .container .item.coincu img {
     width: 195px;
     height: 44.73px;
   }
-  #page-14 .content-page14 > main .PARTNERS .container .item:nth-child(7) img {
-    width: 297px;
-    height: 65.36px;
+  #page-14 .content-page14 > main .PARTNERS .container .item.Dorahack {
+    width: 25%;
   }
-  #page-14 .content-page14 > main .PARTNERS .container .item:nth-child(8) {
-    width: 66.66%;
+  #page-14 .content-page14 > main .PARTNERS .container .item.Dorahack img {
+    width: 237.6px;
+    height: 52.288px;
   }
-  #page-14 .content-page14 > main .PARTNERS .container .item:nth-child(8) img {
-    width: 570.41px;
-    height: 298px;
+  #page-14 .content-page14 > main .PARTNERS .container .item.coinex {
+    width: 33.33%;
   }
-  #page-14 .content-page14 > main .PARTNERS .container .item:nth-child(9) img {
+  #page-14 .content-page14 > main .PARTNERS .container .item.coinex img {
+    width: 456.328px;
+    height: 238.4px;
+  }
+  #page-14 .content-page14 > main .PARTNERS .container .item.irons img {
     width: 217.29px;
     height: 203px;
   }
-  #page-14 .content-page14 > main .PARTNERS .container .item:nth-child(10) img {
-    width: 218.53px;
-    height: 57.37px;
+  #page-14 .content-page14 > main .PARTNERS .container .item.abga {
+    width: 25%;
+  }
+  #page-14 .content-page14 > main .PARTNERS .container .item.abga img {
+    width: 174.824px;
+    height: 45.896px;
+  }
+  #page-14 .content-page14 > main .PARTNERS .container .item.techfest img {
+    width: 228.36px;
+    height: 86.48px;
+  }
+  #page-14 .content-page14 > main .PARTNERS .container .item.eos img {
+    width: 286px;
+    height: 87.42px;
+  }
+  #page-14 .content-page14 > main .PARTNERS .container .item.evm img {
+    width: 235.37px;
+    height: 51.59px;
   }
 }
 #page-14 .content-page14 > main .titleFooter {

@@ -3306,6 +3306,8 @@ header ._header_top .bg_header {
   }
   #page-14 .content-page14 > main .PARTNERS .container .item.coinex {
     width: 33.33%;
+    top: 26px;
+    left: 75px;
   }
   #page-14 .content-page14 > main .PARTNERS .container .item.coinex img {
     width: 427, 8px;

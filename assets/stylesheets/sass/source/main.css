@@ -1618,6 +1618,9 @@ header ._header_top .bg_header {
     top: 50%;
     transform: translateY(-50%);
   }
+  #page-4 .container .phases .phase ul li {
+    background: rgba(26, 215, 253, 0.8);
+  }
   @-webkit-keyframes LiOnPhase {
     from {
       background: rgba(26, 215, 253, 0.2);
@@ -1680,6 +1683,9 @@ header ._header_top .bg_header {
   }
   #page-4 .container .phases .phase.coming header .desktop-icon .planet {
     filter: brightness(0) invert(1);
+  }
+  #page-4 .container .phases .phase.coming ul li {
+    background: rgba(26, 215, 253, 0.2);
   }
   #page-4 .container .phases .phase:last-child header .desktop-icon .core {
     transform: translateX(-54%);

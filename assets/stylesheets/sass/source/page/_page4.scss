@@ -134,7 +134,7 @@
       padding: 78px 0px 50px;
       overflow: initial;
       h2 {
-        position: absolute;       
+        position: absolute;
         transform: translateX(-50%);
         font-size: 32px;
         line-height: 2em;
@@ -221,6 +221,11 @@
               transform: translateY(-50%);
             }
           }
+          ul {
+            li {
+              background: rgba(26, 215, 253, 0.8);
+            }
+          }
           &.active {
             @keyframes LiOnPhase {
               from {
@@ -269,6 +274,11 @@
                 .planet {
                   filter: brightness(0) invert(1);
                 }
+              }
+            }
+            ul {
+              li {
+                background: rgba(26, 215, 253, 0.2);
               }
             }
           }
@@ -445,7 +455,7 @@
   @media (min-width: 1600px) {
     .container {
       padding-top: 109px;
-      h2{
+      h2 {
         bottom: 40px;
         left: 50%;
       }

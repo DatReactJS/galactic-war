@@ -16,29 +16,29 @@
       object-fit: cover;
       object-position: 10% 0;
     }
-    &::after {
-      content: "";
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      left: 0;
-      background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-        linear-gradient(
-          90deg,
-          rgba(0, 0, 0, 0.45) 3.28%,
-          rgba(0, 0, 0, 0) 18.3%,
-          rgba(0, 0, 0, 0) 79.46%,
-          rgba(0, 0, 0, 0.45) 97.23%
-        ),
-        linear-gradient(
-          180deg,
-          rgba(0, 0, 0, 0.45) 0%,
-          rgba(0, 0, 0, 0.2385) 25.24%,
-          rgba(0, 0, 0, 0) 45.51%,
-          rgba(0, 0, 0, 0.45) 74.03%
-        );
-    }
+    // &::after {
+    //   content: "";
+    //   position: absolute;
+    //   width: 100%;
+    //   height: 100%;
+    //   top: 0;
+    //   left: 0;
+    //   background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    //     linear-gradient(
+    //       90deg,
+    //       rgba(0, 0, 0, 0.45) 3.28%,
+    //       rgba(0, 0, 0, 0) 18.3%,
+    //       rgba(0, 0, 0, 0) 79.46%,
+    //       rgba(0, 0, 0, 0.45) 97.23%
+    //     ),
+    //     linear-gradient(
+    //       180deg,
+    //       rgba(0, 0, 0, 0.45) 0%,
+    //       rgba(0, 0, 0, 0.2385) 25.24%,
+    //       rgba(0, 0, 0, 0) 45.51%,
+    //       rgba(0, 0, 0, 0.45) 74.03%
+    //     );
+    // }
   }
   .content {
     position: relative;
@@ -96,9 +96,9 @@
         line-height: 1.5em;
       }
       p {
-        font-size: 14px;
+        font-size: 18px;
         line-height: 1.5em;
-        width: 822px;
+        width: 622px;
       }
       img {
         display: block;
